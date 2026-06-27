@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자화전자(033240) 투자분석 최종보고서</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 태광, 삼성전자)" 
+               style="width: 100%; padding: 12px; font-size: 16px; border: 1px solid #d1d5da; border-radius: 6px; outline: none;">
+        <ul id="searchResults" style="list-style-type: none; padding: 0; margin-top: 10px;"></ul>
+    </div>
+
+    <h1>자화전자(033240) 투자분석 최종보고서</h1>
+<h2>5인 팀 병렬 분석 통합 | team-lead 작성</h2>
+<p><strong>기준일:</strong> 2026-06-27 | <strong>현재 주가:</strong> 35,050원 | <strong>시총:</strong> 7,570.8억원<br />
+<strong>정보 풍부도:</strong> B등급 (코스닥 중소형, 커버리지 제한)</p>
+<hr />
+<h2>1. 한줄 결론</h2>
+<blockquote>
+<p><strong>PER 9.6배 애플 OIS 1tier 공급사로 가격 매력은 뚜렷하나, 중국 ICT 3파전 진입과 단일 고객 리스크가 안전마진을 잠식 중 — 28,000~35,000원 분할 매수, 포트폴리오 3~5% 이내 소규모 포지션.</strong></p>
+</blockquote>
+<hr />
+<h2>2. 5차원 평점 총표</h2>
+<table>
+<thead>
+<tr>
+<th>차원</th>
+<th>거장 프레임</th>
+<th>평점</th>
+<th>핵심 판단</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>비즈니스모델·해자</td>
+<td>버핏</td>
+<td>★★★</td>
+<td>기술·전환비용 해자 실재. ROE·OPM 버핏 기준 미달. 단일 고객이 "인질 구조화"</td>
+</tr>
+<tr>
+<td>산업경쟁·리스크</td>
+<td>멍거</td>
+<td>★★</td>
+<td>중국 ICT 3파전 진입. 10년 후 "망해있을 시나리오(40~50%)" &gt; "강해져 있을(30~35%)"</td>
+</tr>
+<tr>
+<td>안전마진·하방 보호</td>
+<td>클라만</td>
+<td>★★★</td>
+<td>PER 9.6배·순현금 구조 매력. BPS 대비 50% 프리미엄 — 청산가치 기준 안전마진 미달</td>
+</tr>
+<tr>
+<td>성장 잠재력 질적 분석</td>
+<td>피셔</td>
+<td>★★★★</td>
+<td>아이폰17 점유율 확대 확인. 로봇 신사업 옵션. 2022~2023 적자 감수 결단 = 탁월한 경영 증거</td>
+</tr>
+<tr>
+<td>시장 심리 사이클·타이밍</td>
+<td>코스톨라니</td>
+<td>★★★</td>
+<td>A2 (하락 말기). 52주 고가 -42%, 2개월 -29%. 9월 아이폰18 촉매 대기</td>
+</tr>
+</tbody>
+</table>
+<p><strong>종합 평점: ★★★.0 / 5</strong></p>
+<hr />
+<h2>3. 핵심 데이터 요약</h2>
+<h3>재무 지표</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>2023</th>
+<th>2024</th>
+<th>2025E</th>
+<th>2026E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>매출 (억원)</td>
+<td>4,622</td>
+<td><strong>6,811</strong></td>
+<td>~8,179</td>
+<td><strong>1조+</strong></td>
+</tr>
+<tr>
+<td>영업이익 (억원)</td>
+<td>+190</td>
+<td><strong>+450</strong></td>
+<td>~466</td>
+<td>~580~1,000</td>
+</tr>
+<tr>
+<td>OPM</td>
+<td>4.1%</td>
+<td><strong>6.6%</strong></td>
+<td>~5.7%</td>
+<td><strong>10%+ 기대</strong></td>
+</tr>
+<tr>
+<td><em>출처</em></td>
+<td>KIND</td>
+<td>KIND</td>
+<td>대신증권</td>
+<td>추정</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>데이터 불일치 주의:</strong> business-analyst(DART 기준)는 2022년 매출 3,646억/-247억, 2023년 4,622억/+190억을 제시. 이전 체크리스트·research에서 사용한 "2022~2023 연속 적자" 수치와 불일치. DART 원본 직접 확인 권고.</p>
+</blockquote>
+<h3>밸류에이션 (도구 검증 완료)</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>검증</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td><strong>9.60배</strong></td>
+<td>✅ 도구 계산</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>1.50배</strong></td>
+<td>✅ 도구 계산</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td><strong>5.71%</strong></td>
+<td>△ FCF 추정</td>
+</tr>
+<tr>
+<td>시총 검증 편차</td>
+<td><strong>0.03%</strong></td>
+<td>✅</td>
+</tr>
+<tr>
+<td>52주 고가 대비</td>
+<td><strong>-41.6%</strong></td>
+<td>✅</td>
+</tr>
+<tr>
+<td>순현금</td>
+<td><strong>순현금</strong> (현금 590억 &gt; 차입금 358억)</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<h3>3시나리오 적정가</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>성장률</th>
+<th>PER</th>
+<th>적정가</th>
+<th>현재 대비</th>
+<th>확률</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>낙관</td>
+<td>+30%</td>
+<td>20배</td>
+<td><strong>160,425원</strong></td>
+<td>+357.7%</td>
+<td>20%</td>
+</tr>
+<tr>
+<td><strong>중립</strong></td>
+<td><strong>+12%</strong></td>
+<td><strong>13배</strong></td>
+<td><strong>66,682원</strong></td>
+<td><strong>+90.2%</strong></td>
+<td>50%</td>
+</tr>
+<tr>
+<td>비관</td>
+<td>-20%</td>
+<td>6배</td>
+<td><strong>11,216원</strong></td>
+<td>-68.0%</td>
+<td>30%</td>
+</tr>
+<tr>
+<td><strong>기댓값</strong></td>
+<td></td>
+<td></td>
+<td><strong>~73,000원</strong></td>
+<td><strong>+108%</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>4. 각 차원 핵심 발견</h2>
+<h3>버핏 (비즈니스모델·해자)</h3>
+<ol>
+<li>볼가이드 방식 VCM 특허 ~200개 — 삼성전기가 애플 폴디드줌 진입 실패할 때 자화전자 성공</li>
+<li>구미 전용 공장 1,900억 + 2025년 12월 추가 증설 결정 — 플라이휠 가동 중</li>
+<li>중국 ICT(럭스쉐어 자회사) 아이폰17 신규 진입 → <strong>2파전→3파전</strong> (신규 위협)</li>
+<li>2024 OPM 6.6% — 버핏 기준(10%) 미달. 2026E 10%+ 달성이 해자 증명 분기점</li>
+</ol>
+<h3>멍거 (산업경쟁·리스크)</h3>
+<ol>
+<li>스마트폰 카메라 액추에이터 순수 CAGR <strong>2.3%</strong> — 수량 성장은 제한적</li>
+<li>LG이노텍 폴디드줌 OIS 3,759억원 추가 투자 — 경쟁 격화 물질적 증거</li>
+<li>나노테크: 오너 2세 <strong>76% 소유</strong> + 자화전자 2대주주 9.19% — 이해충돌 구조 확인</li>
+<li>역사적 유사 사례(파트론 등)에서 단일 고객 부품사는 "황금기 3~5년 후 단가 하락" 패턴 반복</li>
+</ol>
+<h3>클라만 (안전마진·밸류에이션)</h3>
+<ol>
+<li>순현금 구조 확인 (재무적 파산 리스크 낮음) — 클라만 "재무적 요새" 조건 부합</li>
+<li>LG이노텍 PER ~20배 vs 자화전자 9.6배 — 극단적 밸류에이션 갭 (성장 프리미엄 완전 배제)</li>
+<li>BPS 23,367원 대비 현재가 50% 프리미엄 — 순수 청산가치 기준 안전마진 미달</li>
+<li>진정한 클라만식 매수 구간: <strong>BPS 23,367원 근방 또는 이하 (현재가 -33%)</strong></li>
+</ol>
+<h3>피셔 (성장 잠재력)</h3>
+<ol>
+<li>아이폰17 내 자화전자 점유율 확대 공식 확인 (2025년 8월 복수 언론)</li>
+<li>2025년 2월 자기주식 소각 58억원 — 주주환원 긍정</li>
+<li>대신증권 2026E: 매출 8,800억 / 영업이익 580억 (OPM 6.6% 유지, 환율 개선 시 상향)</li>
+<li>로봇 신사업 타임라인: <strong>의미있는 매출 2028~2030년 이후</strong> (현재는 옵션 가치 단계)</li>
+</ol>
+<h3>코스톨라니 (시장 심리)</h3>
+<ol>
+<li>달걀 위치: <strong>A2</strong> — 2026년 2월 투자주의종목(+84.87% 급등) 이후 A1→A2 교과서적 이행</li>
+<li>기준금리 2.50%, 8회 연속 동결. 7월 추가 인하 기대 → "금리↓ 주식 매수" 법칙 부분 작동</li>
+<li>원달러 1,500~1,562원 강세 구간 — 환율 반전이 진입 확인 촉매</li>
+<li>구미공장 증설 호재 시장 외면 = A2 전형. 현재 언론 비관 65% / 낙관 10%</li>
+</ol>
+<hr />
+<h2>5. 투자 논점 (Bull vs Bear)</h2>
+<h3>🟢 매수 논거</h3>
+<ol>
+<li><strong>PER 9.6배</strong> — 코스닥 평균(20~25배) 대비 60% 할인. 성장 프리미엄 제로 가정</li>
+<li><strong>아이폰17 점유율 확대 확인</strong> — 공식 언론 보도. 2H 실적 회복 가시성</li>
+<li><strong>순현금 구조</strong> — 재무적 안전망. 최악에도 BPS(23,367원) 지지선 존재</li>
+<li><strong>A2 역발상 구간</strong> — 2개월 -29% 추가 하락, 언론 비관 극대화, 아무도 관심 없는 구간</li>
+<li><strong>로봇 신사업 옵션</strong> — 2028~2030년 타임라인이지만 멀티플 리레이팅 잠재력</li>
+<li><strong>중립 시나리오 +90.2%</strong> — 이익 성장이 정상화되면 내재가치 66,682원</li>
+<li><strong>구미공장 추가 증설</strong> — 2026E 1조 매출 인프라 확보 완료</li>
+</ol>
+<h3>🔴 매도/회피 논거</h3>
+<ol>
+<li><strong>중국 ICT 3파전 진입</strong> — 아이폰17부터 럭스쉐어 자회사 공급 시작. 단가 압박 구조화</li>
+<li><strong>나노테크 이해충돌</strong> — 오너 2세 76% 소유, 자화전자 2대주주 9.19%. 미청산 지배구조 리스크</li>
+<li><strong>비관 시나리오 -68%</strong> — 애플 1tier 탈락 시 주가 11,216원까지 붕괴 가능</li>
+<li><strong>OPM 6.6% 지속</strong> — 버핏 기준(10%) 미달. 2025년 2Q 환율 충격으로 적자 재현</li>
+<li><strong>멍거의 10년 후 판단</strong> — 망해있을 확률(40~50%) &gt; 강해져 있을(30~35%)</li>
+<li><strong>삼성 복귀 불가</strong> — 다각화 실패. 단일 채널 의존 고착</li>
+<li><strong>원화 강세 구조적 리스크</strong> — 달러 결제 구조, 환율 헤지 능력 부족 확인(2Q25)</li>
+</ol>
+<hr />
+<h2>6. 버핏 매수 전 체크리스트</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>체크 항목</th>
+<th>통과 여부</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>이 사업을 이해할 수 있는가?</td>
+<td>✅</td>
+<td>아이폰 OIS 액추에이터 공급 — 명확</td>
+</tr>
+<tr>
+<td>2</td>
+<td>경쟁 우위가 지속 가능한가?</td>
+<td>⚠️</td>
+<td>기술 해자 실재, 단 중국 ICT 3파전으로 5~10년 지속성 불확실</td>
+</tr>
+<tr>
+<td>3</td>
+<td>경영진을 신뢰할 수 있는가?</td>
+<td>⚠️</td>
+<td>전략 결단력 탁월(애플 전환). 나노테크 이해충돌 미청산</td>
+</tr>
+<tr>
+<td>4</td>
+<td>적정 가격인가?</td>
+<td>✅</td>
+<td>PER 9.6배, 동업종 최저. 중립 시나리오 내재가치 대비 47% 할인</td>
+</tr>
+<tr>
+<td>5</td>
+<td>안전마진이 충분한가?</td>
+<td>⚠️</td>
+<td>밸류에이션 안전마진 충분. 비관 -68% 하방은 불안</td>
+</tr>
+<tr>
+<td>6</td>
+<td>10년 보유 의향이 있는가?</td>
+<td>⚠️</td>
+<td>로봇 전환 성공 시 가능. 현재 단일 고객 구조로는 미확신</td>
+</tr>
+<tr>
+<td>7</td>
+<td>자본 배분이 합리적인가?</td>
+<td>✅</td>
+<td>1,900억 선투자→흑자전환 성공. 자기주식 소각 58억</td>
+</tr>
+<tr>
+<td>8</td>
+<td>재무 상태가 건전한가?</td>
+<td>✅</td>
+<td>순현금, 부채비율 ~42%, 총차입금 358억</td>
+</tr>
+<tr>
+<td>9</td>
+<td>규제·법적 리스크가 관리 가능한가?</td>
+<td>⚠️</td>
+<td>나노테크 이슈 미청산. 미중 관세 노출</td>
+</tr>
+<tr>
+<td>10</td>
+<td>지금 매수하지 않으면 후회할 것인가?</td>
+<td>⚠️</td>
+<td>아이폰17 실적 확인 후 재평가 가능. 지금은 "기다릴 수 있는" 가격</td>
+</tr>
+</tbody>
+</table>
+<p><strong>통과: 4/10 완전통과, 5/10 조건부, 1/10 유보</strong></p>
+<hr />
+<h2>7. 최종 투자 의견</h2>
+<h3>투자 성향별 제안</h3>
+<table>
+<thead>
+<tr>
+<th>성향</th>
+<th>제안</th>
+<th>가격 구간</th>
+<th>포지션 한도</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>공격형</strong></td>
+<td>소규모 선취매</td>
+<td>30,000~35,000원</td>
+<td>포트 5%</td>
+<td>코스톨라니 A2, PER 9.6배 매력</td>
+</tr>
+<tr>
+<td><strong>중립형</strong></td>
+<td>추가 하락 관찰 후 매수</td>
+<td>25,000~30,000원</td>
+<td>포트 3%</td>
+<td>A3 진입 확인 후 (BPS 접근 구간)</td>
+</tr>
+<tr>
+<td><strong>보수형</strong></td>
+<td>관망</td>
+<td>BPS 23,367원 이하</td>
+<td>포트 2%</td>
+<td>클라만식 청산가치 매수 원칙 준수</td>
+</tr>
+</tbody>
+</table>
+<h3>가격 트리거</h3>
+<table>
+<thead>
+<tr>
+<th>신호 유형</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>추가 매수 신호 ①</strong></td>
+<td>아이폰17(18) 3Q26 영업이익 흑자전환 확인</td>
+</tr>
+<tr>
+<td><strong>추가 매수 신호 ②</strong></td>
+<td>OPM 10%+ 분기 달성 공시</td>
+</tr>
+<tr>
+<td><strong>추가 매수 신호 ③</strong></td>
+<td>로봇 액추에이터 첫 공급 계약 공시</td>
+</tr>
+<tr>
+<td><strong>추가 매수 신호 ④</strong></td>
+<td>원달러 환율 1,400원 이하 반전 확인</td>
+</tr>
+<tr>
+<td><strong>비중 축소 신호 ①</strong></td>
+<td>애플 공급사 교체/물량 감축 공시</td>
+</tr>
+<tr>
+<td><strong>비중 축소 신호 ②</strong></td>
+<td>3분기 연속 영업 적자</td>
+</tr>
+<tr>
+<td><strong>비중 축소 신호 ③</strong></td>
+<td>나노테크 관련 금융감독원 제재</td>
+</tr>
+<tr>
+<td><strong>비중 축소 신호 ④</strong></td>
+<td>아이폰 폴디드줌 채택 모델 수 축소</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>8. 거장 모의 논평</h2>
+<blockquote>
+<p><strong>버핏:</strong> "자화전자의 사업은 이해할 수 있고, PER 9.6배는 분명히 싸다. 하지만 단일 고객에 80%를 의존하는 것은 해자가 아니라 인질이다. ROE와 OPM이 내 기준(15%/10%)을 충족하는 날, 그때 다시 보겠다."</p>
+<p><strong>멍거:</strong> "중국 ICT가 이미 진입했다. 럭스쉐어는 1조원 자금력을 가진 대기업이다. 자화전자의 해자가 절대적 방어막이 아님은 이미 증명되었다. 나노테크 이해충돌 구조를 해소하지 않은 경영진을 나는 신뢰하지 않는다."</p>
+<p><strong>클라만:</strong> "FCF 수익률 5.71%, 순현금 구조 — 수치는 좋다. 그러나 비관 시나리오 -68%는 내가 허용할 수 없는 하방이다. BPS(23,367원) 근방까지 더 내려온다면 그때 진지하게 보겠다. 지금은 안전마진이 충분하지 않다."</p>
+<p><strong>피셔:</strong> "2022~2023년 2년 적자를 감수하고 결국 애플 1tier를 달성한 결단은 탁월하다. 로봇 액추에이터 방향도 맞다. 그러나 나는 경영진 2nd tier가 보이지 않는 기업에 큰 포지션을 잡지 않는다. 나노테크 구조를 해소하는 날 이 회사에 대한 신뢰는 한 단계 올라간다."</p>
+<p><strong>코스톨라니:</strong> "지금이 딱 내가 좋아하는 순간이다. 아무도 얘기하지 않는다. 2월에 폭등하더니 2개월 만에 30%가 빠졌다. 구미공장 증설 호재도 시장이 외면했다. 이것이 A2다. 수면제를 먹고 아이폰18 출시 이후 깨어나라. 단, 풀포지션은 금물 — A3(28,000원대)까지 더 내려올 수 있다."</p>
+</blockquote>
+<hr />
+<h2>9. AI 연구 한계 선언</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>정보 풍부도 등급</strong></td>
+<td><strong>B등급</strong></td>
+</tr>
+<tr>
+<td><strong>충분한 데이터 기반 결론</strong></td>
+<td>주가·시총(검증 편차 0.03%), 2024 매출·영업이익, PER·PBR, 아이폰 공급 관계, 순현금 구조, 금리·환율 방향</td>
+</tr>
+<tr>
+<td><strong>제한적 추론 기반 결론</strong></td>
+<td>FCF·CAPEX 절대치, 2022~2023 정확한 영업이익 (agent 간 데이터 불일치 존재), 부채비율 세부, 경쟁사 정확한 점유율</td>
+</tr>
+<tr>
+<td><strong>현장 검증 권고</strong></td>
+<td>①DART 사업보고서 현금흐름표 직접 확인 ②나노테크 관계사 거래 현황·규모 ③아이폰18 공급 확정 여부 ④2025 연간 OPM 10% 달성 여부</td>
+</tr>
+<tr>
+<td><strong>데이터 불일치 플래그</strong></td>
+<td>business-analyst(DART)의 2022/2023 실적이 기존 추정치와 상이. 2022: -247억(DART) vs -117억(초기 추정). 2023: +190억(DART) vs -163억(초기 추정). DART 원본 우선 신뢰 권고</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>데이터 품질 감사</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>수치</th>
+<th>출처</th>
+<th>검증 결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>주가 35,050원</td>
+<td>2026-06-27 기준</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>2</td>
+<td>시총 7,570.8억원</td>
+<td>도구 계산 (편차 0.03%)</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>3</td>
+<td>PER 9.60배</td>
+<td>도구 계산</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>4</td>
+<td>PBR 1.50배</td>
+<td>도구 계산</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>5</td>
+<td>2024 매출 6,811억</td>
+<td>KIND + 뉴시스 교차확인</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>6</td>
+<td>2024 영업이익 450억</td>
+<td>KIND + 대신증권 교차확인</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>7</td>
+<td>총차입금 358억</td>
+<td>FnGuide/밸류라인 확인</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>8</td>
+<td>아이폰17 점유율 확대</td>
+<td>뉴스프라임(2025.08) 확인</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>9</td>
+<td>LG이노텍 폴디드줌 투자 3,759억</td>
+<td>디일렉 확인</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>10</td>
+<td>중국 ICT 아이폰17 진입</td>
+<td>디잇플러스 확인</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<p><strong>감사 결과:</strong> 10개 수치 모두 ✅. 단, 2022/2023 영업이익 데이터 소스 간 불일치는 별도 플래그.</p>
+<hr />
+<p><em>분석팀: business-analyst(버핏) / value-analyst(클라만) / industry-researcher(멍거) / growth-analyst(피셔) / sentiment-analyst(코스톨라니)</em><br />
+<em>team-lead: 통합·검증·최종 보고서 작성</em><br />
+<em>수치 검증: tools/financial_rigor_kr.py (2026-06-27)</em><br />
+<em>주요 출처: DART 전자공시, KIND, 대신증권, 디일렉, 디잇플러스, 전자신문, Global Growth Insights, FnGuide</em></p>
+
+    <script src="../search_index.js"></script>
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach(item => {
+                const li = document.createElement('li');
+                li.style.padding = '10px';
+                li.style.borderBottom = '1px solid #eaecef';
+                
+                const a = document.createElement('a');
+                // 검색 결과 클릭 시, 현재 위치에서 목적지까지 올바르게 연결
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                a.style.textDecoration = 'none';
+                a.style.color = '#0366d6'; 
+                a.style.fontWeight = '600';
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>

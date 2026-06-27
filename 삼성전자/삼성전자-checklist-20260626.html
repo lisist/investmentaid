@@ -1,0 +1,556 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼성전자(005930) 매수 전 체크리스트 (버핏 6관문)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 태광, 삼성전자)" 
+               style="width: 100%; padding: 12px; font-size: 16px; border: 1px solid #d1d5da; border-radius: 6px; outline: none;">
+        <ul id="searchResults" style="list-style-type: none; padding: 0; margin-top: 10px;"></ul>
+    </div>
+
+    <h1>삼성전자(005930) 매수 전 체크리스트 (버핏 6관문)</h1>
+<p><strong>기준일:</strong> 2026-06-26<br />
+<strong>현재 주가:</strong> 339,500원 (장중 기준, 전일 종가 358,500원)<br />
+<strong>종목코드:</strong> 005930 | <strong>거래소:</strong> 코스피<br />
+<strong>정보 풍부도 등급:</strong> A등급 — 대형주·글로벌 커버리지 풍부. 단, "컨센서스 함정" 주의.</p>
+<hr />
+<h2>핵심 데이터 요약</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>수치</th>
+<th>출처·비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>주가</td>
+<td>339,500원</td>
+<td>2026-06-26 장중</td>
+</tr>
+<tr>
+<td>시가총액 (보통주)</td>
+<td>약 2,027조원</td>
+<td>계산: 339,500×59.7억주</td>
+</tr>
+<tr>
+<td>매출 (2025)</td>
+<td>333.6조원 (역대 최대)</td>
+<td>삼성 공식 발표</td>
+</tr>
+<tr>
+<td>영업이익 (2025)</td>
+<td>43.6조원</td>
+<td>삼성 공식 발표</td>
+</tr>
+<tr>
+<td>영업이익 (2026 Q1)</td>
+<td>57.2조원 (분기 사상 최대)</td>
+<td>삼성 공식 발표 2026-04</td>
+</tr>
+<tr>
+<td>순이익 (2025)</td>
+<td>45.2조원 (추정)</td>
+<td>investing.com</td>
+</tr>
+<tr>
+<td>EPS (2025)</td>
+<td>7,570원</td>
+<td>순이익 45.2조÷59.7억주 (추정)</td>
+</tr>
+<tr>
+<td>EPS (2026F)</td>
+<td>~15,000~20,000원</td>
+<td>Q1 기준 연환산 추정</td>
+</tr>
+<tr>
+<td>BPS</td>
+<td>~48,000원</td>
+<td>추정 (FnGuide 교차검증 필요)</td>
+</tr>
+<tr>
+<td>PER (TTM, 2025 EPS)</td>
+<td><strong>44.85배</strong></td>
+<td>tools/financial_rigor_kr.py 계산</td>
+</tr>
+<tr>
+<td>선행 PER (2026F)</td>
+<td><strong>~17~23배</strong></td>
+<td>2026F EPS 추정 기반</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>7.07배</strong></td>
+<td>BPS 추정 48,000원 기준</td>
+</tr>
+<tr>
+<td>FCF (2024)</td>
+<td>27.7조원</td>
+<td>영업CF 65.3조 - CAPEX 37.6조</td>
+</tr>
+<tr>
+<td>주당 FCF (2024)</td>
+<td>4,640원</td>
+<td>추정</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td><strong>1.37%</strong></td>
+<td>tools/financial_rigor_kr.py 계산</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>0.43%</strong></td>
+<td>tools/financial_rigor_kr.py 계산</td>
+</tr>
+<tr>
+<td>ROE (2024)</td>
+<td>9.0%</td>
+<td>investing.com</td>
+</tr>
+<tr>
+<td>ROE (2022 최고)</td>
+<td>17.1%</td>
+<td>investing.com</td>
+</tr>
+<tr>
+<td>순현금</td>
+<td>약 100.6조원</td>
+<td>2024년 말 기준</td>
+</tr>
+<tr>
+<td>CAPEX (2025)</td>
+<td>약 52.7조원</td>
+<td>DS 47.5조+디스플레이 등</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>1관문: 이 사업을 이해할 수 있는가? (능력 범위)</h2>
+<ul>
+<li>[x] <strong>수익 방식:</strong> 반도체(DS부문, 매출의 약 50%)·스마트폰·가전(DX부문)·디스플레이(SDC) 4대 사업. 메모리 반도체(DRAM/NAND) 수요처는 PC·서버·스마트폰·AI 가속기.</li>
+<li>[x] <strong>10년 예측 가능성:</strong> 메모리 반도체·파운드리·완성품 수직통합 구조는 10년 내 본질 변화 가능성 낮음. AI 인프라 수요 증가로 HBM 중요도 확대 추세 명확.</li>
+<li>[x] <strong>핵심 변수:</strong> HBM 점유율 회복 여부, TSMC 대비 파운드리 경쟁력, 스마트폰 ASP 방어, 메모리 사이클 주기.</li>
+<li>[x] <strong>지식 근거:</strong> DART 공시·IR 자료·복수 리서치. 메모리 사이클 구조는 이해 가능하나 반도체 공정 기술 깊이는 전문가 수준 지식 요구.</li>
+</ul>
+<p><strong>평점: ★★★★☆</strong><br />
+비즈니스 모델 이해 가능. 단, HBM 수율·파운드리 기술 로드맵은 반도체 전문 지식 없이 10년 확실성 평가 어려움.</p>
+<hr />
+<h2>2관문: 좋은 사업인가? (경제적 특성)</h2>
+<pre><code>실행: python tools/financial_rigor_kr.py verify-valuation
+      --price 339500 --eps 7570 --bvps 48000 --fcf-per-share 4640 --dividend 1444
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>기준</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE (5년 평균 2020-2024)</td>
+<td>약 10.8% (20%/13.9%/17.1%/4.1%/9.0%)</td>
+<td>&gt;15% 우수</td>
+<td>✗ 미달 (사이클 왜곡)</td>
+</tr>
+<tr>
+<td>ROE (피크, 2022)</td>
+<td>17.1%</td>
+<td>&gt;15%</td>
+<td>○ 충족</td>
+</tr>
+<tr>
+<td>영업이익률 (2025)</td>
+<td>13.1%</td>
+<td>&gt;10%</td>
+<td>○ 충족</td>
+</tr>
+<tr>
+<td>영업이익률 (2024)</td>
+<td>10.9%</td>
+<td>&gt;10%</td>
+<td>○ 충족</td>
+</tr>
+<tr>
+<td>영업이익률 (2023)</td>
+<td>2.5%</td>
+<td>&gt;10%</td>
+<td>✗ 사이클 저점</td>
+</tr>
+<tr>
+<td>FCF (2022~2024)</td>
+<td>37.5조 / 20.0조 / 27.7조원</td>
+<td>지속 양(+)</td>
+<td>○ 충족</td>
+</tr>
+<tr>
+<td>FCF ≈ 순이익</td>
+<td>FCF 27.7조 vs 순이익 26.1조 (2024)</td>
+<td>근접</td>
+<td>○ 충족</td>
+</tr>
+<tr>
+<td>CAPEX 강도</td>
+<td>CAPEX/매출: 2025년 약 15.8%</td>
+<td>중자산 수준</td>
+<td>△ 반도체 특성상 불가피</td>
+</tr>
+<tr>
+<td>부채 수준</td>
+<td>무차입 경영, 순현금 100.6조원</td>
+<td>유이자부채/OI&lt;3년</td>
+<td>○ 우수</td>
+</tr>
+</tbody>
+</table>
+<p><strong>의견:</strong> ROE 5년 평균은 메모리 사이클 때문에 왜곡됨. 2022 피크(17.1%)·2026 반등(AI 수요) 사이클 확인 필요. 무차입+100조 현금은 사업 품질 A등급 요소.</p>
+<p><strong>평점: ★★★☆☆</strong><br />
+좋은 사업이나 반도체 사이클 리스크 내재. 2023년처럼 1년 만에 영업이익 84.9% 급감이 가능한 구조는 "탁월한 경제적 해자"와 구분 필요.</p>
+<hr />
+<h2>3관문: 해자가 충분한가? (경쟁 우위)</h2>
+<table>
+<thead>
+<tr>
+<th>해자 유형</th>
+<th>보유 여부</th>
+<th>구체적 근거</th>
+<th>추세</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기술·특허 장벽</td>
+<td>○</td>
+<td>2013년 세계 최초 3D V-NAND 양산 / HBM4 처리속도 11.7Gbps(표준 8Gbps 초과) / 1c(10nm 6세대) DRAM 독자 공정 / EU 글로벌 R&amp;D 투자 4위</td>
+<td>확대 (HBM4 경쟁력 회복)</td>
+</tr>
+<tr>
+<td>규모·원가 우위</td>
+<td>○</td>
+<td>반도체·디스플레이·완성품 수직통합. 메모리 전체 매출 2025 Q3 1위 탈환</td>
+<td>유지</td>
+</tr>
+<tr>
+<td>브랜드·가격결정력</td>
+<td>△</td>
+<td>스마트폰 글로벌 1위(점유율 19%). 단, 반도체는 B2B 거래로 브랜드 영향 제한</td>
+<td>유지</td>
+</tr>
+<tr>
+<td>전환비용</td>
+<td>△</td>
+<td>엔비디아·AWS 등 대형 고객의 공급망 전환 비용 존재. 그러나 SK하이닉스·마이크론도 대체 공급 가능</td>
+<td>보통</td>
+</tr>
+<tr>
+<td>네트워크 효과</td>
+<td>✗</td>
+<td>반도체·가전에서 네트워크 효과 미약</td>
+<td>해당 없음</td>
+</tr>
+<tr>
+<td>허가·규제 장벽</td>
+<td>△</td>
+<td>반도체 팹 건설에 수십조 CAPEX+수년 리드타임 → 진입 장벽. 단 신규 경쟁사 위협보다 기존 경쟁사(TSMC, SK하이닉스) 위협이 더 큼</td>
+<td>유지</td>
+</tr>
+</tbody>
+</table>
+<p><strong>반론 (멍거 역발상):</strong> SK하이닉스에게 DRAM 1위를 뺏겼고 HBM 시장에서도 3위(삼성 18% vs 하이닉스 61%). 1조 달러를 갖고 뛰어들어도 빼앗기 어렵지만, 이미 강력한 경쟁자가 특정 영역에서 앞서 있다는 사실이 해자의 한계를 보여줌.</p>
+<p><strong>평점: ★★★☆☆</strong><br />
+해자 존재하나 "넓은 해자"보다는 "깊은 기술 해자 + 규모 해자". HBM 1위 탈환 시 ★★★★☆으로 상향 가능.</p>
+<hr />
+<h2>4관문: 경영진을 신뢰할 수 있는가? (사람)</h2>
+<table>
+<thead>
+<tr>
+<th>체크 항목</th>
+<th>평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>솔직성</td>
+<td>△ — 2023년 반도체 위기 대응은 적절했으나, HBM 수율 문제 공개 시점 지연 논란</td>
+</tr>
+<tr>
+<td>자본 배분 능력</td>
+<td>○ — 2025년 자사주 14.58조원 소각 + 3개년 11.1조원 배당 정책. 무차입 경영으로 재무 규율 양호</td>
+</tr>
+<tr>
+<td>주주 이익 일치성</td>
+<td>△ — 이재용 회장 보통주 지분 1.65%. 직접 지분 낮아 경영권은 삼성물산 → 삼성생명 → 삼성전자 지배구조에 의존</td>
+</tr>
+<tr>
+<td>오너 마인드셋</td>
+<td>○ — 이재용 회장 실질적 총수. 대규모 M&amp;A 결정권 보유</td>
+</tr>
+<tr>
+<td>지배구조</td>
+<td>△ — 순환출자 구조(삼성물산→삼성생명→삼성전자). 복잡한 지배구조는 소수 주주 관점에서 리스크</td>
+</tr>
+<tr>
+<td>위기 대응</td>
+<td>○ — 2023년 반도체 혹한기에서 CAPEX 조정+운영 효율화로 빠른 회복. 2026 Q1 분기 최대 실적 입증</td>
+</tr>
+<tr>
+<td>오너리스크</td>
+<td>○ (개선) — 2025년 7월 삼성물산-제일모직 부당합병 혐의 <strong>대법원 최종 무죄 확정</strong>. 10년간 사법리스크 해소. 상속세 완납(2026년 4월) 이후 경영 집중 환경 조성</td>
+</tr>
+</tbody>
+</table>
+<p><strong>평점: ★★★☆☆</strong><br />
+오너리스크 해소는 긍정적. 단, 순환출자 구조·이재용 직접 지분 1.65%로 인한 대리인 문제는 잔존. 경영진 능력은 검증됨.</p>
+<hr />
+<h2>5관문: 가격이 충분히 싼가? (안전마진)</h2>
+<pre><code>실행: python tools/financial_rigor_kr.py three-scenario
+      --price 339500 --eps 7570 --shares 59.7
+      --growth 20 10 0 --per 35 25 15
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>역사적 분위</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM, 2025 EPS 기준)</td>
+<td>44.85배</td>
+<td>5년 평균 대비 고평가</td>
+<td>✗ 고평가</td>
+</tr>
+<tr>
+<td>선행 PER (2026F EPS ~17,000원 추정)</td>
+<td>~20배</td>
+<td>중간 수준</td>
+<td>△ 보통</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>7.07배</td>
+<td>역사적 고평가 구간</td>
+<td>✗ 고평가</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>0.43%</td>
+<td>역사적 저배당 구간</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td>1.37%</td>
+<td>낮은 수준</td>
+<td>✗</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3시나리오 적정가 (3년 기준, 도구 계산 결과):</strong></p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>연성장률</th>
+<th>목표PER</th>
+<th>적정가</th>
+<th>현재 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>낙관 (AI 초호황 지속)</td>
+<td>+20%</td>
+<td>35배</td>
+<td>457,834원</td>
+<td><strong>+34.9%</strong></td>
+</tr>
+<tr>
+<td>중립 (성장 둔화)</td>
+<td>+10%</td>
+<td>25배</td>
+<td>251,892원</td>
+<td><strong>-25.8%</strong></td>
+</tr>
+<tr>
+<td>비관 (사이클 하강)</td>
+<td>0%</td>
+<td>15배</td>
+<td>113,550원</td>
+<td><strong>-66.6%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>클라만 관점:</strong> 시장이 339,500원에 삼성전자를 두는 이유는 "Q1 2026 분기 최대 실적(57.2조원 영업이익) + HBM4 엔비디아 공급 개시"라는 AI 수요 폭발 기대. 이 이유가 일시적(사이클 피크)인지 구조적(AI 인프라 장기 성장)인지가 핵심 쟁점. 중립 시나리오에서도 -25.8% 손실 가능. 비관 시나리오에서는 -66.6%.</p>
+<p><strong>평점: ★★☆☆☆</strong><br />
+TTM PER 44.85배·PBR 7.07배·FCF 수익률 1.37%는 안전마진 부재. 낙관 시나리오에서만 수익 가능한 구조. 선행 PER(~20배)이 더 현실적이나, 이는 Q1 2026 수준의 실적이 연간 지속됨을 가정.</p>
+<hr />
+<h2>6관문: 시장 심리·타이밍 점검 (코스톨라니)</h2>
+<ul>
+<li>[ ] 거래량 감소·관심 식음: <strong>아님</strong> — AI 반도체 최대 수혜주로 거래량·관심 모두 폭발. 언론 매일 보도.</li>
+<li>[x] 언론·주변 외면·비관: <strong>아님</strong> — 반대로 모든 언론이 "삼성전자 AI 부활" 보도.</li>
+<li>[x] 모두가 열광: <strong>해당</strong> — 분기 사상 최대 실적 발표 후 주가 급등. 투자자 열광.</li>
+<li>[ ] 금리 방향 지지: 확인 불가 (한국은행 기준금리 2026년 동향 별도 확인 필요).</li>
+<li>[x] 매수 이유 점검: "최근 많이 올라서" 또는 "HBM 기대감" — <strong>경계 필요</strong>.</li>
+</ul>
+<p><strong>코스톨라니 달걀 위치 판정:</strong> 현재는 <strong>B2~B3 구간</strong>에 가깝다.<br />
+2023년 하반기~2024년이 A구간(비관 극대화, 매수 적기)이었다면, 2026년 Q1 최대 실적 후는 모두가 낙관하는 B구간에 진입했을 가능성이 높다.</p>
+<blockquote>
+<p>"주식을 사서 수면제를 먹고 몇 년 후에 깨어나라. 단, 올바른 주식을 샀을 때만." — 코스톨라니</p>
+</blockquote>
+<p><strong>현재가 339,500원에서 수면제를 먹는 것은:</strong> 중립·비관 시나리오에서 수년간 마이너스를 감수해야 함.</p>
+<p><strong>감정 통제 점검:</strong>
+- FOMO 위험: ★★★★★ (분기 최대 실적 기사로 유혹 강함)
+- 5년 보유 가능?: 반도체 사이클 하강 시 가격 50% 이상 하락 가능. 이를 감수할 수 있는가?
+- 200자 매수 논거: 가능 (아래 거울 테스트)</p>
+<hr />
+<h2>4단계: 거울 테스트</h2>
+<blockquote>
+<p>"나는 <strong>339,500원</strong>에 <strong>삼성전자</strong>를 매수한다. 이유는:
+1. 이 사업의 본질은 <strong>메모리 반도체·HBM·스마트폰의 수직통합 글로벌 1위 기업</strong>이며, 나는 이를 이해한다.
+2. 해자는 <strong>기술 장벽(HBM4 독자 공정)과 규모 우위</strong>이며, <strong>유지</strong> 추세다. 단 HBM 시장 3위라는 현실 인정.
+3. 경영진은 <strong>능력 있으나 순환출자 구조 내 지배</strong>하며, 사법 리스크 해소로 <strong>조건부 신뢰</strong>할 수 있다.
+4. 현재 가격은 내재가치의 <strong>TTM 기준 고평가, 선행 기준 보통</strong> 수준으로, 안전마진이 <strong>부족</strong>하다.
+5. 설령 내가 틀려도, 하방 리스크는 <strong>관리 불가</strong>하다. 이유: <strong>중립 시나리오 -25.8%, 비관 시나리오 -66.6% 손실 가능성 내재.</strong>"</p>
+</blockquote>
+<p><strong>거울 테스트 결과: ⚠ 조건부 통과</strong><br />
+5문장 완성 가능하나, 4번·5번 문장이 "안전마진 부족·하방 불관리"로 귀결됨.</p>
+<hr />
+<h2>5단계: 즉각 거부 목록 점검</h2>
+<ul>
+<li>[x] 수익 방식 설명 가능 → <strong>통과</strong></li>
+<li>[x] FCF 3년 연속 양(+) (22/23/24년 모두 양) → <strong>통과</strong></li>
+<li>[x] 경영진 신뢰성·도덕성 (대법원 무죄 확정, 자사주 소각) → <strong>통과</strong></li>
+<li>[ ] 경쟁 우위 유지 (HBM 3위로 추락한 사실은 우위 약화 신호) → <strong>△ 경계</strong></li>
+<li>[x] 수익 구조 폰지 아님 (실제 영업이익으로 FCF 창출) → <strong>통과</strong></li>
+<li>[x] 원금 손실 감당 가능 금액 투자 여부 → <strong>투자자 본인 판단</strong></li>
+<li>[ ] 매수 이유 "모두가 사고 있어서"에 해당 가능성 → <strong>⚠ 경계</strong></li>
+<li>[x] 200자 매수 논거 가능 → <strong>통과</strong></li>
+</ul>
+<p><strong>즉각 거부 해당 없음.</strong> 단 "HBM 경쟁력 약화" 및 "시장 열광에 의한 매수 충동" 두 항목은 경계 신호.</p>
+<hr />
+<h2>핵심 리스크 (3~5개)</h2>
+<ol>
+<li>
+<p><strong>반도체 사이클 하강 위험</strong>: 2023년처럼 영업이익 84.9% 급감이 반복될 수 있다. AI 수요가 일시적 피크라면 현재 주가는 심각한 하방을 내포.</p>
+</li>
+<li>
+<p><strong>HBM 경쟁력 회복 불확실성</strong>: 현재 HBM 점유율 3위(18%). SK하이닉스 61%와의 격차가 지속되면 AI 반도체 사이클에서 수혜 제한.</p>
+</li>
+<li>
+<p><strong>고평가 리스크</strong>: TTM PER 44.85배·PBR 7.07배는 역사적 고평가 구간. 낙관 시나리오가 현실화되지 않으면 멀티플 압축.</p>
+</li>
+<li>
+<p><strong>CAPEX 부담</strong>: 2025년 CAPEX 52.7조원 (매출 대비 15.8%). HBM·파운드리 투자 지속 시 FCF 압박 가능.</p>
+</li>
+<li>
+<p><strong>지배구조 리스크 잔존</strong>: 순환출자·이재용 직접 지분 1.65% 구조는 소수 주주 보호 취약. 오너 리스크 해소는 상당 부분 진전됐으나 구조 자체는 미변화.</p>
+</li>
+</ol>
+<hr />
+<h2>최종 결론</h2>
+<p><strong>⚠ 회색지대 — 체크리스트 조건부 통과 (4.5/6관문)</strong></p>
+<table>
+<thead>
+<tr>
+<th>관문</th>
+<th>평점</th>
+<th>통과 여부</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1관문: 능력 범위</td>
+<td>★★★★☆</td>
+<td>○</td>
+</tr>
+<tr>
+<td>2관문: 사업 품질</td>
+<td>★★★☆☆</td>
+<td>○</td>
+</tr>
+<tr>
+<td>3관문: 해자</td>
+<td>★★★☆☆</td>
+<td>○</td>
+</tr>
+<tr>
+<td>4관문: 경영진</td>
+<td>★★★☆☆</td>
+<td>○</td>
+</tr>
+<tr>
+<td>5관문: 안전마진</td>
+<td>★★☆☆☆</td>
+<td>✗ (고평가)</td>
+</tr>
+<tr>
+<td>6관문: 심리·타이밍</td>
+<td>B구간 추정</td>
+<td>✗ (과열)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>핵심 쟁점 — 투자자가 스스로 판단할 것:</strong></p>
+<ol>
+<li><strong>Q1 2026 실적 지속 가능성</strong>: 분기 영업이익 57.2조원이 구조적 변화인가, 사이클 피크인가? 이것이 현재가의 핵심 전제.</li>
+<li><strong>HBM4 점유율 회복 속도</strong>: 2026년 내 선두 탈환 시 주가 업사이드. 실패 시 AI 수혜 제한.</li>
+<li><strong>반도체 사이클 위치</strong>: 지금이 B구간(보유/매도)인지, 새로운 구조적 성장 사이클 초입인지.</li>
+</ol>
+<p><strong>버핏 어록:</strong> "훌륭한 회사를 적정 가격에 사는 것이, 적정한 회사를 훌륭한 가격에 사는 것보다 낫다." — 삼성전자는 훌륭한 회사다. 문제는 현재 가격이 "훌륭한 가격"이 아니라는 점.</p>
+<p><strong>현재 339,500원은 매수 적기가 아닐 가능성이 높다. 사이클 하강 또는 AI 기대 실망 시 252,000원(중립 적정가) 이하 진입 기회를 기다리는 전략이 안전마진 원칙에 부합한다.</strong></p>
+<hr />
+<p><em>데이터 출처: 삼성전자 공식 IR, 삼성 뉴스룸 Korea, investing.com, 카운터포인트리서치, 전자신문, news1.kr</em><br />
+<em>수치 계산: tools/financial_rigor_kr.py (2026-06-26)</em><br />
+<em>추정값: BPS(48,000원), 2026F EPS(15,000~20,000원), PBR — FnGuide/네이버금융 교차검증 권장</em></p>
+
+    <script src="../search_index.js"></script>
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach(item => {
+                const li = document.createElement('li');
+                li.style.padding = '10px';
+                li.style.borderBottom = '1px solid #eaecef';
+                
+                const a = document.createElement('a');
+                // 검색 결과 클릭 시, 현재 위치에서 목적지까지 올바르게 연결
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                a.style.textDecoration = 'none';
+                a.style.color = '#0366d6'; 
+                a.style.fontWeight = '600';
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>
