@@ -1,0 +1,657 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04. 안전마진 분석 — 세스 클라만 시각</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { 
+            box-sizing: border-box; 
+            min-width: 200px; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 45px; 
+        }
+        /* 📱 모바일 화면 최적화: 여백을 대폭 줄여 가독성 확보 */
+        @media (max-width: 767px) {
+            .markdown-body { 
+                padding: 15px; 
+            }
+            #searchInput {
+                font-size: 14px !important;
+                padding: 10px !important;
+            }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 태광, 삼성전자)" 
+               style="width: 100%; padding: 12px; font-size: 16px; border: 1px solid #d1d5da; border-radius: 6px; outline: none; box-sizing: border-box;">
+        <ul id="searchResults" style="list-style-type: none; padding: 0; margin-top: 10px;"></ul>
+    </div>
+
+    <h1>04. 안전마진 분석 — 세스 클라만 시각</h1>
+<p><strong>태광(주) (023160, KOSPI) | 분석 기준가: 23,800원 | 기준일: 2026-06-27</strong>
+<strong>오늘 등락: -4.80% | 52주 위치: 15.7% (저점 근방)</strong></p>
+<hr />
+<blockquote>
+<p>"투자자의 목표는 안전마진이 있는 가격에 사야 하는 것이다.
+안전마진이 없다면, 그것은 투기이지 투자가 아니다."
+— 세스 클라만, 『Margin of Safety』</p>
+</blockquote>
+<hr />
+<h2>0. 정밀 검증 결과 (Bash 실행 기록)</h2>
+<p><strong>사용 데이터 출처:</strong>
+- EPS 1,740원: 2024A 순이익 461억원 ÷ 발행주식수 2,650만주 (신영증권·IBK 리포트, 2025)
+- BPS 26,444원: PBR 0.90배 역산 (FnGuide, 2026-06-27)
+- 주당FCF 1,130원: 2024A 영업이익 399억원 × FCF 전환율 75% ÷ 2,650만주 (추정)
+- DPS 521원: 2025년 배당 총액 138억원 ÷ 2,650만주 (DART 공시)
+- 발행주식수: 26,500천주 (신영증권 리포트 확인)</p>
+<h3>밸류에이션 지표 검증 (2024A EPS 기준)</h3>
+<pre><code>============================================================
+밸류에이션 지표 검증 (Valuation Metrics)
+============================================================
+  현재 주가: 23,800.0원
+
+  PER (주가/EPS):     13.68배  [EPS=1,740.0원]
+  PBR (주가/BPS):     0.90배  [BPS=26,444.0원]
+  FCF 수익률:         4.75%  [주당FCF=1,130.0원]
+  배당수익률:         2.19%  [주당배당=521.0원]
+
+  [OK] 계산 완료 — 위 수치를 보고서에 직접 인용하세요
+</code></pre>
+<p>※ 시장 컨센서스 PER 10.0배와 차이: 시장은 Forward EPS(2025E ~2,380원) 기준 적용한 것으로 추정</p>
+<h3>3시나리오 적정가 산출 (EPS 1,740원 기준)</h3>
+<pre><code>============================================================
+3시나리오 적정가 산출 (3년 기준)
+============================================================
+  현재 주가: 23,800.0원  |  현재 EPS: 1,740.0원  |  발행주식: 0.265억주
+
+  시나리오     연성장률     목표PER    3년후EPS       적정가          괴리율
+  ----------------------------------------------------------
+  [+] 낙관    +15.0%    10.0배       2,646원      26,463원  +11.2%
+  [~] 중립     +5.0%     7.0배       2,014원      14,100원  -40.8%
+  [-] 비관    -20.0%     5.0배         891원       4,454원  -81.3%
+
+  [FAIL] 중립 시나리오 기준 하락위험 40.8% — 현재가 과평가 가능성
+</code></pre>
+<hr />
+<h2>1. 5개년 재무 추세 — "이익이 얼마나 믿을 수 없는가?"</h2>
+<table>
+<thead>
+<tr>
+<th>연도</th>
+<th>매출(억원)</th>
+<th>영업이익(억원)</th>
+<th>순이익(억원)</th>
+<th>OPM</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021</td>
+<td>~1,500 추정</td>
+<td>~120 추정</td>
+<td>~80 추정</td>
+<td>~8%</td>
+<td>2022Q1 YoY +268% 역산</td>
+</tr>
+<tr>
+<td>2022</td>
+<td><strong>2,136</strong></td>
+<td><strong>443</strong></td>
+<td><strong>352</strong></td>
+<td>20.7%</td>
+<td>IBK·신영 리포트</td>
+</tr>
+<tr>
+<td>2023</td>
+<td><strong>2,699</strong></td>
+<td><strong>553</strong></td>
+<td><strong>535</strong></td>
+<td>20.5%</td>
+<td>IBK·신영 리포트</td>
+</tr>
+<tr>
+<td>2024</td>
+<td><strong>2,668</strong></td>
+<td><strong>399</strong></td>
+<td><strong>461</strong></td>
+<td>14.9%</td>
+<td>IBK·DART 확인</td>
+</tr>
+<tr>
+<td>2025 (상반기)</td>
+<td>△-12.3%</td>
+<td>적자전환</td>
+<td>△-43.9%</td>
+<td>음수</td>
+<td>씽크풀·공시</td>
+</tr>
+<tr>
+<td>2025 (3Q 누적)</td>
+<td>△+7.8%</td>
+<td>△-12.0%</td>
+<td>△+62.2%</td>
+<td>개선</td>
+<td>씽크풀·공시</td>
+</tr>
+</tbody>
+</table>
+<p><strong>클라만식 이익 변동성 진단:</strong></p>
+<ul>
+<li>2021→2023: 영업이익 ~120억 → 553억, <strong>4배 이상 팽창</strong> (수주 사이클 회복)</li>
+<li>2023→2025 상반기: 영업이익 553억 → <strong>적자전환</strong> (수주 공백·매출 인식 지연)</li>
+<li>2025년 3Q 누적: 순이익 +62.2% 반등 → 하반기 수주 인식 본격화</li>
+</ul>
+<p><strong>핵심 진단:</strong> 플랜트 피팅 수주 기반 사업의 특성상, 이익은 수주 → 제조 → 납품 → 매출 인식의 긴 사이클을 따른다. 2023년 553억 영업이익은 2021~2022년 수주가 인식된 결과이며, 2025년 상반기 적자전환은 2024년 수주 공백이 반영된 것이다. 이 구조에서 단년도 이익은 사업의 지속력을 보여주지 못한다.</p>
+<blockquote>
+<p>"사이클 기업의 이익을 정상 이익으로 착각하는 것이 가장 위험한 함정이다."
+— 클라만</p>
+</blockquote>
+<hr />
+<h2>2. 수익성 지표 — 사이클 평균 vs 현재</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>2022</th>
+<th>2023</th>
+<th>2024</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>영업이익률</td>
+<td>20.7%</td>
+<td>20.5%</td>
+<td><strong>14.9%</strong></td>
+<td>수주 공백 효과 선반영</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>~13%</td>
+<td><strong>10.9%</strong></td>
+<td><strong>8.2%</strong></td>
+<td>하락 추세</td>
+</tr>
+<tr>
+<td>ROA</td>
+<td>~7%</td>
+<td>~8%</td>
+<td>~6%</td>
+<td>안정적이나 하락</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>—</td>
+<td>—</td>
+<td><strong>0.90배</strong></td>
+<td>장부가 이하</td>
+</tr>
+</tbody>
+</table>
+<p><strong>FCF 안정성 판단:</strong></p>
+<p>피팅 제조업(Fitting Manufacturing)은 반도체와 달리 CAPEX 부담이 제한적이다. 주요 설비는 단조·가공 기계로, 반도체 FAB 대비 회전율이 높고 교체 주기가 길다. 따라서:
+- 2024 영업이익 399억 → 감가상각 포함 EBITDA 약 450억 추정
+- CAPEX 약 100~120억 가정 (매출의 4~5% 수준)
+- FCF 추정: 약 280~320억원 → 주당 약 1,057~1,208원</p>
+<p>의견: FCF 수익률 4.75%는 국채(3%) 대비 1.75%p의 위험 프리미엄을 제공한다. 단, 수주 공백 발생 시 OCF 자체가 급감할 수 있다는 사업 리스크는 상존한다.</p>
+<p><strong>배당 이력:</strong></p>
+<ul>
+<li>2025년 배당 총액: 138억3,897만원 (DART 공시)</li>
+<li>주당 배당금(DPS): 약 521원</li>
+<li>배당수익률: 2.19% (현재 주가 23,800원 기준)</li>
+<li>배당성향: 21.12% (2025년 기준)</li>
+<li>회사 목표: 2024~2026년 주주환원율 순이익 대비 30% + 2026년 자사주 100억 매입·소각</li>
+<li>의견: 배당은 꾸준하지만 배당수익률이 특별히 매력적인 수준은 아니다.</li>
+</ul>
+<hr />
+<h2>3. 재무 건전성</h2>
+<p><strong>데이터 제한:</strong> DART 공시 수치 직접 확인 불가. 증권사 리포트 참조 추정값.</p>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>추정값</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PBR</td>
+<td><strong>0.90배</strong></td>
+<td>FnGuide (2026-06-27)</td>
+</tr>
+<tr>
+<td>BPS</td>
+<td><strong>26,444원</strong></td>
+<td>PBR 역산 (자체 계산)</td>
+</tr>
+<tr>
+<td>Target BPS (IBK)</td>
+<td><strong>21,613원</strong></td>
+<td>IBK 리포트 (2025)</td>
+</tr>
+<tr>
+<td>부채비율</td>
+<td>중간 수준 추정</td>
+<td>피팅 제조업 평균 40~80%</td>
+</tr>
+<tr>
+<td>순현금/순부채</td>
+<td>데이터 부족</td>
+<td>DART 직접 확인 권장</td>
+</tr>
+<tr>
+<td>자사주 매입 계획</td>
+<td>100억원</td>
+<td>2026년 기업가치 제고 계획 공시</td>
+</tr>
+</tbody>
+</table>
+<p><strong>재무 건전성 판단:</strong>
+- PBR 0.90배는 태광이 장부가치 이하에서 거래되고 있음을 의미
+- 배당 및 자사주 매입 병행: 재무 여력이 충분함을 시사
+- 중기 목표 PBR 1배(2027~2029): 현재 주가는 회사 자체 목표가 이하</p>
+<hr />
+<h2>4. 정밀 검증 — Bash 실행 결과 요약</h2>
+<p>실행 명령어:</p>
+<pre><code class="language-bash">python tools/financial_rigor_kr.py verify-valuation \
+  --price 23800 --eps 1740 --bvps 26444 --fcf-per-share 1130 --dividend 521
+
+python tools/financial_rigor_kr.py three-scenario \
+  --price 23800 --eps 1740 --shares 0.265 --growth 15 5 -20 --per 10 7 5
+</code></pre>
+<p>핵심 수치 (도구 검증 완료):</p>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>값</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER</td>
+<td><strong>13.68배</strong></td>
+<td>(2024A 기준), 시장 컨센서스 10배는 Forward 기준</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>0.90배</strong></td>
+<td>장부가 10% 할인 — 청산가치 하방 보호 존재</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td><strong>4.75%</strong></td>
+<td>국채(3%) 대비 +1.75%p 위험프리미엄</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>2.19%</strong></td>
+<td>안정적이나 특별히 높지 않음</td>
+</tr>
+<tr>
+<td>낙관 적정가</td>
+<td><strong>26,463원</strong></td>
+<td>현재가 대비 +11.2%</td>
+</tr>
+<tr>
+<td>중립 적정가</td>
+<td><strong>14,100원</strong></td>
+<td>현재가 대비 <strong>-40.8%</strong></td>
+</tr>
+<tr>
+<td>비관 적정가</td>
+<td><strong>4,454원</strong></td>
+<td>현재가 대비 <strong>-81.3%</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. 클라만식 하방 분석</h2>
+<h3>청산가치: BPS 기준 하방</h3>
+<ul>
+<li><strong>BPS 26,444원 &gt; 현재가 23,800원</strong></li>
+<li>PBR 0.90배 → 시장은 장부가 대비 10% 할인 적용 중</li>
+<li>의미: 태광은 현재 자산 청산가치 이하에서 거래되고 있다</li>
+<li>이는 클라만이 말하는 "비인기 자산(Unloved Asset)" 조건의 핵심 요소</li>
+</ul>
+<p>그러나 반론: 피팅 제조 설비의 실제 청산가치는 수주 가뭄 시 급격히 하락할 수 있다. 해양·플랜트 시장이 침체되면 중고 단조 설비의 수요도 함께 침체된다.</p>
+<h3>최악 시나리오: 수주 가뭄 발생 시</h3>
+<p>2025년 상반기 사례가 실증: 수주 공백이 현실화되면:
+- 영업이익 적자전환 (2025 상반기 실제 발생)
+- EPS 음전환 → PER 무의미, PBR로만 가치 평가
+- 비관 시나리오(이익 -20%, PER 5배): 적정가 <strong>4,454원</strong> (현재가 대비 -81.3%)
+- 수주 가뭄 + 업황 침체 시: PBR 0.5배 적용 가능 → <strong>13,222원</strong> (-44.4%)</p>
+<h3>52주 저가(18,660원)는 안전마진 하단인가?</h3>
+<table>
+<thead>
+<tr>
+<th>기준</th>
+<th>가격</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>현재가</td>
+<td>23,800원</td>
+<td>—</td>
+</tr>
+<tr>
+<td>52주 저가</td>
+<td>18,660원</td>
+<td>-21.6%</td>
+</tr>
+<tr>
+<td>BPS (장부가)</td>
+<td>26,444원</td>
+<td>+11.1% (현재가 이상)</td>
+</tr>
+<tr>
+<td>수주 가뭄 PBR 0.5배</td>
+<td>13,222원</td>
+<td>-44.4%</td>
+</tr>
+<tr>
+<td>비관 시나리오 적정가</td>
+<td>4,454원</td>
+<td>-81.3%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>판단:</strong> 52주 저가 18,660원은 단순 기술적 하단이지 클라만 의미의 안전마진 하단이 아니다. 수주 가뭄이 장기화된다면 PBR 0.5배(13,222원) 아래도 가능하다.</p>
+<h3>"비인기 자산" 가능성 — 시장이 왜 외면하는가?</h3>
+<table>
+<thead>
+<tr>
+<th>요인</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>사업 복잡성</td>
+<td>수주→납품→인식 사이클이 길어 실적 예측 어려움</td>
+</tr>
+<tr>
+<td>업종 비인기</td>
+<td>플랜트 피팅은 섹시하지 않은 B2B 소재 산업</td>
+</tr>
+<tr>
+<td>이익 변동성</td>
+<td>2025 상반기 영업이익 적자전환 → 투자자 이탈</td>
+</tr>
+<tr>
+<td>오너 리스크?</td>
+<td>소형주 거버넌스 리스크</td>
+</tr>
+<tr>
+<td>52주 저가 근방</td>
+<td>하락 모멘텀 속에서 기술적 매도 압력</td>
+</tr>
+</tbody>
+</table>
+<p>의견: 태광은 클라만이 선호하는 전형적인 "비인기 우량자산" 요소를 갖추고 있다. PBR 0.9, 플랜트 사이클 저점 근방, 자사주 매입 계획이 그것이다. 단, 이익의 변동성과 수주 예측 불가능성이 클라만의 "이익 신뢰도" 기준을 약화시킨다.</p>
+<hr />
+<h2>6. 동업종 비교 — 성광벤드(014620) 대비</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>태광(023160)</th>
+<th>성광벤드(014620)</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>현재 PER</td>
+<td>~13.7배 (2024A)</td>
+<td><strong>27.4배</strong></td>
+<td>태광이 2배 저렴</td>
+</tr>
+<tr>
+<td>현재 PBR</td>
+<td><strong>0.90배</strong></td>
+<td>1.72배</td>
+<td>태광이 장부가 이하, 성광벤드는 장부가 프리미엄</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td><strong>9.9%</strong></td>
+<td>6.27%</td>
+<td>태광 수익성 우위</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>2.19%</td>
+<td>낮음 추정</td>
+<td>태광 우위</td>
+</tr>
+</tbody>
+</table>
+<p><strong>동업종 비교 결론:</strong></p>
+<p>태광은 동일 업종 성광벤드 대비 PER 절반, PBR은 장부가 이하, ROE는 더 높은 이례적 저평가 상태다. 이는 시장이 특정 리스크(이익 변동성, 2025 실적 부진)를 과도하게 반영하고 있다는 증거일 수 있다.</p>
+<p>그러나 반론: 성광벤드의 프리미엄이 정당한 이유가 있을 수 있다 — 사업 구성의 안정성, 수주 집중도 차이 등은 추가 검증이 필요하다.</p>
+<hr />
+<h2>7. 클라만 핵심 질문에 대한 답</h2>
+<h3>"이 가격(23,800원)에서 손실 가능성은 얼마나 되는가?"</h3>
+<table>
+<thead>
+<tr>
+<th>위험 요소</th>
+<th>발생 가능성</th>
+<th>충격 강도</th>
+<th>예상 주가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수주 가뭄 장기화</td>
+<td>중간</td>
+<td>대형</td>
+<td>10,000~13,000원</td>
+</tr>
+<tr>
+<td>LNG 프로젝트 지연</td>
+<td>중간~낮음</td>
+<td>중형</td>
+<td>15,000~18,000원</td>
+</tr>
+<tr>
+<td>조선·플랜트 사이클 하강</td>
+<td>낮음 (현재 상승 초입)</td>
+<td>치명적</td>
+<td>5,000~10,000원</td>
+</tr>
+<tr>
+<td>미국 LNG 정책 후퇴</td>
+<td>낮음</td>
+<td>중형</td>
+<td>18,000~20,000원</td>
+</tr>
+<tr>
+<td>현재 수준 유지</td>
+<td>중간</td>
+<td>없음</td>
+<td>23,000~27,000원</td>
+</tr>
+</tbody>
+</table>
+<p><strong>기대수익률 가중 계산 (확률 부여, 의견):</strong>
+- 낙관 30% × +11.2% = +3.4%
+- 중립 40% × -40.8% = -16.3%
+- 비관 30% × -81.3% = -24.4%
+- <strong>가중 기대수익률: 약 -37.3%</strong></p>
+<p>※ 단, 이 계산은 순수 Klarman식 이익-PER 밸류에이션 기준. 자산가치(BPS 26,444원) 기준으로는 다른 그림이 나온다.</p>
+<h3>BPS 기준 안전마진 재계산</h3>
+<p>현재 PBR 0.90배 → 장부가 대비 10% 할인 매수 가능.
+PBR 1.0배 회복 시 주가: <strong>26,444원</strong> (현재 대비 +11.1%)
+기업 목표 PBR 1.0배 (2027~2029) 달성 시 시간 프리미엄 포함.</p>
+<p>자산 기준 안전마진: <strong>존재하나 협소 (10%)</strong></p>
+<hr />
+<h2>8. 안전마진 분석 — 종합 판정</h2>
+<h3>클라만 기준 체크리스트</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>판단</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>청산가치 대비 할인</td>
+<td><strong>부분 존재</strong></td>
+<td>PBR 0.90 = 10% 할인 (협소)</td>
+</tr>
+<tr>
+<td>정상 이익 대비 저평가</td>
+<td><strong>불확실</strong></td>
+<td>이익 변동성 극심, '정상 이익' 판단 어려움</td>
+</tr>
+<tr>
+<td>FCF 수익률 &gt; 무위험수익률</td>
+<td><strong>OK</strong></td>
+<td>4.75% &gt; 국채 3%+</td>
+</tr>
+<tr>
+<td>배당수익률 의미 있음</td>
+<td><strong>보통</strong></td>
+<td>2.19%, 자사주 계획 병행</td>
+</tr>
+<tr>
+<td>비관 시나리오 하방 제한</td>
+<td><strong>없음</strong></td>
+<td>-40.8%~-81.3% 손실 가능</td>
+</tr>
+<tr>
+<td>비인기 자산 성격</td>
+<td><strong>있음</strong></td>
+<td>업종 비인기, 실적 부진 과도 반영 가능</td>
+</tr>
+<tr>
+<td>동업종 상대 저평가</td>
+<td><strong>있음</strong></td>
+<td>성광벤드 대비 PER 절반, PBR 0.9 vs 1.7</td>
+</tr>
+<tr>
+<td>기업 자체 밸류업 의지</td>
+<td><strong>있음</strong></td>
+<td>자사주 100억 매입·소각, PBR 1배 목표</td>
+</tr>
+</tbody>
+</table>
+<h3>시나리오별 결론</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적정가</th>
+<th>현재가 대비</th>
+<th>클라만 판단</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>낙관 (LNG 붐, EPS +15%)</td>
+<td>26,463원</td>
+<td>+11.2%</td>
+<td>수익 있으나 협소</td>
+</tr>
+<tr>
+<td>중립 (완만 성장, EPS +5%)</td>
+<td>14,100원</td>
+<td>-40.8%</td>
+<td>손실 위험 존재</td>
+</tr>
+<tr>
+<td>BPS 기준 청산</td>
+<td>26,444원</td>
+<td>+11.1%</td>
+<td>하방 일부 보호</td>
+</tr>
+<tr>
+<td>비관 (수주 가뭄, EPS -20%)</td>
+<td>4,454원</td>
+<td>-81.3%</td>
+<td>치명적 손실</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>9. 최종 판정</h2>
+<blockquote>
+<p>"현명한 투자자는 손실을 피하는 데서 출발한다.
+수익은 손실을 피하면 자연히 따라온다."
+— 클라만</p>
+</blockquote>
+<h3>안전마진 평가: <strong>협소, 조건부 존재 ★★☆☆☆</strong></h3>
+<p><strong>결론 근거:</strong></p>
+<ol>
+<li>
+<p><strong>청산가치 기반 하방</strong>: PBR 0.90배 → 장부가 대비 10% 할인. 자산 기준 하방 보호는 존재하나 협소하다.</p>
+</li>
+<li>
+<p><strong>이익 변동성 치명적</strong>: 2025년 상반기 영업이익 적자전환이 실증한 것처럼, 수주 공백 발생 시 이익은 순식간에 사라진다. '정상 이익' 기준 밸류에이션 자체가 불안정하다.</p>
+</li>
+<li>
+<p><strong>중립 시나리오도 위험</strong>: 도구 계산 결과 중립 시나리오(EPS +5%, PER 7배) 적정가는 14,100원(-40.8%). 이는 클라만이 허용할 수 없는 하방 위험이다.</p>
+</li>
+<li>
+<p><strong>비인기 자산 프리미엄 가능성</strong>: 동업종 성광벤드 대비 대폭 할인, 기업 자체 PBR 1배 목표, 자사주 매입 계획은 클라만이 좋아하는 "시장이 외면한 우량자산" 성격을 띤다.</p>
+</li>
+<li>
+<p><strong>LNG·플랜트 슈퍼사이클 시 한정 매력</strong>: 미국 LNG 터미널 착공 재개, 조선 피팅 수요 증가 시 낙관 시나리오(+11.2%)는 보수적 목표다. 그러나 클라만은 낙관 시나리오에 베팅하지 않는다.</p>
+</li>
+</ol>
+<p><strong>클라만이라면 이 주식을 사겠는가?</strong></p>
+<p>"지금 가격(23,800원)은 BPS 대비 10% 할인이다. 그것은 하방 보호라고 부르기엔 너무 협소하다. 클라만의 기준은 '충분한 안전마진(Adequate Margin of Safety)'이지 '약간의 할인'이 아니다. 최소 PBR 0.5배(13,222원) 이하에서라면 클라만 방식의 진정한 안전마진이 생긴다. 현재 가격에서는 관망이 적합하다."</p>
+<hr />
+<p><em>작성: value-analyst (세스 클라만 역할) | 2026-06-27</em>
+<em>정밀 계산: tools/financial_rigor_kr.py 실행 결과 인용 (직접 실행 확인)</em>
+<em>데이터 출처: IBK투자증권 리포트(2025.03), 신영증권 리포트(2025.05.27), DART 전자공시, FnGuide, 씽크풀, 디지털투데이(기업가치 제고 공시 기사)</em></p>
+
+    <script src="../search_index.js"></script>
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach(item => {
+                const li = document.createElement('li');
+                li.style.padding = '10px';
+                li.style.borderBottom = '1px solid #eaecef';
+                
+                const a = document.createElement('a');
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                a.style.textDecoration = 'none';
+                a.style.color = '#0366d6'; 
+                a.style.fontWeight = '600';
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>
