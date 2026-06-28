@@ -44,6 +44,10 @@ const searchData = [
         "url": "엔바이오니아/엔바이오니아-checklist-20260628.html"
     },
     {
+        "title": "[원익IPS] 원익IPS-checklist-20260628",
+        "url": "원익IPS/원익IPS-checklist-20260628.html"
+    },
+    {
         "title": "[유티아이] 유티아이-checklist-20260627",
         "url": "유티아이/유티아이-checklist-20260627.html"
     },
