@@ -9,31 +9,25 @@ def build_wiki():
         html_filepath = filepath.with_suffix('.html')
         url_path = html_filepath.as_posix()
         
-        # 기본 제목을 확장자(.md)가 떨어진 깔끔한 파일명으로 우선 설정합니다.
-        title = filepath.stem 
+        # 파일명에서 확장자(.md)를 제외한 이름만 가져옵니다. (예: "01-비즈니스모델-버핏시각")
+        file_name = filepath.stem 
         
         depth = len(filepath.parts) - 1
         rel_prefix = "../" * depth if depth > 0 else "./"
 
+        # 💡 문서 내용을 무시하고 오직 [폴더명] 파일명 형태로만 조합합니다.
+        if depth > 0:
+            folder_name = filepath.parts[-2]
+            display_title = f"[{folder_name}] {file_name}"
+        else:
+            display_title = file_name # 최상위 폴더 파일인 경우
+
         try:
             with open(filepath, 'r', encoding='utf-8') as f:
                 md_text = f.read()
-            
-            # 본문에서 # 태그를 찾으면 그것을 제목으로 덮어씁니다.
-            for line in md_text.splitlines():
-                if line.startswith('# '):
-                    title = line.strip('# \n')
-                    break
         except Exception as e:
             print(f"파일 읽기 오류 ({filepath}): {e}")
             continue
-
-        # 💡 [핵심 추가 로직] 폴더명을 추출하여 "폴더명 - 제목" 형태로 조합합니다.
-        if depth > 0:
-            folder_name = filepath.parts[-2] # 상위 폴더 이름 가져오기
-            display_title = f"[{folder_name}] {title}" # 원하시면 f"{folder_name} - {title}" 로 변경하셔도 됩니다.
-        else:
-            display_title = title # 최상위 폴더에 있는 파일은 폴더명이 안 붙습니다.
 
         html_body = markdown.markdown(md_text, extensions=['fenced_code', 'tables'])
 
@@ -100,7 +94,7 @@ def build_wiki():
         with open(html_filepath, 'w', encoding='utf-8') as f:
             f.write(html_content)
 
-        # 자바스크립트 검색 엔진용 데이터에는 가공된 display_title을 저장합니다.
+        # 검색 인덱스에도 새로 만든 직관적인 이름을 저장합니다.
         index_data.append({
             "title": display_title,
             "url": url_path

@@ -31,7 +31,7 @@
             letter-spacing: -0.5px;
         }
         .search-input {
-            box-sizing: border-box; /* 핵심 해결 코드: 패딩과 테두리를 너비에 포함 */
+            box-sizing: border-box; 
             width: 100%;
             padding: 16px 22px;
             font-size: 18px;
@@ -56,7 +56,7 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
             text-align: left;
             border: 1px solid #e1e4e8;
-            box-sizing: border-box; /* 결과창도 삐져나가지 않도록 추가 */
+            box-sizing: border-box; 
         }
         .results-list:empty {
             border: none;
@@ -82,7 +82,16 @@
             color: #0056b3;
         }
 
-        /* 📱 모바일 화면 최적화 */
+        /* 💡 추가: 키보드 방향키로 선택된 항목을 하이라이트하는 스타일 */
+        .results-list li.active {
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+        }
+        .results-list li.active a {
+            color: #0056b3;
+            padding-left: 16px; /* 왼쪽 테두리(4px)가 생기므로 글씨가 밀리지 않게 여백 조정 */
+        }
+
         @media (max-width: 600px) {
             .search-container {
                 padding: 15px;
@@ -105,16 +114,19 @@
 <body>
     <div class="search-container">
         <div class="search-title">Investment AI-ed</div>
-        <input type="text" id="searchInput" placeholder="종목명 또는 리서치 키워드 검색..." class="search-input" autofocus>
+        <input type="text" id="searchInput" placeholder="종목명 또는 리서치 키워드 검색..." class="search-input" autofocus autocomplete="off">
         <ul id="searchResults" class="results-list"></ul>
     </div>
 
     <script src="search_index.js"></script>
     <script>
+        let currentFocus = -1; // 현재 키보드로 가리키고 있는 위치
+
         document.getElementById('searchInput').addEventListener('input', function(e) {
             const keyword = e.target.value.toLowerCase().trim();
             const resultsContainer = document.getElementById('searchResults');
             resultsContainer.innerHTML = ''; 
+            currentFocus = -1; // 타이핑을 새로 하면 포커스 초기화
 
             if (!keyword) return;
 
@@ -122,7 +134,7 @@
                 item.title.toLowerCase().includes(keyword)
             );
 
-            filtered.forEach(item => {
+            filtered.forEach((item, index) => {
                 const li = document.createElement('li');
                 const a = document.createElement('a');
                 
@@ -131,8 +143,60 @@
                 
                 li.appendChild(a);
                 resultsContainer.appendChild(li);
+
+                // 💡 마우스로 목록을 스쳤을 때도 키보드 위치와 동기화 (마우스+키보드 혼용 시 오류 방지)
+                li.addEventListener('mouseenter', () => {
+                    currentFocus = index;
+                    addActive(resultsContainer.getElementsByTagName('li'));
+                });
             });
         });
+
+        // 💡 핵심 수정: 한글 씹힘 현상 방지 및 정확한 페이지 이동 로직
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            // 한글 조합 중일 때 엔터키를 누르면 검색이 실행되는 것이 아니라 글자 조합만 완성되게 함
+            if (e.isComposing || e.keyCode === 229) {
+                if (e.key === "Enter") return;
+            }
+
+            const resultsContainer = document.getElementById('searchResults');
+            const items = resultsContainer.getElementsByTagName('li');
+            
+            if (e.key === "ArrowDown" || e.keyCode === 40) {
+                currentFocus++;
+                addActive(items);
+                e.preventDefault(); // 방향키 누를 때 입력 커서가 앞뒤로 이동하는 것 방지
+            } else if (e.key === "ArrowUp" || e.keyCode === 38) {
+                currentFocus--;
+                addActive(items);
+                e.preventDefault();
+            } else if (e.key === "Enter" || e.keyCode === 13) {
+                e.preventDefault();
+                if (currentFocus > -1 && items[currentFocus]) {
+                    // a 태그 클릭 대신 가장 확실한 자바스크립트 페이지 이동 명령 사용
+                    window.location.href = items[currentFocus].querySelector('a').href;
+                }
+            }
+        });
+
+        function addActive(items) {
+            if (!items || items.length === 0) return false;
+            removeActive(items);
+            
+            if (currentFocus >= items.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = items.length - 1;
+            
+            items[currentFocus].classList.add("active");
+            
+            // 리스트가 길어 화면 밖으로 넘어가면, 선택된 항목을 따라 스크롤이 자동으로 내려감
+            items[currentFocus].scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+
+        function removeActive(items) {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+        }
     </script>
 </body>
 </html>
