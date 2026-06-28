@@ -24,6 +24,10 @@ const searchData = [
         "url": "SK하이닉스/최종보고서.html"
     },
     {
+        "title": "[미코] 미코-checklist-20260628",
+        "url": "미코/미코-checklist-20260628.html"
+    },
+    {
         "title": "[삼성전자] 삼성전자-checklist-20260626",
         "url": "삼성전자/삼성전자-checklist-20260626.html"
     },

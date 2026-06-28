@@ -39,6 +39,7 @@ def build_wiki():
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{display_title}</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
     <style>
         .markdown-body {{ box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }}

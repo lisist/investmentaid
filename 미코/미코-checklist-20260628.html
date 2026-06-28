@@ -1,0 +1,647 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[미코] 미코-checklist-20260628</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }
+        
+        /* 검색창 기본 스타일 추가 */
+        .search-input {
+            box-sizing: border-box; 
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 16px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        .search-input:focus {
+            border-color: #0366d6;
+            box-shadow: 0 4px 24px rgba(3, 102, 214, 0.15);
+        }
+        .results-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            max-height: 350px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e1e4e8;
+            box-sizing: border-box; 
+        }
+        .results-list:empty { border: none; box-shadow: none; }
+        .results-list li { border-bottom: 1px solid #eaecef; }
+        .results-list li:last-child { border-bottom: none; }
+        .results-list a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+        .results-list a:hover { background-color: #f6f8fa; color: #0056b3; }
+
+        /* 💡 키보드 방향키 하이라이트 스타일 */
+        .results-list li.active {
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+        }
+        .results-list li.active a {
+            color: #0056b3;
+            padding-left: 11px; 
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body { padding: 15px; }
+            .search-input { font-size: 14px; padding: 10px 14px; }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 삼성전자)" 
+               class="search-input" autocomplete="off">
+        <ul id="searchResults" class="results-list"></ul>
+    </div>
+
+    <h1>미코(059090) 버핏식 매수 전 체크리스트</h1>
+<p><strong>기준일: 2026-06-28 | 분석 기준가: 17,370원 | 거래소: 코스닥 | 정보 등급: B</strong></p>
+<hr />
+<h2>핵심 데이터 요약</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>수치</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>분석 기준가</td>
+<td>17,370원 (전일比 -2.14%)</td>
+<td>fetch_price_kr.py, 2026-06-28 13:01</td>
+</tr>
+<tr>
+<td>52주 고가 / 저가</td>
+<td>29,250원 / 12,400원 (위치: 29.5%)</td>
+<td>Yahoo Finance</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td>5,804억원 (검증: 17,370 × 3,342만주 = 5,805억, 오차 0.02%)</td>
+<td>FnGuide</td>
+</tr>
+<tr>
+<td>PER</td>
+<td>19.67배 (검증: 17,370 ÷ 883 = 19.67)</td>
+<td>FnGuide / financial_rigor_kr.py</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>4.35배 (검증: 17,370 ÷ 3,989 = 4.35)</td>
+<td>FnGuide / financial_rigor_kr.py</td>
+</tr>
+<tr>
+<td>EPS (지배주주)</td>
+<td>883원 (2025년 기준)</td>
+<td>FnGuide</td>
+</tr>
+<tr>
+<td>BPS</td>
+<td>3,989원</td>
+<td>FnGuide</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>-33.23% (2022) → -25.04% (2023) → 20.43% (2024) → 27.23% (2025)</td>
+<td>FnGuide</td>
+</tr>
+<tr>
+<td>영업이익률</td>
+<td>10.3% (2025, 연결)</td>
+<td>FnGuide</td>
+</tr>
+<tr>
+<td>부채비율</td>
+<td>228.63%</td>
+<td>FnGuide</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td>-456억 (2023) / -408억 (2024) / -5,416억 (2025) — 3년 연속 음수</td>
+<td>FnGuide 현금흐름표</td>
+</tr>
+<tr>
+<td>외국인 지분율</td>
+<td>21.46%</td>
+<td>FnGuide</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>AI 연구 편향 경고 (B등급)</h2>
+<p>미코는 코스닥 상장(2002년) 중소형주로 애널리스트 커버리지가 제한적입니다.<br />
+아래 분석에서 <strong>"추정:"</strong> 표시 항목은 DART 원문 확인 전까지 신뢰도 제한적입니다.<br />
+특히 사업부문별 매출 내역, SOFC 부문 별도 재무, 순부채 절대금액은 B등급 자료입니다.</p>
+<blockquote>
+<p><strong>클라만:</strong> "투자에서 가장 중요한 것은 얼마나 벌 수 있는가가 아니라 얼마나 잃을 수 있는가를 먼저 따져보는 것이다."</p>
+</blockquote>
+<hr />
+<h2>⚠️ 즉각 거부 체크 (6관문 이전 사전 필터)</h2>
+<table>
+<thead>
+<tr>
+<th>거부 조건</th>
+<th>해당 여부</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FCF 3년 연속 음(-)이고 개선 전망 없음</td>
+<td><strong>△ 부분 해당</strong></td>
+<td>연결 FCF 3년 연속 음수. 단, 2025년 -5,416억은 플랜텍·HPS 인수 대금 포함 일회성 성격. 2026년 FCF 개선 가능성 존재하나 미확인.</td>
+</tr>
+<tr>
+<td>수익 방식 설명 불가</td>
+<td><strong>미해당</strong></td>
+<td>반도체 부품 세정·코팅(코미코) + SOFC(미코파워) — 이해 가능</td>
+</tr>
+<tr>
+<td>경영진 신뢰성 문제</td>
+<td><strong>△ 부분 해당</strong></td>
+<td>오너 담보대출(22.63%), 별도기준 3년 연속 영업손실, 특수관계인 자본잠식</td>
+</tr>
+<tr>
+<td>경쟁 우위 불가역적 침식</td>
+<td><strong>미해당</strong></td>
+<td>코미코 글로벌 팹 납품 기반 유지 중</td>
+</tr>
+<tr>
+<td>폰지형 수익 구조</td>
+<td><strong>미해당</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>판단:</strong> 즉각 거부 아님. 단, FCF 문제와 경영진 불안 요인으로 6관문 전체를 엄밀하게 검토.</p>
+<hr />
+<h2>6관문 체크리스트</h2>
+<h3>1관문: 이 사업을 이해할 수 있는가? (능력 범위) ★★☆</h3>
+<p><strong>한 문장 수익 방식:</strong><br />
+코미코(자회사 41.1% 지분)가 반도체 팹의 소모성 세라믹 부품을 세정·코팅 재활용하여 반복 매출을 올리고, 미코파워(100%)가 SOFC 연료전지 시스템을 판매하며, HPS·플랜텍이 보일러·EPC 사업을 영위하는 복합 그룹.</p>
+<table>
+<thead>
+<tr>
+<th>체크 항목</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한 문장으로 수익 방식 설명 가능?</td>
+<td>✅ (코미코 세정·코팅 반복 매출 + SOFC 시스템 판매)</td>
+</tr>
+<tr>
+<td>10년 후 사업 예측 가능?</td>
+<td>△ 코미코는 예측 가능, SOFC·HPS·플랜텍은 불확실성 높음</td>
+</tr>
+<tr>
+<td>성패 핵심 변수?</td>
+<td>코미코: 반도체 가동률 / SOFC: CHPS 정책·상업화 속도 / 그룹: M&amp;A 통합 성공 여부</td>
+</tr>
+<tr>
+<td>지식 기반 판단?</td>
+<td>△ 공시·뉴스 기반 분석, 현장 검증 미실시 (B등급 한계)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>판정 근거:</strong> 코미코 비즈니스는 이해하기 쉬우나, 2025년 플랜텍·HPS 편입으로 연결 구조가 복잡해졌다. SOFC는 국내 상업화 초기 단계로 10년 경로 불확실하다. 단일 사업 집중형이 아닌 복합 지주구조 → 이해도 중간.</p>
+<hr />
+<h3>2관문: 좋은 사업인가? (경제적 특성) ★★</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>기준</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE (2025)</td>
+<td>27.23%</td>
+<td>&gt;15% 우수</td>
+<td>✅ 통과</td>
+</tr>
+<tr>
+<td>ROE (2022~2023)</td>
+<td>-33%, -25%</td>
+<td>연속 적자</td>
+<td>❌ 불량</td>
+</tr>
+<tr>
+<td>영업이익률 (2025)</td>
+<td>10.3%</td>
+<td>&gt;10% 의미 있음</td>
+<td>✅ 경계 통과</td>
+</tr>
+<tr>
+<td>FCF (3년)</td>
+<td>-456억 / -408억 / -5,416억</td>
+<td>지속 양(+)</td>
+<td>❌ <strong>3년 연속 음수</strong></td>
+</tr>
+<tr>
+<td>부채비율</td>
+<td>228.63%</td>
+<td>유이자부채/영업이익 &lt;3년</td>
+<td>❌ 경보 수준</td>
+</tr>
+<tr>
+<td>CAPEX 강도</td>
+<td>대규모 M&amp;A 포함</td>
+<td>경자산 선호</td>
+<td>❌ 중자산~중공업</td>
+</tr>
+</tbody>
+</table>
+<p><strong>판정 근거:</strong> ROE 2024~2025년 회복(20%↑)은 긍정이나 2022~2023년 2년 연속 대규모 적자가 있었다. FCF 3년 연속 음수가 핵심 약점이다. 단, 2025년 -5,416억 FCF는 M&amp;A 인수 대금(-5,664억 투자현금유출) 효과가 대부분으로, 순수 영업 FCF는 248억 양수다. </p>
+<p>반론: 코미코 별도 기준은 반복 매출·고이익률 구조이며, 반도체 가동률 회복 시 FCF 빠른 정상화 가능. 그러나 연결 부채비율 228%는 유동성 리스크.</p>
+<hr />
+<h3>3관문: 해자가 충분한가? (경쟁 우위) ★★★</h3>
+<table>
+<thead>
+<tr>
+<th>해자 유형</th>
+<th>보유 여부</th>
+<th>구체적 근거</th>
+<th>추세</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>브랜드·가격결정력</td>
+<td>△</td>
+<td>코미코: 반도체 세정업 30년 브랜드. SOFC: 인지도 낮음</td>
+<td>유지</td>
+</tr>
+<tr>
+<td>전환비용</td>
+<td>✅</td>
+<td>세정·코팅은 팹별 공정 인증 필요. 교체 비용·재인증 부담 존재</td>
+<td>확대</td>
+</tr>
+<tr>
+<td>네트워크 효과</td>
+<td>✗</td>
+<td>해당 없음</td>
+<td>—</td>
+</tr>
+<tr>
+<td>규모·원가 우위</td>
+<td>△</td>
+<td>국내 1위 코미코, 글로벌 멀티사이트(미·대·싱·중). 단, 규모 절대적 우위 불명</td>
+<td>유지</td>
+</tr>
+<tr>
+<td>기술·특허 장벽</td>
+<td>✅</td>
+<td>SOFC 국내 유일 셀·스택·시스템 자체 제작 상용화</td>
+<td>확대 중</td>
+</tr>
+<tr>
+<td>허가·규제 장벽</td>
+<td>△</td>
+<td>CHPS 경쟁 입찰 우선협상 선정, 규제 혜택 일부</td>
+<td>유지</td>
+</tr>
+</tbody>
+</table>
+<p><strong>경쟁자 1조 원 테스트:</strong> 반도체 세정·코팅은 고객사 인증·노하우 축적 장벽으로 5년 내 코미코 지위 탈취는 어렵다. SOFC는 두산퓨얼셀이 외부 기술(세레스파워)로 이미 진입했으나 자체 제조는 미코파워만 가능.</p>
+<p><strong>판정 근거:</strong> 코미코의 전환비용 해자는 실질적이나 반도체 가동률 연동이라는 의존성이 크다. SOFC 기술 해자는 성장 가능성이 있으나 아직 적자 사업이다. 전체적으로 해자 존재하되 깊이 부족.</p>
+<hr />
+<h3>4관문: 경영진을 신뢰할 수 있는가? (사람) ★★★</h3>
+<table>
+<thead>
+<tr>
+<th>체크 항목</th>
+<th>평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>솔직성</td>
+<td>△ 추정: 공시 품질은 보통, SOFC 적자 지속 현황 투명하게 공시</td>
+</tr>
+<tr>
+<td>자본 배분 능력</td>
+<td>△ 2025년 대규모 M&amp;A(플랜텍·HPS 편입) — 통합 결과 미확인. 1Q26 실적 악화는 부정적 신호</td>
+</tr>
+<tr>
+<td>주주 이익 일치성</td>
+<td>△ 창업자 오너(14.27% 직접보유) — 긍정. 단, 전선규 22.63% 담보대출 설정 — 주가 하락 시 반대매매 리스크</td>
+</tr>
+<tr>
+<td>오너 마인드셋</td>
+<td>✅ 창업자 복귀(2026년 4월) — 장기 관점 경영 의지 표명</td>
+</tr>
+<tr>
+<td>지배구조</td>
+<td>△ 별도기준 3년 연속 영업손실, 특수관계인(에임) 자본잠식</td>
+</tr>
+<tr>
+<td>위기 대응</td>
+<td>△ 반도체 하강 사이클(2022~2023) 대규모 순손실 발생</td>
+</tr>
+<tr>
+<td>오너리스크</td>
+<td>△ 횡령·배임 이력 없음. 담보대출 반대매매 리스크 주의</td>
+</tr>
+</tbody>
+</table>
+<p><strong>판정 근거:</strong> 전선규 창업자 복귀는 긍정이나 담보대출과 별도 영업손실은 불안 요인이다. 대규모 M&amp;A 효과가 아직 검증되지 않아 자본 배분 능력을 판단하기 이르다. 합격권이나 지배구조 불안 요인 존재.</p>
+<hr />
+<h3>5관문: 가격이 충분히 싼가? (안전마진) ★★</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER</td>
+<td>19.67배</td>
+<td>성장주치고는 보통, 그러나 FCF 음수 감안 시 부담</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>4.35배</td>
+<td>자산 대비 고평가</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td>음수 (2025 FCF -5,416억, M&amp;A 포함)</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>52주 위치</td>
+<td>29.5% (고점 대비 -40.6%)</td>
+<td>△ 기술적으로 저점권</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3시나리오 적정가 (financial_rigor_kr.py 검증):</strong></p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>EPS 성장률/년</th>
+<th>목표 PER</th>
+<th>3년 후 EPS</th>
+<th>적정가</th>
+<th>현재 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>낙관 (+25%)</td>
+<td>+25%</td>
+<td>20배</td>
+<td>1,725원</td>
+<td>34,492원</td>
+<td>+98.6%</td>
+</tr>
+<tr>
+<td>중립 (+10%)</td>
+<td>+10%</td>
+<td>15배</td>
+<td>1,175원</td>
+<td>17,629원</td>
+<td><strong>+1.5%</strong></td>
+</tr>
+<tr>
+<td>비관 (-5%)</td>
+<td>-5%</td>
+<td>10배</td>
+<td>757원</td>
+<td>7,571원</td>
+<td>-56.4%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>클라만 관점:</strong><br />
+시장이 이 주식을 싸게 두는 이유: 1Q26 실적 쇼크(-46.5%), 대규모 부채, 오너 복귀 불확실성. 이유가 일시적(반도체 가동률 회복 시 해소 가능)이냐 구조적(SOFC 만성 적자, 부채 부담)이냐가 핵심 판단이다.</p>
+<p><strong>판정 근거:</strong> 중립 시나리오 기준 안전마진 1.5%로 버핏식 안전마진이 사실상 없다. 낙관 시나리오(EPS +25% 성장)를 전제해야 의미 있는 수익이 나온다. 비관 시나리오(-56%)에서 추가매수 여부를 미리 판단해야 한다.</p>
+<hr />
+<h3>6관문: 시장 심리·타이밍 점검 (코스톨라니) ★★★</h3>
+<table>
+<thead>
+<tr>
+<th>코스톨라니 체크</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>거래량 감소·관심 식어가는 단계인가?</td>
+<td>✅ 1Q26 쇼크 이후 언론 관심 급감</td>
+</tr>
+<tr>
+<td>언론·주변이 외면하거나 비관적인가?</td>
+<td>✅ "실적 쇼크, 오너 리스크" 부정 논조 우세</td>
+</tr>
+<tr>
+<td>모두가 열광하는 구간인가? (매도 신호)</td>
+<td>❌ 해당 없음</td>
+</tr>
+<tr>
+<td>금리 방향이 매수를 지지하는가?</td>
+<td>△ 한은 금리 방향 확인 필요</td>
+</tr>
+<tr>
+<td>매수 이유가 FOMO인가?</td>
+<td>❌ 해당 없음</td>
+</tr>
+</tbody>
+</table>
+<p><strong>코스톨라니 달걀 위치:</strong> <strong>A2~A3 구간</strong> (관심 감소, 실망 매물 소화 단계)</p>
+<p>52주 고점(29,250원) 대비 -40.6% 하락, 1Q26 실적 쇼크 후 급락 완료. 시장이 외면하는 단계이나 촉매(코미코 실적 회복, SOFC 흑자 전환, 평택공장 가동)가 가시화되기 전까지 반등 촉매 부재.</p>
+<p><strong>수면제 가격 조건 (코스톨라니):</strong><br />
+추정: 코미코 영업이익 정상화(반도체 가동률 회복) + 미코파워 IPO 가시화 + 부채비율 200% 이하 확인 → 13,000~15,000원대 (B3 비중 확인 시 추가 검토)</p>
+<hr />
+<h2>거울 테스트</h2>
+<blockquote>
+<p>"나는 17,370원에 미코를 매수한다. 이유는:
+1. 이 사업의 본질은 코미코를 통한 반도체 부품 세정·코팅 반복 매출과 SOFC 연료전지 성장이며, 나는 코미코 부문은 이해하나 연결 그룹 전체(HPS·플랜텍)는 아직 검증되지 않았다.
+2. 해자는 코미코의 전환비용(팹 인증 장벽)과 SOFC 기술 독점이며, 유지 추세다.
+3. 경영진은 창업자 복귀로 장기 관점 의지가 있으나, 담보대출과 별도 영업손실로 완전히 신뢰하기 어렵다.
+4. 현재 가격은 중립 시나리오 내재가치의 ~99% 수준으로, 안전마진이 사실상 없다.
+5. 설령 내가 틀려도, 하방 리스크는 비관 시나리오 7,571원(-56%)으로 <strong>관리 불가</strong> 수준이다. 이유: FCF 음수·부채비율 228%·M&amp;A 통합 불확실성."</p>
+</blockquote>
+<p><strong>→ 5문장 완성됨. 그러나 4번(안전마진 없음)과 5번(하방 관리 불가)이 통과 불가.</strong></p>
+<hr />
+<h2>6관문 평점 총람</h2>
+<table>
+<thead>
+<tr>
+<th>관문</th>
+<th>핵심 판단</th>
+<th>평점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 능력 범위</td>
+<td>코미코 이해 가능, 연결 그룹 복잡도 상승</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>2. 사업 품질</td>
+<td>FCF 3년 음수, 부채비율 228%, ROE 회복 중</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>3. 해자</td>
+<td>코미코 전환비용·SOFC 기술 장벽 — 중간 수준</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>4. 경영진</td>
+<td>창업자 오너 긍정, 담보대출·별도 적자 우려</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>5. 안전마진</td>
+<td>중립 시나리오 +1.5%, 비관 -56% — 마진 없음</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>6. 심리·타이밍</td>
+<td>A2~A3 구간, 반등 촉매 아직 미가시화</td>
+<td>★★★</td>
+</tr>
+</tbody>
+</table>
+<p><strong>종합 평점: ★★★(-) / 5</strong></p>
+<hr />
+<h2>핵심 리스크 (3가지)</h2>
+<ol>
+<li><strong>FCF 적자 구조 지속 가능성</strong> — 2025년 -5,416억 FCF는 M&amp;A 효과이나, SOFC 부문 만성 적자 + 부채 이자비용(연 275억) → 영업 FCF 흑자 지속 여부 미확인</li>
+<li><strong>대규모 M&amp;A 통합 리스크</strong> — 플랜텍·HPS 편입으로 매출 2배(9,770억) 성장했으나 1Q26 영업이익 -46.5% 급감. 신규 사업부 통합이 기대보다 어려울 수 있음</li>
+<li><strong>오너 담보대출 반대매매 리스크</strong> — 전선규 22.63% 주식 담보 설정 → 주가 추가 하락 시 반대매매 → 수급 악화 악순환 가능</li>
+</ol>
+<hr />
+<h2>최종 판정</h2>
+<h3>❓ 회색지대 (매수 보류)</h3>
+<p>통과하지 못한 관문: <strong>2관문(FCF 음수·고부채)</strong>, <strong>5관문(안전마진 부재)</strong></p>
+<p><strong>매수를 고려하기 위한 선결 조건:</strong>
+- 코미코 2Q26 영업이익 정상화 확인 (컨센서스 대비 ≥100% 달성)
+- 연결 부채비율 200% 이하로 하락 확인
+- 미코파워 SOFC 분기 흑자 전환 또는 IPO 일정 구체화
+- 주가 14,000원대 이하 (3시나리오 가중평균 ≈ 19,864원의 70% 수준)</p>
+<p><strong>코미코 사업만 놓고 보면:</strong> 글로벌 반도체 팹 고객 기반, 전환비용 해자, 반도체 가동률 회복 수혜 → 매력적인 비즈니스. 그러나 미코 연결 지주구조에서 SOFC 적자·M&amp;A 부채를 함께 매입하는 셈이어서 코미코 단독 투자와 다른 리스크를 진다.</p>
+<p><strong>결론:</strong> "좋은 사업(코미코)을 비싸게, 그리고 나쁜 패키지(부채·SOFC 적자)와 함께 사는 가격이다." — 데이터가 말한다.</p>
+<blockquote>
+<p><strong>코스톨라니:</strong> "주식을 사서 수면제를 먹고 몇 년 후에 깨어나라. 그때 부자가 되어 있을 것이다. 단, 올바른 주식을 샀을 때만."<br />
+→ 올바른 주식의 조건이 아직 충족되지 않았다.</p>
+</blockquote>
+<hr />
+<p><em>정보 등급: B (코스닥 중소형, 커버리지 제한) | 추정 데이터에 "추정:" 명시 | DART 원문 교차검증 권장</em><br />
+<em>수치 검증: financial_rigor_kr.py / 주가 수집: fetch_price_kr.py (2026-06-28 13:01)</em></p>
+
+    <script src="../search_index.js"></script>
+    <script>
+        let currentFocus = -1;
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+            currentFocus = -1; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach((item, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+
+                // 마우스 진입 시 키보드 포커스와 동기화
+                li.addEventListener('mouseenter', () => {
+                    currentFocus = index;
+                    addActive(resultsContainer.getElementsByTagName('li'));
+                });
+            });
+        });
+
+        // 한글 씹힘 방지 및 엔터 이동 완벽 적용
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            if (e.isComposing || e.keyCode === 229) {
+                if (e.key === "Enter") return;
+            }
+
+            const resultsContainer = document.getElementById('searchResults');
+            const items = resultsContainer.getElementsByTagName('li');
+            
+            if (e.key === "ArrowDown" || e.keyCode === 40) {
+                currentFocus++;
+                addActive(items);
+                e.preventDefault(); 
+            } else if (e.key === "ArrowUp" || e.keyCode === 38) {
+                currentFocus--;
+                addActive(items);
+                e.preventDefault();
+            } else if (e.key === "Enter" || e.keyCode === 13) {
+                e.preventDefault();
+                if (currentFocus > -1 && items[currentFocus]) {
+                    window.location.href = items[currentFocus].querySelector('a').href;
+                }
+            }
+        });
+
+        function addActive(items) {
+            if (!items || items.length === 0) return false;
+            removeActive(items);
+            
+            if (currentFocus >= items.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = items.length - 1;
+            
+            items[currentFocus].classList.add("active");
+            items[currentFocus].scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+
+        function removeActive(items) {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>
