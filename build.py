@@ -5,25 +5,21 @@ from pathlib import Path
 def build_wiki():
     index_data = []
 
-    # 1. 루트 폴더부터 모든 .md 파일을 재귀적으로 찾습니다.
     for filepath in Path('.').rglob('*.md'):
-        
-        # HTML 파일 저장 경로 및 URL 설정
         html_filepath = filepath.with_suffix('.html')
         url_path = html_filepath.as_posix()
-        title = filepath.name
         
-        # 현재 파일의 폴더 깊이(depth) 계산 
-        # (예: 최상위 폴더면 depth=0, '태광/노트.md'면 depth=1)
+        # 기본 제목을 확장자(.md)가 떨어진 깔끔한 파일명으로 우선 설정합니다.
+        title = filepath.stem 
+        
         depth = len(filepath.parts) - 1
         rel_prefix = "../" * depth if depth > 0 else "./"
 
-        # 2. 마크다운 파일 내용 읽기 및 제목 추출
         try:
             with open(filepath, 'r', encoding='utf-8') as f:
                 md_text = f.read()
             
-            # 첫 번째 H1 태그를 제목으로 추출
+            # 본문에서 # 태그를 찾으면 그것을 제목으로 덮어씁니다.
             for line in md_text.splitlines():
                 if line.startswith('# '):
                     title = line.strip('# \n')
@@ -32,35 +28,28 @@ def build_wiki():
             print(f"파일 읽기 오류 ({filepath}): {e}")
             continue
 
-        # 3. 마크다운을 순수 HTML 요소로 변환
+        # 💡 [핵심 추가 로직] 폴더명을 추출하여 "폴더명 - 제목" 형태로 조합합니다.
+        if depth > 0:
+            folder_name = filepath.parts[-2] # 상위 폴더 이름 가져오기
+            display_title = f"[{folder_name}] {title}" # 원하시면 f"{folder_name} - {title}" 로 변경하셔도 됩니다.
+        else:
+            display_title = title # 최상위 폴더에 있는 파일은 폴더명이 안 붙습니다.
+
         html_body = markdown.markdown(md_text, extensions=['fenced_code', 'tables'])
 
-        # 4. 검색창과 스타일이 포함된 통합 HTML 템플릿에 본문 삽입
         html_content = f"""
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title}</title>
+    <title>{display_title}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
     <style>
-        .markdown-body {{ 
-            box-sizing: border-box; 
-            min-width: 200px; 
-            max-width: 900px; 
-            margin: 0 auto; 
-            padding: 45px; 
-        }}
-        /* 📱 모바일 화면 최적화: 여백을 대폭 줄여 가독성 확보 */
+        .markdown-body {{ box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }}
         @media (max-width: 767px) {{
-            .markdown-body {{ 
-                padding: 15px; 
-            }}
-            #searchInput {{
-                font-size: 14px !important;
-                padding: 10px !important;
-            }}
+            .markdown-body {{ padding: 15px; }}
+            #searchInput {{ font-size: 14px !important; padding: 10px !important; }}
         }}
     </style>
 </head>
@@ -108,25 +97,21 @@ def build_wiki():
 </html>
 """
 
-        # 5. 완성된 HTML 파일 저장
         with open(html_filepath, 'w', encoding='utf-8') as f:
             f.write(html_content)
-            
-        print(f"변환 완료: {html_filepath}")
 
-        # 6. 검색 인덱스에 데이터 추가 (검색은 새로 만든 html 파일들만 타겟팅합니다)
+        # 자바스크립트 검색 엔진용 데이터에는 가공된 display_title을 저장합니다.
         index_data.append({
-            "title": title,
+            "title": display_title,
             "url": url_path
         })
         
-    # 7. 검색을 위한 자바스크립트 변수 파일 저장
     with open('search_index.js', 'w', encoding='utf-8') as f:
         f.write("const searchData = ")
         json.dump(index_data, f, ensure_ascii=False, indent=4)
         f.write(";")
     
-    print(f"\n✅ 빌드 완료! 총 {len(index_data)}개의 HTML 파일과 1개의 검색 엔진(search_index.js)이 생성되었습니다.")
+    print(f"\n✅ 빌드 완료! 총 {len(index_data)}개의 파일이 변환되었습니다.")
 
 if __name__ == "__main__":
     build_wiki()
