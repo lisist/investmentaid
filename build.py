@@ -104,7 +104,7 @@ def build_wiki():
 <body class="markdown-body">
     
     <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
-        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 태광, 삼성전자)" 
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 삼성전자)" 
                class="search-input" autocomplete="off">
         <ul id="searchResults" class="results-list"></ul>
     </div>
