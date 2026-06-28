@@ -36,6 +36,10 @@ const searchData = [
         "url": "삼성전자/최종보고서.html"
     },
     {
+        "title": "[엔바이오니아] 엔바이오니아-checklist-20260628",
+        "url": "엔바이오니아/엔바이오니아-checklist-20260628.html"
+    },
+    {
         "title": "[유티아이] 유티아이-checklist-20260627",
         "url": "유티아이/유티아이-checklist-20260627.html"
     },
@@ -90,6 +94,10 @@ const searchData = [
     {
         "title": "[태광] 06-심리사이클-코스톨라니시각",
         "url": "태광/06-심리사이클-코스톨라니시각.html"
+    },
+    {
+        "title": "[태광] 최종보고서",
+        "url": "태광/최종보고서.html"
     },
     {
         "title": "[태광] 태광-checklist-20260627",
