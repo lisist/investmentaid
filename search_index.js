@@ -110,5 +110,13 @@ const searchData = [
     {
         "title": "[태광] 태광-checklist-20260627",
         "url": "태광/태광-checklist-20260627.html"
+    },
+    {
+        "title": "[한국항공우주] 한국항공우주-checklist-20260628",
+        "url": "한국항공우주/한국항공우주-checklist-20260628.html"
+    },
+    {
+        "title": "[한화에어로스페이스] 한화에어로스페이스-checklist-20260628",
+        "url": "한화에어로스페이스/한화에어로스페이스-checklist-20260628.html"
     }
 ];
