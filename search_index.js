@@ -1,5 +1,13 @@
 const searchData = [
     {
+        "title": "[LG에너지솔루션] LG에너지솔루션-checklist-20260628",
+        "url": "LG에너지솔루션/LG에너지솔루션-checklist-20260628.html"
+    },
+    {
+        "title": "[LG에너지솔루션] LG에너지솔루션-research-20260628",
+        "url": "LG에너지솔루션/LG에너지솔루션-research-20260628.html"
+    },
+    {
         "title": "[SK하이닉스] 01-비즈니스모델-버핏시각",
         "url": "SK하이닉스/01-비즈니스모델-버핏시각.html"
     },
@@ -26,6 +34,10 @@ const searchData = [
     {
         "title": "[미코] 미코-checklist-20260628",
         "url": "미코/미코-checklist-20260628.html"
+    },
+    {
+        "title": "[삼성바이오로직스] 삼성바이오로직스-checklist-20260629",
+        "url": "삼성바이오로직스/삼성바이오로직스-checklist-20260629.html"
     },
     {
         "title": "[삼성전자] 삼성전자-checklist-20260626",
@@ -118,5 +130,9 @@ const searchData = [
     {
         "title": "[한화에어로스페이스] 한화에어로스페이스-checklist-20260628",
         "url": "한화에어로스페이스/한화에어로스페이스-checklist-20260628.html"
+    },
+    {
+        "title": "[현대차] 현대차-checklist-20260628",
+        "url": "현대차/현대차-checklist-20260628.html"
     }
 ];
