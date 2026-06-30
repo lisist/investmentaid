@@ -40,6 +40,10 @@ const searchData = [
         "url": "삼성바이오로직스/삼성바이오로직스-checklist-20260629.html"
     },
     {
+        "title": "[삼성바이오로직스] 삼성바이오로직스-research-20260630",
+        "url": "삼성바이오로직스/삼성바이오로직스-research-20260630.html"
+    },
+    {
         "title": "[삼성전자] 삼성전자-checklist-20260626",
         "url": "삼성전자/삼성전자-checklist-20260626.html"
     },
