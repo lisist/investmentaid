@@ -1,0 +1,701 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[유진테크] 유진테크-checklist-20260630</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }
+        
+        /* 검색창 기본 스타일 추가 */
+        .search-input {
+            box-sizing: border-box; 
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 16px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        .search-input:focus {
+            border-color: #0366d6;
+            box-shadow: 0 4px 24px rgba(3, 102, 214, 0.15);
+        }
+        .results-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            max-height: 350px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e1e4e8;
+            box-sizing: border-box; 
+        }
+        .results-list:empty { border: none; box-shadow: none; }
+        .results-list li { border-bottom: 1px solid #eaecef; }
+        .results-list li:last-child { border-bottom: none; }
+        .results-list a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+        .results-list a:hover { background-color: #f6f8fa; color: #0056b3; }
+
+        /* 💡 키보드 방향키 하이라이트 스타일 */
+        .results-list li.active {
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+        }
+        .results-list li.active a {
+            color: #0056b3;
+            padding-left: 11px; 
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body { padding: 15px; }
+            .search-input { font-size: 14px; padding: 10px 14px; }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 삼성전자)" 
+               class="search-input" autocomplete="off">
+        <ul id="searchResults" class="results-list"></ul>
+    </div>
+
+    <h1>유진테크 (084370) — 버핏 6관문 체크리스트</h1>
+<p><strong>기준일</strong>: 2026-06-30 | <strong>분석 기준가</strong>: 185,700원 (한국 금융 데이터 기준, 장중 226,000원 신고가 경신)
+<strong>거래소</strong>: KOSDAQ | <strong>정보 풍부도</strong>: B등급 (중형주, 커버리지 제한, 일부 추정 의존)</p>
+<blockquote>
+<p>⚠️ <strong>주가 데이터 경고</strong>: Yahoo Finance(fetch_price_kr.py)가 46,700원(-71.66%)을 반환했으나 명백한 오류. 알파스퀘어·밸류라인·한국경제 등 복수 국내 출처에서 185,700원 확인. 이하 분석은 185,700원 기준.</p>
+<p>⚠️ <strong>중요: 오늘(2026-06-30) 유진테크는 장중 +21.7% 급등하며 52주 신고가(226,000원) 경신 중.</strong> 52주 저가(37,350원) 대비 +505% 상승 상태에서 이 분석이 실행됨을 특히 유의.</p>
+</blockquote>
+<hr />
+<h2>핵심 데이터 요약</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>출처/기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>현재 주가</td>
+<td><strong>185,700원</strong> (장중 226,000원)</td>
+<td>2026-06-30, 국내 금융 사이트 기준</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td><strong>약 4.1~5.0조원</strong></td>
+<td>주가×2,228만주</td>
+</tr>
+<tr>
+<td>발행주식수</td>
+<td>약 22,280,000주</td>
+<td>순이익/EPS 역산 추정</td>
+</tr>
+<tr>
+<td>52주 고 / 저</td>
+<td>226,000 / 37,350원</td>
+<td>신고가 갱신일</td>
+</tr>
+<tr>
+<td>52주 위치</td>
+<td><strong>~79%</strong> (저가 대비 +505%)</td>
+<td>국내 소스 기준</td>
+</tr>
+<tr>
+<td>PER (TTM, 2025A)</td>
+<td><strong>97.43배</strong></td>
+<td>도구 계산 (EPS 1,906원)</td>
+</tr>
+<tr>
+<td>선행 PER (2026E)</td>
+<td><strong>45~66배</strong></td>
+<td>EPS 2,800~4,060원 기준</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>9.26배</strong></td>
+<td>도구 계산 (BPS 20,053원)</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td><strong>0.92%</strong></td>
+<td>주당FCF 1,700원 추정*</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>0.12%</strong></td>
+<td>주당배당 230원 (2025)</td>
+</tr>
+<tr>
+<td>ROE (2025A)</td>
+<td><strong>9.60%</strong></td>
+<td>사이클 저점</td>
+</tr>
+<tr>
+<td>ROE (5년 평균)</td>
+<td><strong>12.34%</strong></td>
+<td>2021~2025 평균</td>
+</tr>
+<tr>
+<td>영업이익률 (2025A)</td>
+<td><strong>14.75%</strong></td>
+<td>연결 기준</td>
+</tr>
+<tr>
+<td>컨센서스 목표가</td>
+<td>52,000~160,000원</td>
+<td>2025년 발표 기준 (현재가 이미 초과)</td>
+</tr>
+</tbody>
+</table>
+<p>*주당 FCF 1,700원: DART 현금흐름표 미확인, 순이익 대비 보수적 추정. 낮은 부채비율(18%)·R&amp;D 경상비처리 감안.</p>
+<hr />
+<h2>1관문: 이 사업을 이해할 수 있는가? (능력 범위)</h2>
+<table>
+<thead>
+<tr>
+<th>체크</th>
+<th>답변</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한 문장 수익 방식</td>
+<td>✅ "삼성전자·SK하이닉스가 DRAM·HBM을 만들 때 필요한 배치형 CVD/ALD 반도체 장비를 납품하고 A/S 수익을 얻는다"</td>
+</tr>
+<tr>
+<td>10년 후 예측</td>
+<td>✅ "DRAM·HBM 선단공정이 존재하는 한 배치형 CVD/ALD 수요는 지속. 공정 세대가 깊어질수록(1c→2a) 장비 수요 증가. 단, 사이클 변동과 기술 패러다임 변화(GAA·3D DRAM 등) 리스크 존재"</td>
+</tr>
+<tr>
+<td>핵심 성패 변수</td>
+<td>삼성/SK 투자 사이클, 선단공정 전환 속도, 일본 경쟁사(고쿠사이) 기술 추격, 환율, HBM 채택 속도</td>
+</tr>
+<tr>
+<td>지식 출처</td>
+<td>공시·증권사 리포트·업계 전문 매체(디일렉) 기반, 반도체 장비 도메인 지식 일부 필요</td>
+</tr>
+</tbody>
+</table>
+<p><strong>B등급 주의</strong>: 반도체 장비 산업의 기술적 세부사항(LPCVD vs ALD, 배치형 vs 단일 웨이퍼)은 일반 투자자의 이해 범위를 벗어날 수 있다. "유진테크 = 반도체 장비 소부장"으로 단순화하면 핵심 경쟁력을 오판할 위험이 있다.</p>
+<p><strong>★★★★☆</strong> — 비즈니스 모델 명확, 10년 방향성 예측 가능. 기술 장벽이 있지만 이해 가능 범위.</p>
+<hr />
+<h2>2관문: 좋은 사업인가? (경제적 특성)</h2>
+<h3>수익성 추세</h3>
+<table>
+<thead>
+<tr>
+<th>연도</th>
+<th>매출(억원)</th>
+<th>YoY</th>
+<th>영업이익(억원)</th>
+<th>OPM</th>
+<th>ROE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021</td>
+<td>3,246</td>
+<td>—</td>
+<td>739</td>
+<td><strong>22.8%</strong></td>
+<td><strong>22.6%</strong></td>
+</tr>
+<tr>
+<td>2022</td>
+<td>3,106</td>
+<td>-4.3%</td>
+<td>536</td>
+<td>17.3%</td>
+<td>13.0%</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>2,765</td>
+<td>-11.0%</td>
+<td>243</td>
+<td><strong>8.8%</strong></td>
+<td><strong>7.1%</strong></td>
+</tr>
+<tr>
+<td>2024</td>
+<td>3,381</td>
+<td>+22.2%</td>
+<td>612</td>
+<td>18.1%</td>
+<td>16.3%</td>
+</tr>
+<tr>
+<td><strong>2025A</strong></td>
+<td><strong>3,503</strong></td>
+<td>+3.6%</td>
+<td><strong>517</strong></td>
+<td><strong>14.8%</strong></td>
+<td><strong>9.6%</strong></td>
+</tr>
+<tr>
+<td><strong>2026E</strong></td>
+<td><strong>4,500</strong></td>
+<td>+28.5%</td>
+<td><strong>650</strong></td>
+<td>14.4%</td>
+<td>~20% 추정</td>
+</tr>
+<tr>
+<td>5년 평균</td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>16.3%</strong></td>
+<td><strong>12.3%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 재무 지표 (도구 정밀 계산)</h3>
+<pre><code>python tools/financial_rigor_kr.py verify-valuation 결과
+PER: 97.43배 | PBR: 9.26배 | FCF 수익률: 0.92% | 배당수익률: 0.12%
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>기준</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE 5년 평균</td>
+<td><strong>12.34%</strong></td>
+<td>&gt;15% 우수</td>
+<td>❌ 미달 (사이클 저점 7.1%이 평균 끌어내림)</td>
+</tr>
+<tr>
+<td>ROE 업사이클 피크</td>
+<td><strong>22.6%</strong> (2021)</td>
+<td>&gt;20% 탁월</td>
+<td>✅ 호황 시 충분</td>
+</tr>
+<tr>
+<td>영업이익률 평균</td>
+<td><strong>16.3%</strong></td>
+<td>&gt;10% 의미 있음</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td>추정</td>
+<td>지속 양(+) 추정</td>
+<td>⚠️ 직접 확인 불가</td>
+</tr>
+<tr>
+<td>CAPEX 강도</td>
+<td>경자산 추정 (R&amp;D 경상 처리)</td>
+<td>경자산 &gt; 중자산</td>
+<td>✅ 추정</td>
+</tr>
+<tr>
+<td>부채비율</td>
+<td><strong>18.16%</strong> (2025A)</td>
+<td>유이자부채/영업이익 &lt;3년</td>
+<td>✅ 사실상 무차입</td>
+</tr>
+</tbody>
+</table>
+<p><strong>핵심 문제 - 사이클 변동성</strong>:
+- 매출이 2021→2023년 사이에 -14.8% 감소, 영업이익은 -67.1% 폭락
+- ROE는 22.6%에서 7.1%로 3분의 1 토막
+- 이는 "좋은 사업"의 특성(안정적 수익)과는 거리가 있다
+- 단, 지금(2026E) 회복 사이클 진입 중 → 내년이 진짜 피크가 될 수 있음</p>
+<p><strong>★★★☆☆</strong> — 호황 시 탁월한 수익성, 무차입 재무구조. 그러나 사이클 저점 시 ROE·OPM이 급격히 악화. 5년 평균 ROE 12.34%는 버핏 기준(15%) 미달.</p>
+<hr />
+<h2>3관문: 해자가 충분한가? (경쟁 우위)</h2>
+<table>
+<thead>
+<tr>
+<th>해자 유형</th>
+<th>보유</th>
+<th>근거</th>
+<th>추세</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>배치형 ALD 독점 공급</strong></td>
+<td>✅ 강력</td>
+<td>삼성전자 ALD 배치 장비 단독 공급사 (고쿠사이 대체). 150웨이퍼 동시 처리 vs 고쿠사이 100장 미만</td>
+<td>확대</td>
+</tr>
+<tr>
+<td><strong>전환비용</strong></td>
+<td>✅ 강력</td>
+<td>공정 qualification 1~2년 소요. 공정 레시피가 장비에 일체화. 중간 교체 사실상 불가</td>
+<td>유지</td>
+</tr>
+<tr>
+<td><strong>기술·특허</strong></td>
+<td>✅ 보통</td>
+<td>특허 344건 보유. 단, 고쿠사이로부터 특허 침해 소송 피소(2024년)</td>
+<td>유지 (소송 진행)</td>
+</tr>
+<tr>
+<td><strong>국산화 전략적 필요성</strong></td>
+<td>✅ 신규</td>
+<td>일본 수출 규제 이후 삼성·SK 모두 국산화 의지 강화. 유진테크 수혜 직접적</td>
+<td>확대</td>
+</tr>
+<tr>
+<td><strong>HBM 공정 핵심성</strong></td>
+<td>✅ 신규</td>
+<td>HBM4/HBM5 공정에서 ALD 배치 장비 필수. 단가 60~70억원 (고가)</td>
+<td>확대</td>
+</tr>
+<tr>
+<td>브랜드·가격결정력</td>
+<td>⚠️ 보통</td>
+<td>세계적으로 알려진 브랜드 아님. B2B 장비 특성상 사양·납기 경쟁</td>
+<td>유지</td>
+</tr>
+<tr>
+<td>네트워크 효과</td>
+<td>❌ 해당 없음</td>
+<td>B2B 제조업, 네트워크 효과 없음</td>
+<td>—</td>
+</tr>
+<tr>
+<td>규모·원가 우위</td>
+<td>⚠️ 제한</td>
+<td>TEL·AMAT 대비 규모 열세</td>
+<td>유지</td>
+</tr>
+</tbody>
+</table>
+<p><strong>경쟁자 1조원 테스트</strong>: ASM International(네덜란드)이 1조원으로 한국 시장에 진입하면? → ASM은 이미 글로벌 ALD 선두. 다만 배치형 퍼니스 특화 분야에서 유진테크의 고객 관계·공정 레시피는 단기간 대체 어려움. "1~2년이면 어렵지 않다" vs "3~5년은 걸린다" — 후자가 현실적.</p>
+<p><strong>★★★★☆</strong> — 배치형 ALD 독점+전환비용+국산화 수혜의 복합 해자. 단, 해자 깊이는 TEL/ASM 대비 니치 시장 한정.</p>
+<hr />
+<h2>4관문: 경영진을 신뢰할 수 있는가? (사람)</h2>
+<p><strong>대표이사</strong>: 엄평용 회장 (71세, 창업자, 1954년생)
+- 현대전자(SK하이닉스 전신) 출신 → 테라다인 → 브룩스 오토메이션 → 2000년 창업
+- 지분율 34.5% (특수관계인 포함 36.1%) — 주가에 1조원 이상 이해관계</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>솔직성</td>
+<td>✅ 주요 계약 공시, IR 운영</td>
+</tr>
+<tr>
+<td>자본 배분</td>
+<td>✅ 매출의 27.2% R&amp;D 투자(장기 지향) / 2017년 Aixtron ALD 사업 인수(기술 확보)</td>
+</tr>
+<tr>
+<td>주주 이익 일치성</td>
+<td>✅ 창업자 34.5% 지분, 이익 직결. 2010년 이후 매년 배당 지속</td>
+</tr>
+<tr>
+<td>오너 마인드셋</td>
+<td>✅ 창업자 직접 경영, 기술 출신</td>
+</tr>
+<tr>
+<td>지배구조</td>
+<td>⚠️ 장남(엄중헌) 경영 수업 중. 승계 준비 단계</td>
+</tr>
+<tr>
+<td>위기 대응</td>
+<td>✅ 2023년 다운사이클에서도 R&amp;D 유지, 비용 통제</td>
+</tr>
+<tr>
+<td>오너리스크</td>
+<td>⚠️ 창업자 고령(71세) — 갑작스러운 경영 공백 리스크. 미국 자회사 부실(125억 추가 출자). 기술 유출 피해 사건(2022, 736억 규모)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>★★★★☆</strong> — 창업자 경영·고지분·장기 R&amp;D 투자 우수. 고령 승계 리스크와 자회사 부실은 주시 필요. 하드 거부 해당 없음.</p>
+<hr />
+<h2>5관문: 가격이 충분히 싼가? (안전마진)</h2>
+<h3>밸류에이션 지표 (도구 정밀 계산)</h3>
+<pre><code>python tools/financial_rigor_kr.py verify-valuation 결과
+PER: 97.43배(TTM) | PBR: 9.26배 | FCF 수익률: 0.92% | 배당수익률: 0.12%
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>역사적 분위</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM, 2025A)</td>
+<td><strong>97.43배</strong></td>
+<td>극단적 고가</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>선행 PER (2026E)</td>
+<td><strong>45~66배</strong></td>
+<td>사이클 피크 전망 반영</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>9.26배</strong></td>
+<td>역사적 상단</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td><strong>0.92%</strong></td>
+<td>극히 낮음</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>0.12%</strong></td>
+<td>사실상 없음</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<h3>3시나리오 적정가 (2026E EPS 3,400원 기준)</h3>
+<pre><code>python tools/financial_rigor_kr.py three-scenario 결과 (3년 기준)
+낙관(+30%, PER 35배):  261,443원 (+40.8%)
+중립(+10%, PER 20배):   90,508원 (-51.3%) ← 도구 판정: 현재가 과평가 [FAIL]
+비관(-15%, PER  8배):   16,704원 (-91.0%)
+</code></pre>
+<p><strong>시나리오 가정 근거</strong>:
+- 낙관: HBM4/5 슈퍼사이클 지속, 삼성P5·SK 청주 증설 풀가동 → EPS +30%, PER 35배
+- 중립: 안정적 수요, 사이클 피크 후 완만한 성장 → EPS +10%, PER 20배 (반도체 장비 정상 PER)
+- 비관: 반도체 다운사이클 재진입, 삼성 투자 지연 → EPS -15%, PER 8배 (2023년 저점 수준)</p>
+<p><strong>핵심 문제</strong>: 현재가 185,700원은 중립 내재가치(90,508원)의 <strong>205%</strong> 수준. 즉, 낙관 시나리오를 100% 믿어야만 지금 가격이 정당화된다. 클라만이 가장 경계하는 상황 — "최악이 아닌 최선을 가정해야만 성립하는 가격."</p>
+<p><strong>오늘 하루 +21.7% 신고가 경신</strong>: 이 시점에 신규 매수는 투기에 가깝다.</p>
+<p><strong>★☆☆☆☆</strong> — 5개 지표 전항목 ❌. 중립 시나리오 -51.3% FAIL. 안전마진 제로.</p>
+<hr />
+<h2>6관문: 시장 심리·타이밍 (코스톨라니)</h2>
+<table>
+<thead>
+<tr>
+<th>체크</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>거래량 감소·관심 식고 있나?</td>
+<td>❌ <strong>오늘 52주 신고가 경신 중. 관심 최고조</strong></td>
+</tr>
+<tr>
+<td>언론이 외면하나?</td>
+<td>❌ HBM 수혜 호재 기사 도배</td>
+</tr>
+<tr>
+<td>모두가 열광하나?</td>
+<td>❌ 모든 증권사 "BUY". 일부 목표가 이미 초과</td>
+</tr>
+<tr>
+<td>52주 위치</td>
+<td><strong>~79%</strong> (신고가 갱신으로 사실상 최상단)</td>
+</tr>
+<tr>
+<td>52주 저가 대비</td>
+<td>+505% (6개월 내 5배 이상 폭등)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>코스톨라니 달걀 위치</strong>: <strong>B3 구간</strong> (과열·매도 극단). 거래량 급증+신고가+언론 호재+6개월 5배 상승 — 코스톨라니가 경고하는 "모두가 이미 알고, 모두가 이미 산" 시점. 이 지점에서 신규 진입하는 것은 달걀 모델 최악의 타이밍.</p>
+<p><strong>★☆☆☆☆</strong> — B3 최과열 구간. 역발상 매수 타이밍의 정반대.</p>
+<hr />
+<h2>즉각 거부 목록 점검</h2>
+<table>
+<thead>
+<tr>
+<th>거부 조건</th>
+<th>해당 여부</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수익 방식 설명 불가</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>FCF 3년 연속 음(-)</td>
+<td>❌ (추정 양(+))</td>
+</tr>
+<tr>
+<td>경영진 신뢰성 문제</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>경쟁 우위 붕괴 중</td>
+<td>❌ (오히려 확대 중)</td>
+</tr>
+<tr>
+<td>폰지 구조</td>
+<td>❌</td>
+</tr>
+<tr>
+<td><strong>매수 이유 "다들 사고 있어서"</strong></td>
+<td>⚠️ <strong>오늘 52주 신고가+HBM 열풍 = FOMO 주의</strong></td>
+</tr>
+<tr>
+<td><strong>200자 이내 논거 불가</strong></td>
+<td>✅ 가능 (but 안전마진 없어 논거 완성 불가)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>핵심 리스크 (Top 5)</h2>
+<ol>
+<li>
+<p><strong>고객사 집중도 94%</strong>: 매출의 94%가 삼성전자+SK하이닉스. 삼성이 투자를 줄이면(2023년 경험) 유진테크 영업이익은 -55% 폭락. 2개 고객에 이렇게 의존하는 기업에 버핏이 주목하겠는가?</p>
+</li>
+<li>
+<p><strong>PER 97배 - 극단적 고평가</strong>: TTM PER 97배, 선행 PER 45~66배. 실적이 1회라도 미스하면 멀티플 급격 압축(de-rating). 주가 -30~50% 이상 가능.</p>
+</li>
+<li>
+<p><strong>오늘 하루 +21.7% 급등</strong>: 이미 6개월 만에 5배 오른 주가가 오늘 또 +21.7%. 무엇이 이 주가를 지지하는가? 뉴스가 좋을 때 주가가 제일 많이 빠진다(코스톨라니).</p>
+</li>
+<li>
+<p><strong>반도체 사이클 하강 리스크</strong>: 2022→2023년 유진테크 영업이익 -55%. 현재 사이클이 얼마나 지속될지 아무도 모른다. 비관 시나리오 -91% 하방.</p>
+</li>
+<li>
+<p><strong>승계 리스크</strong>: 창업자 엄평용 회장 71세. 갑작스러운 경영 공백 시 14.5% 이상 지분이 상속세 부담으로 매도 압력 발생 가능. 장남 경영 수업 중이나 아직 검증 안 됨.</p>
+</li>
+</ol>
+<hr />
+<h2>거울 테스트</h2>
+<blockquote>
+<p>"나는 185,700원에 유진테크를 매수한다. 이유는:
+1. 이 사업의 본질은 <strong>HBM·DRAM 선단공정 배치형 CVD/ALD 반도체 장비 독점 공급</strong>이며, 나는 이를 이해한다.
+2. 해자는 <strong>배치형 ALD 독점+전환비용+국산화 수혜</strong>이며, <strong>확대</strong> 추세다.
+3. 경영진은 <strong>창업자 34.5% 지분·장기 R&amp;D 투자</strong>로 <strong>신뢰</strong>할 수 있다.
+4. 현재 가격은 내재가치의 <strong>205%</strong> 수준으로, 안전마진이 <strong>심각하게 부족</strong>하다.
+5. 설령 내가 틀려도, 하방 리스크는 <strong>관리 불가</strong>하다. 이유: 중립 시나리오 -51%, 비관 시나리오 -91%, 오늘 52주 신고가 경신으로 단기 고점 진입 가능성 높음."</p>
+</blockquote>
+<p><strong>거울 테스트 결과: ❌ 4번·5번 완성 불가</strong> — 안전마진 없음, 하방 비관리 상태.</p>
+<hr />
+<h2>최종 결론</h2>
+<h3>❌ 체크리스트 미통과</h3>
+<p><strong>레드라인</strong>: <strong>5관문(안전마진) 완전 실패 + 6관문(타이밍) 최악</strong></p>
+<p>사업 자체는 우수하다. 배치형 ALD 독점, 창업자 경영, HBM 구조적 수혜 — 이런 회사라면 버핏·피셔 모두 관심을 가질 만하다. <strong>문제는 가격이다.</strong></p>
+<ul>
+<li>PER 97배: 이 회사가 향후 97년치 이익을 선구매하는 가격</li>
+<li>중립 내재가치(90,508원)의 2배 초과</li>
+<li>오늘 하루 +21.7% 신고가 경신 당일 신규 진입</li>
+</ul>
+<p><strong>버핏의 말</strong>: "아무리 좋은 기업도 너무 비싼 가격에 사면 좋은 투자가 아니다."</p>
+<p><strong>재검토 기준 (Watchlist 등록)</strong>:
+- <strong>85,000원 이하</strong>: 선행 PER 25배 수준 (2026E EPS 3,400원 기준 적정가 근접)
+- <strong>60,000원 이하</strong>: TTM PER 31배 → 중립 내재가치(90,508원) 대비 33% 안전마진 확보
+- <strong>모니터링 항목</strong>: 삼성·SK 투자 사이클 상황, 고쿠사이 특허 소송 결과, 2026E EPS 실제 달성 여부</p>
+<hr />
+<p><em>보고서 저장: reports/유진테크/유진테크-checklist-20260630.md</em>
+<em>데이터 출처: 알파스퀘어, 밸류라인, 한국경제, 비즈니스포스트, 블로터, 디일렉, 알파증류소, 버틀러</em>
+<em>추정값: 주당FCF 1,700원(직접 확인 불가), 2026E EPS 3,400원(컨센서스 중간값 2,800~4,060원), 발행주식수 2,228만주(역산 추정)</em></p>
+
+    <script src="../search_index.js"></script>
+    <script>
+        let currentFocus = -1;
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+            currentFocus = -1; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach((item, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+
+                // 마우스 진입 시 키보드 포커스와 동기화
+                li.addEventListener('mouseenter', () => {
+                    currentFocus = index;
+                    addActive(resultsContainer.getElementsByTagName('li'));
+                });
+            });
+        });
+
+        // 한글 씹힘 방지 및 엔터 이동 완벽 적용
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            if (e.isComposing || e.keyCode === 229) {
+                if (e.key === "Enter") return;
+            }
+
+            const resultsContainer = document.getElementById('searchResults');
+            const items = resultsContainer.getElementsByTagName('li');
+            
+            if (e.key === "ArrowDown" || e.keyCode === 40) {
+                currentFocus++;
+                addActive(items);
+                e.preventDefault(); 
+            } else if (e.key === "ArrowUp" || e.keyCode === 38) {
+                currentFocus--;
+                addActive(items);
+                e.preventDefault();
+            } else if (e.key === "Enter" || e.keyCode === 13) {
+                e.preventDefault();
+                if (currentFocus > -1 && items[currentFocus]) {
+                    window.location.href = items[currentFocus].querySelector('a').href;
+                }
+            }
+        });
+
+        function addActive(items) {
+            if (!items || items.length === 0) return false;
+            removeActive(items);
+            
+            if (currentFocus >= items.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = items.length - 1;
+            
+            items[currentFocus].classList.add("active");
+            items[currentFocus].scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+
+        function removeActive(items) {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,5 +1,9 @@
 const searchData = [
     {
+        "title": "[HD현대중공업] HD현대중공업-checklist-20260630",
+        "url": "HD현대중공업/HD현대중공업-checklist-20260630.html"
+    },
+    {
         "title": "[LG에너지솔루션] LG에너지솔루션-checklist-20260628",
         "url": "LG에너지솔루션/LG에너지솔루션-checklist-20260628.html"
     },
@@ -44,6 +48,10 @@ const searchData = [
         "url": "삼성바이오로직스/삼성바이오로직스-research-20260630.html"
     },
     {
+        "title": "[삼성바이오로직스] 최종보고서",
+        "url": "삼성바이오로직스/최종보고서.html"
+    },
+    {
         "title": "[삼성전자] 삼성전자-checklist-20260626",
         "url": "삼성전자/삼성전자-checklist-20260626.html"
     },
@@ -62,6 +70,10 @@ const searchData = [
     {
         "title": "[원익IPS] 원익IPS-checklist-20260628",
         "url": "원익IPS/원익IPS-checklist-20260628.html"
+    },
+    {
+        "title": "[유진테크] 유진테크-checklist-20260630",
+        "url": "유진테크/유진테크-checklist-20260630.html"
     },
     {
         "title": "[유티아이] 유티아이-checklist-20260627",
@@ -134,6 +146,10 @@ const searchData = [
     {
         "title": "[한화에어로스페이스] 한화에어로스페이스-checklist-20260628",
         "url": "한화에어로스페이스/한화에어로스페이스-checklist-20260628.html"
+    },
+    {
+        "title": "[현대모비스] 현대모비스-checklist-20260630",
+        "url": "현대모비스/현대모비스-checklist-20260630.html"
     },
     {
         "title": "[현대차] 현대차-checklist-20260628",
