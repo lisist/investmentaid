@@ -40,6 +40,10 @@ const searchData = [
         "url": "미코/미코-checklist-20260628.html"
     },
     {
+        "title": "[비나텍] 비나텍-checklist-20260701",
+        "url": "비나텍/비나텍-checklist-20260701.html"
+    },
+    {
         "title": "[삼성바이오로직스] 삼성바이오로직스-checklist-20260629",
         "url": "삼성바이오로직스/삼성바이오로직스-checklist-20260629.html"
     },
