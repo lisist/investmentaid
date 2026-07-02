@@ -1,0 +1,764 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[두산로보틱스] 두산로보틱스-checklist-20260701</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }
+        
+        /* 검색창 기본 스타일 추가 */
+        .search-input {
+            box-sizing: border-box; 
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 16px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        .search-input:focus {
+            border-color: #0366d6;
+            box-shadow: 0 4px 24px rgba(3, 102, 214, 0.15);
+        }
+        .results-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            max-height: 350px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e1e4e8;
+            box-sizing: border-box; 
+        }
+        .results-list:empty { border: none; box-shadow: none; }
+        .results-list li { border-bottom: 1px solid #eaecef; }
+        .results-list li:last-child { border-bottom: none; }
+        .results-list a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+        .results-list a:hover { background-color: #f6f8fa; color: #0056b3; }
+
+        /* 💡 키보드 방향키 하이라이트 스타일 */
+        .results-list li.active {
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+        }
+        .results-list li.active a {
+            color: #0056b3;
+            padding-left: 11px; 
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body { padding: 15px; }
+            .search-input { font-size: 14px; padding: 10px 14px; }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 삼성전자)" 
+               class="search-input" autocomplete="off">
+        <ul id="searchResults" class="results-list"></ul>
+    </div>
+
+    <h1>두산로보틱스 (454910) — 버핏식 매수 전 체크리스트</h1>
+<p><strong>분석일: 2026-07-01 | 분석 기준가: 84,300원 (2026-07-01 21:42 실시간 수집)</strong></p>
+<hr />
+<h2>정보 풍부도 등급: B등급</h2>
+<p>2023년 10월 코스피 상장 이후 3년차. 증권사 커버리지는 존재하나(5~7개사) 적자 지속으로 전통적 밸류에이션 적용 불가. 2021년 이전 공시 데이터 제한적. 이하 추정 수치는 [추정] 표시.</p>
+<blockquote>
+<p><strong>컨센서스 함정 주의</strong>: 모든 증권사 목표주가가 현재가 대비 30~60% 상향 제시 중이나, 이는 2027년 흑자 전환 가정 하 선반영 시나리오임. 실적 기반 가치가 아님.</p>
+</blockquote>
+<hr />
+<h2>핵심 데이터 표</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>수치</th>
+<th>출처·날짜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>분석 기준가</td>
+<td><strong>84,300원</strong></td>
+<td>fetch_price_kr.py, 2026-07-01</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td><strong>5.46조원</strong></td>
+<td>네이버금융, 2026-07-01</td>
+</tr>
+<tr>
+<td>52주 고가</td>
+<td>170,000원</td>
+<td>네이버금융</td>
+</tr>
+<tr>
+<td>52주 저가</td>
+<td>57,400원</td>
+<td>네이버금융</td>
+</tr>
+<tr>
+<td>52주 위치</td>
+<td><strong>23.9%</strong> (저점 근처)</td>
+<td>fetch_price_kr.py</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>16.02배</strong></td>
+<td>financial_rigor_kr.py (BPS 5,262원 기준)</td>
+</tr>
+<tr>
+<td>PER (TTM)</td>
+<td><strong>N/A (적자)</strong></td>
+<td>EPS -852원</td>
+</tr>
+<tr>
+<td>EPS (2025A)</td>
+<td><strong>-852원</strong></td>
+<td>밸류라인 (순손실 554.95억 / 6,477만주)</td>
+</tr>
+<tr>
+<td>BPS</td>
+<td><strong>5,262원</strong></td>
+<td>밸류라인</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>0%</strong> (무배당)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>ROE (5년 평균)</td>
+<td><strong>-7.47%</strong></td>
+<td>밸류라인</td>
+</tr>
+<tr>
+<td>두산 지분율</td>
+<td><strong>49.98%</strong></td>
+<td>기업모니터, 2026-04-02</td>
+</tr>
+<tr>
+<td>현금성자산</td>
+<td><strong>2,112억원</strong> (순현금)</td>
+<td>2026 Q1 공시</td>
+</tr>
+<tr>
+<td>부채비율</td>
+<td><strong>14.6%</strong> (2025A)</td>
+<td>seoulexchange</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>재무 이력 (연결 기준)</h2>
+<table>
+<thead>
+<tr>
+<th>연도</th>
+<th>매출액</th>
+<th>YoY</th>
+<th>영업이익</th>
+<th>영업이익률</th>
+<th>당기순이익</th>
+<th>ROE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021</td>
+<td>370억</td>
+<td>—</td>
+<td>-71억</td>
+<td>-19.2%</td>
+<td>-74억</td>
+<td>-47.9% (별도)</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>450억</td>
+<td>+21.6%</td>
+<td>-132억</td>
+<td>-29.4%</td>
+<td>-125억</td>
+<td>-29.3%</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>530억</td>
+<td>+17.8%</td>
+<td>-192억</td>
+<td>-36.1%</td>
+<td>-159억</td>
+<td>-6.6%</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>468억</td>
+<td>-11.7%</td>
+<td>-412억</td>
+<td>-88.0%</td>
+<td>-366억</td>
+<td>-8.7%</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>330억</td>
+<td>-29.5%</td>
+<td>-595억</td>
+<td>-180.3%</td>
+<td>-555억</td>
+<td>-14.8%</td>
+</tr>
+<tr>
+<td>2026 Q1</td>
+<td>153억</td>
+<td>+190% (vs Q1-25)</td>
+<td>-121억</td>
+<td>-79.1%</td>
+<td>-92억</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>2023 ROE 개선(-6.6%)은 IPO 조달금 8,200억원 유입으로 자기자본 급증에 따른 착시. 실질 수익성 개선 아님.
+2024 영업손실 급증(-412억): ONExia 인수(356억) 관련 비용 반영 추정.
+2026 Q1 매출 급증(+190%): ONExia 연결 효과 + 국내 정부사업 수주 확대.</p>
+</blockquote>
+<hr />
+<h2>1관문: 이 사업을 이해할 수 있는가? (능력 범위)</h2>
+<p><strong>평점: ★★★☆☆</strong></p>
+<ul>
+<li><strong>수익 방식</strong>: 산업현장에서 사람과 나란히 작업 가능한 협동로봇(코봇)을 제조·판매하고, DART Suite 소프트웨어 플랫폼을 통해 애플리케이션 생태계 구축을 시도함. ONExia 인수 이후 북미 자동화 솔루션(시스템 통합) 사업을 추가.</li>
+<li><strong>한 문장 설명</strong>: "로봇 하드웨어를 팔고 소프트웨어 플랫폼으로 생태계를 만들어 제조·물류 자동화 시장을 공략한다."</li>
+<li><strong>10년 예측 가능성</strong>: 중간. 협동로봇 수요 자체는 인건비 상승·고령화 구조로 장기 성장 가시성 있음. 다만 피지컬 AI·휴머노이드로의 기술 전환 속도, 중국산 저가 경쟁 심화, 엔비디아·보스턴다이나믹스 등 빅테크 진입이 변수.</li>
+<li><strong>핵심 변수</strong>: ① 글로벌 코봇 시장에서 유니버설로봇(UR)과의 점유율 격차 축소 여부, ② ONExia 통합 후 북미 매출 규모화 성공 여부, ③ 피지컬 AI 전환의 실제 수익화 시점.</li>
+<li><strong>지식 출처</strong>: 공개 공시·뉴스 기반 분석. 현장 실사(스커틀버트) 미수행.</li>
+</ul>
+<blockquote>
+<p>협동로봇 사업모델은 이해 가능하나, "피지컬 AI 플랫폼 기업"으로의 전환 스토리는 현재 매출로 검증 불가.</p>
+</blockquote>
+<hr />
+<h2>2관문: 좋은 사업인가? (경제적 특성)</h2>
+<p><strong>평점: ★☆☆☆☆</strong></p>
+<pre><code>financial_rigor_kr.py verify-valuation 실행 결과:
+  PER: 적자 (EPS=-852원)
+  PBR: 16.02배 (BPS=5,262원)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>기준</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE (5년 평균)</td>
+<td>-7.47%</td>
+<td>&gt;15% 우수</td>
+<td>❌ 미충족</td>
+</tr>
+<tr>
+<td>영업이익률 (2025A)</td>
+<td>-180.3%</td>
+<td>&gt;10% 의미 있음</td>
+<td>❌ 미충족</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td>음(−), 대규모 적자 [추정]</td>
+<td>지속 양(+)</td>
+<td>❌ 미충족</td>
+</tr>
+<tr>
+<td>CAPEX 강도</td>
+<td>적자·투자 중 [미확인]</td>
+<td>경자산 선호</td>
+<td>❌ 불리</td>
+</tr>
+<tr>
+<td>부채 수준</td>
+<td>14.6% (건전)</td>
+<td>유이자부채/OI &lt;3년</td>
+<td>△ (저부채이나 OI 음수)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>충족 항목: 0/5</strong></p>
+<ul>
+<li>창업(2015년) 이래 단 한 해도 영업흑자를 기록하지 못한 구조적 적자 기업.</li>
+<li>매출액은 2023년 530억 peak 이후 2025년 330억으로 역성장.</li>
+<li>영업손실은 132억(2022) → 595억(2025)으로 4.5배 확대.</li>
+<li>IPO 조달 8,200억 중 2,112억만 잔존(추정). 연간 현금 소진 속도 약 1,500~2,000억/년(추정).</li>
+<li>FCF는 만성 음수. 현금흐름표 공시 기준 정밀 산출은 DART 접근 필요[미확인].</li>
+</ul>
+<blockquote>
+<p><strong>버핏 관점</strong>: "좋은 사업은 자본을 투입하지 않아도 스스로 돈을 벌어 주주에게 돌려준다." 두산로보틱스는 정반대 — 지속적인 자본 수혈 없이는 생존 불가.</p>
+</blockquote>
+<hr />
+<h2>3관문: 해자가 충분한가? (경쟁 우위)</h2>
+<p><strong>평점: ★★★☆☆</strong></p>
+<table>
+<thead>
+<tr>
+<th>해자 유형</th>
+<th>보유 여부</th>
+<th>구체적 근거</th>
+<th>추세</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>브랜드·가격결정력</td>
+<td>▲ 부분</td>
+<td>국내 1위, 글로벌 4위. 단 UR 대비 브랜드 프리미엄 약함</td>
+<td>유지</td>
+</tr>
+<tr>
+<td>전환비용</td>
+<td>▲ 부분</td>
+<td>DART Suite 생태계, 기존 고객 재프로그래밍 비용</td>
+<td>구축 중</td>
+</tr>
+<tr>
+<td>네트워크 효과</td>
+<td>△ 초기</td>
+<td>DART Suite 앱 개발자 생태계(스마트폰 앱스토어 모델) — 아직 초기</td>
+<td>초기</td>
+</tr>
+<tr>
+<td>규모·원가 우위</td>
+<td>❌ 부재</td>
+<td>소규모(매출 330억). UR, ABB, FANUC 대비 규모 열위</td>
+<td>축소</td>
+</tr>
+<tr>
+<td>기술·특허 장벽</td>
+<td>✅ 존재</td>
+<td>6축 토크센서 탑재(M/H 시리즈), ISO PL e Cat 4 안전인증(국내 최초), 20kg+ 페이로드 글로벌 점유율 72%(2022A)</td>
+<td>유지</td>
+</tr>
+<tr>
+<td>허가·규제 장벽</td>
+<td>△ 보조</td>
+<td>국제 안전인증(TÜV Rheinland 등) 취득 장벽</td>
+<td>유지</td>
+</tr>
+</tbody>
+</table>
+<p><strong>가장 강한 해자</strong>: 고중량 페이로드(20kg 이상) 협동로봇에서의 기술 우위. 타 브랜드 대비 차별화된 영역.</p>
+<p><strong>경쟁자 1조 원 테스트</strong>: UR(Teradyne), ABB, FANUC, 레인보우로보틱스, 중국 JAKA/Dobot 등이 이미 자본 투입 중. 두산로보틱스의 소프트웨어 생태계(DART Suite)와 고중량 기술은 1~2년 내 완전 복제 어려우나, 5년 내 따라잡기 가능성은 열려 있음. 중국 저가 모델의 가격 공세가 현실화 중.</p>
+<blockquote>
+<p><strong>가장 큰 해자 리스크</strong>: 피지컬 AI 전환 경쟁에서 엔비디아(Isaac 플랫폼), 보스턴다이나믹스, 삼성 등 자본력·기술력 우위 대기업이 진입할 경우 기존 코봇 해자 무력화 가능.</p>
+</blockquote>
+<p><strong>주요 고객사</strong>: Toyota, Continental, Renault, IKEA, 삼성전자, 현대자동차 (제조·물류 부문)
+<strong>글로벌 딜러 채널</strong>: 130개 이상 (출처: dnews 2025-08)</p>
+<hr />
+<h2>4관문: 경영진을 신뢰할 수 있는가? (사람)</h2>
+<p><strong>평점: ★★★☆☆</strong></p>
+<table>
+<thead>
+<tr>
+<th>체크 항목</th>
+<th>평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>솔직성</strong></td>
+<td>적자 확대를 "AI 투자 전략적 집행"으로 설명. 일관된 메시지이나 흑자 전환 로드맵 지연 반복 [중립]</td>
+</tr>
+<tr>
+<td><strong>자본 배분</strong></td>
+<td>IPO 조달 8,200억 중 2,112억 잔존. ONExia 356억 M&amp;A, AI R&amp;D 인력 채용 확대. 아직 성과 미검증 [중립]</td>
+</tr>
+<tr>
+<td><strong>주주 이익 일치성</strong></td>
+<td>두산 49.98% 지배주주. 류정훈 대표 개인 지분율 미확인</td>
+</tr>
+<tr>
+<td><strong>오너 마인드셋</strong></td>
+<td>전문경영인(류정훈, 2021년 취임). 그룹 내 전략적 배치 성격 강함 [중립]</td>
+</tr>
+<tr>
+<td><strong>지배구조</strong></td>
+<td>두산그룹 계열사. 2024년 두산밥캣-두산로보틱스 불공정 합병 시도 → 소액주주 반발로 무산 [부정적]</td>
+</tr>
+<tr>
+<td><strong>위기 대응</strong></td>
+<td>계엄령(2024-12) 이후 주가 급락 시 합병 공식 철회. 상황 판단은 신속했으나 시도 자체가 소액주주에 불이익 [부정적]</td>
+</tr>
+<tr>
+<td><strong>오너리스크</strong></td>
+<td>2024년 합병 논란: 두산로보틱스(고PBR 적자기업)를 이용해 두산밥캣(흑자 알짜기업)을 흡수하려 한 구조. 지배주주인 두산그룹에 유리하고 소액주주에 불리한 딜로 평가받음 [⚠️ 중요 레드플래그]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>류정훈 대표 경력</strong>: 서강대 경영학·미시간대 MBA, 두산그룹 2007년 입사, 두산인프라코어 중국법인 세일즈, 그룹 신사업팀(Tri-C) 거쳐 2021년 7월 두산로보틱스 대표 취임. 2022년 박인원 공동대표 추가 선임(각자대표).</p>
+<p><strong>자본 배분 최근 결정</strong>:
+- 2024: ONExia (미국 자동화) 89.59% 인수 — 356억 원 (2030년 매출 $84.2M 목표)
+- 2024 시도→철회: 두산밥캣 흡수합병 (소액주주 반발 + 계엄령 여파로 무산)
+- 배당 지급 없음. 무배당 정책.</p>
+<hr />
+<h2>5관문: 가격이 충분히 싼가? (안전마진)</h2>
+<p><strong>평점: ★☆☆☆☆</strong></p>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>역사적 분위</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td>N/A (적자)</td>
+<td>—</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>선행PER (2026E)</td>
+<td>N/A (적자 지속 예상)</td>
+<td>—</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>16.02배</td>
+<td>역사적 고점권 (IPO 이후 최저 지점 근처이나 절대적 고평가)</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>0%</td>
+<td>—</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td>음수 (−)</td>
+<td>—</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>PSR (2025A)</td>
+<td>~165배</td>
+<td>극도의 성장 프리미엄</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>PSR (2026E 연환산)</td>
+<td>~89배</td>
+<td>매우 고평가</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3시나리오 적정가 (두 가지 접근법)</strong></p>
+<p><strong>① PSR 기반 (EPS 음수 기업 대안 접근)</strong></p>
+<p>EPS가 지속 음수이므로 PSR(주가매출배수) 분석:</p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>가정</th>
+<th>2027E 매출</th>
+<th>적용 멀티플</th>
+<th>적정 시총</th>
+<th>적정 주가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>낙관</td>
+<td>피지컬AI 전환 성공, ONExia $84M 달성</td>
+<td>2,500억</td>
+<td>EV/Sales 15x</td>
+<td>3.75조+현금</td>
+<td>~59,000원 [추정]</td>
+</tr>
+<tr>
+<td>중립</td>
+<td>완만한 성장, 흑자 전환 지연</td>
+<td>1,200억</td>
+<td>EV/Sales 10x</td>
+<td>1.2조+현금</td>
+<td>~22,000원 [추정]</td>
+</tr>
+<tr>
+<td>비관</td>
+<td>시장 경쟁 심화, 현금 소진 우려</td>
+<td>600억</td>
+<td>EV/Sales 5x</td>
+<td>3,000억+잔여현금</td>
+<td>~8,000원 [추정]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>현재 주가 84,300원 = PSR 낙관 시나리오(59,000원)도 상회하는 가격.</strong></p>
+<p><strong>② EPS 기반 (2027E 흑자전환 낙관 가정 EPS 500원 — 극도 투기적 추정)</strong></p>
+<pre><code>python tools/financial_rigor_kr.py three-scenario 결과 (3년 기준)
+※ EPS 500원 = 2027E 최초 흑자전환 시 낙관 EPS 추정. 2025A EPS는 -852원(실제 손실)
+낙관(+80%/yr, PER 50배): 145,800원 (+73.0%)
+중립(+20%/yr, PER 20배):  17,280원 (-79.5%) ← FAIL
+비관(-60%/yr, PER  5배):     160원 (-99.8%)
+</code></pre>
+<p><strong>해석</strong>: EPS 500원 달성(현재 미실현 목표)에서 출발해도, 중립 성장 시 -79.5% 하락. 낙관에서만 +73% — 하지만 이는 3년간 EPS +80% 복리 성장 + 이전에 흑자 전환 선제 달성을 모두 전제. 두 접근 모두 같은 결론: <strong>어떤 합리적 가정도 현재가를 지지하지 못함.</strong></p>
+<p>클라만 관점: "시장이 이 주식을 싸게 두지 않는 이유 — 피지컬 AI 테마 프리미엄." 이 프리미엄이 영구적인가? 아니다. 실적 기반 검증이 필요하며 현재 가격에는 완벽한 시나리오만 반영되어 있음.</p>
+<p><strong>손실 시나리오</strong>: 비관 시나리오 실현 시 현재가 대비 -90.5% 하락 가능. 주가가 반토막(42,150원)에도 추가매수 가능성 — No. 구조적 적자 기업에 대한 추가 매수는 매몰비용 함정.</p>
+<p><strong>증권사 컨센서스</strong>: 목표주가 110,000~135,000원 (평균 ~121,000원), 투자의견 BUY. 단, 이는 2027년 흑자 전환 및 PSR 프리미엄 유지를 가정한 것.</p>
+<hr />
+<h2>6관문: 시장 심리·타이밍 점검 (코스톨라니)</h2>
+<p><strong>코스톨라니 달걀 위치: A2~A3 구간 (침체→회복 초입)</strong></p>
+<ul>
+<li>[x] 52주 고가(170,000원) 대비 -50.4% 하락. 관심이 식은 상태 → A2-A3 신호</li>
+<li>[x] 24년 두산밥캣 합병 논란 이후 언론 기조 부정적 ("10년째 군불만 뗀다", "12년째 적자") </li>
+<li>[x] 그러나 피지컬AI 테마는 여전히 시장 관심권 — 완전한 외면 상태는 아님</li>
+<li>[x] 금리 방향: 한국은행 완화 사이클 → 성장주에 중립~우호적</li>
+<li>[ ] 엔비디아 AI 무대 등장(2026-04), 증권사 일제 목표가 상향 — 여전히 관심 집중 국면</li>
+</ul>
+<p><strong>달걀 판정</strong>: A3~B1 경계. 주가는 식었으나 내러티브는 뜨겁다. 순수한 역발상 매수 구간이라기보다는 테마 기대감이 지속되는 상태.</p>
+<p><strong>의사결정 감정 통제 점검</strong>:
+- FOMO 여부: 피지컬AI 테마 열기로 인한 FOMO 위험 존재
+- 매수 이유가 "모두가 사고 있어서"인가: 두산로보틱스는 AI 로봇 대표주로 자주 언급됨 → 주의
+- 5년 보유 가능 여부: 적자 구조 개선 전제 시만 가능. 불확실성 높음.</p>
+<hr />
+<h2>즉각 거부 목록 점검</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>해당 여부</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수익 방식 설명 불가</td>
+<td>❌ (설명 가능)</td>
+</tr>
+<tr>
+<td>FCF 3년 연속 음수, 개선 전망 불명확</td>
+<td><strong>✅ 해당</strong> — 2022~2025 모두 적자, 2026도 적자 예상</td>
+</tr>
+<tr>
+<td>경영진 신뢰성·도덕성 문제</td>
+<td><strong>✅ 부분 해당</strong> — 2024년 불공정 합병 시도</td>
+</tr>
+<tr>
+<td>경쟁 우위 되돌릴 수 없이 무너지는 중</td>
+<td>❌ (아직 기술 우위 유지, 단 위험 증가)</td>
+</tr>
+<tr>
+<td>수익이 "다음 매수자" 기대에 의존</td>
+<td><strong>✅ 해당</strong> — 현재 실적 기반 가치화 불가, 순수 성장 내러티브</td>
+</tr>
+<tr>
+<td>200자 이내 매수 논거 작성 가능</td>
+<td><strong>△ 어려움</strong> — "실적 없는 AI 기대주" 논거는 투기적</td>
+</tr>
+</tbody>
+</table>
+<p><strong>즉각 거부 레드라인 3개 해당.</strong></p>
+<hr />
+<h2>거울 테스트</h2>
+<blockquote>
+<p>"나는 84,300원에 두산로보틱스을 매수한다. 이유는:
+1. 이 사업의 본질은 <strong>협동로봇 제조 및 자동화 솔루션 판매</strong>이며, 나는 이를 이해한다.
+2. 해자는 <strong>고중량 코봇 기술 우위 및 초기 소프트웨어 생태계(DART Suite)</strong>이며, <strong>구축 중</strong> 추세다.
+3. 경영진은 <strong>전략적 변화를 주도하나 주주 이익 침해 이력(합병 논란) 존재</strong>하며, <strong>반신반의</strong>할 수 있다.
+4. 현재 가격은 내재가치의 <strong>300~1,000%+ 수준</strong>으로, 안전마진이 <strong>전혀 없다</strong>.
+5. 설령 내가 틀려도, 하방 리스크는 <strong>관리 불가</strong>하다. 이유: <strong>구조적 적자 기업, FCF 음수, 현금 소진 중, 비관 시나리오에서 -90% 이상 하락 가능</strong>."</p>
+</blockquote>
+<p><strong>거울 테스트 결과: 미통과.</strong> 4번 및 5번 문장 완성 불가 — 안전마진 부재, 하방 리스크 과대.</p>
+<hr />
+<h2>핵심 리스크 (3~5개)</h2>
+<ol>
+<li>
+<p><strong>현금 소진 리스크 (가장 긴급)</strong>: IPO 조달 8,200억 중 2,112억 잔존(추정). 현재 연간 현금 소진 속도(operating loss + CAPEX + 투자 활동)가 수백~수천억 원. 흑자 전환 전 추가 유상증자 또는 자금 조달 필요 가능성 높음 → 기존 주주 희석 리스크.</p>
+</li>
+<li>
+<p><strong>매출 역성장 + 손실 확대의 동시 진행</strong>: 2023~2025년 매출 감소(-29.5% 2024→2025)와 영업손실 급증(-595억)이 동시 발생. 성장주 프리미엄 유지 논거가 약화되는 구조.</p>
+</li>
+<li>
+<p><strong>피지컬AI 전환 불확실성</strong>: "하드웨어→AI 플랫폼" 전환은 자본·시간·역량 집중 투자 필요. 엔비디아, 보스턴다이나믹스, 삼성 등 자본력 우위 경쟁자의 진입으로 시장 지위 유지 불확실.</p>
+</li>
+<li>
+<p><strong>지배구조 리스크</strong>: 두산그룹(49.98%) 지배 하 소액주주 이익 침해 가능성 잔존. 2024년 합병 논란이 해소된 것이 아니라 "무산"된 것 — 유사 시도 재발 가능성.</p>
+</li>
+<li>
+<p><strong>글로벌 시장 경쟁 심화</strong>: 유니버설로봇(UR, Teradyne 계열), 중국 JAKA·Dobot의 저가 공세, ABB·FANUC의 기술·자본 우위. 20kg+ 점유율 72%는 2022년 기준이며 최신 시장점유율 데이터 미확인.</p>
+</li>
+</ol>
+<hr />
+<h2>최종 결론</h2>
+<h3>❌ 체크리스트 미통과 (통과: 1~1.5관문 / 6관문)</h3>
+<p><strong>핵심 레드라인:</strong>
+- <strong>2관문 (사업 품질)</strong>: 창업 이래 12년 적자, ROE 지속 음수, FCF 만성 음수. 버핏식 "좋은 사업"의 정의를 충족하는 지표가 단 하나도 없음.
+- <strong>5관문 (안전마진)</strong>: PBR 16x, PSR 89~165x. 어떤 합리적 가정을 해도 현재가는 내재가치를 초과함. 낙관 시나리오에서도 현재가는 적정가를 상회.
+- <strong>즉각 거부</strong>: FCF 3년 이상 음수, 합병 논란으로 인한 경영진 신뢰성 일부 훼손, 실적 기반 논거 부재.</p>
+<p><strong>회색지대 (투자자 스스로 판단할 사항)</strong>:
+- "2027년 흑자 전환 + 피지컬AI 생태계 구축 성공"을 믿는다면, 이 주식은 고위험 성장 베팅으로서 포트폴리오 일부(5% 미만)에 투기적으로 편입하는 논리는 존재함. 그러나 이것은 버핏식 투자가 아니라 모멘텀·테마 투자임.
+- 현금 잔액 2,112억원이 충분한지: 2026~2027년 추가 손실을 감당할 수 있는 규모인지 재무상황 모니터링 필요.
+- ONExia $84.2M 매출 목표(2030년) 달성 여부: 현재 점검 불가능.</p>
+<p><strong>버핏이라면</strong>: 매수하지 않는다. 적자 기업에 PBR 16배를 지불하는 것은 "어리석은 가격에 훌륭한 회사를 사는 것"이 아니라 "훌륭해질 수도 있는 회사에 망할 수도 있는 가격을 지불하는 것"이다.</p>
+<p><strong>코스톨라니라면</strong>: "아직 달걀이 충분히 식지 않았다. 모두가 피지컬 AI를 이야기하는 동안에는 A구간이 아니다. 실적 공시 후 실망매물이 나올 때 다시 보라."</p>
+<hr />
+<h2>데이터 출처</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>실시간 주가</td>
+<td>fetch_price_kr.py (네이버금융 API)</td>
+</tr>
+<tr>
+<td>재무제표 (연도별)</td>
+<td>seoulexchange.kr / 한국경제 markets</td>
+</tr>
+<tr>
+<td>밸류에이션 지표</td>
+<td>valueline.co.kr</td>
+</tr>
+<tr>
+<td>지분구조</td>
+<td>기업모니터 (wisereport, 2026-04-02)</td>
+</tr>
+<tr>
+<td>2026 Q1 실적</td>
+<td>CBC뉴스, thestock.co.kr (2026-04-28 공시 기반)</td>
+</tr>
+<tr>
+<td>사업·제품 정보</td>
+<td>doosanrobotics.com, dnews (2025-08)</td>
+</tr>
+<tr>
+<td>ONExia 인수</td>
+<td>mna.bridgecode.kr</td>
+</tr>
+<tr>
+<td>합병 논란</td>
+<td>서울신문 (2024-08-30), topdaily</td>
+</tr>
+<tr>
+<td>경영진</td>
+<td>bloter.net, businesspost</td>
+</tr>
+<tr>
+<td>증권사 컨센서스</td>
+<td>한국경제 컨센서스 (2026-07-01) / 하이투자·삼성·KB·한투 리포트</td>
+</tr>
+<tr>
+<td>협동로봇 기술</td>
+<td>koita 웹진 (2024-01)</td>
+</tr>
+</tbody>
+</table>
+<p><em>수치에 [추정] 표시된 항목은 공식 DART 공시에서 직접 확인되지 않은 계산값임.</em>
+<em>[미확인] 항목은 데이터 부재로 판단 유보.</em></p>
+
+    <script src="../search_index.js"></script>
+    <script>
+        let currentFocus = -1;
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+            currentFocus = -1; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach((item, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+
+                // 마우스 진입 시 키보드 포커스와 동기화
+                li.addEventListener('mouseenter', () => {
+                    currentFocus = index;
+                    addActive(resultsContainer.getElementsByTagName('li'));
+                });
+            });
+        });
+
+        // 한글 씹힘 방지 및 엔터 이동 완벽 적용
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            if (e.isComposing || e.keyCode === 229) {
+                if (e.key === "Enter") return;
+            }
+
+            const resultsContainer = document.getElementById('searchResults');
+            const items = resultsContainer.getElementsByTagName('li');
+            
+            if (e.key === "ArrowDown" || e.keyCode === 40) {
+                currentFocus++;
+                addActive(items);
+                e.preventDefault(); 
+            } else if (e.key === "ArrowUp" || e.keyCode === 38) {
+                currentFocus--;
+                addActive(items);
+                e.preventDefault();
+            } else if (e.key === "Enter" || e.keyCode === 13) {
+                e.preventDefault();
+                if (currentFocus > -1 && items[currentFocus]) {
+                    window.location.href = items[currentFocus].querySelector('a').href;
+                }
+            }
+        });
+
+        function addActive(items) {
+            if (!items || items.length === 0) return false;
+            removeActive(items);
+            
+            if (currentFocus >= items.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = items.length - 1;
+            
+            items[currentFocus].classList.add("active");
+            items[currentFocus].scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+
+        function removeActive(items) {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>
