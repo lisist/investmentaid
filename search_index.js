@@ -4,12 +4,24 @@ const searchData = [
         "url": "HD현대중공업/HD현대중공업-checklist-20260630.html"
     },
     {
+        "title": "[KB금융] KB금융-checklist-20260702",
+        "url": "KB금융/KB금융-checklist-20260702.html"
+    },
+    {
+        "title": "[KB금융] KB금융-research-20260703",
+        "url": "KB금융/KB금융-research-20260703.html"
+    },
+    {
         "title": "[LG에너지솔루션] LG에너지솔루션-checklist-20260628",
         "url": "LG에너지솔루션/LG에너지솔루션-checklist-20260628.html"
     },
     {
         "title": "[LG에너지솔루션] LG에너지솔루션-research-20260628",
         "url": "LG에너지솔루션/LG에너지솔루션-research-20260628.html"
+    },
+    {
+        "title": "[LS Electric] LS Electric-checklist-20260702",
+        "url": "LS Electric/LS Electric-checklist-20260702.html"
     },
     {
         "title": "[SK하이닉스] 01-비즈니스모델-버핏시각",

@@ -1,0 +1,1282 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[KB금융] KB금융-research-20260703</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }
+        
+        /* 검색창 기본 스타일 추가 */
+        .search-input {
+            box-sizing: border-box; 
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 16px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        .search-input:focus {
+            border-color: #0366d6;
+            box-shadow: 0 4px 24px rgba(3, 102, 214, 0.15);
+        }
+        .results-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            max-height: 350px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e1e4e8;
+            box-sizing: border-box; 
+        }
+        .results-list:empty { border: none; box-shadow: none; }
+        .results-list li { border-bottom: 1px solid #eaecef; }
+        .results-list li:last-child { border-bottom: none; }
+        .results-list a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+        .results-list a:hover { background-color: #f6f8fa; color: #0056b3; }
+
+        /* 💡 키보드 방향키 하이라이트 스타일 */
+        .results-list li.active {
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+        }
+        .results-list li.active a {
+            color: #0056b3;
+            padding-left: 11px; 
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body { padding: 15px; }
+            .search-input { font-size: 14px; padding: 10px 14px; }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 삼성전자)" 
+               class="search-input" autocomplete="off">
+        <ul id="searchResults" class="results-list"></ul>
+    </div>
+
+    <h1>KB금융그룹(105560) — 5대 거장 심층 투자분석</h1>
+<p><strong>작성일</strong>: 2026-07-03 | <strong>분석 기준가</strong>: 165,000원 (2026-07-02 종가)
+<strong>거래소</strong>: KOSPI | <strong>시가총액</strong>: 약 58.5조원 (3.547억주 × 165,000원)
+<strong>정보 풍부도</strong>: <strong>A등급</strong> — KOSPI 대형주, 상장 25년+, 10개 이상 증권사 커버리지</p>
+<hr />
+<h2>⚠️ AI 연구 편향 선언 (A등급 컨센서스 함정)</h2>
+<p>KB금융은 국내 최대 금융지주로 정보가 극히 풍부하다. 이 보고서의 가장 큰 위험은 <strong>AI가 시장 컨센서스(Strong Buy)를 그대로 반복하는 것</strong>이다. 따라서 분석의 40%는 "왜 지금 시점에 사면 안 되는가"에 집중한다.</p>
+<p><strong>편향 점검:</strong>
+- [x] 확신이 데이터에서 오는가? — 도구로 검증된 수치만 사용
+- [x] 자료 절반만 봤다면 결론이 달라지는가? — 섹션 4에서 역발상 집중 검증
+- [x] AI 출력이 컨센서스와 지나치게 일치하지 않는가? — "매수" 컨센서스의 반론을 의도적으로 강화
+- [x] "정보 많음 = 확실성 높음" 오류 점검 — PBR 밴드 확장 후 과거 사례 대입</p>
+<hr />
+<h2>핵심 데이터 요약</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>출처 / 기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>현재 주가</td>
+<td><strong>165,000원</strong></td>
+<td>Yahoo Finance·국내 일치 (2026-07-02)</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td><strong>58.5조원</strong></td>
+<td>3.547억주 × 165,000원</td>
+</tr>
+<tr>
+<td>52주 고 / 저</td>
+<td>182,700 / 105,800원</td>
+<td>52주 위치: 77.0%</td>
+</tr>
+<tr>
+<td>PER (2025A)</td>
+<td><strong>10.01배</strong></td>
+<td>도구 계산 (EPS 16,480원)</td>
+</tr>
+<tr>
+<td>선행 PER (2026E)</td>
+<td><strong>~9.39배</strong></td>
+<td>StockAnalysis Forward PER</td>
+</tr>
+<tr>
+<td>PBR (2025A)</td>
+<td><strong>1.01배</strong></td>
+<td>도구 계산 (BPS 163,500원)</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td><strong>9.99%</strong></td>
+<td>도구 계산 (EPS = FCF 근사)</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>2.65%</strong></td>
+<td>도구 계산 (DPS 4,367원)</td>
+</tr>
+<tr>
+<td>EPS (2025A)</td>
+<td><strong>16,480원</strong></td>
+<td>지배주주순이익 5.843조 ÷ 3.547억주</td>
+</tr>
+<tr>
+<td>BPS (2025A)</td>
+<td><strong>~163,500원</strong></td>
+<td>EPS ÷ ROE 10.08% 역산</td>
+</tr>
+<tr>
+<td>DPS (2025A)</td>
+<td><strong>4,367원</strong></td>
+<td>현금배당 1조5,490억 ÷ 3.547억주</td>
+</tr>
+<tr>
+<td>ROE (2025A)</td>
+<td><strong>10.08%</strong></td>
+<td>지배주주순이익/자기자본</td>
+</tr>
+<tr>
+<td>순이익 (2025A)</td>
+<td><strong>5.843조원</strong></td>
+<td>+15.1% YoY (역대 최대)</td>
+</tr>
+<tr>
+<td>총자산</td>
+<td><strong>757.8조원</strong></td>
+<td>2024A 연결 (업계 1위)</td>
+</tr>
+<tr>
+<td>주주환원율 (2025A)</td>
+<td><strong>52.4%</strong></td>
+<td>현금배당 1.55조 + 자사주 매입·소각 1.48조</td>
+</tr>
+<tr>
+<td>NIM (2026Q1)</td>
+<td><strong>1.99%</strong></td>
+<td>국민은행 은행 NIM 1.77%</td>
+</tr>
+<tr>
+<td>CET1 (2026Q1)</td>
+<td><strong>13.63%</strong></td>
+<td>+완충 규제 여력 150~210bp</td>
+</tr>
+<tr>
+<td>컨센서스 목표주가</td>
+<td><strong>196,450원</strong></td>
+<td>5개 증권사 평균 (+19.1%)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>1단계: 사업 본질 분석 — 버핏의 "이해 가능한 사업"</h2>
+<h3>한 문장 사업 본질</h3>
+<blockquote>
+<p>"KB금융그룹은 국민은행을 핵심으로 증권·손보·카드·생명보험을 거느린 한국 최대 종합 금융지주로, 760조원의 총자산에서 발생하는 이자이익(73%)과 수수료·트레이딩 이익(27%)을 주요 수익원으로 한다."</p>
+</blockquote>
+<h3>매출(순영업수익) 구조 (2025A)</h3>
+<table>
+<thead>
+<tr>
+<th>수익원</th>
+<th>금액(조원)</th>
+<th>비중</th>
+<th>YoY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>순이자이익</td>
+<td><strong>13.07</strong></td>
+<td>73%</td>
+<td>+1.9%</td>
+</tr>
+<tr>
+<td>순수수료이익</td>
+<td><strong>4.10</strong></td>
+<td>23%</td>
+<td>+6.6%</td>
+</tr>
+<tr>
+<td>트레이딩·기타</td>
+<td><strong>0.77</strong></td>
+<td>4%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>합계</strong></td>
+<td><strong>17.94</strong></td>
+<td>100%</td>
+<td>+3.2%</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>부문</th>
+<th>순이익(억원)</th>
+<th>비중</th>
+<th>YoY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KB국민은행</td>
+<td>38,620</td>
+<td><strong>66%</strong></td>
+<td>+18.8%</td>
+</tr>
+<tr>
+<td>KB손해보험</td>
+<td>7,782</td>
+<td>13%</td>
+<td>-7.3%</td>
+</tr>
+<tr>
+<td>KB증권</td>
+<td>6,739</td>
+<td>12%</td>
+<td>+15.1%</td>
+</tr>
+<tr>
+<td>KB국민카드</td>
+<td>3,302</td>
+<td>6%</td>
+<td>-18.0%</td>
+</tr>
+<tr>
+<td>KB라이프생명</td>
+<td>2,440</td>
+<td>4%</td>
+<td>-9.4%</td>
+</tr>
+<tr>
+<td><strong>그룹 합계</strong></td>
+<td><strong>58,430</strong></td>
+<td>100%</td>
+<td>+15.1%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>주목: 비은행 기여도 하락.</strong> 2024A 비은행 36% → 2025A 34% → 2026Q1 43%(반등). 손보·카드 부진이 지속적 리스크. 2026Q1 비은행 43% 반등은 일시적 트레이딩 이익 영향.</p>
+<h3>5개년 수익성 추세 (연결, 조원)</h3>
+<table>
+<thead>
+<tr>
+<th>연도</th>
+<th>순이자이익</th>
+<th>지배순이익</th>
+<th>ROE</th>
+<th>NIM(그룹)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021A</td>
+<td>11.23</td>
+<td>4.41</td>
+<td>9.8%</td>
+<td>~2.1%</td>
+</tr>
+<tr>
+<td>2022A</td>
+<td>11.52</td>
+<td>4.15</td>
+<td>9.2%</td>
+<td>~2.2%</td>
+</tr>
+<tr>
+<td>2023A</td>
+<td>12.18</td>
+<td>4.59</td>
+<td>8.5%</td>
+<td>2.08%</td>
+</tr>
+<tr>
+<td>2024A</td>
+<td>12.83</td>
+<td>5.08</td>
+<td>9.74%</td>
+<td>2.03%</td>
+</tr>
+<tr>
+<td><strong>2025A</strong></td>
+<td><strong>13.07</strong></td>
+<td><strong>5.84</strong></td>
+<td><strong>10.08%</strong></td>
+<td>1.95%</td>
+</tr>
+<tr>
+<td><strong>2026Q1</strong></td>
+<td>3.33</td>
+<td>1.89(분기)</td>
+<td>13.94%*</td>
+<td>1.99%</td>
+</tr>
+</tbody>
+</table>
+<p>*연환산 기준</p>
+<p><strong>추세 해석</strong>: 이자이익은 완만한 성장(+16.4% 5년), 순이익은 +32.4% 성장. 이자이익 외 비이자(수수료·보험)이 성장 엔진으로 부상. 2026Q1 비이자이익 1.65조(+27.8% YoY, 사상 최대)는 구조 전환 신호.</p>
+<h3>비즈니스 모델 특성</h3>
+<table>
+<thead>
+<tr>
+<th>특성</th>
+<th>평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>반복 수익 vs 일회성</td>
+<td><strong>강한 반복 수익</strong> — 예금·대출 스프레드, 수수료는 구조적 반복</td>
+</tr>
+<tr>
+<td>자본 집약도</td>
+<td><strong>고자산·경자산 혼합</strong> — 대출은 자산 필요, 수수료·플랫폼은 경자산</td>
+</tr>
+<tr>
+<td>락인·전환비용</td>
+<td><strong>높음</strong> — 주거래 은행 변경에 평균 3~5시간 소요, 자동이체·급여이체 재설정</td>
+</tr>
+<tr>
+<td>영업 레버리지</td>
+<td><strong>보통</strong> — 고정비(인건비·IT) 존재, 그러나 신용비용이 변동 레버리지 역할</td>
+</tr>
+</tbody>
+</table>
+<p><strong>버핏식 질문:</strong> "10년간 사업 계획 없이도 잘 돌아갈 수 있는가?"
+→ <strong>YES</strong> — 사람들이 계속 예금하고, 대출받고, 카드를 쓰고, 보험에 가입한다. KB국민은행 브랜드와 4,200여 개 점포(ATM 포함)는 별도 계획 없이도 운영된다. 다만 금리 환경과 규제 변화에 1~2년 단위로 노출된다.</p>
+<hr />
+<h2>2단계: 경제적 해자 평가 — 버핏의 "해자"</h2>
+<table>
+<thead>
+<tr>
+<th>해자 유형</th>
+<th style="text-align: center;">보유</th>
+<th>구체적 근거</th>
+<th style="text-align: center;">추세</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>브랜드·신뢰</strong></td>
+<td style="text-align: center;">✅ 강력</td>
+<td>국민은행 = 한국인 70%의 "기본 은행" 인식. 공모펀드·ISA 판매 1위</td>
+<td style="text-align: center;">유지</td>
+</tr>
+<tr>
+<td><strong>전환비용</strong></td>
+<td style="text-align: center;">✅ 강력</td>
+<td>주거래 은행 변경 시 자동이체·급여이체·청약통장 재설정 필요. 4,200여 점포 접근성</td>
+<td style="text-align: center;">유지</td>
+</tr>
+<tr>
+<td><strong>규모의 경제</strong></td>
+<td style="text-align: center;">✅ 강력</td>
+<td>총자산 757조(업계 1위) → 조달 원가 최저. IT 투자 분산 효과</td>
+<td style="text-align: center;">확대 중</td>
+</tr>
+<tr>
+<td><strong>규제 장벽</strong></td>
+<td style="text-align: center;">✅ 강력</td>
+<td>신규 시중은행 인가 사실상 불가. 금산분리·자기자본 요건이 진입 장벽</td>
+<td style="text-align: center;">유지</td>
+</tr>
+<tr>
+<td><strong>디지털 플랫폼</strong></td>
+<td style="text-align: center;">✅ 보통</td>
+<td>KB스타뱅킹 MAU 1,379만(시중은행 1위), 그룹 통합 MAU 3,103만</td>
+<td style="text-align: center;">확대 중</td>
+</tr>
+<tr>
+<td><strong>네트워크 효과</strong></td>
+<td style="text-align: center;">⚠️ 제한</td>
+<td>결제 네트워크는 카카오페이·네이버페이에 잠식. 은행 자체는 네트워크 효과 약</td>
+<td style="text-align: center;">약화</td>
+</tr>
+<tr>
+<td><strong>기술·특허</strong></td>
+<td style="text-align: center;">❌ 없음</td>
+<td>금융 기술은 복제 가능. 단, 데이터(고객 거래 이력)는 사실상 특허</td>
+<td style="text-align: center;">—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>1조 원 경쟁자 테스트</strong>: "경쟁자가 1조 원으로 KB국민은행을 5년 내 대체할 수 있는가?"
+→ <strong>불가능</strong> — 인터넷은행 3사(카카오·케이·토스)가 수조 원을 투자했음에도 대출시장점유율 3.4%에 불과. 전환비용·점포망·기업대출 역량·규제 자본 요건이 4중 방어막. 다만 가계대출 영역에서 MAU 경쟁에서는 밀리고 있음.</p>
+<p><strong>해자 추세 결론</strong>: 핵심 해자(브랜드·전환비용·규모·규제)는 <strong>유지 또는 확대</strong>. 디지털 영역에서는 카카오뱅크 MAU(1,744만) &gt; KB스타뱅킹(1,379만)으로 열위. 단, 디지털 MAU 격차가 수익으로 직결되지는 않음 — 기업대출·자산관리에서 여전히 KB 우위.</p>
+<hr />
+<h2>3단계: 역발상·리스크 목록 — 멍거의 "뒤집어 생각하기"</h2>
+<h3>"KB금융이 실패할 수 있는 모든 경로"</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>실패 경로</th>
+<th style="text-align: center;">발생확률</th>
+<th style="text-align: center;">영향도</th>
+<th style="text-align: center;">주가 영향</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>한국 가계부채 위기</strong> — 2025년 말 가계부채/GDP 100% 돌파, DSR 규제로 부실화 가속</td>
+<td style="text-align: center;">15%</td>
+<td style="text-align: center;">대형</td>
+<td style="text-align: center;">-40~60%</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>NIM 급락</strong> — 한국은행 금리 인하 재개(2027년 이후) + 예금금리 경쟁 심화로 NIM이 1.5% 이하로 하락</td>
+<td style="text-align: center;">20%</td>
+<td style="text-align: center;">중형</td>
+<td style="text-align: center;">-20~30%</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>NPL 급증</strong> — 부동산 PF 부실, 자영업자 연체 확대. 2025A NPL 0.63%→2% 이상</td>
+<td style="text-align: center;">10%</td>
+<td style="text-align: center;">대형</td>
+<td style="text-align: center;">-30~50%</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>밸류업 모멘텀 소멸</strong> — 정권 교체·정책 후퇴로 주주환원 압박 소실</td>
+<td style="text-align: center;">25%</td>
+<td style="text-align: center;">중형</td>
+<td style="text-align: center;">-15~25%</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>경쟁 심화(인터넷은행)</strong> — 2030년까지 인터넷은행 가계대출 점유율 10% 돌파</td>
+<td style="text-align: center;">30%</td>
+<td style="text-align: center;">소형</td>
+<td style="text-align: center;">-5~15%</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>규제 강화</strong> — BIS 자본 요건 상향, 배당 제한 명령</td>
+<td style="text-align: center;">20%</td>
+<td style="text-align: center;">중형</td>
+<td style="text-align: center;">-10~20%</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>양종희 회장 거버넌스 리스크</strong> — 2026.11 임기 만료·리더십 공백</td>
+<td style="text-align: center;">20%</td>
+<td style="text-align: center;">소형</td>
+<td style="text-align: center;">-5~10%</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>글로벌 경기침체</strong> — 2027~2028년 경기침체로 기업대출 부실 급증</td>
+<td style="text-align: center;">20%</td>
+<td style="text-align: center;">중형</td>
+<td style="text-align: center;">-20~35%</td>
+</tr>
+</tbody>
+</table>
+<h3>역사적 유사 사례</h3>
+<table>
+<thead>
+<tr>
+<th>사례</th>
+<th>내용</th>
+<th>결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2003 카드사 위기</td>
+<td>LG카드·현대카드 부실로 은행 동반 충격</td>
+<td>국민은행 주가 60% 하락 후 5년 만에 회복</td>
+</tr>
+<tr>
+<td>2008 글로벌 금융위기</td>
+<td>외환 유동성 위기, 정부 채권 매입</td>
+<td>국내 은행 평균 -55%, KB -45% 후 3년 회복</td>
+</tr>
+<tr>
+<td>2011 저축은행 사태</td>
+<td>저축은행 부실, 시중은행 영향 제한</td>
+<td>직접 영향 미미, 간접 신뢰 영향</td>
+</tr>
+</tbody>
+</table>
+<p><strong>공통 패턴</strong>: 한국 대형 금융지주는 위기 시 40~60% 하락, 3~5년 내 완전 회복. 이는 "비인기 자산 특성"과 맞닿아 있어 클라만 관점에서는 오히려 매력 포인트.</p>
+<h3>멍거식 반론 — "스마트머니는 왜 KB금융을 더 사지 않는가?"</h3>
+<ol>
+<li><strong>외국인 지분율 ~70%에서 추가 매수 여력 제한</strong> — 이미 대거 보유 중</li>
+<li><strong>ROE 10%는 버핏 기준(15%) 미달</strong> — 규제 자본 요건상 레버리지 제한</li>
+<li><strong>한국 디스카운트 미해소</strong> — 지배구조·정치 리스크 프리미엄 지속</li>
+<li><strong>밸류업 프로그램 지속 불확실</strong> — 정책 의존적 모멘텀</li>
+</ol>
+<p><strong>반박:</strong> 1) 외국인 추가 매수 여력 있음 (ETF 편입 확대), 2) 규제 자본 하에서 ROE 10%는 업계 최상위, 3) PBR 1배 돌파가 디스카운트 해소의 시작 신호, 4) 주주환원 52.4% 달성은 정책 독립적 모멘텀</p>
+<p><strong>멍거식 질문:</strong> "내가 가장 틀릴 가능성이 높은 지점은?"
+→ <strong>NIM 하락 리스크 과소평가.</strong> 금리 인하 재개 시 NIM은 빠르게 반응하며 수익성 압박. 2023년 2.08% → 2025년 1.95%로 이미 -13bp 하락 추세.</p>
+<hr />
+<h2>4단계: 자본 건전성 정밀 검토</h2>
+<h3>대출 포트폴리오 위험 분석</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>기준 / 비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>원화대출 (2024말)</td>
+<td>363.6조원</td>
+<td>가계 176.8조(49%) + 기업 186.8조(51%)</td>
+</tr>
+<tr>
+<td>원화대출 (2026Q1)</td>
+<td>367.3조원</td>
+<td>가계 188조(51%) + 기업 179조(49%)</td>
+</tr>
+<tr>
+<td>NPL 비율 (2024말)</td>
+<td>0.32%</td>
+<td>고정이하여신 / 총여신</td>
+</tr>
+<tr>
+<td>NPL 비율 (2025말)</td>
+<td>0.63%</td>
+<td>+0.31%p 상승 (자영업·부동산 PF 부실)</td>
+</tr>
+<tr>
+<td>NPL 커버리지 (2026Q1)</td>
+<td>127.1%</td>
+<td>충당금 / 고정이하여신</td>
+</tr>
+<tr>
+<td>연체율 (2024말)</td>
+<td>0.29%</td>
+<td>매우 낮은 수준</td>
+</tr>
+<tr>
+<td>CET1 (2026Q1)</td>
+<td>13.63%</td>
+<td>규제 최저 ~11.5% 대비 +210bp 여유</td>
+</tr>
+</tbody>
+</table>
+<p><strong>NPL 상승 해석</strong>: 2024말 0.32% → 2025말 0.63% 상승은 주의 신호이나, 이는 △부동산 PF 부실 정리 △자영업자 지원 만기 도래 반영. 커버리지 127.1%로 충당금 적정 수준 유지. 단, 추가 악화 시 신용비용 증가 → 이익 압박.</p>
+<h3>CET1 완충 여력 분석</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>영향</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>현재 CET1 (2026Q1)</td>
+<td>13.63%</td>
+</tr>
+<tr>
+<td>운영리스크 완화 (2026H1 반영)</td>
+<td>+20bp</td>
+</tr>
+<tr>
+<td>신용위험액 감소 (2027년)</td>
+<td>+20bp</td>
+</tr>
+<tr>
+<td>규제 최저 요건 (완충 포함)</td>
+<td>~11.5%</td>
+</tr>
+<tr>
+<td><strong>주주환원 가용 자본</strong></td>
+<td><strong>약 150~210bp = 약 1.5~2.0조원/년 추가 재원 가능</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5단계: 안전마진·하방 보호 — 클라만의 "손실 회피 우선"</h2>
+<h3>밸류에이션 지표 (도구 정밀 계산)</h3>
+<pre><code>python tools/financial_rigor_kr.py verify-valuation 결과
+PER: 10.01배 | PBR: 1.01배 | FCF 수익률: 9.99% | 배당: 2.65%
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>역사적 맥락</th>
+<th style="text-align: center;">판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (2025A)</td>
+<td><strong>10.01배</strong></td>
+<td>5년 평균 약 6~8배 대비 다소 높음</td>
+<td style="text-align: center;">⚠️</td>
+</tr>
+<tr>
+<td>선행 PER (2026E)</td>
+<td><strong>~9.39배</strong></td>
+<td>2026E EPS 17,569원 내포</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>PBR (2025A)</td>
+<td><strong>1.01배</strong></td>
+<td>5년 평균 0.50~0.60배 대비 역대 고점권</td>
+<td style="text-align: center;">⚠️</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td><strong>9.99%</strong></td>
+<td>10년 국채 대비 6~7%p 초과 수익</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>2.65%</strong></td>
+<td>분리과세(14%) 적용 시 실효 3.1%+</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>EV/BV</td>
+<td><strong>~0.95배</strong></td>
+<td>자기자본 이하 실효 시총</td>
+<td style="text-align: center;">✅</td>
+</tr>
+</tbody>
+</table>
+<h3>3시나리오 적정가 (3년 기준)</h3>
+<pre><code>python tools/financial_rigor_kr.py three-scenario 결과
+낙관(+15%/yr, PER 13배): 325,832원 (+97.5%)
+중립(+10%/yr, PER 11배): 241,284원 (+46.2%)  ← OK
+비관( -5%/yr, PER  8배): 113,036원 (-31.5%)
+</code></pre>
+<p><strong>시나리오 가정 근거:</strong>
+- <strong>낙관</strong>: EPS +15%/yr = 2026E~2028E 지속 성장 + 주주환원 60%+ + 밸류업 리레이팅으로 PER 13배 (신한 수준 프리미엄)
+- <strong>중립</strong>: EPS +10%/yr = 기준금리 안정 + NIM 유지 + CET1 완충 활용 주주환원 확대, PER 11배 (현재 ~10배에서 소폭 리레이팅)
+- <strong>비관</strong>: EPS -5%/yr = 부동산 PF 부실 + 가계부채 위기 + NIM 급락, PER 8배 (2020년 저점 수준)</p>
+<p><strong>핵심 발견:</strong>
+- <strong>하방 리스크(-31.5%) &lt; 상방 기대(+46.2%)</strong> — 비대칭 수익 구조 긍정적
+- 비관 시나리오(113,036원)도 <strong>PBR 0.69배</strong>로 심각한 청산가치 이하가 아님
+- 중립 시나리오(+46.2%)는 3년 CAGR +13.5% → 한국 국채(약 3%) 대비 우수</p>
+<h3>청산가치 하방 분석</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>추정</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>유형자기자본 (BPS)</td>
+<td>163,500원/주</td>
+<td>EPS/ROE 역산</td>
+</tr>
+<tr>
+<td>담보 대출 비율 (추정)</td>
+<td>~70%</td>
+<td>주택담보 중심 가계대출</td>
+</tr>
+<tr>
+<td>비관 청산가치 (헤어컷 30%)</td>
+<td>~114,000원</td>
+<td>BPS × 0.70</td>
+</tr>
+<tr>
+<td>현재 주가 대비 청산가치</td>
+<td><strong>-30.9%</strong></td>
+<td>165,000 vs 114,000원</td>
+</tr>
+</tbody>
+</table>
+<p><strong>클라만 관점</strong>: 청산가치 대비 현재 프리미엄 30%. 전통적 의미의 "담보 매수"는 아님. 그러나 FCF(순이익) 수익률 10%가 지속 가능하다면 3~4년 안에 투자원금 전액 회수 가능.</p>
+<h3>촉매 목록</h3>
+<table>
+<thead>
+<tr>
+<th>촉매</th>
+<th>시기</th>
+<th>효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026E 주주환원율 60%+ 달성</td>
+<td>2026.12</td>
+<td>목표주가 상향 트리거</td>
+</tr>
+<tr>
+<td>기보유 자사주 2.3조원 소각 완료</td>
+<td>2026H2</td>
+<td>EPS 희석 효과 반전, 주당가치 상승</td>
+</tr>
+<tr>
+<td>한국은행 기준금리 동결 장기화</td>
+<td>2026~2027</td>
+<td>NIM 안정 = 이익 가시성</td>
+</tr>
+<tr>
+<td>MSCI Korea 리밸런싱 (외국인 지분 추가 유입)</td>
+<td>분기</td>
+<td>수급 지지</td>
+</tr>
+<tr>
+<td>밸류업 ETF 편입 확대</td>
+<td>2026 하반기</td>
+<td>패시브 자금 유입</td>
+</tr>
+</tbody>
+</table>
+<p><strong>클라만식 질문:</strong> "최악 시나리오(NPL 급증+NIM 하락)에서도 이 가격이 지지되는가?"
+→ <strong>조건부 YES</strong> — 비관 적정가 113,036원은 현재가 대비 -31.5%. 2020년 코로나 저가(105,800원 근방)를 하회한다. 즉 "코로나 급락 때보다 더 나쁜 상황"이 돼야 손실이 심화되는 구조. 단기 하방을 감수할 수 있다면 장기 손실 위험은 제한적.</p>
+<hr />
+<h2>6단계: 성장 잠재력 질적 분석 — 피셔의 "스커틀버트"</h2>
+<h3>피셔 15개 질문 핵심 항목 적용</h3>
+<table>
+<thead>
+<tr>
+<th>질문</th>
+<th>평가</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 수년간 매출 크게 늘릴 제품·서비스?</td>
+<td>✅</td>
+<td>비이자이익(수수료·WM·IB) 구조 전환 진행. 2026Q1 비이자이익 +27.8%</td>
+</tr>
+<tr>
+<td>2. R&amp;D 효율 (AI 투자 성과)</td>
+<td>⚠️</td>
+<td>AI 전략 선언(2026 신년)이나 구체 성과 미검증. KB스타뱅킹 UX 개선 진행 중</td>
+</tr>
+<tr>
+<td>3. 영업 조직 (판매력·유통망)</td>
+<td>✅</td>
+<td>4,200+ ATM, 940여 지점, 전국 커버리지 업계 1위</td>
+</tr>
+<tr>
+<td>4. 이익률 방어 (경쟁 심화 시)</td>
+<td>⚠️</td>
+<td>NIM은 금리 정책 종속. 단, 비이자이익 성장이 완충 역할</td>
+</tr>
+<tr>
+<td>5. 핵심 인재 유지</td>
+<td>✅</td>
+<td>공기업형 고용 안정성. IB·WM 전문가 확보 진행</td>
+</tr>
+<tr>
+<td>6. 경영진 깊이 (CEO 의존 탈피)</td>
+<td>✅</td>
+<td>3개 CIB·WM·IB 사업 부문 별도 경영진 존재</td>
+</tr>
+<tr>
+<td>7. 원가 구조 우위</td>
+<td>✅</td>
+<td>총자산 1위 → 조달 원가 최저. CIR(영업비용/영업수익) 약 45% (업계 최저 수준)</td>
+</tr>
+<tr>
+<td>8. 장기 대안 (성장 다각화)</td>
+<td>✅</td>
+<td>동남아 3X3 전략, 인도네시아 5개 계열사 체계화</td>
+</tr>
+</tbody>
+</table>
+<h3>비이자이익 구조 전환 — 성장 엔진 분석</h3>
+<p>2026Q1 수수료 이익 1조3,593억(+45.5% YoY, 사상 최대):
+- <strong>자산관리(WM)</strong>: IRP·ISA·퇴직연금 등 고령화 수혜 구조. 인구 고령화로 10년 구조적 성장.
+- <strong>투자은행(IB)</strong>: 기업 M&amp;A·IPO 자문. 증권 자회사(KB증권) 성장 연계.
+- <strong>보험 수수료</strong>: KB손보·KB라이프 판매 수수료. IFRS17 신기준으로 CSM 쌓기 진행 중.</p>
+<p><strong>핵심 통찰</strong>: KB금융의 미래 성장 스토리는 "NIM 보호"가 아니라 "비이자이익 비중 30%→40% 확대"다. 2026Q1 이미 비이자이익 비중 33%(사상 최고). 이 추세가 지속되면 금리 하락 사이클에서도 이익 안정성 확보.</p>
+<h3>인도네시아 3X3 전략 (피셔: 장기 성장 대안)</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>현황</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>진출 국가</td>
+<td>인도네시아 (은행·증권·카드·보험·캐피탈 5개 계열사)</td>
+</tr>
+<tr>
+<td>전략</td>
+<td>3개 핵심국 × 3개 핵심 사업 (3X3)</td>
+</tr>
+<tr>
+<td>현 기여</td>
+<td>미미 (통합·정상화 단계)</td>
+</tr>
+<tr>
+<td>전망</td>
+<td>2030년 이후 비은행 해외 수익 가시화 기대</td>
+</tr>
+</tbody>
+</table>
+<p><strong>위험</strong>: 인도네시아 환율 리스크, 현지 규제, 문화 리스크. 과거 KB부코핀은행 인수 후 정상화에 수년 소요.</p>
+<p><strong>피셔식 질문:</strong> "어려울 때도 탁월한 결정을 내려왔는가?"
+→ <strong>2023년 밸류업 선제 대응, 주주환원 52.4% 달성</strong> — 정책 요구보다 앞서서 자발적 환원 확대. YES.</p>
+<hr />
+<h2>7단계: 시장 심리 사이클 — 코스톨라니의 "달걀 모델"</h2>
+<h3>현재 위치 판정</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>해석</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>52주 위치</td>
+<td>77.0% (저가 105,800→고가 182,700원)</td>
+<td>중상단 — 급락 후 반등 중</td>
+</tr>
+<tr>
+<td>당일 등락</td>
+<td>+4.10% (오늘 급등)</td>
+<td>강세 모멘텀</td>
+</tr>
+<tr>
+<td>PBR 1배 돌파</td>
+<td>2026.02 최초, 현재 1.01배</td>
+<td>역사적 전환점 통과</td>
+</tr>
+<tr>
+<td>언론 논조</td>
+<td>긍정 우세 (역대 최대 순이익, 주주환원 선도)</td>
+<td>B1~B2 구간</td>
+</tr>
+<tr>
+<td>외국인 수급</td>
+<td>5월 코스피 전반적 순매도, KB 방어적</td>
+<td>혼조</td>
+</tr>
+<tr>
+<td>공매도</td>
+<td>수치 미확인, 숏커버 압력 상승 추정</td>
+<td>지지 요인</td>
+</tr>
+<tr>
+<td>밸류업 ETF</td>
+<td>대형 금융주 편입 확대 진행</td>
+<td>패시브 지지</td>
+</tr>
+</tbody>
+</table>
+<p><strong>달걀 위치: B2 — 상승 국면</strong></p>
+<p>2020~2022년 A2~A3(투매·비관) 구간을 거쳐, 2023년 B1(반등), 2024~2025년 B2(상승)에 진입. PBR 1배 돌파(2026.02)는 B2→B3 전환의 시작점일 수 있다. 그러나 B3(열광)의 전형적 신호(거래량 폭증, 개인 FOMO, 연일 신고가)는 아직 미관찰.</p>
+<p><strong>B2 구간의 올바른 행동</strong>: 보유 + 일부 추가 매수 기회. 다만 52주 위치 77%로 단기 추격 매수는 신중.</p>
+<h3>매크로 타이밍</h3>
+<table>
+<thead>
+<tr>
+<th>요인</th>
+<th>현황</th>
+<th>KB금융 영향</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한국 기준금리</td>
+<td>2.50% (2026년 5월, 8회 연속 동결)</td>
+<td>NIM 안정 ✅</td>
+</tr>
+<tr>
+<td>경제성장률 전망</td>
+<td>2.6% (한은, 기존 2.0%→상향)</td>
+<td>기업대출 수요 ✅</td>
+</tr>
+<tr>
+<td>부동산 시장</td>
+<td>DSR 3단계 이후 안정화 추세</td>
+<td>가계대출 성장 제약 ⚠️</td>
+</tr>
+<tr>
+<td>코스톨라니 법칙</td>
+<td>"금리 인하 시 주식 매수" — 현재 동결</td>
+<td>금리 인하 선반영 ⚠️</td>
+</tr>
+<tr>
+<td>밸류업 정책</td>
+<td>2026~2028년 배당 분리과세 확정</td>
+<td>배당 선호 수급 ✅</td>
+</tr>
+</tbody>
+</table>
+<p><strong>코스톨라니식 질문:</strong> "지금 KB금융을 사려는 이유가 모두가 사고 있어서인가, 아무도 관심 없기 때문인가?"
+→ <strong>B2 구간: 모두가 주목하고 있으나, 아직 B3 열광은 아님.</strong> "주주환원 1등 은행"이라는 서사가 확산되며 관심 증가. 그러나 2020~2022년의 극단적 무관심(PBR 0.3~0.4배) 구간은 종료됨.</p>
+<hr />
+<h2>8단계: 밸류에이션·안전마진 — 버핏+클라만</h2>
+<h3>역DCF — 현재 주가가 내포하는 가정</h3>
+<table>
+<thead>
+<tr>
+<th>가정 조건</th>
+<th>내포 수치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>현재 PER (2025A)</td>
+<td>10.01배</td>
+</tr>
+<tr>
+<td>현재 PBR (2025A)</td>
+<td>1.01배</td>
+</tr>
+<tr>
+<td>Forward PER (2026E)</td>
+<td>9.39배</td>
+</tr>
+<tr>
+<td>내포 2026E EPS</td>
+<td>~17,570원 (+6.6% YoY)</td>
+</tr>
+<tr>
+<td>내포 3년 EPS CAGR (낙관 가정)</td>
+<td>+10~15%</td>
+</tr>
+<tr>
+<td>내포 목표 PBR (ROE 10%, CoE 10.5% 가정)</td>
+<td><strong>0.95배</strong> → 현재가 소폭 고평가 시사</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ROE-CoE 모델</strong>: PBR 적정치 = (ROE - g) / (CoE - g). ROE 10.08%, 영구 성장률 g=3%, 자기자본비용 CoE=10.5% 가정 시:
+- 적정 PBR = (10.08% - 3%) / (10.5% - 3%) = 7.08% / 7.5% = <strong>0.944배</strong>
+- 현재 PBR 1.01배는 이보다 7% 고평가 — 즉 ROE 개선(11~12%)이나 CoE 하락이 선반영된 가격</p>
+<p><strong>CoE 하락 시나리오</strong>: 밸류업 프로그램 + 주주환원 확대 → 투자자 요구 수익률(CoE) 9.5%로 하락 시:
+- 적정 PBR = (10.08% - 3%) / (9.5% - 3%) = 7.08% / 6.5% = <strong>1.09배</strong>
+- 목표주가 = BPS 163,500 × 1.09 = <strong>178,215원</strong> (+8%)</p>
+<h3>동업종 비교 — 국내·해외</h3>
+<table>
+<thead>
+<tr>
+<th>은행</th>
+<th>국가</th>
+<th>PBR</th>
+<th>ROE</th>
+<th>평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KB금융</strong></td>
+<td>한국</td>
+<td>1.01배</td>
+<td>10.08%</td>
+<td>국내 최고 PBR</td>
+</tr>
+<tr>
+<td>신한지주</td>
+<td>한국</td>
+<td>0.94배</td>
+<td>~10%</td>
+<td>KB 대비 소폭 저렴</td>
+</tr>
+<tr>
+<td>하나금융</td>
+<td>한국</td>
+<td>0.59배</td>
+<td>~10%</td>
+<td>유의미한 할인</td>
+</tr>
+<tr>
+<td>우리금융</td>
+<td>한국</td>
+<td>0.49배</td>
+<td>~9%</td>
+<td>최저 PBR, 최저 ROE</td>
+</tr>
+<tr>
+<td>DBS</td>
+<td>싱가포르</td>
+<td>2.67배</td>
+<td>16.2%</td>
+<td>ROE 차이로 프리미엄 정당</td>
+</tr>
+</tbody>
+</table>
+<p><strong>시사점</strong>: KB금융은 국내 4대 금융지주 중 최고 PBR. 하나·우리 대비 프리미엄 정당한가?
+→ <strong>YES, 조건부</strong> — KB는 ROE 1위, 주주환원율 1위, 총자산 1위. 프리미엄 정당하나, 신한 대비 7% 추가 프리미엄은 밸류업 선도 이미지 외에 근거가 약함.</p>
+<h3>3시나리오 결론</h3>
+<pre><code>중립 시나리오: 241,284원 (+46.2%) — 3년 CAGR +13.5%
+</code></pre>
+<p><strong>중립 시나리오 전제</strong>: EPS +10%/yr (2028E 22,000원), PER 11배 유지. 합리적 가정으로 현재가 대비 46% 상승여력. 이는 단순 PBR 회귀(BPS × 1.2배 시 약 196,000원)보다 훨씬 보수적.</p>
+<hr />
+<h2>9단계: 종합 의사결정 메모</h2>
+<table>
+<thead>
+<tr>
+<th>차원</th>
+<th>결론</th>
+<th>신뢰도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>사업 품질 (버핏)</td>
+<td>반복 수익 모델, 해자 유지. 경자산+자본 규제 혼합</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>경제적 해자 (버핏)</td>
+<td>브랜드·전환비용·규모·규제 4중 해자, 디지털만 열위</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>경쟁 리스크 (멍거)</td>
+<td>인터넷은행 점유율 3.4% 잠식 중, 가계대출 장기 위협</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>안전마진·하방 보호 (클라만)</td>
+<td>비관 -31.5%, FCF 10%. "담보 매수"는 아니나 비대칭 구조 양호</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>성장 잠재력 질적 분석 (피셔)</td>
+<td>비이자이익 구조 전환 + 동남아 장기 옵션</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>시장 심리 사이클 (코스톨라니)</td>
+<td>B2 상승 국면. B3 전환 전 잠재 기회</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td>밸류에이션 (버핏+클라만)</td>
+<td>PBR 1배 = 역사적 고점이나 ROE 개선·밸류업으로 정당화 가능</td>
+<td>★★★★☆</td>
+</tr>
+</tbody>
+</table>
+<h3>최종 의사결정 테이블</h3>
+<table>
+<thead>
+<tr>
+<th>전략</th>
+<th>제안</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>미보유자</strong></td>
+<td><strong>155,000원 이하 분할 매수 개시</strong> — PBR 0.95배, 52주 저가와 중간점에서 진입이 안전마진 개선. 오늘 +4.1% 급등 후 단기 추격은 자제.</td>
+</tr>
+<tr>
+<td><strong>소량 보유자</strong></td>
+<td><strong>추가 매수 고려</strong> — 목표 PBR 1.2~1.3배(196,000~212,000원) 미도달. 포트폴리오 비중 5~10% 이내에서 확대.</td>
+</tr>
+<tr>
+<td><strong>충분 보유자</strong></td>
+<td><strong>보유 유지</strong> — B2 구간. 중립 적정가 241,284원 대비 현재 68% 수준.</td>
+</tr>
+<tr>
+<td><strong>매도 신호</strong></td>
+<td>PBR 1.3배(213,000원) 도달 + B3 신호(거래량 폭증·개인 FOMO) 동시 출현 시. 또는 NPL 1.5% 돌파 + 주주환원 후퇴 확인 시.</td>
+</tr>
+<tr>
+<td><strong>추가매수 신호</strong></td>
+<td>145,000원 이하(PBR 0.89배) 재진입 시 공격적 매수. 매크로 위기로 130,000원 이하 도달 시 최대 비중 확대.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>4대 거장 모의 논평</h2>
+<blockquote>
+<p><strong>버핏:</strong> "국민은행을 보유한 KB금융은 워싱턴포스트나 가이코처럼 규제가 해자 역할을 하는 프랜차이즈다. 한국인 수천만 명이 월급을 받고 공과금을 내는 계좌가 여기 있다. 이 사업은 10년 후에도 똑같이 작동한다. PBR 1배는 부담스럽지 않다 — 훌륭한 기업을 적정 가격에 사는 것이 평범한 기업을 저렴하게 사는 것보다 낫다. FCF 수익률 10%, 배당 2.65%. 나는 살 것이다."</p>
+<p><strong>멍거:</strong> "잠깐. 한국 금융지주는 15년간 PBR 0.3~0.6배를 유지해왔다. 갑자기 1배가 된 이유는 무엇인가? 정책 때문이다. 정책이 바뀌면 PBR은 다시 0.5배로 돌아간다. ROE 10%는 버핏이 원하는 15%가 아니다. 가계부채/GDP 100%, 인터넷은행의 부상, 인구 감소 — 이것들이 내가 외면할 수 없는 리스크다. 감사히 포트폴리오의 5% 이하로 보유하되, 열광해서는 안 된다."</p>
+<p><strong>클라만:</strong> "165,000원에서 최악 시나리오 손실 31.5%는 수용 가능하다. 비관 시나리오 주가 113,000원도 여전히 PBR 0.69배로 청산가치 이상이다. FCF 10%를 지속 창출하는 자산을 장부가 수준에 매수할 수 있다는 것은 비대칭 수익을 의미한다. 단, 포지션 크기를 조절해 '설령 틀려도 포트폴리오를 망치지 않도록'."</p>
+<p><strong>피셔:</strong> "나는 KB금융이 10년 후 얼마나 달라져 있을지가 더 중요하다. 비이자이익 비중이 27%→40%로 올라가는 것, 동남아 3개국에서 자리를 잡는 것, AI로 CIR을 40% 이하로 낮추는 것 — 이것들이 실현된다면 지금 가격은 싸다. 경영진이 '주주환원 상단 없다'고 선언하고 52.4%를 달성한 것이 그 실행력을 보여준다. 보유하겠다."</p>
+<p><strong>코스톨라니:</strong> "달걀은 B2에 있다. 아직 B3 열광은 아니다. 2020년에 이 주식을 가진 사람은 수면제를 먹고 6년을 잤다. 지금 깨어났더니 +56% 올라 있다. 좋은 은행 주식을 사고 다시 수면제를 먹어라. 단, 비관 시나리오(-31.5%)를 감수할 수 있을 만큼만."</p>
+</blockquote>
+<hr />
+<h2>결론 (회피 금지)</h2>
+<h3>✅ 심층분석 통과 — 조건부 적극 매수 추천</h3>
+<p><strong>핵심 매수 논거 (200자):</strong></p>
+<blockquote>
+<p>KB금융은 한국 최대 금융지주(총자산 757조, 순이익 5.8조)로, FCF 수익률 10%를 창출하면서 PBR 1배에 거래된다. 주주환원율 52.4%(업계 1위)에서 60%+로 상향 예정이며, 비이자이익 구조 전환과 동남아 성장 옵션이 있다. 중립 3년 목표가 241,000원(+46%), 비관 시나리오도 -31.5%로 제한된다.</p>
+</blockquote>
+<p><strong>매수 가격 구간:</strong>
+- <strong>적극 매수</strong>: 145,000원 이하 (PBR ~0.89배)
+- <strong>분할 매수</strong>: 155,000~165,000원 (PBR 0.95~1.01배)
+- <strong>관망</strong>: 166,000~182,000원 (현재 이상, 52주 고가 재도달 전)
+- <strong>일부 익절</strong>: 200,000원 이상 (컨센서스 목표가 도달)</p>
+<p><strong>핵심 모니터링 지표:</strong>
+1. CET1 추세: 13.63% 유지 여부 (하락 시 주주환원 제약)
+2. NPL 비율: 0.63%→1.0% 도달 시 경보
+3. NIM 추세: 1.99%→1.75% 이하 하락 시 이익 압박 경계
+4. 2026 주주환원율: 60% 목표 달성 여부 (2026.12 발표)
+5. 양종희 회장 연임 여부: 2026.11 결정</p>
+<hr />
+<h2>AI 분석 신뢰도 vs 실제 투자 확실성</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th style="text-align: center;">AI 분석 신뢰도</th>
+<th style="text-align: center;">실제 투자 확실성</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>재무 수치 (5개년 실적)</td>
+<td style="text-align: center;"><strong>높음</strong> (90%)</td>
+<td style="text-align: center;"><strong>높음</strong> (공시 기반)</td>
+</tr>
+<tr>
+<td>해자 평가</td>
+<td style="text-align: center;"><strong>중간</strong> (75%)</td>
+<td style="text-align: center;"><strong>중간</strong> (질적 판단 포함)</td>
+</tr>
+<tr>
+<td>밸류에이션 수치 (도구 계산)</td>
+<td style="text-align: center;"><strong>높음</strong> (95%)</td>
+<td style="text-align: center;"><strong>높음</strong> (수식 기반)</td>
+</tr>
+<tr>
+<td>3시나리오 적정가</td>
+<td style="text-align: center;"><strong>중간</strong> (70%)</td>
+<td style="text-align: center;"><strong>낮음</strong> (성장률·PER 가정 민감)</td>
+</tr>
+<tr>
+<td>경영진 의도·전략</td>
+<td style="text-align: center;"><strong>낮음</strong> (60%)</td>
+<td style="text-align: center;"><strong>낮음</strong> (공개 IR 기반)</td>
+</tr>
+<tr>
+<td>마크로 리스크 (가계부채·금리)</td>
+<td style="text-align: center;"><strong>낮음</strong> (55%)</td>
+<td style="text-align: center;"><strong>낮음</strong> (예측 불가)</td>
+</tr>
+<tr>
+<td>최종 매수 결론</td>
+<td style="text-align: center;"><strong>중간</strong> (70%)</td>
+<td style="text-align: center;"><strong>독자 판단 필수</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ 이 보고서는 투자 권유가 아닙니다. AI가 공개 정보로 작성한 분석이며, 실제 투자 결정은 개인 위험 허용 수준, 포트폴리오 맥락, 세금 상황을 고려해 독자적으로 판단하십시오.</p>
+</blockquote>
+<hr />
+<p><em>보고서 저장: reports/KB금융/KB금융-research-20260703.md</em>
+<em>분석 기준가: 165,000원 (2026-07-02 종가)</em>
+<em>주요 데이터 출처: 헤럴드경제(2025A 연간실적), inthenews.co.kr(2024A/2025A), investing.com(2026Q1), stockanalysis.com, KIS신용평가(2025.06), thebell.co.kr(주주환원 컨콜), newspim.com(목표주가)</em>
+<em>도구 계산: python tools/financial_rigor_kr.py verify-valuation + three-scenario (2026-07-03 실행)</em></p>
+
+    <script src="../search_index.js"></script>
+    <script>
+        let currentFocus = -1;
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+            currentFocus = -1; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach((item, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+
+                // 마우스 진입 시 키보드 포커스와 동기화
+                li.addEventListener('mouseenter', () => {
+                    currentFocus = index;
+                    addActive(resultsContainer.getElementsByTagName('li'));
+                });
+            });
+        });
+
+        // 한글 씹힘 방지 및 엔터 이동 완벽 적용
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            if (e.isComposing || e.keyCode === 229) {
+                if (e.key === "Enter") return;
+            }
+
+            const resultsContainer = document.getElementById('searchResults');
+            const items = resultsContainer.getElementsByTagName('li');
+            
+            if (e.key === "ArrowDown" || e.keyCode === 40) {
+                currentFocus++;
+                addActive(items);
+                e.preventDefault(); 
+            } else if (e.key === "ArrowUp" || e.keyCode === 38) {
+                currentFocus--;
+                addActive(items);
+                e.preventDefault();
+            } else if (e.key === "Enter" || e.keyCode === 13) {
+                e.preventDefault();
+                if (currentFocus > -1 && items[currentFocus]) {
+                    window.location.href = items[currentFocus].querySelector('a').href;
+                }
+            }
+        });
+
+        function addActive(items) {
+            if (!items || items.length === 0) return false;
+            removeActive(items);
+            
+            if (currentFocus >= items.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = items.length - 1;
+            
+            items[currentFocus].classList.add("active");
+            items[currentFocus].scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+
+        function removeActive(items) {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>
