@@ -1,0 +1,707 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[대한전선] 대한전선-checklist-20260703</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }
+        
+        /* 검색창 기본 스타일 추가 */
+        .search-input {
+            box-sizing: border-box; 
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 16px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        .search-input:focus {
+            border-color: #0366d6;
+            box-shadow: 0 4px 24px rgba(3, 102, 214, 0.15);
+        }
+        .results-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            max-height: 350px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e1e4e8;
+            box-sizing: border-box; 
+        }
+        .results-list:empty { border: none; box-shadow: none; }
+        .results-list li { border-bottom: 1px solid #eaecef; }
+        .results-list li:last-child { border-bottom: none; }
+        .results-list a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+        .results-list a:hover { background-color: #f6f8fa; color: #0056b3; }
+
+        /* 💡 키보드 방향키 하이라이트 스타일 */
+        .results-list li.active {
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+        }
+        .results-list li.active a {
+            color: #0056b3;
+            padding-left: 11px; 
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body { padding: 15px; }
+            .search-input { font-size: 14px; padding: 10px 14px; }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 삼성전자)" 
+               class="search-input" autocomplete="off">
+        <ul id="searchResults" class="results-list"></ul>
+    </div>
+
+    <h1>대한전선 (001440) — 버핏 6관문 체크리스트</h1>
+<p><strong>기준일</strong>: 2026-07-03 | <strong>분석 기준가</strong>: 32,900원
+<strong>거래소</strong>: KOSPI | <strong>정보 풍부도</strong>: B등급 (중형주, 증권사 커버리지 5개 내외, 해저케이블 사업 역사 짧음)</p>
+<blockquote>
+<p>⚠️ <strong>주가 교차검증</strong>: 알파스퀘어 32,900원(-2.37%) 확인. Yahoo Finance와 일치. 정상 데이터.
+⚠️ <strong>FCF 주의</strong>: 2025A 영업현금흐름 -1,713억원. 대규모 CAPEX 투자 사이클로 FCF 명백히 음수. 주당 FCF = -874원(영업CF만, CAPEX 제외 시 더 심각).
+⚠️ <strong>B등급 편향 경고</strong>: 해저케이블·수주잔고 관련 데이터는 회사 IR 중심 — 반론 검증 필요.</p>
+</blockquote>
+<hr />
+<h2>핵심 데이터 요약</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>출처 / 기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>현재 주가</td>
+<td><strong>32,900원</strong></td>
+<td>알파스퀘어 (2026-07-03, -2.37%)</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td><strong>약 6.45조원</strong></td>
+<td>1.96억주 × 32,900원</td>
+</tr>
+<tr>
+<td>52주 고 / 저</td>
+<td>75,900 / 14,740원</td>
+<td>고가 대비 -56.7%, 저가 대비 +123%</td>
+</tr>
+<tr>
+<td>52주 위치</td>
+<td><strong>29.7%</strong></td>
+<td>저가~고가 중 하단</td>
+</tr>
+<tr>
+<td>발행주식수</td>
+<td><strong>1억9,599만주</strong></td>
+<td>알파스퀘어</td>
+</tr>
+<tr>
+<td>PER (TTM, 2025A)</td>
+<td><strong>72.79배</strong></td>
+<td>도구 계산 (EPS 452원)</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>3.82배</strong></td>
+<td>도구 계산 (BPS 8,613원)</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td><strong>음수</strong></td>
+<td>영업CF -1,713억(2025A) / 1.96억주 = -874원/주</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>0%</strong></td>
+<td>2025A 배당 미실시</td>
+</tr>
+<tr>
+<td>EPS (2025A)</td>
+<td><strong>452원</strong></td>
+<td>FnGuide</td>
+</tr>
+<tr>
+<td>BPS (2025A)</td>
+<td><strong>8,613원</strong></td>
+<td>FnGuide</td>
+</tr>
+<tr>
+<td>ROE (TTM)</td>
+<td><strong>5.48%</strong></td>
+<td>알파스퀘어</td>
+</tr>
+<tr>
+<td>영업이익률</td>
+<td><strong>3.5%(2025A)</strong> / <strong>5.6%(2026Q1)</strong></td>
+<td>FnGuide / 공시</td>
+</tr>
+<tr>
+<td>이자보상배율</td>
+<td><strong>~3.0배</strong></td>
+<td>영업이익 1,286억 / 이자비용 425억 (추정)</td>
+</tr>
+<tr>
+<td>수주잔고 (2026Q1)</td>
+<td><strong>3조8,273억원</strong></td>
+<td>분기 최대 (+30% YoY)</td>
+</tr>
+<tr>
+<td>컨센서스 목표주가</td>
+<td><strong>44,000~61,000원</strong></td>
+<td>KB증권(보수적)~하나·SK·유안타증권</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>1관문: 이 사업을 이해할 수 있는가? (능력 범위)</h2>
+<table>
+<thead>
+<tr>
+<th>체크</th>
+<th>답변</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한 문장 수익 방식</td>
+<td>✅ "대한전선은 구리·알루미늄 등 금속 원자재로 초고압케이블·해저케이블·전력선·통신선을 제조·판매하며, AI 데이터센터·전력망 현대화·해상풍력 수요를 핵심 성장 동력으로 한다"</td>
+</tr>
+<tr>
+<td>10년 후 예측</td>
+<td>✅ "전선 제조 사업 자체는 지속. 단, 해저케이블이 얼마나 큰 비중을 차지할지(현재 ~26%) 불확실 — 2027년 해저2공장 가동 이후 확인 가능"</td>
+</tr>
+<tr>
+<td>핵심 성패 변수</td>
+<td>구리 가격, 수주잔고 실현 여부, 해저케이블 2공장 가동 일정, 영국 내셔널그리드 프레임워크 수주 규모, 경쟁사(LS전선) 대응</td>
+</tr>
+<tr>
+<td>지식 출처</td>
+<td>회사 공시·IR 중심. 해저케이블 기술 심층 이해(HVDC vs HVAC, 포설 기술)는 전문 지식 필요</td>
+</tr>
+</tbody>
+</table>
+<p><strong>★★★★☆</strong> — 전선 제조 비즈니스 모델은 명확. 해저케이블의 기술 복잡성(640kV HVDC, 포설선 운용)이 완전 이해를 어렵게 하나, 사업의 큰 그림은 파악 가능.</p>
+<hr />
+<h2>2관문: 좋은 사업인가? (경제적 특성)</h2>
+<h3>수익성 추세 (연결 기준)</h3>
+<table>
+<thead>
+<tr>
+<th>연도</th>
+<th>매출(억원)</th>
+<th>YoY</th>
+<th>영업이익(억원)</th>
+<th>OPM</th>
+<th>순이익(억원)</th>
+<th>ROE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023A</td>
+<td>28,440</td>
+<td>—</td>
+<td>798</td>
+<td>2.8%</td>
+<td>719</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024A</td>
+<td>32,913</td>
+<td>+15.7%</td>
+<td>1,152</td>
+<td>3.5%</td>
+<td>742</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>2025A</strong></td>
+<td><strong>36,360</strong></td>
+<td><strong>+10.5%</strong></td>
+<td><strong>1,286</strong></td>
+<td><strong>3.5%</strong></td>
+<td><strong>923</strong></td>
+<td><strong>5.48%</strong></td>
+</tr>
+<tr>
+<td><strong>2026Q1</strong></td>
+<td>10,834</td>
+<td>+26.6%</td>
+<td><strong>604</strong></td>
+<td><strong>5.6%</strong></td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 재무 지표 (도구 정밀 계산)</h3>
+<pre><code>python tools/financial_rigor_kr.py verify-valuation 결과
+PER: 72.79배 | PBR: 3.82배 | FCF: 음수(-874원/주) | 배당: 0%
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>기준</th>
+<th style="text-align: center;">판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE (TTM)</td>
+<td><strong>5.48%</strong></td>
+<td>&gt;15% 우수</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>영업이익률</td>
+<td><strong>3.5%(2025A)</strong> / <strong>5.6%(2026Q1)</strong></td>
+<td>&gt;10%</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>FCF (2025A)</td>
+<td><strong>-1,713억원(영업CF)</strong></td>
+<td>지속 양(+)</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>CAPEX 강도</td>
+<td><strong>유상증자 9,525억(2회), CAPEX 2,200억+</strong></td>
+<td>경자산</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>이자보상배율</td>
+<td><strong>~3.0배</strong></td>
+<td>&gt;3배 권고</td>
+<td style="text-align: center;">⚠️</td>
+</tr>
+</tbody>
+</table>
+<p><strong>충족 항목: 0~1/5</strong> — 어떤 기준으로도 "좋은 사업" 판정이 어렵다.</p>
+<p><strong>단, 방향성 주목:</strong> 2026Q1 OPM 5.6%는 5년 평균(2.76%)의 2배. 수주잔고 실현 시 2027년 이후 이익 구조 급변 가능. 그러나 현재 데이터만으로는 "좋은 사업" 아님.</p>
+<p><strong>2026E EPS 추정</strong> (B등급 주의 — 추정): 2026Q1 영업이익 604억 × 4 = 연환산 2,416억(+88%). 순이익 ~1,735억 추정 → EPS ~885원(+96% YoY). 선행PER = 32,900 / 885 = <strong>37.2배</strong> (여전히 고평가).</p>
+<p><strong>★★☆☆☆</strong> — 전통 전선 사업 특성상 이익률이 낮고, 대규모 CAPEX로 FCF는 명백히 음수. 이익 개선 추세는 존재하나 현재 수치만으로 "좋은 사업" 충족 불가.</p>
+<hr />
+<h2>3관문: 해자가 충분한가? (경쟁 우위)</h2>
+<table>
+<thead>
+<tr>
+<th>해자 유형</th>
+<th style="text-align: center;">보유</th>
+<th>구체적 근거</th>
+<th style="text-align: center;">추세</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>인증 장벽</strong></td>
+<td style="text-align: center;">✅ 보통</td>
+<td>HVDC 테스트센터(640kV, 국내 유일급) 보유. 영국 내셔널그리드 공급자 자격 획득</td>
+<td style="text-align: center;">확대</td>
+</tr>
+<tr>
+<td><strong>규모·원가 우위</strong></td>
+<td style="text-align: center;">⚠️ 제한</td>
+<td>국내 2위(29%), LS전선(38%)과 격차 축소(27.9%p→8.4%p). 그러나 글로벌 1위 대비 규모 열위</td>
+<td style="text-align: center;">확대 중</td>
+</tr>
+<tr>
+<td><strong>기술 장벽(해저케이블)</strong></td>
+<td style="text-align: center;">✅ 보통</td>
+<td>당진 해저1공장 가동. 640kV HVDC+400kV HVAC 동시 생산 가능(2027). 포설선 인수 추진</td>
+<td style="text-align: center;">확대</td>
+</tr>
+<tr>
+<td><strong>장기 계약</strong></td>
+<td style="text-align: center;">✅ 보통</td>
+<td>영국 내셔널그리드 HVDC 프레임워크(최장 8년, 110조원 시장)</td>
+<td style="text-align: center;">초기</td>
+</tr>
+<tr>
+<td><strong>브랜드</strong></td>
+<td style="text-align: center;">⚠️ 보통</td>
+<td>84년 업력. 그러나 해저케이블 레퍼런스 축적 초기 단계</td>
+<td style="text-align: center;">구축 중</td>
+</tr>
+<tr>
+<td><strong>전환비용</strong></td>
+<td style="text-align: center;">❌ 약</td>
+<td>전선 제품은 가격·납기·인증 기반 경쟁. LS전선 대비 차별화 제한</td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr>
+<td><strong>네트워크 효과</strong></td>
+<td style="text-align: center;">❌ 없음</td>
+<td>해당 없음</td>
+<td style="text-align: center;">—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>1조 원 경쟁자 테스트</strong>: "LS전선이 1조 원 추가 투자하면 대한전선의 해저케이블 지위를 5년 내 완전히 제압할 수 있는가?"
+→ <strong>부분적으로 가능.</strong> LS전선은 이미 기술·레퍼런스·규모에서 앞서 있다. 그러나 시장이 워낙 빠르게 성장하므로 대한전선도 수요 흡수 가능. "LS전선의 지위를 빼앗는 것이 아니라, 대한전선이 독자적 포지션을 구축할 수 있느냐"가 진짜 질문.</p>
+<p><strong>★★★☆☆</strong> — 해저케이블 역량 구축 중 (실재). 그러나 LS전선 대비 열위, 레퍼런스 축적 초기 단계. 해자 "성장 중"이나 "확립"은 2028~2029년 이후 판단 가능.</p>
+<hr />
+<h2>4관문: 경영진을 신뢰할 수 있는가? (사람)</h2>
+<table>
+<thead>
+<tr>
+<th>체크 항목</th>
+<th>평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>솔직성</td>
+<td>⚠️ 수주잔고·IR 명확 공개. 단, CAPEX 부담·FCF 악화에 대한 투자자 소통이 충분한지 불명</td>
+</tr>
+<tr>
+<td>자본 배분</td>
+<td>⚠️ <strong>유상증자 2회(9,525억원 희석), 배당 0.</strong> 성장 투자 집중 기조. 기존 주주 입장에서 희석 반복</td>
+</tr>
+<tr>
+<td>주주 이익 일치성</td>
+<td>⚠️ 호반그룹(최대주주 39.93~41.95%) 지배. 소수주주와 이해 완전 일치 여부 불명</td>
+</tr>
+<tr>
+<td>오너 마인드셋</td>
+<td>⚠️ 호반그룹 오너 2세(김민성) 배경 전문경영인(송종민 대표). "진짜 오너 경영"이 아닌 그룹 대리인 성격</td>
+</tr>
+<tr>
+<td>지배구조</td>
+<td>⚠️ 호반그룹(건설사) 계열. 전선 사업과 시너지 불명확. 2021년 IMM PE로부터 인수(전략적 M&amp;A?)</td>
+</tr>
+<tr>
+<td>위기 대응</td>
+<td>✅ 2022·2024년 유상증자로 투자 재원 선제 확보. 성장 투자 실행력 인정</td>
+</tr>
+<tr>
+<td>오너리스크</td>
+<td>✅ 횡령·배임·형사재판 미발견. LS전선과 경쟁 관련 민사소송 존재하나 경영 위협 수준 아님</td>
+</tr>
+<tr>
+<td><strong>KG스틸 블록딜</strong></td>
+<td>⚠️ <strong>5% 주주 KG스틸이 CB전환 후 650만주(2,533억) 블록딜 매도(2026.06)</strong> — 전략적 주주의 대규모 매도는 신뢰 훼손 신호</td>
+</tr>
+</tbody>
+</table>
+<p><strong>★★★☆☆</strong> — 오너리스크 없고 성장 투자 실행력 인정. 그러나 유상증자 반복·배당 0·KG스틸 블록딜이 주주 친화성을 낮춘다. 호반그룹의 전선 사업 육성 의지와 장기 비전은 검증 필요.</p>
+<hr />
+<h2>5관문: 가격이 충분히 싼가? (안전마진)</h2>
+<h3>밸류에이션 지표 (도구 정밀 계산)</h3>
+<pre><code>python tools/financial_rigor_kr.py verify-valuation 결과
+PER: 72.79배 | PBR: 3.82배 | FCF: 음수(-874원/주) | 배당: 0%
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>역사적 맥락</th>
+<th style="text-align: center;">판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM, 2025A)</td>
+<td><strong>72.79배</strong></td>
+<td>전선 업종 평균 8~12배 대비 극고점</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>선행 PER (2026E)</td>
+<td><strong>~37.2배</strong></td>
+<td>2026E EPS 885원 추정</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>3.82배</strong></td>
+<td>전선 업종 0.8~1.5배 대비 2~4배 프리미엄</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td><strong>음수</strong></td>
+<td>—</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>0%</strong></td>
+<td>배당 미실시</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table>
+<h3>3시나리오 적정가 (3년 기준, 2025A EPS 452원)</h3>
+<pre><code>python tools/financial_rigor_kr.py three-scenario 결과
+낙관(+60%/yr, PER 30배): 55,542원 (+68.8%)
+중립(+40%/yr, PER 20배): 24,806원 (-24.6%)  ← FAIL
+비관(-10%/yr, PER  8배):  2,636원 (-92.0%)
+</code></pre>
+<p><strong>시나리오 가정 근거:</strong>
+- <strong>낙관</strong>: 수주잔고 3.82조 전량 실현 + 해저2공장 2027 가동 + 영국 내셔널그리드 대형 수주. EPS 3년간 +60%(연환산), PER 30배(성장 프리미엄)
+- <strong>중립</strong>: 수주잔고 안정적 소화, EPS +40%(연), PER 20배 (합리적 성장주)
+- <strong>비관</strong>: 구리 가격 급등 + 수주 지연 + CAPEX 투자 실패, EPS -10%, PER 8배(전통 전선주)</p>
+<p><strong>핵심 발견:</strong>
+- <strong>낙관 시나리오(EPS 3년 +60%, PER 30배)에서도 +68.8%</strong> — 언뜻 매력적으로 보임
+- 그러나 +60%/yr EPS 성장 3년 지속은 극히 낙관적 가정
+- 실현 가능성 높은 중립 시나리오 기준 -24.6% → <strong>현재 가격은 과평가</strong>
+- 비관 시나리오 -92% → 원금의 8%만 남음</p>
+<p><strong>컨센서스 목표주가 vs 현재가:</strong>
+- KB증권(보수적) 44,000원 (+33.7%)
+- 하나·SK증권 60,000~61,000원 (+82~85%)
+- 현재가 32,900원은 가장 보수적 목표주가(44,000원)의 74.8% 수준 — "컨센서스 대비 싼" 신호이나 절대 밸류에이션은 여전히 고평가</p>
+<p><strong>★★☆☆☆</strong> — PER 72배, PBR 3.82배, FCF 음수, 배당 0. 중립 시나리오 -24.6%. 고가 대비 -57% 급락으로 심리적 저가처럼 보이나, 절대 밸류에이션은 여전히 매우 비싸다.</p>
+<hr />
+<h2>6관문: 시장 심리·타이밍 점검 (코스톨라니)</h2>
+<table>
+<thead>
+<tr>
+<th>체크</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>52주 고가 대비</td>
+<td><strong>-56.7%</strong> (75,900 → 32,900원)</td>
+</tr>
+<tr>
+<td>52주 저가 대비</td>
+<td><strong>+123%</strong> (14,740 → 32,900원)</td>
+</tr>
+<tr>
+<td>달걀 위치</td>
+<td><strong>A1~A2 냉각~비관 진입</strong> — 고점 후 급락, 차익 실현 매물 소화 단계</td>
+</tr>
+<tr>
+<td>언론 논조</td>
+<td>혼조 — 분기 최대실적(긍정) vs 주가 급락·KG스틸 블록딜(부정)</td>
+</tr>
+<tr>
+<td>외국인 비중</td>
+<td>12.95% (낮음 — 개인 주도 시장)</td>
+</tr>
+<tr>
+<td>FOMO 신호</td>
+<td>⚠️ AI·전력·해저케이블 테마 여전히 서사 활발. 완전한 비관 진입 전</td>
+</tr>
+</tbody>
+</table>
+<p><strong>급락 구조 분석:</strong>
+1. 고점 75,900원(2026.05.08) → 32,900원까지 약 56일간 -56.7%
+2. KG스틸 블록딜(2,533억, 2026.06.05) — 수급 충격
+3. 펀더멘털 변화 없음 — 수주잔고 3.82조로 오히려 사상 최대</p>
+<p><strong>코스톨라니 관점</strong>: 고가 대비 -57%는 "일부 담배꽁초" 특성. 그러나 PER 72배에서 급락한 것이라 절대 저가가 아님. 냉각 단계(A1~A2)에서 서사는 살아 있어 A3(극도 비관·투매) 진입 여부 불확실.</p>
+<p><strong>★★★☆☆</strong> — 고가 대비 -57%로 단기 심리 냉각. 단, 저가(14,740원) 대비 +123%로 초저가 구간은 아님. 만약 A3 투매가 온다면 20,000원 이하도 가능.</p>
+<hr />
+<h2>즉각 거부 목록 점검</h2>
+<table>
+<thead>
+<tr>
+<th>거부 조건</th>
+<th style="text-align: center;">해당 여부</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>이 회사가 어떻게 돈을 버는지 설명할 수 없다</td>
+<td style="text-align: center;">❌ 설명 가능</td>
+</tr>
+<tr>
+<td><strong>FCF가 3년 연속 음(-)이고 개선 전망 없음</strong></td>
+<td style="text-align: center;">⚠️ <strong>2025A 명확히 음수(-1,713억). 2024A 소폭 양수(68억). 2026년도 CAPEX 2공장 착공으로 FCF 지속 음수 예상</strong></td>
+</tr>
+<tr>
+<td>경영진의 신뢰성·도덕성 문제</td>
+<td style="text-align: center;">❌ 형사 문제 없음</td>
+</tr>
+<tr>
+<td>경쟁 우위가 되돌릴 수 없이 무너지고 있다</td>
+<td style="text-align: center;">❌ 오히려 해저케이블 해자 구축 중</td>
+</tr>
+<tr>
+<td>수익이 다음 매수자 기대에 의존(폰지)</td>
+<td style="text-align: center;">⚠️ 현재 이익 대비 PER 72배 — 미래 성장 과도하게 선반영</td>
+</tr>
+<tr>
+<td><strong>원금 전체 잃어도 감당 가능한 금액인가</strong></td>
+<td style="text-align: center;">개인 판단 필요</td>
+</tr>
+<tr>
+<td><strong>매수 이유가 주로 FOMO·추천</strong></td>
+<td style="text-align: center;">⚠️ AI·전력망 테마로 주가 급등 후 급락 — FOMO 사이클 전형</td>
+</tr>
+<tr>
+<td><strong>200자 이내 매수 논거 완성 가능</strong></td>
+<td style="text-align: center;">⚠️ <strong>"PER 72배, FCF 음수 상태에서 안전마진이 있다"를 200자 이내로 쓸 수 없음</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>핵심 리스크 (Top 5)</h2>
+<ol>
+<li>
+<p><strong>FCF 지속 음수 구조</strong>: 2025A 영업CF -1,713억, 해저2공장 CAPEX 4,972억 예정(2026년 착공). 2027년까지 FCF 마이너스 지속 확실. 단기차입금 6,700억 만기 도래 시 유동성 리스크.</p>
+</li>
+<li>
+<p><strong>밸류에이션 과고평가</strong>: 선행PER 37배(2026E), PBR 3.82배. 이익 성장이 기대에 미달할 경우 PER 10~15배 수렴 시 주가 -70% 가능.</p>
+</li>
+<li>
+<p><strong>구리 원자재 가격 리스크</strong>: 매출원가의 핵심. 구리 가격 급등 시 이미 낮은 OPM(3.5%)이 추가 압박.</p>
+</li>
+<li>
+<p><strong>수주잔고 실현 불확실성</strong>: 3.82조 수주잔고가 전액 이익으로 전환되는 시점(2027~2028년 추정)까지 현금 창출 제한. 납기 지연·취소 리스크.</p>
+</li>
+<li>
+<p><strong>유상증자 반복 위험</strong>: 2022년 4,900억 + 2024년 4,625억 = 총 9,525억 희석. 2공장 추가 CAPEX 4,972억 조달 시 3차 유상증자 가능성.</p>
+</li>
+</ol>
+<hr />
+<h2>거울 테스트</h2>
+<blockquote>
+<p>"나는 32,900원에 대한전선을 매수한다. 이유는:
+1. 이 사업의 본질은 <strong>전력·해저케이블 제조, AI·전력망 수요의 수혜 공급자</strong>이며, 나는 이를 이해한다.
+2. 해자는 <strong>해저케이블 생산 역량(1공장 가동, 2공장 2027)+영국 내셔널그리드 프레임워크</strong>이며, <strong>확대</strong> 추세다.
+3. 경영진은 <strong>성장 투자 실행력을 보이나 유상증자 반복·배당 0</strong>으로 <strong>조건부 신뢰</strong> 가능하다.
+4. 현재 가격은 내재가치의 <strong>측정 어렵다</strong> — PER 72배, FCF 음수. 안전마진이 <strong>없다</strong>.
+5. 설령 내가 틀려도, 하방 리스크는 <strong>관리 불가</strong>하다. 이유: 중립 시나리오 -24.6%, 비관 -92%, 투자 회수 2034년 예정."</p>
+</blockquote>
+<p><strong>거울 테스트 결과: ⚠️ 4번·5번 완성 불가</strong> — "안전마진이 있다", "하방 리스크가 관리 가능하다"를 정직하게 쓸 수 없음.</p>
+<hr />
+<h2>최종 결론</h2>
+<h3>❓ 회색지대 (실질적으로 ❌ 미통과 근접)</h3>
+<p><strong>레드라인 (미통과 요인):</strong>
+1. <strong>FCF 음수 지속</strong> — 2025A -1,713억(영업CF), 2026년도 해저2공장 착공으로 악화 예정
+2. <strong>PER 72배, PBR 3.82배</strong> — 어떤 합리적 성장 가정으로도 중립 시나리오 이상 달성 어려움
+3. <strong>200자 안전마진 논거 불완성</strong> — "지금 이 가격이 정당하다"는 논거를 쓸 수 없음
+4. <strong>유상증자 2회(9,525억) + 배당 0</strong> — 기존 주주에게 적대적 자본 구조</p>
+<p><strong>회색지대로 분류하는 근거:</strong>
+- 수주잔고 3.82조(사상 최대, +30% YoY) — 실질 계약에 기반한 미래 매출 가시성
+- 2026Q1 OPM 5.6%(구조적 이익 개선 신호, 5년 평균 2.76%의 2배)
+- 영국 내셔널그리드 HVDC 프레임워크(최장 8년, 110조원 시장)
+- 고가(75,900원) 대비 -57% 급락 — 펀더멘털 악화 없는 수급 충격
+- KB증권 최저 목표주가 44,000원(+34%) 대비 현재가 32,900원은 저평가 구간</p>
+<p><strong>투자자 스스로 판단해야 할 핵심 쟁점:</strong></p>
+<blockquote>
+<p>"2027~2028년 해저케이블 2공장 가동 + 수주잔고 3.82조 실현 시 EPS가 800~1,500원으로 도약하는 시나리오를 믿는가? 그리고 그 이익을 기다리며 FCF 음수 구간의 유동성 리스크를 감내할 수 있는가?"</p>
+</blockquote>
+<p>만약 YES → 재검토 가격은 현재(32,900원)도 고려 가능. 단, 포트폴리오 비중 최대 3%.
+만약 NO → 재검토 기준 도달 후 진입.</p>
+<p><strong>재검토 기준 (Watchlist 등록):</strong>
+- <strong>20,000원 이하</strong>: 선행PER ~23배(2026E EPS 885원 기준) — 성장주로서 최소한의 안전마진 진입
+- <strong>2027년 해저2공장 가동 확인 후</strong>: 분기 이익 400억+(OPM 8%+) 달성 시 재평가
+- <strong>FCF 흑자 전환 확인</strong>: 영업CF &gt; CAPEX 시점(추정 2028년)에 본격 매수</p>
+<hr />
+<p><em>보고서 저장: reports/대한전선/대한전선-checklist-20260703.md</em>
+<em>데이터 출처: 알파스퀘어(주가·발행주식수), FnGuide(EPS·BPS), 일렉트릭파워(2025A실적), 전기신문(해저케이블역량), IB토마토(CAPEX·재무부담), 하나증권·KB증권·SK증권·유안타증권(목표주가), 딜사이트(호반산업 지분)</em>
+<em>도구 계산: python tools/financial_rigor_kr.py verify-valuation + three-scenario (2026-07-03 실행)</em></p>
+
+    <script src="../search_index.js"></script>
+    <script>
+        let currentFocus = -1;
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+            currentFocus = -1; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach((item, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+
+                // 마우스 진입 시 키보드 포커스와 동기화
+                li.addEventListener('mouseenter', () => {
+                    currentFocus = index;
+                    addActive(resultsContainer.getElementsByTagName('li'));
+                });
+            });
+        });
+
+        // 한글 씹힘 방지 및 엔터 이동 완벽 적용
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            if (e.isComposing || e.keyCode === 229) {
+                if (e.key === "Enter") return;
+            }
+
+            const resultsContainer = document.getElementById('searchResults');
+            const items = resultsContainer.getElementsByTagName('li');
+            
+            if (e.key === "ArrowDown" || e.keyCode === 40) {
+                currentFocus++;
+                addActive(items);
+                e.preventDefault(); 
+            } else if (e.key === "ArrowUp" || e.keyCode === 38) {
+                currentFocus--;
+                addActive(items);
+                e.preventDefault();
+            } else if (e.key === "Enter" || e.keyCode === 13) {
+                e.preventDefault();
+                if (currentFocus > -1 && items[currentFocus]) {
+                    window.location.href = items[currentFocus].querySelector('a').href;
+                }
+            }
+        });
+
+        function addActive(items) {
+            if (!items || items.length === 0) return false;
+            removeActive(items);
+            
+            if (currentFocus >= items.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = items.length - 1;
+            
+            items[currentFocus].classList.add("active");
+            items[currentFocus].scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+
+        function removeActive(items) {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[뉴로메카] 뉴로메카-checklist-20260703</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }
+        
+        /* 검색창 기본 스타일 추가 */
+        .search-input {
+            box-sizing: border-box; 
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 16px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        .search-input:focus {
+            border-color: #0366d6;
+            box-shadow: 0 4px 24px rgba(3, 102, 214, 0.15);
+        }
+        .results-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            max-height: 350px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e1e4e8;
+            box-sizing: border-box; 
+        }
+        .results-list:empty { border: none; box-shadow: none; }
+        .results-list li { border-bottom: 1px solid #eaecef; }
+        .results-list li:last-child { border-bottom: none; }
+        .results-list a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+        .results-list a:hover { background-color: #f6f8fa; color: #0056b3; }
+
+        /* 💡 키보드 방향키 하이라이트 스타일 */
+        .results-list li.active {
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+        }
+        .results-list li.active a {
+            color: #0056b3;
+            padding-left: 11px; 
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body { padding: 15px; }
+            .search-input { font-size: 14px; padding: 10px 14px; }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 삼성전자)" 
+               class="search-input" autocomplete="off">
+        <ul id="searchResults" class="results-list"></ul>
+    </div>
+
+    <h1>뉴로메카 (348340) — 버핏 6관문 체크리스트</h1>
+<p><strong>기준일:</strong> 2026-07-03 | <strong>기준가:</strong> 35,700원 | <strong>거래소:</strong> KOSDAQ</p>
+<hr />
+<h2>정보 풍부도 등급: <strong>B~C등급</strong></h2>
+<ul>
+<li>2022년 11월 코스닥 기술성장기업 특례 상장 (약 3.5년)</li>
+<li>증권사 커버리지: 2개사 (SK증권·한국IR협의회)</li>
+<li>신규 상장 + 4년 연속 적자 — 실적 기반 분석 한계 명확</li>
+<li><strong>판단 방향</strong>: 즉각 거부 사유가 확인되었으므로, 6관문 전체 채우기보다 핵심 거부 근거를 명확히 제시</li>
+</ul>
+<hr />
+<h2>핵심 데이터 요약</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>수치</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기준가</td>
+<td><strong>35,700원</strong> (2026-07-03 20:32)</td>
+<td>fetch_price_kr.py</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td><strong>약 4,430억원</strong></td>
+<td>alphasquare</td>
+</tr>
+<tr>
+<td>52주 고가/저가</td>
+<td>139,000원 / 19,990원</td>
+<td>Yahoo Finance</td>
+</tr>
+<tr>
+<td>52주 위치</td>
+<td><strong>13.2%</strong> (고가 대비 -74%)</td>
+<td>도구 계산</td>
+</tr>
+<tr>
+<td>IPO 공모</td>
+<td>2022년 11월 (코스닥 기술성장 특례)</td>
+<td></td>
+</tr>
+<tr>
+<td>EPS (FY2024)</td>
+<td><strong>-1,589원</strong> (적자)</td>
+<td>한국경제</td>
+</tr>
+<tr>
+<td>BPS (유상증자 후)</td>
+<td><strong>약 1,912원</strong></td>
+<td>자본 411억/2,150만주 추정</td>
+</tr>
+<tr>
+<td>PER</td>
+<td><strong>N/A (적자)</strong></td>
+<td>financial_rigor_kr.py</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>18.67배</strong></td>
+<td>financial_rigor_kr.py</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td><strong>4년 연속 음(-)</strong></td>
+<td>2022~2025 영업현금흐름 음수</td>
+</tr>
+<tr>
+<td>DPS</td>
+<td><strong>0원</strong></td>
+<td>무배당</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>즉각 거부 결론: ❌ 체크리스트 미통과</h2>
+<p><strong>해당 즉각 거부 항목:</strong></p>
+<table>
+<thead>
+<tr>
+<th>거부 항목</th>
+<th>해당 여부</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FCF 3년 연속 음(-), 개선 전망 없음</td>
+<td>✅ <strong>해당</strong></td>
+<td>4년 연속 영업현금흐름 음수. 2026Q1 영업손실 -40.2억. 흑자전환 2026 → 2027년으로 재차 연기</td>
+</tr>
+<tr>
+<td>경영진 신뢰성 문제</td>
+<td>⚠️ 부분 해당</td>
+<td>IPO 목표 달성률 33% (매출 573억 목표 → 190억 실제). 가이던스 신뢰도 심각하게 훼손</td>
+</tr>
+<tr>
+<td>200자 이내 매수 논거 불가</td>
+<td>✅ <strong>해당</strong></td>
+<td>4년 적자 + 유상증자 희석 + 매출 역성장 상황에서 명확한 매수 논거 작성 불가</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>6관문 평점표</h2>
+<table>
+<thead>
+<tr>
+<th>관문</th>
+<th>항목</th>
+<th>평점</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1관문</td>
+<td>능력 범위</td>
+<td>★★★☆☆</td>
+<td>조건부</td>
+</tr>
+<tr>
+<td>2관문</td>
+<td>사업 품질</td>
+<td>★☆☆☆☆</td>
+<td><strong>실패</strong></td>
+</tr>
+<tr>
+<td>3관문</td>
+<td>해자</td>
+<td>★★☆☆☆</td>
+<td>미흡</td>
+</tr>
+<tr>
+<td>4관문</td>
+<td>경영진</td>
+<td>★★☆☆☆</td>
+<td><strong>미흡</strong></td>
+</tr>
+<tr>
+<td>5관문</td>
+<td>안전마진</td>
+<td>★☆☆☆☆</td>
+<td><strong>실패</strong></td>
+</tr>
+<tr>
+<td>6관문</td>
+<td>시장 심리</td>
+<td>★★★☆☆</td>
+<td>A2 구간이나 무의미</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>1관문: 이 사업을 이해할 수 있는가? ★★★☆☆</h2>
+<ul>
+<li><strong>수익 방식</strong>: 협동로봇(Indy)·자율이동로봇(Moby)·스마트 액추에이터(NeuroDrive) 판매. 최근 휴머노이드(EIR) 개발 중.</li>
+<li>100% 내재화(부품·제어기·SW) 전략 — 이해 가능</li>
+<li><strong>핵심 변수</strong>: ① 협동로봇 흑자전환 시점, ② 휴머노이드 EIR 상용화, ③ 중국 저가 로봇 공세</li>
+<li><strong>10년 후</strong>: 로봇 시장 성장은 확실하나, 뉴로메카의 생존 여부 불투명 (현재 연간 현금 소진 ~150억+)</li>
+</ul>
+<hr />
+<h2>2관문: 좋은 사업인가? ★☆☆☆☆ — 즉각 실패</h2>
+<pre><code>도구: verify-valuation --price 35700 --eps -1589 --bvps 1912
+결과: PER N/A(적자), PBR 18.67배
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>기준</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE (2025 기준)</td>
+<td><strong>-178%</strong> (최근 4분기)</td>
+<td>&gt;15%</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>영업이익률 (FY2025)</td>
+<td><strong>-78%</strong></td>
+<td>&gt;10%</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td><strong>4년 연속 음(-)</strong></td>
+<td>양(+) 지속</td>
+<td>❌❌</td>
+</tr>
+<tr>
+<td>CAPEX 강도</td>
+<td>데이터 부족</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>부채 수준</td>
+<td>CB 222.9억 포함</td>
+<td>—</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<p><strong>수익성 추세 — 개선 없음:</strong></p>
+<table>
+<thead>
+<tr>
+<th>연도</th>
+<th>매출 (억)</th>
+<th>YoY</th>
+<th>영업손실</th>
+<th>OPM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022</td>
+<td>97.5</td>
+<td>—</td>
+<td>-78억</td>
+<td>-80%</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>137.4</td>
+<td>+41%</td>
+<td>-148억</td>
+<td>-108%</td>
+</tr>
+<tr>
+<td>2024</td>
+<td><strong>252.7</strong></td>
+<td>+84%</td>
+<td><strong>-190억</strong></td>
+<td>-75%</td>
+</tr>
+<tr>
+<td><strong>2025</strong></td>
+<td><strong>189.5</strong></td>
+<td><strong>-25%</strong></td>
+<td><strong>-149억</strong></td>
+<td><strong>-78%</strong></td>
+</tr>
+<tr>
+<td>2026Q1</td>
+<td>31.7</td>
+<td>-13%</td>
+<td>-40.2억</td>
+<td>적자 지속</td>
+</tr>
+</tbody>
+</table>
+<p>출처: KIND 분기보고서, 씽크풀, bosoop.com</p>
+<p><strong>치명적 사실</strong>: 매출이 2배 증가한 2024년(252억)에도 영업손실 -190억. 매출 성장이 수익성 개선으로 연결되지 않음. 손익분기 매출 추정 400~500억원.</p>
+<hr />
+<h2>3관문: 해자 ★★☆☆☆</h2>
+<table>
+<thead>
+<tr>
+<th>해자 유형</th>
+<th>보유 여부</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>브랜드·가격결정력</td>
+<td>❌ 미약</td>
+<td>국내 인지도 있으나 두산로보틱스 대비 규모 열세</td>
+</tr>
+<tr>
+<td>전환비용</td>
+<td>✅ 부분</td>
+<td>Neuromeka OS + 직접교시 기술 — 도입 후 재교육 비용 존재</td>
+</tr>
+<tr>
+<td>네트워크 효과</td>
+<td>❌ 없음</td>
+<td></td>
+</tr>
+<tr>
+<td>규모·원가 우위</td>
+<td>❌ 없음</td>
+<td>두산로보틱스(매출 1,200억) 대비 189억 — 규모 6분의 1</td>
+</tr>
+<tr>
+<td>기술·특허 장벽</td>
+<td>✅ 부분</td>
+<td>100% 내재화 + Zero-shot AI 비전 — 기술 우위 주장 있으나 검증 부족</td>
+</tr>
+<tr>
+<td>허가·규제 장벽</td>
+<td>❌ 없음</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>경쟁 현황</strong>: 두산로보틱스 1,200억 vs 뉴로메카 190억 (6배 차). 글로벌 UR(유니버설로봇)과는 비교 불가 수준.</p>
+<hr />
+<h2>4관문: 경영진 ★★☆☆☆</h2>
+<table>
+<thead>
+<tr>
+<th>체크 항목</th>
+<th>평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>솔직성</td>
+<td>❌ IPO 당시 2025년 목표 매출 573억·영업이익 +159억 → 실제 190억·-149억 (달성률 33%). <strong>심각한 가이던스 미달</strong></td>
+</tr>
+<tr>
+<td>자본 배분</td>
+<td>❌ 2026년 유상증자 24% 신주 + 무상증자 50% 발행 — 주주 희석</td>
+</tr>
+<tr>
+<td>창업자 지분</td>
+<td>⚠️ 19.26% — 낮은 편</td>
+</tr>
+<tr>
+<td>오너리스크</td>
+<td>⚠️ 감사 선임 거부·이사 사임 이슈 언급 (세부 미확인)</td>
+</tr>
+<tr>
+<td>법적 분쟁</td>
+<td>데이터 부족</td>
+</tr>
+</tbody>
+</table>
+<p><strong>핵심 문제</strong>: IPO 목표 달성률 33%는 단순 보수적 목표 설정 실패가 아님. 사업 본질에 대한 경영진의 이해 또는 투자자에 대한 커뮤니케이션 신뢰도에 의문.</p>
+<hr />
+<h2>5관문: 안전마진 ★☆☆☆☆</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER</td>
+<td><strong>N/A (4년 연속 적자)</strong></td>
+<td>❌</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>18.67배</strong></td>
+<td>❌ 극단 고평가</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td><strong>음수</strong></td>
+<td>❌</td>
+</tr>
+<tr>
+<td>시총/매출</td>
+<td>4,430억/190억 = <strong>23.3배</strong></td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3시나리오 도구 계산 불가</strong>: EPS 음수로 정상 시나리오 산출 불가. 대신 시총/매출 기준 단순 추정:
+- 흑자 전환 + 매출 500억 달성 시: OPM 10% 가정 → EPS ~300원 → PER 20배 적정가 6,000원 (현재 -83%)
+- <strong>현재가 35,700원에 어떤 시나리오로도 안전마진 없음</strong></p>
+<hr />
+<h2>6관문: 코스톨라니 타이밍 ★★★☆☆</h2>
+<ul>
+<li>52주 위치 <strong>13.2%</strong> → A2~A3 구간처럼 보이나, 적자 기업에서 저가권은 매수 신호가 아님</li>
+<li>52주 고가 139,000원에서 -74% 하락: 테마 거품 소멸 과정</li>
+<li>CES 2026 EIR 발표 후 급등(13만원) → 실적 부진 확인 후 급락(2만원) → 현재 3.5만원 반등</li>
+<li><strong>코스톨라니 교훈</strong>: "올바른 주식을 샀을 때만" — 만성 적자 기업에서 저가는 함정일 수 있음</li>
+</ul>
+<hr />
+<h2>거울 테스트: ❌ 미통과</h2>
+<blockquote>
+<p>나는 35,700원에 뉴로메카를 매수한다. 이유는:
+1. 이 사업의 본질은 협동로봇 제조·판매이며, 이해한다.
+2. 해자는 <strong>Neuromeka OS + AI 비전 기술</strong>이며, <strong>불명확</strong> 추세다.
+3. 경영진은 <strong>IPO 목표 달성률 33%로 가이던스 신뢰도가 낮으며</strong>, <strong>불신</strong>할 요소가 있다.
+4. 현재 가격은 <strong>PBR 18.67배, 시총/매출 23배</strong> 수준으로, 안전마진이 <strong>부족</strong>하다.
+5. 설령 내가 틀려도, 하방 리스크는 <strong>관리 불가</strong>하다. 이유: <strong>흑자전환 시점 불명확, 유상증자 희석 지속, 현금 소진 구조</strong>.</p>
+</blockquote>
+<p><strong>5문장 3~5번 완성 불가 수준 → 매수하지 않는다.</strong></p>
+<hr />
+<h2>핵심 리스크</h2>
+<table>
+<thead>
+<tr>
+<th>순위</th>
+<th>리스크</th>
+<th>심각도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>FCF 4년 연속 음수</strong> — 흑자전환 2027년으로 재차 연기</td>
+<td><strong>Critical</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>IPO 목표 달성률 33%</strong> — 경영진 가이던스 신뢰도 붕괴</td>
+<td><strong>High</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>유상증자 + 무상증자</strong> — 24%+50% 발행으로 기존 주주 희석</td>
+<td><strong>High</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>PBR 18.67배</strong> — 만성 적자 기업에 극고평가 유지 중</td>
+<td><strong>High</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>매출 역성장</strong> — 2025년 -25%, 2026Q1 -13%</td>
+<td><strong>Medium</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>최종 결론: ❌ 체크리스트 미통과</h2>
+<p><strong>통과 불가 레드라인:</strong>
+1. <strong>FCF 4년 연속 음수 + 2026년에도 적자 지속</strong> → 즉각 거부
+2. <strong>IPO 목표 달성률 33%</strong> → 경영진 신뢰도 훼손, 4관문 실패
+3. <strong>PBR 18.67배 + 만성 적자</strong> → 안전마진 없음, 5관문 실패</p>
+<p><strong>재검토 조건:</strong>
+- 2개 연속 분기 흑자 전환 확인 후
+- 시총/매출 비율이 5배 이하 (현재 23배)
+- 매출 500억+ + OPM 흑자 전환 동시 달성 시</p>
+<p><em>작성: 2026-07-03 | 데이터: KIND 공시·한국경제·씽크풀·alphasquare·bosoop.com</em>
+<em>정보풍부도 B~C등급 — 적자 기업 특성상 밸류에이션 도구 활용 제한</em></p>
+
+    <script src="../search_index.js"></script>
+    <script>
+        let currentFocus = -1;
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+            currentFocus = -1; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach((item, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+
+                // 마우스 진입 시 키보드 포커스와 동기화
+                li.addEventListener('mouseenter', () => {
+                    currentFocus = index;
+                    addActive(resultsContainer.getElementsByTagName('li'));
+                });
+            });
+        });
+
+        // 한글 씹힘 방지 및 엔터 이동 완벽 적용
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            if (e.isComposing || e.keyCode === 229) {
+                if (e.key === "Enter") return;
+            }
+
+            const resultsContainer = document.getElementById('searchResults');
+            const items = resultsContainer.getElementsByTagName('li');
+            
+            if (e.key === "ArrowDown" || e.keyCode === 40) {
+                currentFocus++;
+                addActive(items);
+                e.preventDefault(); 
+            } else if (e.key === "ArrowUp" || e.keyCode === 38) {
+                currentFocus--;
+                addActive(items);
+                e.preventDefault();
+            } else if (e.key === "Enter" || e.keyCode === 13) {
+                e.preventDefault();
+                if (currentFocus > -1 && items[currentFocus]) {
+                    window.location.href = items[currentFocus].querySelector('a').href;
+                }
+            }
+        });
+
+        function addActive(items) {
+            if (!items || items.length === 0) return false;
+            removeActive(items);
+            
+            if (currentFocus >= items.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = items.length - 1;
+            
+            items[currentFocus].classList.add("active");
+            items[currentFocus].scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+
+        function removeActive(items) {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,714 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[현대글로비스] 현대글로비스-checklist-20260703</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }
+        
+        /* 검색창 기본 스타일 추가 */
+        .search-input {
+            box-sizing: border-box; 
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 16px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        .search-input:focus {
+            border-color: #0366d6;
+            box-shadow: 0 4px 24px rgba(3, 102, 214, 0.15);
+        }
+        .results-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            max-height: 350px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e1e4e8;
+            box-sizing: border-box; 
+        }
+        .results-list:empty { border: none; box-shadow: none; }
+        .results-list li { border-bottom: 1px solid #eaecef; }
+        .results-list li:last-child { border-bottom: none; }
+        .results-list a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+        .results-list a:hover { background-color: #f6f8fa; color: #0056b3; }
+
+        /* 💡 키보드 방향키 하이라이트 스타일 */
+        .results-list li.active {
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+        }
+        .results-list li.active a {
+            color: #0056b3;
+            padding-left: 11px; 
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body { padding: 15px; }
+            .search-input { font-size: 14px; padding: 10px 14px; }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 삼성전자)" 
+               class="search-input" autocomplete="off">
+        <ul id="searchResults" class="results-list"></ul>
+    </div>
+
+    <h1>현대글로비스 (086280) — 버핏 6관문 체크리스트</h1>
+<p><strong>기준일:</strong> 2026-07-03 | <strong>기준가:</strong> 197,000원 | <strong>거래소:</strong> KOSPI</p>
+<hr />
+<h2>정보 풍부도 등급: <strong>A등급</strong></h2>
+<ul>
+<li>코스피 대형주 (시총 14.78조원), 2005년 상장</li>
+<li>증권사 커버리지 <strong>18개사 전원 BUY</strong>, 컨센서스 목표주가 323,000원</li>
+<li><strong>주의</strong>: 컨센서스 함정 — 모든 지표가 명확해 보여도 확실성이 높다는 뜻이 아님. 반론 검증 집중.</li>
+<li>컨센서스 반론 핵심: <strong>지배구조 할인 해소 촉매가 없다.</strong></li>
+</ul>
+<hr />
+<h2>핵심 데이터 요약</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>수치</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기준가</td>
+<td><strong>197,000원</strong> (2026-07-03 20:28)</td>
+<td>fetch_price_kr.py</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td><strong>14조 7,750억원</strong></td>
+<td>7,500만주 × 197,000원</td>
+</tr>
+<tr>
+<td>52주 고가/저가</td>
+<td>296,000원 / 133,700원</td>
+<td>Yahoo Finance</td>
+</tr>
+<tr>
+<td>52주 위치</td>
+<td><strong>39.0%</strong></td>
+<td>도구 계산</td>
+</tr>
+<tr>
+<td>EPS (FY2025A)</td>
+<td><strong>23,092원</strong> (추정)</td>
+<td>증권사 종합 추정</td>
+</tr>
+<tr>
+<td>BPS</td>
+<td><strong>139,716원</strong></td>
+<td>PBR 1.41배 역산</td>
+</tr>
+<tr>
+<td>DPS (FY2025)</td>
+<td><strong>5,800원</strong></td>
+<td>밸류업 공시</td>
+</tr>
+<tr>
+<td>PER (TTM)</td>
+<td><strong>8.53배</strong></td>
+<td>financial_rigor_kr.py</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>1.41배</strong></td>
+<td>financial_rigor_kr.py</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td><strong>10.15%</strong></td>
+<td>financial_rigor_kr.py</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>2.94%</strong></td>
+<td>financial_rigor_kr.py</td>
+</tr>
+<tr>
+<td>ROE (TTM)</td>
+<td><strong>18.1%</strong></td>
+<td>AlphaSquare</td>
+</tr>
+<tr>
+<td>OPM (FY2025)</td>
+<td><strong>7.0%</strong></td>
+<td>뉴시스</td>
+</tr>
+<tr>
+<td>순현금</td>
+<td><strong>약 +2.4조원</strong></td>
+<td>TopDaily</td>
+</tr>
+<tr>
+<td>컨센서스 목표주가</td>
+<td><strong>323,000원</strong> (+64%)</td>
+<td>18개사 컨센서스</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>6관문 평점표</h2>
+<table>
+<thead>
+<tr>
+<th>관문</th>
+<th>항목</th>
+<th>평점</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1관문</td>
+<td>능력 범위</td>
+<td>★★★★☆</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>2관문</td>
+<td>사업 품질</td>
+<td>★★★★☆</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>3관문</td>
+<td>해자</td>
+<td>★★★☆☆</td>
+<td>조건부 통과</td>
+</tr>
+<tr>
+<td>4관문</td>
+<td>경영진</td>
+<td>★★★☆☆</td>
+<td>조건부 통과</td>
+</tr>
+<tr>
+<td>5관문</td>
+<td>안전마진</td>
+<td>★★★★☆</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>6관문</td>
+<td>시장 심리</td>
+<td>★★★☆☆</td>
+<td>A2 구간</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>1관문: 이 사업을 이해할 수 있는가? ★★★★☆</h2>
+<ul>
+<li><strong>수익 방식</strong>: 현대차·기아 완성차를 전 세계로 운반(PCTC 해운+육상 물류) + CKD 부품 공급망 관리 + 오토벨 중고차 유통. 현대차그룹이 팔면 글로비스가 납품하고 운반한다.</li>
+<li><strong>10년 후</strong>: 현대차·기아가 자동차를 계속 파는 한 글로비스의 물류·해운 수요는 유지. 전기차 CKD로 사업 구조 전환 중.</li>
+<li><strong>핵심 변수</strong>: ① 현대차·기아 글로벌 판매 대수, ② 미국 관세 환경, ③ PCTC 신조 수익성</li>
+<li><strong>평점 이유</strong>: 사업 명확하나 그룹 의존 구조로 독립 분석 복잡.</li>
+</ul>
+<hr />
+<h2>2관문: 좋은 사업인가? ★★★★☆</h2>
+<pre><code>도구: verify-valuation --price 197000 --eps 23092 --bvps 139716 --fcf-per-share 20000 --dividend 5800
+결과: PER 8.53배, PBR 1.41배, FCF 10.15%, 배당 2.94%
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>기준</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE (TTM)</td>
+<td><strong>18.1%</strong></td>
+<td>&gt;15% 우수</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>영업이익률 (FY2025)</td>
+<td><strong>7.0%</strong></td>
+<td>&gt;10% 의미 있음</td>
+<td>⚠️ 아쉬움</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td><strong>10.15%</strong></td>
+<td>양(+) 지속</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>CAPEX 강도</td>
+<td>연 1.2조원 (매출의 4%)</td>
+<td>중자산</td>
+<td>⚠️</td>
+</tr>
+<tr>
+<td>부채 수준</td>
+<td>부채비율 95.6%, 이자보상배율 9.6배</td>
+<td>관리 가능</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<p><strong>수익성 추세 (출처: 쉬핑뉴스넷·증권사):</strong></p>
+<table>
+<thead>
+<tr>
+<th>연도</th>
+<th>매출 (조)</th>
+<th>영업이익 (억)</th>
+<th>OPM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021</td>
+<td>21.8조</td>
+<td>11,262</td>
+<td>5.2%</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>26.9조</td>
+<td>17,990</td>
+<td>6.7%</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>25.7조</td>
+<td>15,540</td>
+<td>6.0%</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>28.4조</td>
+<td>17,529</td>
+<td>6.2%</td>
+</tr>
+<tr>
+<td><strong>2025</strong></td>
+<td><strong>29.6조</strong></td>
+<td><strong>20,730</strong></td>
+<td><strong>7.0%</strong></td>
+</tr>
+<tr>
+<td>2026Q1</td>
+<td>7.8조</td>
+<td>5,215</td>
+<td>6.7%</td>
+</tr>
+</tbody>
+</table>
+<p>영업이익률 7%는 물류업 특성상 낮으나, ROE 18%·FCF 10%는 우수. CAPEX 2030년까지 9조 계획이 리스크.</p>
+<hr />
+<h2>3관문: 해자가 충분한가? ★★★☆☆</h2>
+<table>
+<thead>
+<tr>
+<th>해자 유형</th>
+<th>보유 여부</th>
+<th>구체적 근거</th>
+<th>추세</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>브랜드·가격결정력</td>
+<td>❌ 미약</td>
+<td>B2B 물류사, 소비자 대상 브랜드 없음</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>전환비용</strong></td>
+<td>✅ <strong>강함</strong></td>
+<td>현대차그룹 전속 물류 — 수십 년간 공급망 최적화로 대체 불가</td>
+<td>유지</td>
+</tr>
+<tr>
+<td>네트워크 효과</td>
+<td>❌ 없음</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>규모·원가 우위</strong></td>
+<td>✅ <strong>강함</strong></td>
+<td>PCTC 세계 최대급 선단 + 1만 대 이상 적재 — 단위비용 우위</td>
+<td><strong>확대</strong></td>
+</tr>
+<tr>
+<td>기술·특허 장벽</td>
+<td>❌ 없음</td>
+<td>로지스틱스 서비스, 기술 장벽 낮음</td>
+<td>—</td>
+</tr>
+<tr>
+<td>규제 장벽</td>
+<td>⚠️ 약함</td>
+<td>해운 면허·항만 운영권 — 진입 장벽이 아닌 수준</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>내부거래 의존도 70%+</strong>: 핵심 해자이자 핵심 리스크. 현대차그룹이 물류 내재화 시 위험하나, 현실적으로 불가능.</li>
+<li><strong>PCTC 비계열 비중 53%</strong> (2025년): 그룹 의존 탈피 진전 — 긍정적 추세.</li>
+<li>경쟁자 1조 원 투자 시: PCTC 전용 선박 건조 + 현대차그룹 수십 년 관계 대체 = 사실상 불가.</li>
+</ul>
+<hr />
+<h2>4관문: 경영진을 신뢰할 수 있는가? ★★★☆☆</h2>
+<table>
+<thead>
+<tr>
+<th>체크 항목</th>
+<th>평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>솔직성</td>
+<td>✅ 밸류업 DPS 3,700→5,800원(+57%) 이행</td>
+</tr>
+<tr>
+<td>자본 배분</td>
+<td>⚠️ 9조원 CAPEX 계획 — 공격적. FCF 창출 압박</td>
+</tr>
+<tr>
+<td>주주 이익 일치성</td>
+<td>⚠️ 정의선 직접 지분 20.1% — 이해관계 일치하나 지배구조 복잡</td>
+</tr>
+<tr>
+<td>경영진 형태</td>
+<td>⚠️ 전문경영인(이규복) — 오너 직접 경영 아님</td>
+</tr>
+<tr>
+<td>지배구조</td>
+<td>⚠️ 내부거래 70%+ + 공정위 과징금 이력 + 순환출자 구조</td>
+</tr>
+<tr>
+<td>위기 대응</td>
+<td>✅ 관세 대응: 비계열 물량 53%로 확대, 1Q26 해운 영업이익 +40%</td>
+</tr>
+<tr>
+<td>오너리스크</td>
+<td>❌ 법적 분쟁 없으나, <strong>정의선 승계 지배구조 개편 리스크</strong> — 구조재편 시 글로비스 주가에 불확실성</td>
+</tr>
+</tbody>
+</table>
+<p><strong>핵심 리스크</strong>: 지배구조 개편 논의 — 글로비스가 정의선 지분 확보 수단으로 활용될 경우 주주 이익 훼손 가능.</p>
+<hr />
+<h2>5관문: 가격이 충분히 싼가? ★★★★☆</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>역사적 분위</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td><strong>8.53배</strong></td>
+<td>글로벌 물류 15~20배 대비 할인</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>선행 PER</td>
+<td><strong>7.6~12.7배</strong></td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>1.41배</strong></td>
+<td>역사적 저점 근처</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>2.94%</strong></td>
+<td>국채 대비 프리미엄</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td><strong>10.15%</strong></td>
+<td>매우 높음</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3시나리오 (도구 계산):</strong></p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>가정</th>
+<th>3년 후 EPS</th>
+<th>적정가</th>
+<th>현재 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>낙관</strong></td>
+<td>관세 해소+PCTC 확장 성공, +15%, PER 13배</td>
+<td>35,120원</td>
+<td>456,561원</td>
+<td><strong>+131.8%</strong></td>
+</tr>
+<tr>
+<td><strong>중립</strong></td>
+<td>현상 유지+관세 부담, +5%, PER 10배</td>
+<td>26,732원</td>
+<td>267,319원</td>
+<td><strong>+35.7%</strong> ✅</td>
+</tr>
+<tr>
+<td><strong>비관</strong></td>
+<td>미국 관세 심화+물량 감소, -10%, PER 7배</td>
+<td>16,834원</td>
+<td>117,838원</td>
+<td><strong>-40.2%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>시장이 싸게 두는 이유:</strong>
+1. <strong>내부거래 70%+ 지배구조 할인</strong> (코리아 디스카운트 핵심)
+2. 2030년까지 9조원 CAPEX — 자본 회수 불투명
+3. 순환출자 구조 개편 불확실성</p>
+<p>이 이유들이 영구적인가? → 지배구조 개편은 구조적 문제이나, 밸류업 프로그램·배당 확대로 점진적 해소 중.</p>
+<hr />
+<h2>6관문: 시장 심리·타이밍 ★★★☆☆</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>현황</th>
+<th>달걀 신호</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>52주 위치</td>
+<td><strong>39.0%</strong></td>
+<td>중간 구간</td>
+</tr>
+<tr>
+<td>52주 고가 대비</td>
+<td>296,000원 → 197,000원 = <strong>-33.4%</strong></td>
+<td>A2 하락</td>
+</tr>
+<tr>
+<td>언론 논조</td>
+<td>미국 관세·현대차 판매 감소 우려 보도</td>
+<td>A2 비관</td>
+</tr>
+<tr>
+<td>배당 확대</td>
+<td>DPS 5,800원 (+57%) 밸류업 이행</td>
+<td>A1 회복 신호</td>
+</tr>
+<tr>
+<td>외국인 지분</td>
+<td><strong>45.55%</strong> — 높은 외국인 비중</td>
+<td>구조적 저평가 인식</td>
+</tr>
+</tbody>
+</table>
+<p><strong>달걀 위치: A1~A2</strong> — 하락 후 배당 확대로 반등 모색 중.</p>
+<hr />
+<h2>거울 테스트: ✅ 통과</h2>
+<blockquote>
+<p>"나는 197,000원에 현대글로비스를 매수한다. 이유는:
+1. 이 사업의 본질은 <strong>현대차그룹 완성차 전 세계 운반 + CKD 부품 공급망 + 중고차 유통</strong>이며, 이를 이해한다.
+2. 해자는 <strong>현대차그룹 전속 물류 전환비용 + PCTC 세계 최대급 선단 규모</strong>이며, <strong>유지~확대</strong> 추세다.
+3. 경영진은 <strong>밸류업 DPS 이행·비계열 확대로 주주환원 의지를 보여주며</strong>, 조건부로 <strong>신뢰</strong>할 수 있다.
+4. 현재 가격은 내재가치의 <strong>약 74% 수준</strong>(중립 시나리오 267,319원 대비)으로, 안전마진이 <strong>충분</strong>하다.
+5. 설령 내가 틀려도, 하방 리스크는 <strong>관리 가능</strong>하다. 이유: <strong>FCF 10.15% 수익률 + 배당 2.94% + 순현금 2.4조원이 하방 방어</strong>."</p>
+</blockquote>
+<hr />
+<h2>핵심 리스크</h2>
+<table>
+<thead>
+<tr>
+<th>순위</th>
+<th>리스크</th>
+<th>심각도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>지배구조 할인 지속</strong> — 내부거래 70%+, 순환출자 구조. 촉매 없이 PER 재평가 어려움</td>
+<td>High</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>미국 관세</strong> — 현대차·기아 대미 수출 10.7% 감소로 PCTC 물량 압박</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>9조원 CAPEX 리스크</strong> — 2026~2030년 연 1.3조 투자로 FCF 압박</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>전기차 CKD 구조 변화</strong> — ICE→EV 전환 시 기존 부품 물량 감소</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>지배구조 개편 불확실성</strong> — 정의선 승계 관련 재편 시 주주 이익 영향 불투명</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>최종 결론: ✅ 체크리스트 통과 (5/6관문)</h2>
+<p><strong>매수 의견: 185,000~197,000원 분할 매수 관심권</strong></p>
+<table>
+<thead>
+<tr>
+<th>구간</th>
+<th>행동</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>185,000원 이하</strong></td>
+<td>적극 매수 (PER ~8배, FCF 11%)</td>
+</tr>
+<tr>
+<td><strong>197,000~210,000원</strong></td>
+<td>1차 소규모 분할 매수</td>
+</tr>
+<tr>
+<td><strong>250,000~270,000원</strong></td>
+<td>보유 (중립 시나리오 목표 접근)</td>
+</tr>
+<tr>
+<td><strong>290,000원 이상</strong></td>
+<td>컨센서스 목표 90% 도달 → 익절 검토</td>
+</tr>
+</tbody>
+</table>
+<p><strong>통과 근거:</strong> PER 8.53배·FCF 10.15%·배당 2.94% = 물류 대형주 저평가 조합. ROE 18.1% + 순현금 2.4조. 컨센서스 18개사 BUY, 목표 +64%.</p>
+<p><strong>핵심 모니터링:</strong>
+1. <strong>내부거래 비중 추이</strong> — 50% 이하로 감소 시 지배구조 디스카운트 해소 촉매
+2. <strong>PCTC CAPEX 수익률</strong> — 신조선 ROI 확인 (2028년 인도 후)
+3. <strong>현대차·기아 판매 대수</strong> 분기별 추적
+4. <strong>DPS 추가 인상 발표</strong> — 밸류업 지속 신호</p>
+<p><em>작성: 2026-07-03 | 도구: fetch_price_kr.py, financial_rigor_kr.py | 데이터: AlphaSquare·쉬핑뉴스넷·TopDaily·증권사 컨센서스</em>
+<em>정보풍부도 A등급 — 컨센서스 함정 주의, 지배구조 할인 해소 촉매 부재가 핵심 쟁점</em></p>
+
+    <script src="../search_index.js"></script>
+    <script>
+        let currentFocus = -1;
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+            currentFocus = -1; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach((item, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+
+                // 마우스 진입 시 키보드 포커스와 동기화
+                li.addEventListener('mouseenter', () => {
+                    currentFocus = index;
+                    addActive(resultsContainer.getElementsByTagName('li'));
+                });
+            });
+        });
+
+        // 한글 씹힘 방지 및 엔터 이동 완벽 적용
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            if (e.isComposing || e.keyCode === 229) {
+                if (e.key === "Enter") return;
+            }
+
+            const resultsContainer = document.getElementById('searchResults');
+            const items = resultsContainer.getElementsByTagName('li');
+            
+            if (e.key === "ArrowDown" || e.keyCode === 40) {
+                currentFocus++;
+                addActive(items);
+                e.preventDefault(); 
+            } else if (e.key === "ArrowUp" || e.keyCode === 38) {
+                currentFocus--;
+                addActive(items);
+                e.preventDefault();
+            } else if (e.key === "Enter" || e.keyCode === 13) {
+                e.preventDefault();
+                if (currentFocus > -1 && items[currentFocus]) {
+                    window.location.href = items[currentFocus].querySelector('a').href;
+                }
+            }
+        });
+
+        function addActive(items) {
+            if (!items || items.length === 0) return false;
+            removeActive(items);
+            
+            if (currentFocus >= items.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = items.length - 1;
+            
+            items[currentFocus].classList.add("active");
+            items[currentFocus].scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+
+        function removeActive(items) {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>
