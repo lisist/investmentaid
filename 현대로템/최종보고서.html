@@ -1,0 +1,705 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[현대로템] 최종보고서</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }
+        
+        /* 검색창 기본 스타일 추가 */
+        .search-input {
+            box-sizing: border-box; 
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 16px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        .search-input:focus {
+            border-color: #0366d6;
+            box-shadow: 0 4px 24px rgba(3, 102, 214, 0.15);
+        }
+        .results-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            max-height: 350px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e1e4e8;
+            box-sizing: border-box; 
+        }
+        .results-list:empty { border: none; box-shadow: none; }
+        .results-list li { border-bottom: 1px solid #eaecef; }
+        .results-list li:last-child { border-bottom: none; }
+        .results-list a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+        .results-list a:hover { background-color: #f6f8fa; color: #0056b3; }
+
+        /* 💡 키보드 방향키 하이라이트 스타일 */
+        .results-list li.active {
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+        }
+        .results-list li.active a {
+            color: #0056b3;
+            padding-left: 11px; 
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body { padding: 15px; }
+            .search-input { font-size: 14px; padding: 10px 14px; }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 삼성전자)" 
+               class="search-input" autocomplete="off">
+        <ul id="searchResults" class="results-list"></ul>
+    </div>
+
+    <h1>현대로템 (064350) — 5대 거장 팀 투자분석 최종보고서</h1>
+<p><strong>분석일:</strong> 2026-07-04 | <strong>기준가:</strong> 200,500원 | <strong>거래소:</strong> KOSPI | <strong>시총:</strong> 21.88조원
+<strong>분석팀:</strong> business-analyst(버핏) · value-analyst(클라만) · industry-researcher(멍거) · growth-analyst(피셔) · sentiment-analyst(코스톨라니)</p>
+<hr />
+<h2>1. 한줄 결론</h2>
+<blockquote>
+<p><strong>현대로템은 3중 복합 해자(허가·기술·규모)와 수주 가시성(방산 10.5조+철도 18.5조)을 갖춘 구조적 성장 기업이다. 단, 현재 주가(200,500원)는 중립 시나리오 기준 +58% 업사이드로 매력적이나, 클라만식 청산가치 보호는 없다. K2PL 마진 침식·이라크 계약 지연·방산 비리 수사 확대가 현실적 하방 3대 변수.</strong></p>
+</blockquote>
+<hr />
+<h2>2. 5차원 평점 총표</h2>
+<table>
+<thead>
+<tr>
+<th>차원</th>
+<th>거장</th>
+<th>평점</th>
+<th>핵심 판단</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>비즈니스모델·해자</strong></td>
+<td>버핏</td>
+<td>★★★★☆ (4.0)</td>
+<td>허가·기술·규모 삼각 복합 해자. 2021 적자→2025 OPM 17.2% 해자 확대 증거</td>
+</tr>
+<tr>
+<td><strong>안전마진·하방 보호</strong></td>
+<td>클라만</td>
+<td>★★★☆☆ (3.0)</td>
+<td>중립 +58.1% 매력적. 청산가치(39,200원) 보호 없음. 비관 -43.7%</td>
+</tr>
+<tr>
+<td><strong>산업경쟁·역발상 리스크</strong></td>
+<td>멍거</td>
+<td>★★★☆☆ (3.5)</td>
+<td>드론 대체론 15% 확률. K2PL 마진+이라크 지연이 90% 실패 리스크. 방산 비리 블랙스완</td>
+</tr>
+<tr>
+<td><strong>성장 잠재력·경영진</strong></td>
+<td>피셔</td>
+<td>★★★★☆ (4.1)</td>
+<td>임원 37명 자사주 매입. 파이프라인 현실적 15~18조 추가. Anduril AI MOU</td>
+</tr>
+<tr>
+<td><strong>시장 심리·타이밍</strong></td>
+<td>코스톨라니</td>
+<td>★★★★☆ (3.8)</td>
+<td>A3 후반~B1 초입. 외국인 393만주+ 순매수. 수면제 테스트 통과</td>
+</tr>
+</tbody>
+</table>
+<p><strong>종합 평점: ★★★★☆ (3.7 / 5.0)</strong></p>
+<hr />
+<h2>3. 핵심 데이터 요약</h2>
+<h3>재무 추세 (2021~2025, 연결기준)</h3>
+<table>
+<thead>
+<tr>
+<th>연도</th>
+<th>매출</th>
+<th>영업이익</th>
+<th>OPM</th>
+<th>ROE</th>
+<th>FCF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021</td>
+<td>2조 6,670억</td>
+<td><strong>-2,799억</strong></td>
+<td><strong>적자</strong></td>
+<td>적자</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>3조 1,633억</td>
+<td>1,475억</td>
+<td>4.7%</td>
+<td>14.1%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>3조 5,874억</td>
+<td>2,118억</td>
+<td>5.9%</td>
+<td>10.1%</td>
+<td>~800억</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>4조 3,766억</td>
+<td>4,683억</td>
+<td>10.7%</td>
+<td>21.8%</td>
+<td>~2,500억</td>
+</tr>
+<tr>
+<td><strong>2025</strong></td>
+<td><strong>5조 8,390억</strong></td>
+<td><strong>1조 56억</strong></td>
+<td><strong>17.2%</strong></td>
+<td><strong>30.5%</strong></td>
+<td><strong>7,751억</strong></td>
+</tr>
+<tr>
+<td>2026Q1</td>
+<td>1조 4,574억</td>
+<td>2,242억</td>
+<td>15.4%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 밸류에이션</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>글로벌 피어 비교</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기준가</td>
+<td><strong>200,500원</strong> (2026-07-04)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>시총</td>
+<td><strong>21.88조원</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>PER (FY2025)</strong></td>
+<td><strong>28.42배</strong></td>
+<td>Rheinmetall 60.4배, BAE 31.5배</td>
+</tr>
+<tr>
+<td><strong>PBR</strong></td>
+<td><strong>7.11배</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>EV/EBITDA (LTM)</strong></td>
+<td><strong>19.78배</strong></td>
+<td>Rheinmetall 28.1배, BAE 17.4배</td>
+</tr>
+<tr>
+<td><strong>FCF 수익률</strong></td>
+<td><strong>3.54%</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>0.30%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>52주 위치</td>
+<td><strong>32.1%</strong> (고점 대비 -29%)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>수주잔고 (1Q26)</td>
+<td><strong>29조 8,181억</strong></td>
+<td>매출의 5.1년치</td>
+</tr>
+<tr>
+<td>순현금</td>
+<td><strong>~1.2조원</strong></td>
+<td>실질 무부채 구조</td>
+</tr>
+</tbody>
+</table>
+<h3>3시나리오 적정가 (도구 계산)</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>가정</th>
+<th>3년후 EPS</th>
+<th>적정가</th>
+<th>괴리율</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>낙관</strong></td>
+<td>+35%/년, PER 32배</td>
+<td>17,358원</td>
+<td><strong>555,454원</strong></td>
+<td>+177.0%</td>
+</tr>
+<tr>
+<td><strong>중립</strong></td>
+<td>+20%/년, PER 26배</td>
+<td>12,191원</td>
+<td><strong>316,967원</strong></td>
+<td><strong>+58.1%</strong></td>
+</tr>
+<tr>
+<td><strong>비관</strong></td>
+<td>0%/년, PER 16배</td>
+<td>7,055원</td>
+<td><strong>112,880원</strong></td>
+<td>-43.7%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>가중 적정가</strong> (낙관 30%, 중립 55%, 비관 15%): <strong>0.30×555,454 + 0.55×316,967 + 0.15×112,880 = </strong>342,651원<strong> (+70.9%)</strong></p>
+<hr />
+<h2>4. 각 차원 핵심 발견</h2>
+<h3>버핏 (비즈니스모델·해자)</h3>
+<ol>
+<li><strong>삼각형 복합 해자</strong>: 허가·규제 장벽(★★★★★) + 기술 장벽(★★★★☆) + 규모의 경제(★★★★☆). 단일 해자 아닌 3중 중첩 구조가 10년 지속성의 근거.</li>
+<li><strong>납기 해자</strong>: Rheinmetall 연 36대 생산 한계 vs 현대로템 100~200대. 유럽 방산 공급망 30년 해체로 단기 증산 불가 — 지금이 유일한 창.</li>
+<li><strong>K2PL 현지화 반론 검증</strong>: 핵심 IP(FCS·엔진·사격통제) 통제 유지 확인. 부마르-와벤디는 현지 조립만, 독자 수출 불가. 전환비용 해자 부분 희석이나 치명적이지 않음.</li>
+<li><strong>철도 OPM 개선 예약</strong>: 현재 1~5% → 해외 고수익 프로젝트(모로코 2.2조, 우즈베키스탄 2,700억) 소화로 2026~2028년 7%대 수렴. 시장이 간과하는 잠재 이익 기여.</li>
+<li><strong>플라이휠 가동</strong>: 납품 레퍼런스 → 파이프라인 → 생산 확대 → OPM 유지 → MRO 30~40년 반복수익. 2021년 구조조정 후 선순환 진입 확인.</li>
+</ol>
+<h3>클라만 (안전마진·하방)</h3>
+<ol>
+<li><strong>청산가치 괴리</strong>: 순현금 1.2조 + 순자산 3.08조 = 청산가치 4.28조 (시총 21.88조의 19.6%). 딥밸류 투자자에게 안전마진 없음.</li>
+<li><strong>실질 무부채 구조</strong>: 명목 부채비율 206%는 폴란드 선수금(계약부채) 착시. 순현금 +1.2조, 이자보상배율 127.7배.</li>
+<li><strong>Rheinmetall 대비 할인</strong>: PER 28배 vs 60배. 동급 방산 기업 대비 절반 가격이 핵심 안전마진.</li>
+<li><strong>촉매 가시성</strong>: 폴란드 3차·이라크·루마니아 계약 공시 = 명확한 가격 재평가 트리거.</li>
+<li><strong>클라만 권고</strong>: 현재가 200,500원은 중간 수준 안전마진. 140,000~160,000원(FCF yield 4.4~5.1%) 진입 시 딥밸류 관점 매력도 급상승.</li>
+</ol>
+<h3>멍거 (산업경쟁·역발상)</h3>
+<ol>
+<li><strong>드론 대체론 실상</strong>: 발생확률 15%. Trophy APS 드론 요격 기능 추가(2025), 현대로템-Rafael MOU(MSPO 2025). 전차 "대체"가 아닌 "진화" 패러다임. 현대로템이 이 논쟁을 유로사토리 2026에서 AI 무인포탑으로 선제 대응.</li>
+<li><strong>가장 현실적 리스크 조합</strong>: K2PL 마진 침식(40%) + 이라크 지연(45%) 동시 발생 = 2027~2028 성장 공백 최대 위험. "투자 실패의 90%는 드론이 아니라 여기서 온다."</li>
+<li><strong>가장 저평가된 블랙스완</strong>: 명태균 게이트 수사 확대. 현대로템 임원 KTX 수주 카카오톡 메시지 공개 → 검찰 수사 확대 시 계약 무효·경영진 교체 가능성. 확률 낮으나 영향도 극대.</li>
+<li><strong>NATO 자국 조달 선회</strong>: 루마니아 EU SAFE 기금 조건 "EU 부품 65%+" — 현대로템 충족 난이도 구조적 불리. Rheinmetall이 현지 파트너십으로 공격적 대응 중.</li>
+</ol>
+<h3>피셔 (성장·경영진·스커틀버트)</h3>
+<ol>
+<li><strong>파이프라인 현실성</strong>: 33~40조 전부 수주 낙관론은 과도. 확률가중 현실적 추가 수주 15~18조. <strong>단 1~2건만 성사되어도 현재 밸류에이션 정당화 가능.</strong></li>
+<li><strong>임원 37명 자사주 집단 매입</strong>: 2016년 이후 10년 만. 금액(16억)보다 <strong>집단성</strong>이 핵심 신호 — 내부에서 가장 잘 아는 37명이 자기 돈을 썼다.</li>
+<li><strong>R&amp;D 4.6배 확대</strong>: 전기 3년 5,031억 → 2026~2028년 1.8조. Anduril AI MOU(2026.05)로 무인전투 차세대 포지셔닝. 단 메탄엔진·우주 등 비핵심 분산은 집중도 약화 감점.</li>
+<li><strong>OPM 장기 하락 불가피</strong>: K2PL 현지화 완성 시 방산 OPM 15~18%까지 압축. 볼륨 확대로 이익 절대액 방어 가능하나 마진률 투자자에게 실망.</li>
+<li><strong>경영진 솔직성 높음</strong>: 약속 이행률 4/5 — 루마니아·이라크 타임라인 낙관론만 경계 필요.</li>
+</ol>
+<h3>코스톨라니 (시장심리·타이밍)</h3>
+<ol>
+<li><strong>달걀 A3 후반~B1 초입</strong>: 외국인 스마트머니 매집 완료, 대중 인식 확산 시작 단계. "뒤늦지 않았지만 초저가 기회도 아닌" 구간.</li>
+<li><strong>수급 구조 강세</strong>: 외국인 3개월 393만주+ 순매수, 공매도 잔고 0.04% — 반대 세력 사실상 부재.</li>
+<li><strong>드론 논쟁 선점</strong>: 유로사토리 2026에서 AI 무인포탑 대드론 체계 세계 최초 공개. 언론 프레임이 "전차 위기론" → "무인전투 플랫폼 진화"로 전환 중.</li>
+<li><strong>나토 슈퍼사이클 확인</strong>: 전 회원국 GDP 2% 달성(2026), 2035년 5% 목표 설정. 10년 구조적 수요 기반 확인.</li>
+<li><strong>수면제 테스트 통과</strong>: 3년 보유 시 파산 없음, 목표주가 31~32만원 달성 가능성 높음.</li>
+</ol>
+<hr />
+<h2>5. 투자 논점 (Bull vs Bear)</h2>
+<h3>🟢 매수 논거</h3>
+<ol>
+<li><strong>수주잔고 5.1년치 = 실적 가시성 최고 수준</strong> — 29.8조원은 이미 확정된 미래 매출. 이보다 강한 안전마진은 없음</li>
+<li><strong>Rheinmetall 대비 PER 절반(28배 vs 60배)</strong> — 유사한 성장 레버리지를 절반 가격에 매수</li>
+<li><strong>임원 37명 집단 자사주 매입</strong> — 가장 내부 사정을 잘 아는 37명의 자기 돈</li>
+<li><strong>납기 독점</strong>: 유럽 공급망 30년 해체로 단기 대안 없음. 이 창은 2030년까지 유효</li>
+<li><strong>Trophy APS 통합으로 드론 논쟁 선제 해결</strong> — 전차 위기론이 투자 기회로 전환</li>
+<li><strong>외국인 393만주+ 순매수</strong> — 글로벌 방산 ETF 및 유럽계 기관이 선취매 중</li>
+<li><strong>철도 OPM 잠재적 개선</strong> — 모로코 2.2조 등 해외 고마진 프로젝트 순차 인식</li>
+</ol>
+<h3>🔴 매도·회피 논거</h3>
+<ol>
+<li><strong>K2PL 현지화 마진 함정</strong> — 2029년 폴란드 현지 조립 시작→2033년 이후 방산 OPM 15~18%대 압축</li>
+<li><strong>이라크 계약 45%</strong> — 파이프라인 중 가장 취약한 고리. 이란 민병대·이라크 정치·미국 압력 삼중 불확실성</li>
+<li><strong>명태균 게이트 수사 확대 블랙스완</strong> — 방산 비리 수사 확대 시 계약 무효·주가 급락 가능</li>
+<li><strong>PBR 7.1배 = 청산가치 보호 없음</strong> — 파이프라인 취소 시 비관 적정가 112,880원(-43.7%)</li>
+<li><strong>루마니아 EU 부품 65% 조건 충족 불리</strong> — Rheinmetall 현지 파트너십으로 역전 위험</li>
+<li><strong>이용배 사장 후계자 파이프라인 미공개</strong> — CEO 교체 시 역량 승계 불확실</li>
+<li><strong>원화 강세 위험</strong> — 달러 계약 헤지 불완전 시 환산 이익 훼손</li>
+</ol>
+<hr />
+<h2>6. 버핏 매수 전 체크리스트</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>체크 항목</th>
+<th>통과</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>이 사업을 이해할 수 있는가?</td>
+<td>✅</td>
+<td>정부에 전차·철도 팔고 유지보수 — 단순하고 명확</td>
+</tr>
+<tr>
+<td>2</td>
+<td>경쟁 우위가 지속 가능한가?</td>
+<td>✅</td>
+<td>허가·기술·규모 삼각 해자. 10년 이상 지속 판단</td>
+</tr>
+<tr>
+<td>3</td>
+<td>경영진을 신뢰할 수 있는가?</td>
+<td>✅</td>
+<td>적자→OPM 17% 턴어라운드. 37명 자사주 매입</td>
+</tr>
+<tr>
+<td>4</td>
+<td>적정 가격인가?</td>
+<td>✅</td>
+<td>Rheinmetall 대비 PER 절반. 중립 +58% 업사이드</td>
+</tr>
+<tr>
+<td>5</td>
+<td>안전마진이 충분한가?</td>
+<td>⚠️</td>
+<td>피어 대비 할인은 있으나 청산가치 보호 없음</td>
+</tr>
+<tr>
+<td>6</td>
+<td>10년 보유 의향이 있는가?</td>
+<td>✅</td>
+<td>수주잔고 5년치+파이프라인 구조상 가능</td>
+</tr>
+<tr>
+<td>7</td>
+<td>자본 배분이 합리적인가?</td>
+<td>✅</td>
+<td>유휴자산 매각→방산 집중. R&amp;D 4.6배 확대</td>
+</tr>
+<tr>
+<td>8</td>
+<td>재무 상태가 건전한가?</td>
+<td>✅</td>
+<td>순현금 1.2조, 이자보상배율 127.7배</td>
+</tr>
+<tr>
+<td>9</td>
+<td>규제·법적 리스크가 관리 가능한가?</td>
+<td>⚠️</td>
+<td>명태균 게이트 수사 확대 리스크 상존</td>
+</tr>
+<tr>
+<td>10</td>
+<td>지금 매수하지 않으면 후회할 것인가?</td>
+<td>✅</td>
+<td>파이프라인 계약 공시 전 포지션 구축이 이상적</td>
+</tr>
+</tbody>
+</table>
+<p><strong>10관문 중 8통과, 2조건부</strong> → 체크리스트 통과</p>
+<hr />
+<h2>7. 최종 투자 의견</h2>
+<h3>투자 성향별 제안</h3>
+<table>
+<thead>
+<tr>
+<th>성향</th>
+<th>의견</th>
+<th>가격 구간</th>
+<th>목표가</th>
+<th>비중</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>공격형</strong></td>
+<td>적극 매수</td>
+<td>185,000~200,500원 분할</td>
+<td>350,000원 (1년)</td>
+<td>포트폴리오 10~15%</td>
+</tr>
+<tr>
+<td><strong>중립형</strong></td>
+<td>분할 매수</td>
+<td>185,000~200,500원</td>
+<td>316,967원 (중립 적정가)</td>
+<td>포트폴리오 5~10%</td>
+</tr>
+<tr>
+<td><strong>보수형</strong></td>
+<td>관망 후 매수</td>
+<td>160,000~175,000원 이하</td>
+<td>268,000원</td>
+<td>포트폴리오 3~5%</td>
+</tr>
+</tbody>
+</table>
+<h3>가격 트리거 테이블</h3>
+<table>
+<thead>
+<tr>
+<th>신호 유형</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>추가 매수 신호 (1)</td>
+<td>이라크 K2 250대 계약 공시 (~9조)</td>
+</tr>
+<tr>
+<td>추가 매수 신호 (2)</td>
+<td>루마니아 K2 계약 공시 (~10조)</td>
+</tr>
+<tr>
+<td>추가 매수 신호 (3)</td>
+<td>폴란드 3차 RFP 발표 (파이프라인 현실화)</td>
+</tr>
+<tr>
+<td>추가 매수 신호 (4)</td>
+<td>주가 175,000원 이하 재하락 + 파이프라인 취소 미확인</td>
+</tr>
+<tr>
+<td>추가 매수 신호 (5)</td>
+<td>Q1 2027 방산 OPM 15% 이상 유지 확인</td>
+</tr>
+<tr>
+<td>비중 축소 신호 (1)</td>
+<td>명태균 게이트 수사 확대 → 계약 취소 우려</td>
+</tr>
+<tr>
+<td>비중 축소 신호 (2)</td>
+<td>K2PL 현지화 비율 50% 초과 공시</td>
+</tr>
+<tr>
+<td>비중 축소 신호 (3)</td>
+<td>외국인 3개월 연속 순매도 전환</td>
+</tr>
+<tr>
+<td>비중 축소 신호 (4)</td>
+<td>방산 OPM 2분기 연속 15% 이하 하락</td>
+</tr>
+<tr>
+<td>비중 축소 신호 (5)</td>
+<td>파이프라인 2건 이상 동시 취소 확정</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>8. 거장 모의 논평</h2>
+<blockquote>
+<p><strong>버핏:</strong> "K2 전차는 단순히 무기가 아니다. 허가·기술·규모의 3중 해자가 겹치고, 이를 운용하는 나라의 국방력과 연결된 30년 생애주기 비즈니스다. 내가 가장 좋아하는 사업 유형이다. 다만 K2PL 현지화가 핵심 IP를 침식하는지는 계속 지켜봐야 한다. 이용배 사장이 적자 2,800억원 시절에도 올바른 결정을 내린 사람이라는 점이 이 투자의 가장 큰 안전망이다."</p>
+<p><strong>멍거:</strong> "모두가 드론 때문에 전차 기업을 걱정할 때 나는 다른 것을 걱정한다. K2PL 마진 침식과 이라크 계약 타이밍. 이 두 가지가 동시에 악화되면 2027~2028년 성장 공백이 생긴다. 그리고 명태균 게이트 수사 — 이것이 가장 저평가된 블랙스완이다. 확률은 낮지만 발생 시 주가는 폭락한다. 포지션 크기를 조절하라."</p>
+<p><strong>클라만:</strong> "200,500원에 현대로템을 산다면 나는 청산가치(39,200원)의 5.1배를 지불하는 것이다. 이것은 클라만식 안전마진이 아니다. 하지만 수주잔고 29.8조원이 FCF를 보장한다는 점에서 자본 훼손 리스크는 제한적이다. 나라면 160,000~175,000원까지 기다리겠다. 그 수준에서 FCF yield 4.4~5.1%면 위험 대비 보상이 충분해진다."</p>
+<p><strong>피셔:</strong> "임원 37명이 집단으로 자사주를 샀다. 10년 만에 처음. 나는 이것을 분석 보고서보다 더 신뢰한다. 내부에서 가장 잘 아는 사람들이 자기 돈을 썼다는 것은 — 앞으로 6~12개월 내 주요 계약 발표가 있다고 믿는다는 뜻이다. Anduril AI MOU도 방향이 옳다. 다만 파이프라인 전부 수주를 가정하지 마라. 1~2건 성사면 충분하다."</p>
+<p><strong>코스톨라니:</strong> "외국인이 393만주를 샀다. 스마트머니가 이미 알고 있다. 지금 신문은 '드론이 전차를 죽인다'고 쓴다 — 이것이 매수 신호다. 신문이 '현대로템 열풍'을 1면에 실을 때가 매도 신호다. 아직 1면이 아니다. 수면제를 먹어라. 폴란드 3차 계약 공시 때 깨어나면 된다."</p>
+</blockquote>
+<hr />
+<h2>9. AI 연구 한계 선언</h2>
+<p><strong>정보 풍부도: A등급</strong> — KOSPI 대형주, 증권사 커버리지 18개사, 21년 상장 이력</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>항목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>높은 신뢰도 데이터</strong></td>
+<td>FY2025 확정 재무(영업이익 1조 56억, OPM 17.2%, FCF 7,751억), 밸류에이션 도구 계산값, 수주잔고 공시, 임원 자사주 매입 공시, 발행주식수</td>
+</tr>
+<tr>
+<td><strong>중간 신뢰도 추론</strong></td>
+<td>부문별 OPM 분해(방산 27%, 철도 1~5%), 파이프라인 확정확률(이라크 45%, 루마니아 50%), 2033년 이후 K2PL OPM 15~18% 추정</td>
+</tr>
+<tr>
+<td><strong>낮은 신뢰도·현장 검증 필요</strong></td>
+<td>명태균 게이트 수사 파급 범위, 이라크 계약 협상 세부, Trophy APS K2 탑재 스케줄, 후계자 파이프라인</td>
+</tr>
+</tbody>
+</table>
+<p><strong>반론 검증 집중 결과 (A등급 핵심 작업):</strong>
+- K2PL 전환비용 해자 약화 → <strong>핵심 IP 통제 유지 확인. 치명적이지 않음.</strong>
+- 드론 대체론 → <strong>15% 확률. Trophy APS 드론 요격 기능으로 방어 확인.</strong>
+- 부채비율 206% 위험 → <strong>선수금 착시. 실질 순현금 +1.2조 확인.</strong>
+- 파이프라인 33~40조 낙관론 → <strong>현실적 15~18조(확률가중)로 조정 필요.</strong></p>
+<hr />
+<h2>데이터 품질 감사</h2>
+<table>
+<thead>
+<tr>
+<th>수치</th>
+<th>검증</th>
+<th>편차</th>
+<th>상태</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기준가 200,500원</td>
+<td>fetch_price_kr.py 직접 수집</td>
+<td>0%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>시총 21.88조</td>
+<td>주가×1.09142억주</td>
+<td>0.01%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>PER 28.42배</td>
+<td>financial_rigor_kr.py 도구</td>
+<td>0%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>영업이익 1조 56억</td>
+<td>FnGuide+EBN 교차</td>
+<td>0.00%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>FCF 7,751억</td>
+<td>FnGuide 현금흐름표</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>3시나리오 적정가</td>
+<td>financial_rigor_kr.py 도구</td>
+<td>0%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>수주잔고 29.8조</td>
+<td>공시</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>임원 자사주 37명/16억</td>
+<td>공시(2026.06.12)</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<p><strong>8개 감사 항목 전원 통과 ✅</strong></p>
+<hr />
+<p><em>작성: 2026-07-04 | 팀: business-analyst·value-analyst·industry-researcher·growth-analyst·sentiment-analyst</em>
+<em>도구: fetch_price_kr.py, financial_rigor_kr.py | 정보풍부도 A등급</em>
+<em>데이터: DART·FnGuide·AlphaSquare·EBN·네이버금융·KED Global·UPI·TWZ·Army Recognition·Modern War Institute·TradingEconomics·Mordor Intelligence 외 20여 소스</em></p>
+
+    <script src="../search_index.js"></script>
+    <script>
+        let currentFocus = -1;
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+            currentFocus = -1; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach((item, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+
+                // 마우스 진입 시 키보드 포커스와 동기화
+                li.addEventListener('mouseenter', () => {
+                    currentFocus = index;
+                    addActive(resultsContainer.getElementsByTagName('li'));
+                });
+            });
+        });
+
+        // 한글 씹힘 방지 및 엔터 이동 완벽 적용
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            if (e.isComposing || e.keyCode === 229) {
+                if (e.key === "Enter") return;
+            }
+
+            const resultsContainer = document.getElementById('searchResults');
+            const items = resultsContainer.getElementsByTagName('li');
+            
+            if (e.key === "ArrowDown" || e.keyCode === 40) {
+                currentFocus++;
+                addActive(items);
+                e.preventDefault(); 
+            } else if (e.key === "ArrowUp" || e.keyCode === 38) {
+                currentFocus--;
+                addActive(items);
+                e.preventDefault();
+            } else if (e.key === "Enter" || e.keyCode === 13) {
+                e.preventDefault();
+                if (currentFocus > -1 && items[currentFocus]) {
+                    window.location.href = items[currentFocus].querySelector('a').href;
+                }
+            }
+        });
+
+        function addActive(items) {
+            if (!items || items.length === 0) return false;
+            removeActive(items);
+            
+            if (currentFocus >= items.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = items.length - 1;
+            
+            items[currentFocus].classList.add("active");
+            items[currentFocus].scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+
+        function removeActive(items) {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>
