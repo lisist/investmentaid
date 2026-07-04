@@ -208,6 +208,18 @@ const searchData = [
         "url": "현대글로비스/현대글로비스-checklist-20260703.html"
     },
     {
+        "title": "[현대글로비스] 현대글로비스-research-20260703",
+        "url": "현대글로비스/현대글로비스-research-20260703.html"
+    },
+    {
+        "title": "[현대로템] 현대로템-checklist-20260703",
+        "url": "현대로템/현대로템-checklist-20260703.html"
+    },
+    {
+        "title": "[현대로템] 현대로템-research-20260704",
+        "url": "현대로템/현대로템-research-20260704.html"
+    },
+    {
         "title": "[현대모비스] 현대모비스-checklist-20260630",
         "url": "현대모비스/현대모비스-checklist-20260630.html"
     },

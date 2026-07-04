@@ -1,0 +1,773 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[현대로템] 현대로템-checklist-20260703</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }
+        
+        /* 검색창 기본 스타일 추가 */
+        .search-input {
+            box-sizing: border-box; 
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 16px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        .search-input:focus {
+            border-color: #0366d6;
+            box-shadow: 0 4px 24px rgba(3, 102, 214, 0.15);
+        }
+        .results-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            max-height: 350px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e1e4e8;
+            box-sizing: border-box; 
+        }
+        .results-list:empty { border: none; box-shadow: none; }
+        .results-list li { border-bottom: 1px solid #eaecef; }
+        .results-list li:last-child { border-bottom: none; }
+        .results-list a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+        .results-list a:hover { background-color: #f6f8fa; color: #0056b3; }
+
+        /* 💡 키보드 방향키 하이라이트 스타일 */
+        .results-list li.active {
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+        }
+        .results-list li.active a {
+            color: #0056b3;
+            padding-left: 11px; 
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body { padding: 15px; }
+            .search-input { font-size: 14px; padding: 10px 14px; }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 삼성전자)" 
+               class="search-input" autocomplete="off">
+        <ul id="searchResults" class="results-list"></ul>
+    </div>
+
+    <h1>현대로템 (064350) — 버핏 6관문 체크리스트</h1>
+<p><strong>기준일:</strong> 2026-07-03 | <strong>기준가:</strong> 200,500원 | <strong>거래소:</strong> KOSPI</p>
+<hr />
+<h2>정보 풍부도 등급: <strong>A등급</strong></h2>
+<ul>
+<li>KOSPI 대형주 (시총 21.88조원), 2005년 상장</li>
+<li>증권사 커버리지 다수, 컨센서스 목표주가 276,660원 (2026-07-03)</li>
+<li><strong>컨센서스 함정 주의</strong>: 방산 파이프라인 수주 기대감이 목표주가에 반영된 상태. 지연 시나리오 집중 검토 필요.</li>
+</ul>
+<hr />
+<h2>핵심 데이터 요약</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>수치</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기준가</td>
+<td><strong>200,500원</strong> (2026-07-03 21:27)</td>
+<td>fetch_price_kr.py</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td><strong>21조 8,830억원</strong></td>
+<td>1.091억주 × 200,500원</td>
+</tr>
+<tr>
+<td>시총 검증</td>
+<td>편차 <strong>0.00%</strong> ✅</td>
+<td>financial_rigor_kr.py</td>
+</tr>
+<tr>
+<td>발행주식수</td>
+<td><strong>1억 914만 2,293주</strong></td>
+<td>AlphaSquare</td>
+</tr>
+<tr>
+<td>52주 고가/저가</td>
+<td>282,000원 / 162,000원</td>
+<td>AlphaSquare</td>
+</tr>
+<tr>
+<td>52주 위치</td>
+<td><strong>32.1%</strong></td>
+<td>도구 계산</td>
+</tr>
+<tr>
+<td>EPS (FY2025A)</td>
+<td><strong>7,055원</strong></td>
+<td>FnGuide</td>
+</tr>
+<tr>
+<td>EPS (FY2026E)</td>
+<td><strong>8,718원</strong></td>
+<td>와이즈리포트</td>
+</tr>
+<tr>
+<td>BPS (FY2025A)</td>
+<td><strong>28,211원</strong></td>
+<td>FnGuide</td>
+</tr>
+<tr>
+<td>DPS (FY2025A)</td>
+<td><strong>600원</strong></td>
+<td>공시</td>
+</tr>
+<tr>
+<td>PER (TTM)</td>
+<td><strong>28.42배</strong></td>
+<td>financial_rigor_kr.py</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>7.11배</strong></td>
+<td>financial_rigor_kr.py</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td><strong>4.57%</strong> (추정)</td>
+<td>financial_rigor_kr.py</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>0.30%</strong></td>
+<td>financial_rigor_kr.py</td>
+</tr>
+<tr>
+<td>수주잔고</td>
+<td><strong>29조 8,181억원</strong> (1Q26말)</td>
+<td>증권사 리포트</td>
+</tr>
+<tr>
+<td>수주잔고/매출</td>
+<td><strong>약 5.1년치</strong></td>
+<td>5.84조 매출 기준</td>
+</tr>
+<tr>
+<td>컨센서스 목표주가</td>
+<td><strong>276,660원</strong> (+38%)</td>
+<td>한경 컨센서스</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>6관문 평점표</h2>
+<table>
+<thead>
+<tr>
+<th>관문</th>
+<th>항목</th>
+<th>평점</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1관문</td>
+<td>능력 범위</td>
+<td>★★★★☆</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>2관문</td>
+<td>사업 품질</td>
+<td>★★★★☆</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>3관문</td>
+<td>해자</td>
+<td>★★★★☆</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>4관문</td>
+<td>경영진</td>
+<td>★★★★☆</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>5관문</td>
+<td>안전마진</td>
+<td>★★★☆☆</td>
+<td>조건부 통과</td>
+</tr>
+<tr>
+<td>6관문</td>
+<td>시장 심리</td>
+<td>★★★☆☆</td>
+<td>A2 구간</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>1관문: 이 사업을 이해할 수 있는가? ★★★★☆</h2>
+<p><strong>한 문장 정의:</strong> 현대로템은 한국 육군의 주력 전차 K2를 국내 독점 생산·수출하고(방산 35%), 고속철도·도시철도 차량을 제조·공급하는(철도 62%) 현대차그룹 계열 방산·교통 인프라 기업이다.</p>
+<table>
+<thead>
+<tr>
+<th>필수 답변</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수익 방식 설명 가능?</td>
+<td>✅ 방산: 정부 계약·수출 계약 → 생산 → 납품. 철도: 입찰 수주 → 제작 → 납품</td>
+</tr>
+<tr>
+<td>10년 후 예측 가능?</td>
+<td>✅ K2 전차 수출 시리즈 지속(폴란드 3차·루마니아·이라크) + 글로벌 철도 점유율 확대</td>
+</tr>
+<tr>
+<td>핵심 변수</td>
+<td>① 방산 파이프라인 수주 확정 속도, ② 글로벌 방산 예산 확대 추세, ③ K2PL 현지화 협상</td>
+</tr>
+<tr>
+<td>지식 출처</td>
+<td>데이터 기반 심층 연구</td>
+</tr>
+</tbody>
+</table>
+<p><strong>평점 이유</strong>: 방산·철도 이원 구조는 명확하나 정부 계약 의존 + 방산 보안상 일부 정보 제한 = 4성.</p>
+<hr />
+<h2>2관문: 좋은 사업인가? ★★★★☆</h2>
+<pre><code>도구: verify-valuation --price 200500 --eps 7055 --bvps 28211 --fcf-per-share 9166 --dividend 600
+결과: PER 28.42배, PBR 7.11배, FCF 4.57%, 배당 0.30%
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>기준</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE (FY2025)</td>
+<td><strong>30.5%</strong></td>
+<td>&gt;15% 우수</td>
+<td>✅ 탁월</td>
+</tr>
+<tr>
+<td>ROE 추세 (2022~2025)</td>
+<td>14.1% → 10.0% → 22.2% → <strong>30.5%</strong></td>
+<td>지속 개선</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>영업이익률 (FY2025)</td>
+<td><strong>17.2%</strong></td>
+<td>&gt;10% 의미 있음</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td><strong>추정 양(+)</strong> (순현금 4,200억→1.2조 급증)</td>
+<td>양(+) 지속</td>
+<td>✅ 추정</td>
+</tr>
+<tr>
+<td>CAPEX 강도</td>
+<td>연 6,000억원 계획(2026~2028)</td>
+<td>중자산</td>
+<td>⚠️</td>
+</tr>
+<tr>
+<td>부채비율</td>
+<td>206% (선수금 충당금 포함)</td>
+<td>—</td>
+<td>⚠️ 외형상 높음</td>
+</tr>
+<tr>
+<td>이자보상배율</td>
+<td><strong>127.7배</strong> (2025)</td>
+<td>&gt;3년 우수</td>
+<td>✅ 사실상 무부채</td>
+</tr>
+</tbody>
+</table>
+<p><strong>수익성 추세:</strong></p>
+<table>
+<thead>
+<tr>
+<th>연도</th>
+<th>매출</th>
+<th>영업이익</th>
+<th>OPM</th>
+<th>ROE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022</td>
+<td>3조 1,633억</td>
+<td>1,475억</td>
+<td>4.7%</td>
+<td>14.1%</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>3조 5,874억</td>
+<td>2,100억</td>
+<td>5.9%</td>
+<td>10.0%</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>4조 3,766억</td>
+<td>4,566억</td>
+<td>10.4%</td>
+<td>22.2%</td>
+</tr>
+<tr>
+<td><strong>2025</strong></td>
+<td><strong>5조 8,390억</strong></td>
+<td><strong>1조 56억</strong></td>
+<td><strong>17.2%</strong></td>
+<td><strong>30.5%</strong></td>
+</tr>
+<tr>
+<td><strong>2026Q1</strong></td>
+<td>1조 4,574억</td>
+<td>2,242억</td>
+<td><strong>15.4%</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><em>출처: FnGuide·한국경제 기업재무·CBC뉴스</em></p>
+<ul>
+<li><strong>부채비율 206% 해석</strong>: 폴란드 대규모 수출 선수금이 '계약부채'로 분류 → 실질 순현금 +1.2조원. 영업이익 기준 이자보상배율 127.7배 = 사실상 무부채 구조.</li>
+<li>OPM 4.7% → 17.2%: 방산 고마진 계약 비중 확대가 드라이버.</li>
+<li><strong>FCF 주의</strong>: CAPEX 정확 수치 미공개. 순현금 7,800억 증가 → FCF 양(+) 확실하나 정확한 수치는 DART 원문 확인 필요.</li>
+</ul>
+<hr />
+<h2>3관문: 해자가 충분한가? ★★★★☆</h2>
+<table>
+<thead>
+<tr>
+<th>해자 유형</th>
+<th>보유 여부</th>
+<th>구체적 근거</th>
+<th>추세</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>브랜드·가격결정력</td>
+<td>✅ 부분</td>
+<td>K2 전차 = 에이브럼스 절반 가격 + 납기 신속 + 실전 검증. 방산 구매국의 신뢰</td>
+<td>확대</td>
+</tr>
+<tr>
+<td><strong>전환비용</strong></td>
+<td>✅ <strong>매우 강함</strong></td>
+<td>방산 계약 10~30년 생애주기. 부품·정비·교육 훈련 전부 글로비스 의존. 교체 비용 천문학적</td>
+<td>확대</td>
+</tr>
+<tr>
+<td>네트워크 효과</td>
+<td>❌ 없음</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>규모·원가 우위</strong></td>
+<td>✅ 중간</td>
+<td>국내 K2 독점 생산. 폴란드 2차 가격 협상에서 원가 우위 일부 입증</td>
+<td>유지</td>
+</tr>
+<tr>
+<td><strong>기술·특허 장벽</strong></td>
+<td>✅ <strong>강함</strong></td>
+<td>K2 전차 기술 = 현대차그룹 + 국방과학연구소 30년 개발 축적. 글로벌 MBT 3세대 기술</td>
+<td>유지</td>
+</tr>
+<tr>
+<td><strong>허가·규제 장벽</strong></td>
+<td>✅ <strong>강함</strong></td>
+<td>국방 조달 = 국가 승인 필수. 방산 수출 허가제 + 정부간 계약 구조</td>
+<td>유지</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>경쟁자 1조원 투자 시</strong>: K2 전차 기술 복제에 15~20년 + 국방과학연구소 협력 + 군 실증 검증 필요. 5년 내 지위 탈취 <strong>사실상 불가</strong>.</li>
+<li><strong>철도 해자</strong>: 알스톰·지멘스·CAF와 직접 경쟁 중이나 글로벌 점유율 2.4%로 규모 우위 약함. 단, 에드먼턴·우즈베키스탄·모로코에서 선두 업체를 연달아 제치는 수주 성과는 가격+품질 경쟁력 증거.</li>
+<li><strong>해자 질적 변화</strong>: 방산 수출 확대로 국가 간 계약 → 전환비용 더욱 심화.</li>
+</ul>
+<hr />
+<h2>4관문: 경영진을 신뢰할 수 있는가? ★★★★☆</h2>
+<table>
+<thead>
+<tr>
+<th>체크 항목</th>
+<th>평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>솔직성</td>
+<td>✅ 수주잔고 공시 투명. 이라크 지연 등 리스크도 솔직히 인정</td>
+</tr>
+<tr>
+<td>자본 배분</td>
+<td>✅ 배당 무배당→100→200→<strong>600원</strong> (5년 만에). 2026~2028년 R&amp;D 1.8조 투자 계획</td>
+</tr>
+<tr>
+<td>주주 이익 일치성</td>
+<td>⚠️ 전문경영인(현대차 파견), 개인 지분 없음. 현대차(43.36%) 최대주주</td>
+</tr>
+<tr>
+<td>오너 마인드셋</td>
+<td>⚠️ 전문경영인 — 그룹 방침 의존 리스크 내재</td>
+</tr>
+<tr>
+<td>지배구조</td>
+<td>⚠️ 현대차 43.36% → 그룹 이익 우선 가능성. 단, 글로비스와 달리 내부거래 이슈 적음</td>
+</tr>
+<tr>
+<td>위기 대응</td>
+<td>✅ 이용배 사장: 적자 지속 기업을 5년 만에 OPM 17.2% + 영업이익 1조원으로 전환</td>
+</tr>
+<tr>
+<td>오너리스크</td>
+<td>✅ 횡령·배임 이력 없음. 이용배 사장 현대로템 역사상 유일 3연임</td>
+</tr>
+</tbody>
+</table>
+<p><strong>이용배 사장 평가:</strong>
+- 재무 전문가 출신(HMC투자증권 대표 역임) → 원가 관리 탁월
+- 2020년 취임 시 OPM 4.7% → 2025년 17.2%: 수익성 경영의 증거
+- 3연임(2025년 말 확정): 이례적 성과 인정
+- 2026~2028년 R&amp;D·CAPEX 1.8조원 투자 결정: 성장 vs 단기 수익 균형 추구</p>
+<hr />
+<h2>5관문: 가격이 충분히 싼가? ★★★☆☆</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>역사적 분위</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td><strong>28.42배</strong></td>
+<td>방산 성장주 프리미엄</td>
+<td>⚠️</td>
+</tr>
+<tr>
+<td>선행 PER (2026E)</td>
+<td><strong>약 23배</strong></td>
+<td>수주잔고 고려 시 정당화 가능</td>
+<td>⚠️</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>7.11배</strong></td>
+<td>고평가</td>
+<td>⚠️</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>0.30%</strong></td>
+<td>낮음</td>
+<td>⚠️</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td><strong>4.57%</strong> (추정)</td>
+<td>보통</td>
+<td>⚠️</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3시나리오 (도구 계산):</strong></p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>가정</th>
+<th>3년 후 EPS</th>
+<th>적정가</th>
+<th>현재 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>낙관</strong></td>
+<td>폴란드3차+루마니아 수주확정, +30%/년, PER 30배</td>
+<td>15,500원</td>
+<td>464,995원</td>
+<td><strong>+131.9%</strong></td>
+</tr>
+<tr>
+<td><strong>중립</strong></td>
+<td>현 수주잔고 소화+철도 확대, +15%/년, PER 25배</td>
+<td>10,730원</td>
+<td>268,244원</td>
+<td><strong>+33.8% ✅</strong></td>
+</tr>
+<tr>
+<td><strong>비관</strong></td>
+<td>파이프라인 대부분 지연, +5%/년, PER 18배</td>
+<td>8,167원</td>
+<td>147,007원</td>
+<td><strong>-26.7%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>중립 +33.8%</strong>: OK 기준 통과이나 방산·철도 성장주치고 충분히 저평가는 아님. <strong>수주잔고 5.1년치가 밸류에이션 정당화 핵심 근거</strong>.</p>
+<p><strong>클라만 관점: 시장이 싸게 두는 이유는?</strong>
+1. <strong>파이프라인 지연 리스크</strong> — 이라크(이란·이라크 전쟁 여파), 루마니아(정권 교체), 폴란드 3차(현지화 협상) 모두 불확실성 존재
+2. <strong>PER 28배 = 이미 기대감 반영</strong> — 시장이 파이프라인 일부는 이미 가격에 넣은 상태
+3. <strong>CAPEX 급증 우려</strong> — 연간 6,000억원은 이전 대비 4배 증가</p>
+<p>이 이유들이 일시적인가? → <strong>파이프라인 지연은 일시적</strong>. 글로벌 지상 전력 증강 추세는 구조적 (나토 GDP 2% 국방비 의무화·중동 불안).</p>
+<hr />
+<h2>6관문: 시장 심리·타이밍 ★★★☆☆</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>현황</th>
+<th>달걀 신호</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>52주 위치</td>
+<td><strong>32.1%</strong> (고가 대비 -29%)</td>
+<td>A2 구간</td>
+</tr>
+<tr>
+<td>최근 주가 이벤트</td>
+<td>2026.05.07 -9.92% 급락 (이라크 지연·방산주 변동성)</td>
+<td>비관 확산</td>
+</tr>
+<tr>
+<td>언론 논조</td>
+<td>파이프라인 지연 우려 vs 수주 기대 혼재</td>
+<td>중립</td>
+</tr>
+<tr>
+<td>방산 섹터 심리</td>
+<td>피크 대비 관심 하락 (드론·미사일 테마 부상)</td>
+<td>A2</td>
+</tr>
+<tr>
+<td>거래량</td>
+<td>급락 후 정체 구간</td>
+<td>A1~A2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>달걀 위치: A2 구간</strong> — 이라크·루마니아 지연 악재가 선반영되어 공포 구간. 파이프라인 수주 공시 시 B1 전환 기대.</p>
+<p><strong>코스톨라니 체크</strong>: "아무도 관심 없기 때문에 사는가?" → <strong>부분 YES</strong>. 방산주 관심이 드론·미사일 테마로 이동하며 전차 기업 소외. 역발상 관점에서 분할 매수 적기.</p>
+<hr />
+<h2>거울 테스트: ✅ 통과</h2>
+<blockquote>
+<p>"나는 200,500원에 현대로템을 매수한다. 이유는:
+1. 이 사업의 본질은 <strong>K2 전차 생산·수출(방산) + 고속철도 제조(철도)</strong>이며, 나는 이를 이해한다.
+2. 해자는 <strong>K2 기술 장벽·허가 장벽·전환비용(30년 계약)</strong>이며, <strong>확대</strong> 추세다.
+3. 경영진은 <strong>이용배 사장이 5년 만에 OPM 4.7%→17.2% 전환을 주도했으며</strong>, <strong>신뢰</strong>할 수 있다.
+4. 현재 가격은 수주잔고 5.1년치를 가진 기업의 중립 적정가(268,244원) 대비 <strong>74.7% 수준</strong>으로, 안전마진이 <strong>충분</strong>하다.
+5. 설령 내가 틀려도, 하방 리스크는 <strong>관리 가능</strong>하다. 이유: <strong>비관 -26.7%, ROE 30%·이자보상 127배의 펀더멘탈이 하방 방어</strong>."</p>
+</blockquote>
+<hr />
+<h2>핵심 리스크</h2>
+<table>
+<thead>
+<tr>
+<th>순위</th>
+<th>리스크</th>
+<th>심각도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>파이프라인 지연</strong> — 이라크(전쟁 여파·내각 구성 지연)·루마니아(정권 교체)·폴란드 3차(현지화 협상). 1건이라도 지연 시 EPS 성장 둔화</td>
+<td>High</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>PER 28배 고평가</strong> — 파이프라인 지연 현실화 시 멀티플 재조정으로 -30% 이상 하락 가능</td>
+<td>High</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>K2PL 현지화 딜레마</strong> — 폴란드는 기술 이전 압박. 수익성 훼손 없이 현지화 비율 맞추기 어려움</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>CAPEX 급증</strong> — 연간 6,000억원(이전 대비 4배) R&amp;D·설비 투자 → FCF 감소</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>드론·미사일 대체 리스크</strong> — 우크라이나 전쟁에서 드론 효용성 증명 → 전차 필요성 논쟁. 단기보다 중장기 리스크</td>
+<td>Low-Medium</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>최종 결론: ✅ 체크리스트 통과 (5.5/6관문)</h2>
+<p><strong>매수 의견: 185,000~200,500원 분할 매수 관심권</strong></p>
+<table>
+<thead>
+<tr>
+<th>구간</th>
+<th>행동</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>185,000원 이하</strong></td>
+<td>적극 매수 (선행 PER ~21배, 비관 적정가 147,007원 대비 안전마진 추가)</td>
+</tr>
+<tr>
+<td><strong>200,000~210,000원</strong></td>
+<td>1차 소규모 분할 매수</td>
+</tr>
+<tr>
+<td><strong>250,000~270,000원</strong></td>
+<td>중립 적정가 접근 → 보유 유지</td>
+</tr>
+<tr>
+<td><strong>280,000원 이상</strong></td>
+<td>파이프라인 추가 확정 없으면 일부 익절 검토</td>
+</tr>
+</tbody>
+</table>
+<p><strong>통과 근거:</strong>
+- <strong>수주잔고 29.8조원(매출 5.1년치)</strong> — EPS 성장 가시성 이 수준의 기업은 드묾
+- <strong>ROE 30.5%·OPM 17.2%</strong> — 방산 4사 중 OPM 최고
+- <strong>이자보상배율 127.7배·순현금 1.2조</strong> — 재무 리스크 사실상 없음
+- <strong>비관 시나리오 -26.7%</strong> — 관리 가능한 하방</p>
+<p><strong>핵심 모니터링 (이것이 주가 결정):</strong>
+1. <strong>폴란드 3차 계약 (640대) 공시</strong> — 확정 시 주가 +20~30% 즉각 반응 예상
+2. <strong>루마니아 이행계약 (216대, 2027년 예상)</strong> — 시기 모니터링
+3. <strong>이라크 정치 상황</strong> — 이란·이라크 전쟁 종식 후 계약 재개 여부
+4. <strong>분기별 OPM 추이</strong> — 17% 이상 유지 여부 (K2PL 현지화 협상 영향)</p>
+<p><em>작성: 2026-07-03 | 도구: fetch_price_kr.py, financial_rigor_kr.py</em>
+<em>데이터: FnGuide·AlphaSquare·블로터·뉴데일리·CBC뉴스·한국경제·와이즈리포트·인사이트코리아</em>
+<em>정보풍부도 A등급 — 파이프라인 수주 타이밍이 밸류에이션 결정. 이라크·루마니아·폴란드 3차 공시 모니터링 필수</em></p>
+
+    <script src="../search_index.js"></script>
+    <script>
+        let currentFocus = -1;
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+            currentFocus = -1; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach((item, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+
+                // 마우스 진입 시 키보드 포커스와 동기화
+                li.addEventListener('mouseenter', () => {
+                    currentFocus = index;
+                    addActive(resultsContainer.getElementsByTagName('li'));
+                });
+            });
+        });
+
+        // 한글 씹힘 방지 및 엔터 이동 완벽 적용
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            if (e.isComposing || e.keyCode === 229) {
+                if (e.key === "Enter") return;
+            }
+
+            const resultsContainer = document.getElementById('searchResults');
+            const items = resultsContainer.getElementsByTagName('li');
+            
+            if (e.key === "ArrowDown" || e.keyCode === 40) {
+                currentFocus++;
+                addActive(items);
+                e.preventDefault(); 
+            } else if (e.key === "ArrowUp" || e.keyCode === 38) {
+                currentFocus--;
+                addActive(items);
+                e.preventDefault();
+            } else if (e.key === "Enter" || e.keyCode === 13) {
+                e.preventDefault();
+                if (currentFocus > -1 && items[currentFocus]) {
+                    window.location.href = items[currentFocus].querySelector('a').href;
+                }
+            }
+        });
+
+        function addActive(items) {
+            if (!items || items.length === 0) return false;
+            removeActive(items);
+            
+            if (currentFocus >= items.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = items.length - 1;
+            
+            items[currentFocus].classList.add("active");
+            items[currentFocus].scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+
+        function removeActive(items) {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>
