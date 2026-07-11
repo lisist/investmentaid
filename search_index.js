@@ -28,6 +28,10 @@ const searchData = [
         "url": "LG에너지솔루션/LG에너지솔루션-research-20260628.html"
     },
     {
+        "title": "[LIG디펜스앤에어로스페이스] LIG디펜스앤에어로스페이스-checklist-20260711",
+        "url": "LIG디펜스앤에어로스페이스/LIG디펜스앤에어로스페이스-checklist-20260711.html"
+    },
+    {
         "title": "[LS Electric] LS Electric-checklist-20260702",
         "url": "LS Electric/LS Electric-checklist-20260702.html"
     },
@@ -58,6 +62,10 @@ const searchData = [
     {
         "title": "[뉴로메카] 뉴로메카-checklist-20260703",
         "url": "뉴로메카/뉴로메카-checklist-20260703.html"
+    },
+    {
+        "title": "[대한광통신] 대한광통신-checklist-20260711",
+        "url": "대한광통신/대한광통신-checklist-20260711.html"
     },
     {
         "title": "[대한전선] 대한전선-checklist-20260703",
@@ -120,12 +128,36 @@ const searchData = [
         "url": "삼성전자/최종보고서.html"
     },
     {
+        "title": "[세나테크놀로지] 01-비즈니스모델-버핏시각",
+        "url": "세나테크놀로지/01-비즈니스모델-버핏시각.html"
+    },
+    {
+        "title": "[세나테크놀로지] 03-산업경쟁분석-멍거시각",
+        "url": "세나테크놀로지/03-산업경쟁분석-멍거시각.html"
+    },
+    {
+        "title": "[세나테크놀로지] 04-안전마진분석-클라만시각",
+        "url": "세나테크놀로지/04-안전마진분석-클라만시각.html"
+    },
+    {
+        "title": "[세나테크놀로지] 05-성장잠재력-피셔시각",
+        "url": "세나테크놀로지/05-성장잠재력-피셔시각.html"
+    },
+    {
+        "title": "[세나테크놀로지] 06-심리사이클-코스톨라니시각",
+        "url": "세나테크놀로지/06-심리사이클-코스톨라니시각.html"
+    },
+    {
         "title": "[세나테크놀로지] 세나테크놀로지-checklist-20260703",
         "url": "세나테크놀로지/세나테크놀로지-checklist-20260703.html"
     },
     {
         "title": "[세나테크놀로지] 세나테크놀로지-research-20260703",
         "url": "세나테크놀로지/세나테크놀로지-research-20260703.html"
+    },
+    {
+        "title": "[세나테크놀로지] 최종보고서",
+        "url": "세나테크놀로지/최종보고서.html"
     },
     {
         "title": "[엔바이오니아] 엔바이오니아-checklist-20260628",
