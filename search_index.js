@@ -262,5 +262,9 @@ const searchData = [
     {
         "title": "[현대차] 현대차-checklist-20260628",
         "url": "현대차/현대차-checklist-20260628.html"
+    },
+    {
+        "title": "[호텔신라] 호텔신라-checklist-20260711",
+        "url": "호텔신라/호텔신라-checklist-20260711.html"
     }
 ];
