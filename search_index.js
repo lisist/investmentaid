@@ -4,6 +4,14 @@ const searchData = [
         "url": "HD현대중공업/HD현대중공업-checklist-20260630.html"
     },
     {
+        "title": "[HL만도] HL만도-checklist-20260708",
+        "url": "HL만도/HL만도-checklist-20260708.html"
+    },
+    {
+        "title": "[HL만도] HL만도-checklist-data-20260708",
+        "url": "HL만도/HL만도-checklist-data-20260708.html"
+    },
+    {
         "title": "[KB금융] KB금융-checklist-20260702",
         "url": "KB금융/KB금융-checklist-20260702.html"
     },
@@ -166,6 +174,10 @@ const searchData = [
     {
         "title": "[자화전자] 최종보고서",
         "url": "자화전자/최종보고서.html"
+    },
+    {
+        "title": "[주성엔지니어링] 주성엔지니어링-checklist-20260710",
+        "url": "주성엔지니어링/주성엔지니어링-checklist-20260710.html"
     },
     {
         "title": "[태광] 01-비즈니스모델-버핏시각",

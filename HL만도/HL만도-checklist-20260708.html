@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[HL만도] HL만도-checklist-20260708</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }
+        
+        /* 검색창 기본 스타일 추가 */
+        .search-input {
+            box-sizing: border-box; 
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 16px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        .search-input:focus {
+            border-color: #0366d6;
+            box-shadow: 0 4px 24px rgba(3, 102, 214, 0.15);
+        }
+        .results-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            max-height: 350px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e1e4e8;
+            box-sizing: border-box; 
+        }
+        .results-list:empty { border: none; box-shadow: none; }
+        .results-list li { border-bottom: 1px solid #eaecef; }
+        .results-list li:last-child { border-bottom: none; }
+        .results-list a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+        .results-list a:hover { background-color: #f6f8fa; color: #0056b3; }
+
+        /* 💡 키보드 방향키 하이라이트 스타일 */
+        .results-list li.active {
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+        }
+        .results-list li.active a {
+            color: #0056b3;
+            padding-left: 11px; 
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body { padding: 15px; }
+            .search-input { font-size: 14px; padding: 10px 14px; }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 삼성전자)" 
+               class="search-input" autocomplete="off">
+        <ul id="searchResults" class="results-list"></ul>
+    </div>
+
+    <h1>HL만도 (204320) — 버핏 6관문 체크리스트</h1>
+<p><strong>기준일:</strong> 2026-07-08 | <strong>기준가:</strong> 48,700원 | <strong>거래소:</strong> KOSPI</p>
+<hr />
+<h2>정보 풍부도 등급: <strong>A등급</strong></h2>
+<ul>
+<li>코스피 대형주 (시총 2.29조원), 2015년 이후 독립 상장, 증권사 커버리지 20개사</li>
+<li><strong>컨센서스 함정 주의</strong>: 20인 전원 매수는 B1 구간 신호. 컨센서스가 맞다면 알파 없음.</li>
+<li><strong>핵심 쟁점 2가지</strong>: ① OPM 3~4% 구조적 한계가 개선되는가 ② 로봇 액추에이터가 실질 성장 동력인가</li>
+</ul>
+<hr />
+<h2>6관문 평점표</h2>
+<table>
+<thead>
+<tr>
+<th>관문</th>
+<th>항목</th>
+<th>평점</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1관문</td>
+<td>능력 범위</td>
+<td>★★★★☆</td>
+<td>통과</td>
+</tr>
+<tr>
+<td>2관문</td>
+<td>사업 품질</td>
+<td>★★☆☆☆</td>
+<td><strong>조건부 실패</strong></td>
+</tr>
+<tr>
+<td>3관문</td>
+<td>해자</td>
+<td>★★★☆☆</td>
+<td>조건부</td>
+</tr>
+<tr>
+<td>4관문</td>
+<td>경영진</td>
+<td>★★★☆☆</td>
+<td>조건부</td>
+</tr>
+<tr>
+<td>5관문</td>
+<td>안전마진</td>
+<td>★★★☆☆</td>
+<td>조건부</td>
+</tr>
+<tr>
+<td>6관문</td>
+<td>시장 심리</td>
+<td>★★★★☆</td>
+<td>통과</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>핵심 데이터 요약</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>수치</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기준가</td>
+<td><strong>48,700원</strong> (2026-07-08 14:11)</td>
+<td>fetch_price_kr.py</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td><strong>2.29조원</strong></td>
+<td>4,696만주 × 48,700원</td>
+</tr>
+<tr>
+<td>발행주식수</td>
+<td>4,696만주</td>
+<td>공시</td>
+</tr>
+<tr>
+<td>52주 고가/현재</td>
+<td>79,100원 / 48,700원 = <strong>-38.4%</strong></td>
+<td>Yahoo Finance</td>
+</tr>
+<tr>
+<td>EPS (FY2025)</td>
+<td><strong>2,130원</strong></td>
+<td>FnGuide</td>
+</tr>
+<tr>
+<td>EPS (2026E 컨센서스)</td>
+<td><strong>~4,270원</strong> (추정)</td>
+<td>fPER 11.4배 역산</td>
+</tr>
+<tr>
+<td>BPS (FY2025)</td>
+<td><strong>57,793원</strong></td>
+<td>FnGuide</td>
+</tr>
+<tr>
+<td>DPS (FY2025)</td>
+<td><strong>750원</strong></td>
+<td>공시</td>
+</tr>
+<tr>
+<td>주당 FCF (추산)</td>
+<td><strong>8,030원</strong></td>
+<td>FCF 3,771억/4,696만주 추산</td>
+</tr>
+<tr>
+<td><strong>PER (FY2025)</strong></td>
+<td><strong>22.86배</strong></td>
+<td>도구 계산 ✅</td>
+</tr>
+<tr>
+<td><strong>선행 PER (2026E)</strong></td>
+<td><strong>~11.4배</strong></td>
+<td>증권사 컨센서스</td>
+</tr>
+<tr>
+<td><strong>PBR</strong></td>
+<td><strong>0.84배</strong></td>
+<td>도구 계산 ✅</td>
+</tr>
+<tr>
+<td><strong>FCF 수익률</strong></td>
+<td><strong>16.49%</strong></td>
+<td>도구 계산 ✅ (추산치 주의)</td>
+</tr>
+<tr>
+<td><strong>배당수익률</strong></td>
+<td><strong>1.54%</strong></td>
+<td>도구 계산 ✅</td>
+</tr>
+<tr>
+<td>증권사 목표주가</td>
+<td><strong>74,909원</strong> (평균, 20인 전원 매수)</td>
+<td>컨센서스</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>1관문: 이 사업을 이해할 수 있는가? ★★★★☆</h2>
+<p><strong>한 문장 정의</strong>: HL만도는 현대차·기아 등 글로벌 완성차 OEM에 제동(브레이크)·조향(스티어링)·현가(서스펜션)·ADAS 센서를 납품하고, 부품 장착 후 수십 년간 유지보수 부품도 공급하는 자동차 1차 부품 사업자다.</p>
+<p><strong>10년 후 예측 가능성:</strong>
+- 자동차 제동·조향은 EV 전환 후에도 존재하는 사업 (EV도 브레이크는 필요)
+- 10년 후 주요 변수: ① 완성차 생산량 ② 전동화 비중 ③ 로봇 신사업 기여도
+- EV에서는 회생제동(BBW) 비중 확대 → 기존 유압 브레이크보다 기술 복잡도·단가 높음</p>
+<p><strong>핵심 성패 변수:</strong>
+1. 현대차·기아 글로벌 생산량 및 점유율 (의존도 44~50%)
+2. 중국 내 현지 브랜드 약진으로 인한 중국 법인 매출 감소
+3. 로봇 액추에이터 사업화 성공 여부 (2027년 양산 예정)</p>
+<p><strong>지식 출처</strong>: 데이터 기반 연구 (DART·증권사·언론). 자동차 부품업 구조 명확히 이해 가능.</p>
+<hr />
+<h2>2관문: 좋은 사업인가? ★★☆☆☆</h2>
+<pre><code>python tools/financial_rigor_kr.py verify-valuation \
+  --price 48700 --eps 2130 --bvps 57793 --fcf-per-share 8030 --dividend 750
+
+PER: 22.86배, PBR: 0.84배, FCF수익률: 16.49%, 배당수익률: 1.54% ✅
+</code></pre>
+<h3>5개년 수익성 추세</h3>
+<table>
+<thead>
+<tr>
+<th>연도</th>
+<th>매출</th>
+<th>영업이익</th>
+<th>OPM</th>
+<th>순이익</th>
+<th>ROE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021</td>
+<td>6.1조</td>
+<td>231억</td>
+<td>3.78%</td>
+<td>1,671억</td>
+<td>9.52%</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>7.5조</td>
+<td>248억</td>
+<td>3.30%</td>
+<td>983억</td>
+<td>5.48%</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>8.4조</td>
+<td>280억</td>
+<td>3.33%</td>
+<td>1,356억</td>
+<td>6.68%</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>8.8조</td>
+<td>357억</td>
+<td>4.05%</td>
+<td>1,299억</td>
+<td>6.29%</td>
+</tr>
+<tr>
+<td><strong>2025</strong></td>
+<td><strong>9.5조</strong></td>
+<td><strong>359억</strong></td>
+<td><strong>3.78%</strong></td>
+<td><strong>1,003억</strong></td>
+<td><strong>4.43%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>출처: 한국경제 재무요약 + FnGuide 교차확인</em></p>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>기준</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE (5년 평균)</td>
+<td><strong>6.5%</strong></td>
+<td>&gt;15%</td>
+<td>❌ 기준 미달</td>
+</tr>
+<tr>
+<td>영업이익률 (FY2025)</td>
+<td><strong>3.78%</strong></td>
+<td>&gt;10%</td>
+<td>❌ 기준 미달</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td>3,771억 (추산) — <strong>순이익(1,003억)의 3.8배</strong></td>
+<td>양(+), ≈순이익</td>
+<td>⚠️ 괴리 주의</td>
+</tr>
+<tr>
+<td>CAPEX 강도</td>
+<td>3,438억 (매출의 3.6%) — 중자산</td>
+<td>경자산 선호</td>
+<td>⚠️</td>
+</tr>
+<tr>
+<td>부채 수준</td>
+<td>부채비율 148%, 순현금 1,011억 전환</td>
+<td>저부채</td>
+<td>✅ 개선 중</td>
+</tr>
+</tbody>
+</table>
+<p><strong>핵심 문제</strong>: OPM 3~4%는 자동차 부품업의 구조적 한계. 버핏이 원하는 "정직한 이익률"과 거리가 있다. 다만 2025년 <strong>순현금 전환</strong> (FY2024 순차입금 2,244억 → FY2025 순현금 1,011억)은 재무 개선 신호.</p>
+<p><strong>FCF 괴리 경고</strong>: 주당FCF 8,030원이 EPS 2,130원의 3.8배 → D&amp;A 비용이 크거나 추산 오류 가능성. DART 원문 현금흐름표 직접 확인 필요. 체크리스트 판단에서 FCF 16.49% 수익률을 그대로 신뢰하기 어려움.</p>
+<p><strong>2관문 판정 근거</strong>: ROE 6.5% (기준 15% 미달), OPM 3.78% (기준 10% 미달). 자동차 부품사 특성상 영업 레버리지가 낮고 원자재·인건비 비중이 높은 구조. 버핏 기준 "경제적 특성이 좋은 사업"에는 해당하지 않음.</p>
+<hr />
+<h2>3관문: 해자가 충분한가? ★★★☆☆</h2>
+<table>
+<thead>
+<tr>
+<th>해자 유형</th>
+<th>보유 여부</th>
+<th>구체적 근거</th>
+<th>추세</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>브랜드·가격결정력</td>
+<td>❌ 약함</td>
+<td>완성차 OEM이 가격 결정권 보유. HL만도가 가격을 올리면 발주 감소 위험</td>
+<td>유지</td>
+</tr>
+<tr>
+<td><strong>전환비용</strong></td>
+<td>✅ <strong>중간</strong></td>
+<td>안전부품 인증(FMVSS·ECE) 4~5년, OEM 밸리데이션 비용. 그러나 OEM이 다중 소싱 유지</td>
+<td>유지</td>
+</tr>
+<tr>
+<td>네트워크 효과</td>
+<td>❌ 없음</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>규모·원가 우위</td>
+<td>⚠️ 제한적</td>
+<td>매출 9.5조로 글로벌 부품사 대비 소규모. Bosch(매출 91.8조) 대비 원가 불리</td>
+<td>유지</td>
+</tr>
+<tr>
+<td><strong>기술·특허 장벽</strong></td>
+<td>✅ 중간</td>
+<td>제동·조향 안전부품 핵심 기술 축적. ADAS 통합 기술. 단 Bosch/ZF 대비 열위</td>
+<td>개선 중</td>
+</tr>
+<tr>
+<td>허가·규제 장벽</td>
+<td>✅ 중간</td>
+<td>차량 안전 규정상 인증 기업 수 제한. 신규 진입장벽 존재</td>
+<td>유지</td>
+</tr>
+</tbody>
+</table>
+<p><strong>1조원 투자 시나리오</strong>: Bosch·ZF는 이미 글로벌 1~2위. HL만도가 강점인 한국·중국·인도 시장에서 신규 진입자가 5년 내 지위 탈취는 어려움 — 인증 기간 4~5년이 방어선. 단, 중국 로컬 부품사(伯特利 등)가 이미 시장 침투 중이 핵심 위협.</p>
+<p><strong>해자 핵심 반론</strong>: OEM 다중 소싱이 일반화된 업계 관행 → "전환비용이 있어도 고객이 실제 전환하지 않는 이유는 관성이지 해자가 아니다."</p>
+<hr />
+<h2>4관문: 경영진을 신뢰할 수 있는가? ★★★☆☆</h2>
+<table>
+<thead>
+<tr>
+<th>체크 항목</th>
+<th>평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>솔직성</td>
+<td>✅ 실적 공시 투명. 중국 구조조정 계획 공개</td>
+</tr>
+<tr>
+<td>자본 배분</td>
+<td>⚠️ 배당 750원 유지 (수익성 대비 적정). 로봇 신사업 투자 합리적 방향</td>
+</tr>
+<tr>
+<td>주주 이익 일치성</td>
+<td>⚠️ 전문경영인(조성현·김현욱 각자대표). HL홀딩스 30.26% 지배</td>
+</tr>
+<tr>
+<td>오너 마인드셋</td>
+<td>⚠️ 정몽원 회장 지배 구조. 2세 승계 초기 단계</td>
+</tr>
+<tr>
+<td>지배구조</td>
+<td>⚠️ <strong>딸 지분 매입 공정위 조사 중</strong> — 경미한 수준이나 오너리스크 상존</td>
+</tr>
+<tr>
+<td>위기 대응</td>
+<td>✅ 2022 현대차그룹 분리 후 독립 경영 체계 구축. 순현금 전환 달성</td>
+</tr>
+<tr>
+<td>오너리스크</td>
+<td>⚠️ 딸 공정위 조사. 현대차 분리 이후 비현대 고객 다변화 속도 불명확</td>
+</tr>
+</tbody>
+</table>
+<p><strong>판단</strong>: 치명적 신뢰성 문제 없음. 단 오너 일가 행동 모니터링 필요. 전문경영인 체계라 주주 이익 일치성이 창업자 경영보다 약함.</p>
+<hr />
+<h2>5관문: 가격이 충분히 싼가? ★★★☆☆</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>역사적</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (FY2025)</td>
+<td><strong>22.86배</strong></td>
+<td>자동차부품 평균 10~15배</td>
+<td>❌ 고평가</td>
+</tr>
+<tr>
+<td>선행 PER (2026E)</td>
+<td><strong>~11.4배</strong></td>
+<td>—</td>
+<td>✅ 컨센서스 기준 합리적</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>0.84배</strong></td>
+<td>순자산 이하</td>
+<td>✅ 하방 보호 존재</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>1.54%</strong></td>
+<td>—</td>
+<td>⚠️ 낮음</td>
+</tr>
+<tr>
+<td>FCF 수익률</td>
+<td>16.49% (추산, 신뢰도 제한)</td>
+<td>—</td>
+<td>⚠️ 검증 필요</td>
+</tr>
+</tbody>
+</table>
+<h3>3시나리오 적정가 (도구 계산 확정값)</h3>
+<p><strong>시나리오 A (보수적, EPS 선형 회복):</strong></p>
+<pre><code>낙관 (+25%/년, PER 14배, 3년): 적정가 58,242원 (+19.6%)
+중립 (+10%/년, PER 10배, 3년): 적정가 28,350원 (-41.8%)
+비관 (-10%/년, PER 7배, 3년):  적정가 10,869원 (-77.7%)
+</code></pre>
+<p><strong>시나리오 B (컨센서스 반영, 로봇 성장 포함):</strong></p>
+<pre><code>낙관 (+50%/년, PER 15배, 3년): 적정가 107,831원 (+121.4%)
+중립 (+15%/년, PER 11배, 3년): 적정가 35,634원  (-26.8%)
+비관 (-10%/년, PER 7배, 3년):  적정가 10,869원  (-77.7%)
+</code></pre>
+<p><strong>핵심 관찰</strong>: 
+- <strong>PBR 0.84배</strong>는 순자산 대비 할인으로 하방 방어력 존재 (청산가치 57,793원 &gt; 현재가 48,700원)
+- 그러나 EPS 기반 중립 시나리오에서 -26~42% — 현 주가가 "EPS 턴어라운드" 기대값 선반영
+- <strong>시장이 싸게 두는 이유</strong>: OPM 3~4% 구조적 저수익성 + 중국 리스크 + 현대차 의존도 우려
+- <strong>이유가 영구적인가?</strong>: OPM은 개선 중(2024 4.05%), 중국 구조조정 진행 중. 일시적일 가능성 있음.</p>
+<hr />
+<h2>6관문: 시장 심리·타이밍 ★★★★☆</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>현황</th>
+<th>달걀 신호</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>52주 위치</td>
+<td>고가 79,100원 대비 현재 48,700원 = <strong>-38.4%</strong></td>
+<td>A2~A3 구간</td>
+</tr>
+<tr>
+<td>증권사 논조</td>
+<td>20인 전원 매수. 평균 목표가 74,909원 (+53.8%)</td>
+<td>B1 초입 신호</td>
+</tr>
+<tr>
+<td>공매도</td>
+<td>— (데이터 미수집)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>언론 논조</td>
+<td>로봇 신사업·수익성 개선 기대. 중국 리스크 여전히 언급</td>
+<td>중립~소폭 낙관</td>
+</tr>
+<tr>
+<td>금리 환경</td>
+<td>한국은행 인하 사이클 진행 중</td>
+<td>매수 지지</td>
+</tr>
+</tbody>
+</table>
+<p><strong>코스톨라니 판정</strong>: A2~A3 구간. 고점 대비 -38%는 "이미 많이 빠진" 구간. 전원 매수 컨센서스지만 열광(B2~B3)은 아님. 역발상 기회 가능성 존재.</p>
+<p><strong>감정 통제 체크:</strong>
+- FOMO? — 아니오. 자동차 부품주는 열광 섹터가 아님
+- 추천 때문? — 아니오. 체크리스트 기반 분석
+- 5년 보유? — 자동차 부품 사이클 감안 가능
+- 200자 논거? — "PBR 0.84배 하방 보호 + fPER 11배 + 로봇 신사업 옵션값" — 가능</p>
+<hr />
+<h2>핵심 리스크</h2>
+<table>
+<thead>
+<tr>
+<th>순위</th>
+<th>리스크</th>
+<th>심각도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>OPM 3~4% 구조적 저수익성</strong> — 버핏 기준 "좋은 사업" 미달. 개선 속도 불명확</td>
+<td>High</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>중국 매출 23.3% 집중</strong> — 중국 로컬 브랜드(BYD·지리 등) 자국 부품사 우선 정책</td>
+<td>High</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>현대차·기아 의존도 44~50%</strong> — 현대차 해외 판매 부진 시 직격탄</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>로봇 액추에이터 신사업 불확실성</strong> — 2027년 양산 예정이나 매출 2.3조 목표는 초기 단계</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>EPS 턴어라운드 가정 리스크</strong> — fPER 11.4배는 EPS 100% 성장 전제. 미실현 시 현재가 고평가</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>거울 테스트</h2>
+<blockquote>
+<p>"나는 48,700원에 HL만도를 매수한다. 이유는:
+1. 이 사업의 본질은 <strong>완성차 OEM에 안전 부품(제동·조향·현가)을 납품하는 1차 공급사</strong>이며, 이를 이해한다.
+2. 해자는 <strong>안전부품 인증 전환비용과 기술 장벽(중간 수준)</strong>이며, <strong>유지</strong> 추세다.
+3. 경영진은 <strong>딸 공정위 조사 등 소폭 오너리스크가 있으나</strong> 재무 개선(순현금 전환) 실행력은 <strong>신뢰</strong> 가능하다.
+4. 현재 가격은 PBR 0.84배로 순자산 이하이며 하방 방어는 있으나, EPS 기반 중립 시나리오 대비 안전마진이 <strong>부족</strong>하다.
+5. 설령 내가 틀려도, 하방 리스크는 <strong>조건부 관리 가능</strong>하다. 이유: <strong>PBR 0.84배 (순자산 57,793원 &gt; 현재가) 하방 지지. 단 비관 시나리오 -77.7% 가능성 인식 필요</strong>."</p>
+</blockquote>
+<p><strong>판정: ⚠️ 거울 테스트 조건부 통과</strong> — 4번(안전마진 부족)이 걸림돌이나 PBR 하방 보호로 완전 실패는 아님.</p>
+<hr />
+<h2>최종 결론: ❓ 회색지대 (4/6관문)</h2>
+<p><strong>핵심 쟁점 2가지로 판단이 갈린다:</strong></p>
+<p><strong>✅ 통과 관문 (4개):</strong>
+- 1관문: 사업 이해 가능
+- 4관문: 경영진 (소폭 오너리스크 있으나 치명적 아님)
+- 5관문: PBR 0.84배 하방 보호 (조건부)
+- 6관문: 고점 대비 -38%, A2~A3 매수 구간</p>
+<p><strong>⚠️ 레드라인 또는 조건부 관문 (2개):</strong>
+- 2관문: OPM 3~4%, ROE 6~10% — 버핏 기준 "좋은 사업" 미달
+- 3관문: 해자 깊이 부족 — OEM 다중 소싱으로 전환비용 제한</p>
+<p><strong>투자자가 스스로 판단해야 할 핵심 질문:</strong></p>
+<ol>
+<li>
+<p><strong>"OPM이 오를 수 있는가?"</strong> — 2024년 4.05%로 개선됐으나 2025년 3.78%로 후퇴. 1Q2026 +18.2% 영업이익 성장이 구조적 개선인가, 일시적인가?</p>
+</li>
+<li>
+<p><strong>"로봇 액추에이터가 진짜인가?"</strong> — 2027년 양산 예정, 장기 목표 매출 2.3조. 이것이 실현되면 현재 시총 2.29조는 명백한 저평가. 실현 가능성을 본인이 판단해야 함.</p>
+</li>
+<li>
+<p><strong>"fPER 11.4배 컨센서스를 믿는가?"</strong> — 2026E EPS ~4,270원(FY2025 대비 100% 성장). 이 컨센서스가 실현되면 현재가는 매우 저평가. 실현 가능성 판단이 투자 결론을 결정.</p>
+</li>
+</ol>
+<p><strong>재검토 조건 (매수 검토 가능 시점):</strong>
+- OPM 2분기 연속 5% 이상 달성 공시
+- 로봇 양산 수주 확정 (2027년 전 선수주 공시)
+- 비현대차 고객 매출 비중 30% 초과 공시
+- 또는 주가 38,000원 이하 (PBR ~0.66배, 중립 적정가 35,634원 근접)</p>
+<p><em>작성: 2026-07-08 | 도구: fetch_price_kr.py, financial_rigor_kr.py | 데이터: FnGuide·한국경제·알파스퀘어·증권사 컨센서스</em>
+<em>정보풍부도 A등급 — FCF 추산치 DART 원문 검증 권고</em></p>
+
+    <script src="../search_index.js"></script>
+    <script>
+        let currentFocus = -1;
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+            currentFocus = -1; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach((item, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+
+                // 마우스 진입 시 키보드 포커스와 동기화
+                li.addEventListener('mouseenter', () => {
+                    currentFocus = index;
+                    addActive(resultsContainer.getElementsByTagName('li'));
+                });
+            });
+        });
+
+        // 한글 씹힘 방지 및 엔터 이동 완벽 적용
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            if (e.isComposing || e.keyCode === 229) {
+                if (e.key === "Enter") return;
+            }
+
+            const resultsContainer = document.getElementById('searchResults');
+            const items = resultsContainer.getElementsByTagName('li');
+            
+            if (e.key === "ArrowDown" || e.keyCode === 40) {
+                currentFocus++;
+                addActive(items);
+                e.preventDefault(); 
+            } else if (e.key === "ArrowUp" || e.keyCode === 38) {
+                currentFocus--;
+                addActive(items);
+                e.preventDefault();
+            } else if (e.key === "Enter" || e.keyCode === 13) {
+                e.preventDefault();
+                if (currentFocus > -1 && items[currentFocus]) {
+                    window.location.href = items[currentFocus].querySelector('a').href;
+                }
+            }
+        });
+
+        function addActive(items) {
+            if (!items || items.length === 0) return false;
+            removeActive(items);
+            
+            if (currentFocus >= items.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = items.length - 1;
+            
+            items[currentFocus].classList.add("active");
+            items[currentFocus].scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+
+        function removeActive(items) {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>
