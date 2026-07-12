@@ -60,6 +60,10 @@ const searchData = [
         "url": "SK하이닉스/최종보고서.html"
     },
     {
+        "title": "[농심] 농심-checklist-20260712",
+        "url": "농심/농심-checklist-20260712.html"
+    },
+    {
         "title": "[뉴로메카] 뉴로메카-checklist-20260703",
         "url": "뉴로메카/뉴로메카-checklist-20260703.html"
     },
