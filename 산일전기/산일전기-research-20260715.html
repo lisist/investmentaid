@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[산일전기] 산일전기-research-20260715</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }
+        
+        /* 검색창 기본 스타일 추가 */
+        .search-input {
+            box-sizing: border-box; 
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 16px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        .search-input:focus {
+            border-color: #0366d6;
+            box-shadow: 0 4px 24px rgba(3, 102, 214, 0.15);
+        }
+        .results-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            max-height: 350px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e1e4e8;
+            box-sizing: border-box; 
+        }
+        .results-list:empty { border: none; box-shadow: none; }
+        .results-list li { border-bottom: 1px solid #eaecef; }
+        .results-list li:last-child { border-bottom: none; }
+        .results-list a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+        .results-list a:hover { background-color: #f6f8fa; color: #0056b3; }
+
+        /* 💡 키보드 방향키 하이라이트 스타일 */
+        .results-list li.active {
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+        }
+        .results-list li.active a {
+            color: #0056b3;
+            padding-left: 11px; 
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body { padding: 15px; }
+            .search-input { font-size: 14px; padding: 10px 14px; }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 삼성전자)" 
+               class="search-input" autocomplete="off">
+        <ul id="searchResults" class="results-list"></ul>
+    </div>
+
+    <h1>산일전기(062040) 재무 데이터 조사 — 2026-07-15 기준</h1>
+<h2>핵심 데이터 (기준가: 2026-07-15 15:33, 179,200원, <code>tools/fetch_price_kr.py</code> 실시간 수집)</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>항목</th>
+<th>수치</th>
+<th>출처 / 기준시점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>가격/규모</strong></td>
+<td>현재가</td>
+<td>179,200원 (당일 +6.29%)</td>
+<td>fetch_price_kr.py, 2026-07-15</td>
+</tr>
+<tr>
+<td></td>
+<td>52주 고가/저가</td>
+<td>341,000원 / (저가 미확인, 툴 표시 오류)</td>
+<td>fetch_price_kr.py</td>
+</tr>
+<tr>
+<td></td>
+<td>시가총액</td>
+<td>5.48조원</td>
+<td>fetch_price_kr.py</td>
+</tr>
+<tr>
+<td></td>
+<td>발행주식수</td>
+<td>30,445,200주 (자사주 607,530주 제외 배당대상 30,384,447주)</td>
+<td>배당 공시 검색, 2026.3 공시</td>
+</tr>
+<tr>
+<td><strong>수익성 (연결)</strong></td>
+<td>2023 매출/영업이익/순이익 (개별기준, IPO 전)</td>
+<td>2,145억 / 466억 / 390억원 (OPM 21.7%, NPM 18.2%)</td>
+<td>웹검색 종합(38커뮤니케이션 등), <strong>교차검증 필요 — 신뢰도 중</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>2024 매출/영업이익/순이익</td>
+<td>3,340억 / 1,092억 / 837억원 (OPM 32.7%, NPM 25.1%)</td>
+<td>bosoop.com, CBC뉴스 실적기사 종합</td>
+</tr>
+<tr>
+<td></td>
+<td>2025 매출/영업이익/순이익</td>
+<td>5,019억 / 1,786~1,811억 / 1,489~1,508억원 (OPM 35.6%, NPM 29.7%)</td>
+<td>CBC뉴스(2026.2.10 공시), bosoop.com — 두 소스 수치 근소한 차이(잠정치 vs 확정치 추정)</td>
+</tr>
+<tr>
+<td></td>
+<td>2026 1Q 실적</td>
+<td>매출 1,503억(+52.1% YoY), 영업이익 557억(+47.9% YoY), 컨센서스(542억) 상회</td>
+<td>뉴스 검색(한경 컨센서스 관련 기사), 2026-04-30 발표</td>
+</tr>
+<tr>
+<td></td>
+<td>ROE (최근)</td>
+<td>25.4% (일부 소스 30.0%)</td>
+<td>bosoop.com / 타 리서치 요약, <strong>범위로 표기, 확정 아님</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>FCF</td>
+<td>구체 수치 미확보 — CAPEX 지출 지속 중으로 순이익 대비 FCF는 제한적일 가능성. <strong>추정 불가, 데이터 부족</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>밸류에이션</strong></td>
+<td>EPS (2025)</td>
+<td>4,891원</td>
+<td>bosoop.com</td>
+</tr>
+<tr>
+<td></td>
+<td>BPS</td>
+<td>19,269원</td>
+<td>bosoop.com</td>
+</tr>
+<tr>
+<td></td>
+<td>PER (TTM, 현재가 기준)</td>
+<td>36.6배 (=179,200/4,891)</td>
+<td>계산: 현재가 ÷ EPS</td>
+</tr>
+<tr>
+<td></td>
+<td>PBR (현재가 기준)</td>
+<td>9.3배 (=179,200/19,269)</td>
+<td>계산</td>
+</tr>
+<tr>
+<td></td>
+<td>선행 PER</td>
+<td>확정 컨센서스 EPS 미확보. 목표주가는 증권사별 180,000~350,000원으로 편차 매우 큼(유진 35만원, NH 33.2만원, SK 25만원, IBK 18만원)</td>
+<td>뉴스 검색 종합, 2026.4~5월 리포트</td>
+</tr>
+<tr>
+<td></td>
+<td>배당</td>
+<td>보통주 1주당 1,250원 (2025 결산), 현재가 기준 수익률 약 0.70%</td>
+<td>디지털투데이 공시기사, 2026.3</td>
+</tr>
+<tr>
+<td><strong>성장/수주</strong></td>
+<td>매출 성장률</td>
+<td>2024 +55.7%, 2025 +50.3%, 2026 1Q +52.1% — 3년 연속 50%대 고성장</td>
+<td>상동</td>
+</tr>
+<tr>
+<td></td>
+<td>영업이익 성장률</td>
+<td>2024 +134%, 2025 +64~66%, 2026 1Q +48%</td>
+<td>상동</td>
+</tr>
+<tr>
+<td></td>
+<td>수주잔고</td>
+<td>2025 1Q 기준 4,597억원 (YoY +54%, QoQ +18%); 신규수주 1,693억원(YoY +103%)</td>
+<td>데일리인베스트 기사, 2025.5 시점 — <strong>다소 오래된 시점, 최신 수치 재확인 필요</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>수출/북미 비중</td>
+<td>2025 1Q 수출비중 95.7%(역대 최고), 이 중 미국향 약 69~70%</td>
+<td>상동</td>
+</tr>
+<tr>
+<td><strong>재무건전성</strong></td>
+<td>부채비율</td>
+<td>16.48% (매우 낮음)</td>
+<td>bosoop.com</td>
+</tr>
+<tr>
+<td></td>
+<td>유동비율</td>
+<td>483.9%</td>
+<td>bosoop.com</td>
+</tr>
+<tr>
+<td></td>
+<td>차입금의존도</td>
+<td>약 9%대 (2023년 기준 언급, 최신 수치 미확보)</td>
+<td>웹검색, 신뢰도 낮음</td>
+</tr>
+<tr>
+<td></td>
+<td>현금성자산</td>
+<td>2024년 약 62억원 → 2025(E) 101억원 → 2026(E) 129억원</td>
+<td>미래에셋증권 리포트 인용 요약</td>
+</tr>
+<tr>
+<td></td>
+<td>순현금/순부채</td>
+<td>부채비율이 매우 낮아 사실상 무차입에 가까운 구조로 추정되나, 절대 현금 보유액은 시총 대비 작음(고객 선수금 기반 운전자본 구조로 추정) — <strong>추정</strong></td>
+<td>종합 판단</td>
+</tr>
+<tr>
+<td></td>
+<td>CAPEX/증설</td>
+<td>밀양 2공장 1차 증설 완료(2025.3 가동, 캐파 6,000억원 확보). 2차 증설(초고압변압기, ~1,500억원 캐파) 검토 중, 2028년 목표. 2031년 총 캐파 최대 1조 1,000억원 계획</td>
+<td>파이낸스스코프·본드웹 리포트 요약, 2026.4</td>
+</tr>
+</tbody>
+</table>
+<h2>정보 신뢰도 및 한계</h2>
+<ul>
+<li>네이버금융 직접 접속 불가(WebFetch 차단됨) → 증권사 리포트 요약본, 뉴스, bosoop/goinsider 등 2차 소스로 교차검증. DART 원문 미열람.</li>
+<li>2023년 이전 수치는 IPO 전 시기라 연결/개별 기준 혼재, 소스 간 상충 다수 발견(웹검색 AI 요약이 연도를 뒤섞는 사례 확인됨) → 표에 표시된 2023 수치는 신뢰도 "중" 이하로 취급 권고.</li>
+<li>FCF, 정확한 CAPEX 금액, 최신(2026년) 수주잔고, ROA는 확보 실패. 후속 조사 시 DART 사업보고서/분기보고서 원문 직접 열람 필요.</li>
+</ul>
+
+    <script src="../search_index.js"></script>
+    <script>
+        let currentFocus = -1;
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+            currentFocus = -1; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach((item, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+
+                // 마우스 진입 시 키보드 포커스와 동기화
+                li.addEventListener('mouseenter', () => {
+                    currentFocus = index;
+                    addActive(resultsContainer.getElementsByTagName('li'));
+                });
+            });
+        });
+
+        // 한글 씹힘 방지 및 엔터 이동 완벽 적용
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            if (e.isComposing || e.keyCode === 229) {
+                if (e.key === "Enter") return;
+            }
+
+            const resultsContainer = document.getElementById('searchResults');
+            const items = resultsContainer.getElementsByTagName('li');
+            
+            if (e.key === "ArrowDown" || e.keyCode === 40) {
+                currentFocus++;
+                addActive(items);
+                e.preventDefault(); 
+            } else if (e.key === "ArrowUp" || e.keyCode === 38) {
+                currentFocus--;
+                addActive(items);
+                e.preventDefault();
+            } else if (e.key === "Enter" || e.keyCode === 13) {
+                e.preventDefault();
+                if (currentFocus > -1 && items[currentFocus]) {
+                    window.location.href = items[currentFocus].querySelector('a').href;
+                }
+            }
+        });
+
+        function addActive(items) {
+            if (!items || items.length === 0) return false;
+            removeActive(items);
+            
+            if (currentFocus >= items.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = items.length - 1;
+            
+            items[currentFocus].classList.add("active");
+            items[currentFocus].scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+
+        function removeActive(items) {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,626 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[LS] LS-checklist-20260712</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }
+        
+        /* 검색창 기본 스타일 추가 */
+        .search-input {
+            box-sizing: border-box; 
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 16px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        .search-input:focus {
+            border-color: #0366d6;
+            box-shadow: 0 4px 24px rgba(3, 102, 214, 0.15);
+        }
+        .results-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            max-height: 350px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e1e4e8;
+            box-sizing: border-box; 
+        }
+        .results-list:empty { border: none; box-shadow: none; }
+        .results-list li { border-bottom: 1px solid #eaecef; }
+        .results-list li:last-child { border-bottom: none; }
+        .results-list a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+        .results-list a:hover { background-color: #f6f8fa; color: #0056b3; }
+
+        /* 💡 키보드 방향키 하이라이트 스타일 */
+        .results-list li.active {
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+        }
+        .results-list li.active a {
+            color: #0056b3;
+            padding-left: 11px; 
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body { padding: 15px; }
+            .search-input { font-size: 14px; padding: 10px 14px; }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 삼성전자)" 
+               class="search-input" autocomplete="off">
+        <ul id="searchResults" class="results-list"></ul>
+    </div>
+
+    <h1>LS (006260) 버핏식 매수 전 체크리스트</h1>
+<p><strong>작성일</strong>: 2026-07-12 | <strong>분석 기준가</strong>: 329,000원 (2026-07-12 17:18 기준, 당일 +4.94%)
+<strong>시가총액</strong>: 9.12조원 | <strong>52주 밴드</strong>: 148,600원 ~ 604,000원 (현재 위치: 39.6%, 고점 대비 -45.5%)
+<strong>정보 풍부도 등급</strong>: <strong>A등급</strong> (코스피 대형 지주사, 다수 증권사 커버리지, DART·fnguide·언론보도 풍부) — 단, 지주회사 특성상 핵심 자회사(LS전선 등) 대다수가 비상장이라 개별 자회사 재무 상세는 지주사 연결/증권사 SOTP 추정치에 의존. <strong>컨센서스 함정 주의</strong>: 애널리스트 리포트가 일제히 강세(목표가 상향 랠리)인 시점 — 데이터가 풍부해 보여도 확신도가 높다는 뜻은 아니다.</p>
+<hr />
+<h2>핵심 데이터 표</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>수치</th>
+<th>출처/시점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>현재가</td>
+<td>329,000원</td>
+<td>2026-07-12 17:18</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td>9.12조원</td>
+<td>2026-07-12</td>
+</tr>
+<tr>
+<td>52주 고/저</td>
+<td>604,000원 / 148,600원</td>
+<td>-</td>
+</tr>
+<tr>
+<td>발행주식수(추정)</td>
+<td>약 2,772만주</td>
+<td>시총/주가 역산</td>
+</tr>
+<tr>
+<td>EPS (2025A)</td>
+<td>8,458원</td>
+<td>wisereport 컨센서스</td>
+</tr>
+<tr>
+<td>EPS (2026E)</td>
+<td>18,773원 (컨센서스, 전년비 큰 폭 증가)</td>
+<td>wisereport 컨센서스</td>
+</tr>
+<tr>
+<td>BPS (2025A)</td>
+<td>182,946원</td>
+<td>wisereport</td>
+</tr>
+<tr>
+<td>BPS (2026E)</td>
+<td>200,681원</td>
+<td>wisereport 컨센서스</td>
+</tr>
+<tr>
+<td>PER (2025A, 현재가 기준)</td>
+<td>38.90배</td>
+<td>도구 계산</td>
+</tr>
+<tr>
+<td>PER (2026E, 현재가 기준)</td>
+<td>17.53배</td>
+<td>도구 계산</td>
+</tr>
+<tr>
+<td>PBR (2025A / 2026E)</td>
+<td>1.80배 / 1.64배</td>
+<td>도구 계산</td>
+</tr>
+<tr>
+<td>DPS(2025결산)</td>
+<td>2,500원 (전년 1,650원 대비 +51.5%)</td>
+<td>이사회 결의(2026.2)</td>
+</tr>
+<tr>
+<td>배당수익률(현재가 기준)</td>
+<td>0.76%~0.77%</td>
+<td>도구 계산</td>
+</tr>
+<tr>
+<td>배당성향 추이</td>
+<td>2023년 5.4% → 2024년 10.1% → 2025년 16.8% (2030년 30% 목표)</td>
+<td>증권사 리포트 종합</td>
+</tr>
+<tr>
+<td>부채비율(연결)</td>
+<td>2023년 192.8% → 2024년 170.3% → 2025년 183.4%</td>
+<td>증권사 리포트 종합, <strong>확인 필요</strong></td>
+</tr>
+<tr>
+<td>순차입금/자기자본</td>
+<td>2023년 90.5% → 2024년 84.1% → 2025년 78.9% (개선 추세)</td>
+<td>증권사 리포트 종합, <strong>확인 필요</strong></td>
+</tr>
+<tr>
+<td>ROE 5개년 추이</td>
+<td>3.9% → 8.2% → 11.6% → 15.0% → 15.1%</td>
+<td>증권사 리포트 종합, <strong>확인 필요</strong></td>
+</tr>
+<tr>
+<td>영업이익률 5개년 추이</td>
+<td>4.0% → 4.5% → 4.2% → 4.3% → 4.6%</td>
+<td>증권사 리포트 종합</td>
+</tr>
+<tr>
+<td>순이익률 5개년 추이</td>
+<td>1.9% → 2.7% → 2.6% → 2.4% → 2.6%</td>
+<td>증권사 리포트 종합</td>
+</tr>
+<tr>
+<td>2026년 연결 전망</td>
+<td>매출 37.15조원, 영업이익 1.49조원("영업이익 1.5조 시대")</td>
+<td>언론보도(경제타임스)</td>
+</tr>
+<tr>
+<td>자사주 소각</td>
+<td>2025.8월·2026.2월 총 100만주(발행주식 3.1%), 약 1,712억원 규모</td>
+<td>공시 종합</td>
+</tr>
+</tbody>
+</table>
+<p>※ 영업이익률·순이익률이 4~5%대로 낮게 보이는 것은 <strong>지주회사 연결 매출에 LS MnM(구리 제련·트레이딩, 매출 규모는 크나 마진이 매우 얇은 상사형 사업)이 포함</strong>되어 있기 때문. 지주사 자체(별도) 수익성은 자회사 배당·경영지도수수료 기준으로 별도 산정 필요하나 본 조사에서는 확보하지 못함 — <strong>확인 불가</strong>로 표시.</p>
+<hr />
+<h2>지주회사 구조 및 핵심 자회사</h2>
+<p><strong>LS(006260)는 순수지주회사이자 사업지주회사적 성격을 겸함.</strong> 지주사 자체는 (1) 자회사 지분법/연결 이익, (2) 자회사로부터의 배당금 수취, (3) 브랜드 사용료(경영지도수수료)로 수익을 낸다. 단, 연결재무제표에는 아래 자회사 실적이 모두 합산되어 표시된다.</p>
+<table>
+<thead>
+<tr>
+<th>자회사</th>
+<th>지분율</th>
+<th>상장여부</th>
+<th>주요 사업</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LS전선</td>
+<td>92.6%</td>
+<td>비상장</td>
+<td>전력케이블(초고압/해저), 통신케이블, 전기차 부품</td>
+<td>그룹 핵심 성장동력. 2025년 매출 7.59조원·영업이익 2,798억원 사상 최대, 수주잔액 7.63조원(+22%)</td>
+</tr>
+<tr>
+<td>LS ELECTRIC</td>
+<td>47.5~48.5%</td>
+<td><strong>상장(010120)</strong></td>
+<td>전력기기(변압기·차단기), 자동화, 전기차 충전</td>
+<td>K-전력기기 3사(효성중공업·HD현대일렉트릭·LS ELECTRIC) 중 하나, 두 자릿수 영업이익률</td>
+</tr>
+<tr>
+<td>LS MnM(구 LS니꼬동제련)</td>
+<td>75.1%</td>
+<td>비상장</td>
+<td>동제련(구리), 리사이클링, 황산니켈(2차전지소재) 신사업</td>
+<td>구리가 상승 시 매출·이익 크게 증가하나 마진율 낮은 상사형 구조</td>
+</tr>
+<tr>
+<td>LS I&amp;D</td>
+<td>95.1%</td>
+<td>비상장</td>
+<td>북미 전선사업, 부동산 개발</td>
+<td></td>
+</tr>
+<tr>
+<td>LS엠트론</td>
+<td>100%</td>
+<td>비상장</td>
+<td>트랙터, 산업기계, 자동차부품</td>
+<td></td>
+</tr>
+<tr>
+<td>LS글로벌</td>
+<td>100%</td>
+<td>비상장</td>
+<td>전기동·알루미늄 등 원자재 구매(상사)</td>
+<td><strong>2026.4 공정위 과징금 대상</strong> — 오너리스크 항목 참조</td>
+</tr>
+</tbody>
+</table>
+<p><strong>E1(LPG)은 LS 지주회사(006260)의 자회사가 아니다.</strong> LS그룹은 ㈜LS·예스코홀딩스·E1 3개의 (준)지주회사 축으로 나뉘어 있으며, E1은 구자용(구태회 가문) 계열이 별도로 지배하는 "범LS家" 계열사로 ㈜LS 연결대상이 아니다. <strong>사용자 프롬프트에 언급된 "E1 등 계열사 보유"는 정확한 표현이 아니며, 이는 중요한 정정 사항이다.</strong></p>
+<p><strong>LS전선 손자회사군(2세대 IPO)</strong>: LS전선아시아(2016년 상장), LS머트리얼즈(2023년 상장, 울트라캐패시터), LS이브이코리아(상장 추진), LS마린솔루션(KT 인수, 상장 추진) — 물적분할 후 손자회사 상장이 반복되며 소액주주 지분가치 희석 우려가 지속 제기되는 구조.</p>
+<p><strong>SOTP/NAV 할인</strong>: 2026년 5월 NH투자증권 리포트 기준 LS의 주당 NAV는 약 920,351원으로 산출되었고, 이에 35% 할인율을 적용해 목표가 산정. 현 주가(329,000원)는 산출 NAV 대비 약 64% 할인된 수준(즉 통상적 지주사 할인율보다 더 깊게 할인). 다만 NAV 산출 자체가 비상장 자회사(LS전선·LS MnM 등)의 비교기업 배수 적용 추정치이므로 <strong>불확실성 높음</strong> — "저평가"라는 주장은 애널리스트 추정 NAV에 의존한다는 점을 감안해야 한다.</p>
+<hr />
+<h2>6관문 평점표</h2>
+<table>
+<thead>
+<tr>
+<th>관문</th>
+<th>평점</th>
+<th>한줄 요약</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 이해 가능성</td>
+<td>★★★☆☆</td>
+<td>지주사 수익모델은 단순(배당+경영지도수수료)하나, 연결실적을 좌우하는 5개 핵심 자회사의 업황(전력기기 슈퍼사이클, 구리 가격, 전선 수주)을 모두 이해해야 함</td>
+</tr>
+<tr>
+<td>2. 사업 품질</td>
+<td>★★★☆☆</td>
+<td>ROE 15%대로 개선 추세는 뚜렷하나 연결 영업이익률 4%대로 낮고, LS MnM의 상사형 저마진 매출이 착시 유발</td>
+</tr>
+<tr>
+<td>3. 해자</td>
+<td>★★★★☆</td>
+<td>LS전선의 해저케이블(글로벌 4사 과점, 85% 점유), LS ELECTRIC의 전력기기 진입장벽(인증·트랙레코드)은 실질적 해자. 지주사 차원 해자는 자회사 해자의 총합</td>
+</tr>
+<tr>
+<td>4. 경영진 신뢰</td>
+<td>★★☆☆☆</td>
+<td>자본배분(배당 확대·자사주 소각)은 양호하나, <strong>오너 일가 형사재판 진행 중(통행세/일감몰아주기, 과징금 253억원)</strong> — 중대한 감점 요인</td>
+</tr>
+<tr>
+<td>5. 안전마진</td>
+<td>★★★☆☆</td>
+<td>2026E PER 17.5배·PBR 1.64배는 성장 반영 시 합리적 수준이나, 52주 고점 대비 이미 -45.5% 조정 이후 반등한 시점이라 추가 안전마진은 제한적. NAV 할인 주장은 추정치 의존</td>
+</tr>
+<tr>
+<td>6. 시장심리(코스톨라니)</td>
+<td>★★☆☆☆</td>
+<td>목표주가 릴레이 상향, 신고가 경신 보도가 이어지는 등 열기 과열 신호. A구간(비관 방치)보다 B구간(관심 집중)에 가까움</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>1관문: 이 사업을 이해할 수 있는가?</h3>
+<ul>
+<li><strong>지주사 자체 수익방식</strong>: 자회사 지분 보유에 따른 지분법이익/연결이익, 자회사로부터의 <strong>배당금 수취</strong>, 자회사에 대한 <strong>브랜드(상표권) 사용료·경영지도수수료</strong> 수취. 이 자체는 단순하다.</li>
+<li><strong>10년 후 예측 가능성</strong>: 핵심 변수가 (1) 미국·유럽 전력망 투자 사이클(LS전선·LS ELECTRIC의 수주), (2) 구리 가격(LS MnM), (3) 지배구조 재편(사촌경영 승계, 계열 분리 가능성) 등 다층적. 전력망 투자 붐은 최소 향후 5~10년 지속될 것이란 컨센서스가 있으나, 사이클 정점 시점은 예측 어려움.</li>
+<li><strong>핵심 변수</strong>: 미국 데이터센터·전력망 투자 지속 여부, 구리 가격, 오너 리스크(형사재판 결과), 지주사 할인율의 축소/확대.</li>
+<li><strong>지식의 출처</strong>: 이번 조사는 DART 원문 재무제표까지는 직접 확인하지 못했고 증권사 리포트·언론보도에 상당 부분 의존 — 깊이 있는 1차 자료 검증은 부족.</li>
+</ul>
+<p><strong>하드 거부 해당 없음</strong> (수익 방식 설명 가능). 다만 지주회사+5개 이질적 자회사(케이블·전력기기·트랙터·구리제련) 동시 이해가 요구되어 순수 소비재 기업 대비 난이도 높음.</p>
+<h3>2관문: 좋은 사업인가?</h3>
+<pre><code>python tools/financial_rigor_kr.py verify-valuation --price 329000 --eps 8458 --bvps 182946 --dividend 2500
+→ PER 38.90배 / PBR 1.80배 / 배당수익률 0.76%  (2025A 실적 기준)
+
+python tools/financial_rigor_kr.py verify-valuation --price 329000 --eps 18773 --bvps 200681 --dividend 2536
+→ PER 17.53배 / PBR 1.64배 / 배당수익률 0.77%  (2026E 컨센서스 기준)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>기준</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE(5년 평균, 추정)</td>
+<td>3.9→15.1% (최근 15%대)</td>
+<td>&gt;15% 우수</td>
+<td>최근 연도만 기준 충족, 추세는 우수</td>
+</tr>
+<tr>
+<td>영업이익률</td>
+<td>4.0~4.6%</td>
+<td>&gt;10% 의미있음</td>
+<td><strong>미충족</strong> (단, LS MnM 상사매출 포함 왜곡)</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td>확인 불가 (CAPEX 대형 투자기 — 美 해저케이블 공장 등)</td>
+<td>지속 양(+)</td>
+<td><strong>확인 불가</strong></td>
+</tr>
+<tr>
+<td>CAPEX 강도</td>
+<td>중자산(전선·제련·중공업 복합)</td>
+<td>경자산 선호</td>
+<td>중자산형</td>
+</tr>
+<tr>
+<td>부채 수준(연결)</td>
+<td>부채비율 170~193%, 순차입금/자본 79~91%</td>
+<td>유이자부채/영업이익&lt;3년</td>
+<td>지주사+제조 자회사 특성상 높은 편, 개선 추세</td>
+</tr>
+</tbody>
+</table>
+<p><strong>평점 ★★★☆☆</strong>: 5개 항목 중 명확히 충족되는 것은 ROE 추세 개선, 부채비율 개선 추세 정도. 영업이익률·FCF는 미충족 또는 확인 불가. 최근 실적 모멘텀(2026E 큰 폭 이익 증가 컨센서스)은 긍정적이나 아직 실현되지 않은 전망치.</p>
+<h3>3관문: 해자가 충분한가?</h3>
+<table>
+<thead>
+<tr>
+<th>해자 유형</th>
+<th>보유 여부</th>
+<th>구체적 근거</th>
+<th>추세</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>규모·기술 장벽(LS전선)</td>
+<td>O</td>
+<td>글로벌 해저케이블 시장은 프리즈미안·넥상스·NKT·LS전선 4사가 85% 과점. 제조~시공~유지보수 수직계열화, 유럽·일본 외 보유국 드문 전압형 HVDC 기술 상용화</td>
+<td>확대 (美 버지니아 공장 2028년 가동, 세계 최대 VCV 타워)</td>
+</tr>
+<tr>
+<td>진입규제·인증장벽(LS ELECTRIC)</td>
+<td>O</td>
+<td>전력기기는 장기 트랙레코드·인증이 필수적인 산업, 신규 진입 어려움</td>
+<td>유지~확대 (전력기기 3사 수주잔고 합산 30조원 초과)</td>
+</tr>
+<tr>
+<td>원자재 트레이딩 스케일(LS MnM)</td>
+<td>△</td>
+<td>국내 동제련 상위 사업자지만 구리 가격 연동성 높아 '해자'라기보다 사이클 사업</td>
+<td>유지</td>
+</tr>
+<tr>
+<td>지주사 차원 해자</td>
+<td>△</td>
+<td>지주사 자체의 해자는 자회사 포트폴리오 다각화에서 파생, 독자적 해자는 약함</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>추가 검증</strong>: 경쟁자가 1조 원을 갖고 뛰어들어도 해저케이블(설비투자·기술축적에 수년~10년 필요, 대한전선이 2022년부터 투자해 2026년에야 겨우 1공장 준공 목표)에서는 단기간에 LS전선 지위를 빼앗기 어려움 — 실질적 해자로 판단.</p>
+<h3>4관문: 경영진을 신뢰할 수 있는가?</h3>
+<table>
+<thead>
+<tr>
+<th>체크 항목</th>
+<th>평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>솔직성</td>
+<td>2025.05.27 LS ELECTRIC 손자회사 수주 관련 <strong>정정공시 실수</strong>로 주가 급락 사례 있음(펀더멘털 훼손 아닌 것으로 정리) — 공시 신뢰성에 경미한 흠</td>
+</tr>
+<tr>
+<td>자본 배분 능력</td>
+<td>양호. 2026년 결산배당 주당 2,500원(전년비 +51.5%), 자사주 100만주(3.1%) 소각(2025.8/2026.2), 2030년까지 배당성향 30% 목표 등 주주환원 강화 흐름은 긍정적</td>
+</tr>
+<tr>
+<td>주주 이익 일치성</td>
+<td>오너 일가 지분 32.6%(구자열 전 회장 및 특수관계인 기준), 최대주주는 국민연금(13.49%). 자사주 소각이 지배력은 높이고 주주권(의결권 총량)은 낮추는 효과가 있다는 비판 보도 존재("진격의 LS⑤" 기사)</td>
+</tr>
+<tr>
+<td>오너 마인드셋</td>
+<td>사촌경영 구조(3대 87년 3세대 승계, 2022년 구자은 회장 취임, 임기 2030년까지) — 20년 이상 불협화음 없는 안정적 지배구조로 평가받아왔으나, 최근 3세대(12명 이상) 확대로 후계구도 불확실성 커지는 중</td>
+</tr>
+<tr>
+<td>지배구조·감사 품질</td>
+<td><strong>중대한 흠 있음</strong> — 아래 오너리스크 참조</td>
+</tr>
+<tr>
+<td>위기 대응</td>
+<td>확인 불가 (과거 경기침체기 구체적 대응 사례 미확보)</td>
+</tr>
+<tr>
+<td><strong>오너리스크</strong></td>
+<td><strong>2006~2019년 약 17조원 규모 전기동 거래에서 계열사 LS글로벌을 중간에 끼워 '통행세'를 챙겼다는 혐의로 구자은 회장·구자엽 LS전선 회장·명노현 전 LS 대표 등 전현직 경영진 및 LS·LS전선·LS MnM 법인이 형사재판 진행 중(2026.7.1 공판 재개). 공정거래위원회는 2026.4 과징금 253.6억원(대법원 확정분 70.4억원 포함) 부과 확정</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>평점 ★★☆☆☆</strong>: 자본배분 자체는 양호하나 오너 일가의 일감몰아주기 형사재판이 진행형이라는 점이 4관문의 핵심 리스크. "신뢰성 또는 지배구조 문제 있음" 단계에 해당 — 하드 거부 수준(횡령·배임 유죄 확정)까지는 아니나 경계선에 근접.</p>
+<h3>5관문: 가격이 충분히 싼가?</h3>
+<pre><code>python tools/financial_rigor_kr.py three-scenario --price 329000 --eps 18773 --shares 0.2772 \
+  --growth 20 10 -5 --per 20 15 10
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>연성장률</th>
+<th>목표PER</th>
+<th>3년후EPS</th>
+<th>적정가</th>
+<th>괴리율</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>낙관</td>
+<td>+20.0%</td>
+<td>20.0배</td>
+<td>32,440원</td>
+<td>648,795원</td>
+<td>+97.2%</td>
+</tr>
+<tr>
+<td>중립</td>
+<td>+10.0%</td>
+<td>15.0배</td>
+<td>24,987원</td>
+<td>374,803원</td>
+<td><strong>+13.9%</strong></td>
+</tr>
+<tr>
+<td>비관</td>
+<td>-5.0%</td>
+<td>10.0배</td>
+<td>16,096원</td>
+<td>160,955원</td>
+<td><strong>-51.1%</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>중립 시나리오 기준 상승여력은 13.9%에 불과 — <strong>도구 자체 경고: "안전마진 제한적"</strong></li>
+<li>비관 시나리오(구리·전선 업황 반전, 지주사 할인 확대)에서는 -51.1%까지 하락 가능. 비관 시나리오 목표가(160,955원)는 공교롭게도 52주 저가(148,600원)와 근접해, 이미 시장이 한 차례 이 수준까지 가격을 매긴 이력이 있음을 시사.</li>
+<li><strong>비대칭성</strong>: 낙관(+97%) vs 비관(-51%)로 절대polnts상 낙관 쪽이 크지만, 이는 2026E 실적의 큰 폭 이익 증가(EPS 8,458원→18,773원, +122%)가 실현된다는 전제 위에 세워진 것 — 아직 확정 실적이 아닌 컨센서스.</li>
+</ul>
+<p><strong>클라만 관점</strong>: 시장이 52주 고점 대비 45.5% 할인해 둔 이유는 (1) 2026.5월 공시 실수로 인한 일시적 패닉(펀더멘털 훼손 아님으로 정리됨), (2) 오너 일가 형사재판이라는 구조적 리스크(단기 해소 어려움), (3) 지주사 할인(자회사 비상장 다수). ①은 일시적, ②·③은 상당 기간 지속될 개연성 있는 요인.</p>
+<p><strong>평점 ★★★☆☆</strong>: 2026E 기준 PER 17.5배는 절대적으로 비싸지 않으나, 이는 실현 전 컨센서스에 기댄 것이고 중립 시나리오 안전마진은 14%에 불과. "합리적 밸류에이션, 안전마진 보통" 수준.</p>
+<h3>6관문: 시장 심리·타이밍 점검 (코스톨라니)</h3>
+<ul>
+<li>최근 수개월간 목표주가가 잇달아 상향(53% 수직 상향 등)되고 "신고가 경신" 기사가 반복 — <strong>관심이 식은 A구간이 아니라 뜨거워지는 국면(B구간 근접)</strong></li>
+<li>오늘(2026.7.12) 단일 종가 +4.94%로 급등 — 단기 과열 가능성</li>
+<li>언론 논조: 미국 전력망 투자 붐·데이터센터 수혜주로 압도적 긍정 일색 — 역발상 매수 신호와는 거리가 멂</li>
+<li>금리 방향: 확인 불가 (본 조사 범위 밖)</li>
+<li>"지금 사려는 이유가 모두가 사고 있어서인가?": 최근 주가 흐름과 언론 보도량을 볼 때 <strong>그런 요소가 상당히 개입될 위험이 있음</strong></li>
+</ul>
+<p><strong>평점 ★★☆☆☆</strong>: 코스톨라니 달걀 모델상 현재는 A구간(비관/무관심 매수 구간)이 아니라 관심이 집중되는 국면에 더 가깝다. 52주 저점(148,600원) 대비는 이미 +121% 반등한 상태.</p>
+<hr />
+<h2>핵심 리스크 (3~5개)</h2>
+<ol>
+<li><strong>오너 일가 형사재판 진행 중</strong> — 통행세·일감몰아주기 혐의로 구자은 회장 등 형사재판(2026.7.1 공판), 공정위 과징금 253.6억원 확정. 판결 결과에 따라 지배구조·평판·주가에 추가 충격 가능.</li>
+<li><strong>지주사 연결 영업이익률 4%대의 구조적 낮음</strong> — LS MnM(구리 트레이딩형 사업)이 매출 규모는 키우되 마진을 희석시켜, "좋은 사업"으로서의 질적 판단이 쉽지 않음.</li>
+<li><strong>밸류에이션이 미실현 컨센서스에 의존</strong> — 2026E EPS(18,773원)는 전년 대비 +122% 급증 전망치이며, 이것이 현실화되지 않으면 PER 17.5배는 순식간에 30배대(2025A 수준)로 재평가될 위험.</li>
+<li><strong>높은 부채비율(170~193%)과 대규모 CAPEX 사이클</strong> — 미국 해저케이블 공장 등 대형 투자가 진행 중이라 순차입금 개선 추세가 지속될지 불확실.</li>
+<li><strong>자회사 손자회사 반복 상장(물적분할 IPO)</strong> — LS전선아시아·LS머트리얼즈·LS이브이코리아·LS마린솔루션 등, 자회사 가치가 계속 손자회사로 쪼개져 상장되며 지주사(LS) 주주 입장에서 지분가치 희석 우려가 구조적으로 존재.</li>
+</ol>
+<hr />
+<h2>거울 테스트</h2>
+<blockquote>
+<p>"나는 329,000원에 LS(006260)를 매수한다. 이유는:
+1. 이 사업의 본질은 <strong>LS전선(전력케이블·해저케이블)·LS ELECTRIC(전력기기)·LS MnM(동제련) 등 자회사 지분을 보유하며 배당·경영지도수수료로 수익을 내는 지주회사이고, 핵심 성장동력은 미국·유럽 전력망 투자 붐 수혜</strong>이며, 나는 이를 <strong>개략적으로는</strong> 이해한다(단, 5개 이질적 자회사 업황을 모두 정밀 추적하기는 어렵다).
+2. 해자는 <strong>LS전선의 해저케이블 글로벌 과점(4사 85%)과 LS ELECTRIC의 전력기기 진입장벽</strong>이며, <strong>확대</strong> 추세다.
+3. 경영진은 <strong>주주환원(배당 확대·자사주 소각)에는 적극적이나 오너 일가 형사재판(일감몰아주기 혐의)이 진행 중</strong>이며, 온전히 <strong>신뢰하기 어렵다</strong>.
+4. 현재 가격은 내재가치(중립 시나리오 적정가 374,803원) 대비 <strong>약 88%(괴리율 +13.9%)</strong> 수준으로, 안전마진이 <strong>부족</strong>하다.
+5. 설령 내가 틀려도, 하방 리스크는 <strong>관리 가능한 수준에 근접하나 불확실</strong>하다. 이유: 비관 시나리오 적정가(160,955원)는 현재가 대비 -51%이며 52주 저점(148,600원)과 유사한 수준까지 열려있어, 최악의 경우 반토막 이상 손실이 현실적으로 가능하다."</p>
+</blockquote>
+<p><strong>5문장 완성은 가능하나 4번·5번 문장의 내용 자체가 부정적(안전마진 부족·하방 리스크 불확실)</strong> → <strong>엄밀한 기준으로는 매수 보류.</strong></p>
+<hr />
+<h2>즉각 거부 목록 점검</h2>
+<ul>
+<li>[ ] 이 회사가 어떻게 돈을 버는지 설명할 수 없다 → 아니오 (설명 가능)</li>
+<li>[ ] FCF가 3년 연속 음(-)이고 개선 전망 없음 → <strong>확인 불가</strong> (데이터 미확보, 대형 CAPEX 사이클 진행 중이라 주의 필요)</li>
+<li>[ ] 경영진의 신뢰성·도덕성 문제가 있다 → <strong>해당 (일감몰아주기 형사재판 진행 중, 과징금 확정)</strong> — 하드 거부 근접이나 유죄 확정 전이므로 "회색지대"로 분류</li>
+<li>[ ] 경쟁 우위가 되돌릴 수 없이 무너지고 있다 → 아니오 (오히려 확대 추세)</li>
+<li>[ ] 수익이 "다음 매수자가 더 높은 가격을 줄 것"에 의존한다 (폰지) → 아니오</li>
+<li>[ ] 이 투자가 원금 전체를 잃어도 감당 가능한 금액이 아니다 → 투자자별 판단 필요</li>
+<li>[ ] 매수 이유가 주로 "다들 사고 있어서" 또는 "최근에 많이 올라서" → <strong>위험 신호</strong> — 최근 목표주가 상향 랠리·신고가 경신 보도가 이어지는 시점, FOMO 개입 가능성 점검 필요</li>
+<li>[ ] 200자 이내로 매수 논거를 쓸 수 없다 → 아니오, 논거는 명확히 쓸 수 있음(미국 전력망 투자 수혜 + 실적 턴어라운드 컨센서스)</li>
+</ul>
+<p><strong>즉각 거부 트리거 1건(경영진 신뢰성) — 하드 거부는 아니나 중대 경고.</strong></p>
+<hr />
+<h2>최종 결론</h2>
+<h3>❓ <strong>회색지대 (Gray Zone)</strong></h3>
+<p><strong>6관문 중 명확히 통과로 보기 어려운 항목: 4관문(경영진 신뢰), 5관문(안전마진), 6관문(시장심리) — 3/6개 관문에서 경고 신호.</strong></p>
+<p><strong>핵심 쟁점 (투자자가 스스로 판단해야 할 것):</strong></p>
+<ol>
+<li><strong>오너 일가 형사재판을 어떻게 볼 것인가</strong> — 통행세·일감몰아주기 혐의는 이미 공정위 과징금(253.6억원)으로 행정적 결론이 났고, 형사재판 결과(구자은 회장 등)가 향후 관건이다. 유죄 확정 시 경영 공백·평판 리스크가 현실화될 수 있으나, 시장은 현재 이를 크게 할인하지 않고 목표주가를 오히려 상향하는 중 — 시장과 거버넌스 리스크 인식 사이 괴리가 있다.</li>
+<li><strong>2026E 실적 급증(EPS +122%) 컨센서스의 신뢰도</strong> — 미국 전력망·데이터센터 투자 붐이 실제로 LS전선·LS ELECTRIC 실적으로 이어지고 있다는 증거(수주잔액 급증, 사상 최대 실적)는 있으나, 이 추세가 꺾이면 현재 PER 17.5배는 순식간에 재평가(30배대)될 수 있다.</li>
+<li><strong>지주사 할인율이 축소될지, 구조적으로 유지될지</strong> — 반복되는 손자회사 물적분할 IPO(LS머트리얼즈, LS이브이코리아 등)는 지주사 주주 가치 희석 요인으로, NH증권의 "저평가" 주장(NAV 대비 64% 할인)은 이 구조적 할인이 시간이 지나며 해소된다는 가정에 의존한다.</li>
+<li><strong>이미 52주 저점 대비 +121% 반등한 시점에서의 진입 타이밍</strong> — 코스톨라니 기준으로는 무관심 구간이 아니라 관심 집중 구간에 근접해 있어, 지금 진입이 "무릎에서 사는" 것인지 "어깨에서 사는" 것인지 판단이 엇갈릴 수 있다.</li>
+</ol>
+<p><strong>요약</strong>: LS는 미국 전력망 투자 붐이라는 명확한 장기 성장 테마와 뚜렷한 해자(해저케이블 과점, 전력기기 진입장벽)를 보유한 매력적인 사업이지만, (1) 오너 일가 형사재판이라는 구조적 지배구조 리스크가 미해소 상태이고, (2) 현재 밸류에이션이 실현되지 않은 2026E 컨센서스에 크게 의존하며 중립 시나리오 안전마진이 14%에 불과하다는 점에서 <strong>버핏 기준의 "명백한 매수"로 보기 어렵다.</strong> 사업 자체를 신뢰한다면 오너리스크 해소(형사재판 결과) 또는 추가 조정을 기다려 안전마진을 확보한 후 진입하는 것이 더 보수적인 접근이다.</p>
+<hr />
+<p><em>본 보고서는 DART 원문 공시가 아닌 fnguide/wisereport 요약치, 증권사 리포트 발췌, 언론보도를 종합해 작성되었으며, 일부 수치(부채비율·ROE 5개년, FCF)는 1차 자료로 직접 검증하지 못했다. 투자 결정 전 DART 전자공시(dart.fss.or.kr)에서 최신 사업보고서·분기보고서 원문 확인을 권고한다.</em></p>
+
+    <script src="../search_index.js"></script>
+    <script>
+        let currentFocus = -1;
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+            currentFocus = -1; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach((item, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+
+                // 마우스 진입 시 키보드 포커스와 동기화
+                li.addEventListener('mouseenter', () => {
+                    currentFocus = index;
+                    addActive(resultsContainer.getElementsByTagName('li'));
+                });
+            });
+        });
+
+        // 한글 씹힘 방지 및 엔터 이동 완벽 적용
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            if (e.isComposing || e.keyCode === 229) {
+                if (e.key === "Enter") return;
+            }
+
+            const resultsContainer = document.getElementById('searchResults');
+            const items = resultsContainer.getElementsByTagName('li');
+            
+            if (e.key === "ArrowDown" || e.keyCode === 40) {
+                currentFocus++;
+                addActive(items);
+                e.preventDefault(); 
+            } else if (e.key === "ArrowUp" || e.keyCode === 38) {
+                currentFocus--;
+                addActive(items);
+                e.preventDefault();
+            } else if (e.key === "Enter" || e.keyCode === 13) {
+                e.preventDefault();
+                if (currentFocus > -1 && items[currentFocus]) {
+                    window.location.href = items[currentFocus].querySelector('a').href;
+                }
+            }
+        });
+
+        function addActive(items) {
+            if (!items || items.length === 0) return false;
+            removeActive(items);
+            
+            if (currentFocus >= items.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = items.length - 1;
+            
+            items[currentFocus].classList.add("active");
+            items[currentFocus].scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+
+        function removeActive(items) {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>

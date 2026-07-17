@@ -32,6 +32,10 @@ const searchData = [
         "url": "LIG디펜스앤에어로스페이스/LIG디펜스앤에어로스페이스-checklist-20260711.html"
     },
     {
+        "title": "[LS] LS-checklist-20260712",
+        "url": "LS/LS-checklist-20260712.html"
+    },
+    {
         "title": "[LS Electric] LS Electric-checklist-20260702",
         "url": "LS Electric/LS Electric-checklist-20260702.html"
     },
@@ -84,6 +88,10 @@ const searchData = [
         "url": "두산로보틱스/두산로보틱스-checklist-20260701.html"
     },
     {
+        "title": "[두산에너빌리티] 두산에너빌리티-checklist-20260715",
+        "url": "두산에너빌리티/두산에너빌리티-checklist-20260715.html"
+    },
+    {
         "title": "[레인보우로보틱스] 레인보우로보틱스-checklist-20260701",
         "url": "레인보우로보틱스/레인보우로보틱스-checklist-20260701.html"
     },
@@ -98,6 +106,14 @@ const searchData = [
     {
         "title": "[비나텍] 비나텍-checklist-20260701",
         "url": "비나텍/비나텍-checklist-20260701.html"
+    },
+    {
+        "title": "[산일전기] 산일전기-checklist-20260715",
+        "url": "산일전기/산일전기-checklist-20260715.html"
+    },
+    {
+        "title": "[산일전기] 산일전기-research-20260715",
+        "url": "산일전기/산일전기-research-20260715.html"
     },
     {
         "title": "[삼성바이오로직스] 삼성바이오로직스-checklist-20260629",
@@ -132,6 +148,10 @@ const searchData = [
         "url": "삼성전자/최종보고서.html"
     },
     {
+        "title": "[삼양식품] 삼양식품-checklist-20260712",
+        "url": "삼양식품/삼양식품-checklist-20260712.html"
+    },
+    {
         "title": "[세나테크놀로지] 01-비즈니스모델-버핏시각",
         "url": "세나테크놀로지/01-비즈니스모델-버핏시각.html"
     },
@@ -162,6 +182,10 @@ const searchData = [
     {
         "title": "[세나테크놀로지] 최종보고서",
         "url": "세나테크놀로지/최종보고서.html"
+    },
+    {
+        "title": "[신세계] 신세계-checklist-20260712",
+        "url": "신세계/신세계-checklist-20260712.html"
     },
     {
         "title": "[엔바이오니아] 엔바이오니아-checklist-20260628",
@@ -250,6 +274,10 @@ const searchData = [
     {
         "title": "[한화에어로스페이스] 한화에어로스페이스-checklist-20260628",
         "url": "한화에어로스페이스/한화에어로스페이스-checklist-20260628.html"
+    },
+    {
+        "title": "[한화엔진] 한화엔진-checklist-20260715",
+        "url": "한화엔진/한화엔진-checklist-20260715.html"
     },
     {
         "title": "[현대글로비스] 현대글로비스-checklist-20260703",

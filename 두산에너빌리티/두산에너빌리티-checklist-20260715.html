@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[두산에너빌리티] 두산에너빌리티-checklist-20260715</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 900px; margin: 0 auto; padding: 45px; }
+        
+        /* 검색창 기본 스타일 추가 */
+        .search-input {
+            box-sizing: border-box; 
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 16px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+        .search-input:focus {
+            border-color: #0366d6;
+            box-shadow: 0 4px 24px rgba(3, 102, 214, 0.15);
+        }
+        .results-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            max-height: 350px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e1e4e8;
+            box-sizing: border-box; 
+        }
+        .results-list:empty { border: none; box-shadow: none; }
+        .results-list li { border-bottom: 1px solid #eaecef; }
+        .results-list li:last-child { border-bottom: none; }
+        .results-list a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+        .results-list a:hover { background-color: #f6f8fa; color: #0056b3; }
+
+        /* 💡 키보드 방향키 하이라이트 스타일 */
+        .results-list li.active {
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+        }
+        .results-list li.active a {
+            color: #0056b3;
+            padding-left: 11px; 
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body { padding: 15px; }
+            .search-input { font-size: 14px; padding: 10px 14px; }
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    
+    <div style="margin-bottom: 30px; border-bottom: 2px solid #eaecef; padding-bottom: 20px;">
+        <input type="text" id="searchInput" placeholder="다른 리서치 노트 검색 (예: 삼성전자)" 
+               class="search-input" autocomplete="off">
+        <ul id="searchResults" class="results-list"></ul>
+    </div>
+
+    <h1>두산에너빌리티(034020) 매수 전 체크리스트 — 버핏 6관문</h1>
+<p><strong>작성일</strong>: 2026-07-15 | <strong>거래소</strong>: 코스피 (舊 두산중공업) | <strong>정보 풍부도 등급</strong>: A (대형주, 다수 애널리스트 커버리지)</p>
+<blockquote>
+<p><strong>컨센서스 함정 경고</strong>: 2025년 이익이 급감(-48%)해 TTM PER이 227~591배(소스마다 편차)로 사실상 의미를 상실했다. 원전·SMR·가스터빈 수주잔고 급증(23조원, +43.5%)이라는 강한 성장 스토리 때문에 시장은 이 왜곡을 "일시적"으로 해석하고 있으나, 3시나리오 계산 결과는 이 낙관이 이미 상당 부분 가격에 반영됐음을 시사한다.</p>
+</blockquote>
+<hr />
+<h2>핵심 데이터</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>수치</th>
+<th>출처/기준시점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>분석 기준가</td>
+<td><strong>73,000원</strong></td>
+<td><code>fetch_price_kr.py</code>, 2026-07-15 15:47</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td>46.66조원</td>
+<td>실시간 수집</td>
+</tr>
+<tr>
+<td>52주 위치</td>
+<td>52.4% (고가 139,200원)</td>
+<td>실시간 수집</td>
+</tr>
+<tr>
+<td>PER (TTM)</td>
+<td><strong>486.67배</strong> (지배주주 EPS 추정 150원 기준, 소스 간 227~591배 편차)</td>
+<td><code>financial_rigor_kr.py verify-valuation</code></td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>6.26배</strong> (BPS 11,664원, 2024년말 기준 — 2025년 수치 미확인)</td>
+<td>상동</td>
+</tr>
+<tr>
+<td>선행 PER (2026E 컨센서스)</td>
+<td>약 93~115배 (EPS 787원 전망 기준)</td>
+<td>증권사 컨센서스, 2026-07</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>0%</strong> (2018년 이후 8년째 무배당)</td>
+<td>매일신문(2026.5.8)</td>
+</tr>
+<tr>
+<td>ROE (2025)</td>
+<td>약 0.7~1.1%</td>
+<td>웹검색 종합 — 순이익 급감으로 극히 낮음</td>
+</tr>
+<tr>
+<td>영업이익률</td>
+<td>2023 8.3% → 2024 6.3% → 2025 <strong>4.5%</strong> (하락 추세)</td>
+<td>계산치</td>
+</tr>
+<tr>
+<td>부채비율</td>
+<td>129.1% (2025년말, 부채 15.50조/자본 12.01조)</td>
+<td>계산치 — 2019년 舊두산중공업 시절 최고 300%(연결) 대비 크게 개선</td>
+</tr>
+<tr>
+<td>수주잔고</td>
+<td><strong>23.0조원</strong>(2025말, +43.5%) → 1Q26 24조 초과, 2030년 목표 47.7조</td>
+<td>뉴스 종합·회사 IR</td>
+</tr>
+<tr>
+<td>신규수주(2025)</td>
+<td>14.7조원 (+106.5% YoY)</td>
+<td>뉴스 종합</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>1관문: 능력 범위 — ★★★☆☆</h2>
+<p>원전 주기기(원자로·증기발생기)·가스터빈·SMR 부품을 제작해 국내외 발전사·SMR 개발사에 공급하는 사업. 수익 방식은 명확하나, 프로젝트 단위 대형 수주(장기 계약)·자본집약적 구조·정권별 원전 정책 변동(탈원전↔원전 확대)의 영향을 크게 받는다. 2014~2020년 7년 연속 순손실 이력이 이 산업의 이익 예측 난이도를 잘 보여준다. 10년 후에도 원전·에너지 인프라 사업은 지속되겠지만, 그 기간 이익 궤적을 신뢰성 있게 예측하기는 어렵다.</p>
+<ul>
+<li>핵심 변수: 글로벌 원전·SMR 발주 지속 여부, 국내 원전 정책 일관성(2026.1 탈원전 기조 철회했으나 2025년 추경에서 원자력 예산 0원 편성 이력 등 불일치 존재), 레거시 저수익 프로젝트 손실 조기 마무리 여부</li>
+<li>지식 출처: 심층 조사 기반이나, "원전 르네상스·SMR 슈퍼사이클"이라는 주제 자체가 현재 언론·투자자 사이에서 광범위하게 회자되는 화제성 테마</li>
+</ul>
+<h2>2관문: 좋은 사업인가 — ★☆☆☆☆</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>기준</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE (2025)</td>
+<td>0.7~1.1%</td>
+<td>&gt;15% 우수</td>
+<td><strong>미충족</strong> (심각)</td>
+</tr>
+<tr>
+<td>영업이익률</td>
+<td>4.5%(2025), 하락 추세</td>
+<td>&gt;10% 의미 있음</td>
+<td>미충족</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td>1Q26 영업활동현금흐름 -5,655억(운전자본 부담)</td>
+<td>지속 양(+)</td>
+<td>미충족(추정)</td>
+</tr>
+<tr>
+<td>CAPEX 강도</td>
+<td>3개년 1.3조(SMR 전용공장 9,000억 포함)</td>
+<td>경자산 선호</td>
+<td>중자산 — 미충족</td>
+</tr>
+<tr>
+<td>부채 수준</td>
+<td>부채비율 129.1%</td>
+<td>유이자부채/영업이익&lt;3년</td>
+<td>미검증이나 절대 수준 높음</td>
+</tr>
+</tbody>
+</table>
+<p>2020년 구조조정 이후 재무구조는 개선됐으나(부채비율 300%→129%), <strong>2025년 실적은 매출 성장에도 영업이익 -25%, 순이익 -48%로 수익성이 뚜렷이 후퇴</strong>했다. 현재 시점 기준으로는 "좋은 사업"의 정량 기준을 대부분 충족하지 못한다. 수주잔고 급증이 미래 이익 개선 근거이나, 이는 아직 실현되지 않은 잠재력이지 현재의 경제적 특성이 아니다.</p>
+<h2>3관문: 해자 — ★★★★★</h2>
+<table>
+<thead>
+<tr>
+<th>해자 유형</th>
+<th>보유 여부</th>
+<th>근거</th>
+<th>추세</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>규제·허가 장벽</td>
+<td>있음</td>
+<td>국내 원전 주기기(원자로용기·증기발생기) 시장에서 <strong>APR1400 국산 공급이 가능한 사실상 유일 업체</strong></td>
+<td>유지·강화</td>
+</tr>
+<tr>
+<td>규모·기술 장벽</td>
+<td>있음</td>
+<td>창원 공장 초대형 단조·주조 설비가 세계 최고 수준으로 평가, 신규 진입자가 단기간 복제 불가능</td>
+<td>유지</td>
+</tr>
+<tr>
+<td>네트워크/고객기반</td>
+<td>확대</td>
+<td>X-energy(신규 SMR 공장 투자 약정, 2025.12), NuScale, TerraPower(2026 1Q 수주), Rolls-Royce SMR(2026.5) 등 복수 글로벌 SMR 벤더에 부품 공급하는 "파운드리" 포지션</td>
+<td>확대</td>
+</tr>
+<tr>
+<td>수주 실적</td>
+<td>확대</td>
+<td>체코 두코바니 5·6호기(3,200억) + 7·8호기(5.6조) 확정, 폴란드 원전 협상 진행 중</td>
+<td>확대</td>
+</tr>
+</tbody>
+</table>
+<p>추가 검증: 경쟁자가 1조 원을 투자해도, 원자력 등급 인증과 초대형 단조설비 트랙레코드를 5년 내 복제해 국내 시장 지위를 빼앗기는 사실상 불가능하다. <strong>6관문 중 가장 명확하게 강한 항목.</strong></p>
+<h2>4관문: 경영진 신뢰 — ★★☆☆☆</h2>
+<table>
+<thead>
+<tr>
+<th>체크 항목</th>
+<th>평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>솔직성/이행</td>
+<td>박지원 회장(2016년~ 대표이사, 1988년 입사) — 2020년 채권단 관리 체제에서 3.4조원 자본 확충(자산매각+유상증자)으로 1년 11개월 만에 조기 졸업, 구조조정 자체는 성공적으로 평가됨</td>
+</tr>
+<tr>
+<td>자본 배분</td>
+<td><strong>경고</strong>: 2024년 두산밥캣(우량 자회사)-두산로보틱스(적자 자회사) 합병 비율(1:0.63)이 밥캣 주주에 불리하다는 비판 → 금감원 정정신고서 반려로 철회. 최근 자사주 매입(1,304억원)도 소각이 아닌 임직원 보상재원 목적 — 주주환원 성격 아님</td>
+</tr>
+<tr>
+<td>주주 이익 일치성</td>
+<td><strong>2018년 이후 8년째 무배당</strong> — 이익 개선기에도 주주환원 없음</td>
+</tr>
+<tr>
+<td>오너 마인드셋</td>
+<td>최대주주 ㈜두산(30~40%대, 소스 간 편차), 박정원 회장 개인 지분은 크지 않음 — 전문경영인+그룹 지주사 구조</td>
+</tr>
+<tr>
+<td>지배구조</td>
+<td>2024년 합병 논란은 소액주주 보호 관점에서 명확한 부정적 사례</td>
+</tr>
+<tr>
+<td>오너리스크</td>
+<td><strong>2026년 초 박지원 회장, 강남역 4,000억원대 빌딩 소유권 분쟁 관련 업무상 배임 혐의로 경찰 수사 진행 중</strong>(회사 측은 15년 반복된 민사 사안이라 반박, 유죄 확정 아님)</td>
+</tr>
+</tbody>
+</table>
+<p>경영진의 위기 대응 능력(2020년 구조조정)은 인정할 만하나, <strong>2024년 합병비율 논란과 2026년 진행 중인 배임 혐의 수사는 소액주주 신뢰에 실질적 타격을 주는 사안</strong>이다. 하드거부(★1) 수준의 확정된 신뢰성 문제는 아니나, 뚜렷한 경고 신호로 판정.</p>
+<h2>5관문: 안전마진 — ★☆☆☆☆</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>수치</th>
+<th>판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td>486.67배 (소스별 227~591배)</td>
+<td>극단적으로 높음(단, 저이익 왜곡 반영)</td>
+</tr>
+<tr>
+<td>선행 PER (2026E)</td>
+<td>약 93~115배</td>
+<td>왜곡 감안해도 여전히 매우 높음</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>6.26배</td>
+<td>높음</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>0%</td>
+<td>하방 방어 전무</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3시나리오 적정가</strong> (<code>financial_rigor_kr.py three-scenario</code>, 왜곡된 2025년 EPS 대신 2026년 컨센서스 EPS 787원을 기준연도로 사용):</p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>연성장률</th>
+<th>목표PER</th>
+<th>3년후 EPS</th>
+<th>적정가</th>
+<th>현재가 대비 괴리율</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>낙관</td>
+<td>+30%</td>
+<td>25배</td>
+<td>1,729원</td>
+<td>43,226원</td>
+<td><strong>-40.8%</strong></td>
+</tr>
+<tr>
+<td>중립</td>
+<td>+15%</td>
+<td>15배</td>
+<td>1,197원</td>
+<td>17,954원</td>
+<td><strong>-75.4%</strong></td>
+</tr>
+<tr>
+<td>비관</td>
+<td>-10%</td>
+<td>10배</td>
+<td>574원</td>
+<td>5,737원</td>
+<td><strong>-92.1%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>[FAIL] 낙관 시나리오조차 40.8% 고평가 — 세 시나리오 전부 현재가 대비 큰 폭 하회</strong></p>
+<p>클라만 관점: 시장이 이 주식을 비싸게 두는 이유는 명확하다 — 원전 르네상스·SMR·AI데이터센터 전력수요라는 강력한 서사. 문제는 이 서사가 <strong>이미 2026년 컨센서스 EPS(787원, 2025년 대비 5배 이상 반등을 전제)를 기준으로 계산해도 낙관 시나리오조차 40% 이상 고평가</strong>라는 점이다. 즉 시장은 컨센서스 반등을 뛰어넘는 추가적 이익 서프라이즈를 이미 가격에 반영하고 있다. 최악의 시나리오(원전 정책 후퇴·수주 둔화)에서는 하락폭이 90%를 넘을 수 있다.</p>
+<h2>6관문: 시장 심리·타이밍 (코스톨라니) — B구간(대중 열광) 근접 경고</h2>
+<ul>
+<li>52주 위치 52.4%(고점 139,200원 대비 조정)이나, 원전·SMR·AI데이터센터 테마는 2026년 상반기 내내 언론에 지속적으로 대대적 보도됨</li>
+<li>정부의 2026.1 탈원전 기조 철회 발표 자체가 이미 정책 기대감을 상당 부분 반영시킨 이벤트</li>
+<li>체코·폴란드 원전 수주, X-energy·TerraPower·Rolls-Royce SMR 등 다수의 개별 계약 뉴스가 연속적으로 나오며 투자자 관심이 최고조</li>
+<li>국내 원전정책은 정권 교체 시마다 뒤바뀐 이력이 있어(과거 탈원전→친원전 반복), "지금의 정책 우호적 분위기"가 영구적이라는 보장이 없음</li>
+<li>당일 주가 +2.96% 급등도 뉴스 반응성 매수 패턴에 부합</li>
+</ul>
+<p><strong>판정: 원전·SMR 테마가 시장에서 가장 뜨거운 화제 중 하나로 다뤄지는 시점 — 코스톨라니 관점에서 신규 매수보다 경계가 필요한 국면에 가깝다.</strong></p>
+<hr />
+<h2>핵심 리스크 (3~5개)</h2>
+<ol>
+<li><strong>모든 시나리오에서 고평가</strong> — 2026년 컨센서스 반등(EPS 5배 이상 개선 전제)을 가정한 낙관 시나리오조차 현재가 대비 41% 낮은 적정가</li>
+<li><strong>회장 개인 배임 혐의 형사수사 진행 중(2026년)</strong> — 유죄 확정은 아니나 지배구조 신뢰에 부담</li>
+<li><strong>2024년 밥캣-로보틱스 합병비율 논란</strong> — 소액주주 이익보다 그룹 전체 이해관계가 우선될 수 있음을 보여준 선례</li>
+<li><strong>2025년 실적 급감(영업이익 -25%, 순이익 -48%)</strong> — 수주잔고 증가가 실제 이익으로 전환되기까지 시차 및 불확실성 존재</li>
+<li><strong>국내 원전 정책의 정권별 변동성</strong> — 현재의 친원전 기조가 다음 정권에서도 유지될지 불확실</li>
+</ol>
+<hr />
+<h2>거울 테스트</h2>
+<blockquote>
+<p>"나는 73,000원에 두산에너빌리티를 매수한다. 이유는:
+1. 이 사업의 본질은 <strong>원전 주기기·SMR 부품·가스터빈을 제작해 국내외 발전사에 공급하는 것</strong>이며, 나는 이를 이해한다.
+2. 해자는 <strong>국내 원전 주기기 사실상 독점 지위와 초대형 단조설비 진입장벽</strong>이며, <strong>확대</strong> 추세다.
+3. 경영진은 <strong>2020년 구조조정은 성공적으로 수행했으나, 2024년 합병비율 논란과 2026년 배임 혐의 수사 중</strong>이며, <strong>부분적으로만 신뢰</strong>할 수 있다.
+4. 현재 가격은 내재가치의 <strong>약 170~240% 수준(낙관 시나리오 기준으로도 41% 고평가)</strong>으로, 안전마진이 <strong>명백히 부족</strong>하다.
+5. 설령 내가 틀려도, 하방 리스크는 <strong>관리 불가</strong>하다. 이유: <strong>비관 시나리오 적정가가 현재가 대비 92% 낮은 5,737원 — 원전 정책 후퇴나 레거시 손실 재발 시 손실 폭이 극단적으로 크다.</strong>"</p>
+</blockquote>
+<p><strong>4번과 5번에서 명확히 실패 → 5문장 완성 불가 → 매수하지 않는다.</strong></p>
+<hr />
+<h2>즉각 거부 목록 점검</h2>
+<ul>
+<li>[ ] 사업 이해 불가 → 아니오 (통과)</li>
+<li>[ ] FCF가 3년 연속 음(-) → 데이터 부족하나 1Q26 마이너스 확인, 경고 대상이나 "3년 연속" 확정은 아님</li>
+<li>[x] <strong>경영진 신뢰성·도덕성 문제 — 배임 혐의 수사 진행 중 + 합병비율 논란 (해당 가능성 높음, 확정 유죄는 아니므로 경고 수준)</strong></li>
+<li>[ ] 경쟁 우위가 되돌릴 수 없이 무너지고 있다 → 아니오, 오히려 확대 중 (통과)</li>
+<li>[ ] 폰지성 수익구조 → 아니오 (통과)</li>
+<li>[ ] 전액 손실 감당 불가 금액 → 개인 판단 필요</li>
+<li>[x] <strong>매수 이유가 "원전·SMR 테마가 요즘 핫해서/최근에 많이 올라서"에 해당할 위험 — 해당 가능성 매우 높음</strong></li>
+<li>[x] <strong>200자 이내로 매수 논거를 명확히 쓸 수 없음 — 안전마진 항목에서 논리 붕괴</strong></li>
+</ul>
+<hr />
+<h2>최종 결론</h2>
+<h2>❌ <strong>체크리스트 미통과 — 안전마진 완전 결여 + 경영진 신뢰 레드라인</strong></h2>
+<ul>
+<li><strong>사업 품질(1~3관문)</strong>: 해자는 6관문 중 가장 강력(★★★★★, 국내 원전 주기기 사실상 독점)하나, 현재의 경제적 특성(2관문)은 ROE 1%대·영업이익률 하락·부채비율 129%로 명백히 부진하다. 강한 해자가 아직 좋은 재무 성과로 전환되지 못한 상태.</li>
+<li><strong>경영진(4관문)</strong>: 2024년 합병비율 논란과 2026년 회장 배임 혐의 수사는 하드거부 확정 수준은 아니나 뚜렷한 경고 신호.</li>
+<li><strong>가격(5관문)</strong>: <strong>명백한 실패</strong>. 2026년 컨센서스 반등(5배 이상 EPS 개선)을 전제한 낙관 시나리오조차 현재가 대비 41% 고평가, 중립·비관 시나리오는 각각 75%·92% 고평가.</li>
+<li><strong>타이밍(6관문)</strong>: 원전·SMR 테마가 시장에서 가장 뜨거운 화제 중 하나로 다뤄지는 시점 — 코스톨라니 관점에서 경계 국면.</li>
+</ul>
+<p><strong>레드라인</strong>: 안전마진(5관문)이 낙관적 성장 스토리를 전제해도 확보되지 않는다는 점, 그리고 배당 없이 8년을 보낸 자본배분 정책과 최근 지배구조 신뢰 훼손 사건이 결합되어, 현재 이 주식은 버핏의 원칙(사업이 좋아도 비싸게 사면 손해)에 정면으로 반한다.</p>
+<p><strong>투자자가 스스로 판단해야 할 것</strong>: 원전·SMR 슈퍼사이클이 향후 5년 이상 지속되며 회사의 이익이 컨센서스를 크게 상회할 것이라고 확신하는지 — 그런 확신이 있어도 현재가는 그 확신을 이미 초과 반영한 수준이다.</p>
+<hr />
+<p><em>데이터 소스: DART(직접 열람 미완료), alphasquare, wisereport, 뉴스(매일신문·경향신문·CBC뉴스 등, 2025-04~2026-07 시점 혼재). EPS/BPS/현금성자산/FCF 확정치, 정확한 최대주주 지분율은 DART 원문 추가 검증 권고.</em></p>
+
+    <script src="../search_index.js"></script>
+    <script>
+        let currentFocus = -1;
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const keyword = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; 
+            currentFocus = -1; 
+
+            if (!keyword) return;
+
+            const filtered = searchData.filter(item => 
+                item.title.toLowerCase().includes(keyword)
+            );
+
+            filtered.forEach((item, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                
+                a.href = "../" + item.url; 
+                a.textContent = item.title;
+                
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+
+                // 마우스 진입 시 키보드 포커스와 동기화
+                li.addEventListener('mouseenter', () => {
+                    currentFocus = index;
+                    addActive(resultsContainer.getElementsByTagName('li'));
+                });
+            });
+        });
+
+        // 한글 씹힘 방지 및 엔터 이동 완벽 적용
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            if (e.isComposing || e.keyCode === 229) {
+                if (e.key === "Enter") return;
+            }
+
+            const resultsContainer = document.getElementById('searchResults');
+            const items = resultsContainer.getElementsByTagName('li');
+            
+            if (e.key === "ArrowDown" || e.keyCode === 40) {
+                currentFocus++;
+                addActive(items);
+                e.preventDefault(); 
+            } else if (e.key === "ArrowUp" || e.keyCode === 38) {
+                currentFocus--;
+                addActive(items);
+                e.preventDefault();
+            } else if (e.key === "Enter" || e.keyCode === 13) {
+                e.preventDefault();
+                if (currentFocus > -1 && items[currentFocus]) {
+                    window.location.href = items[currentFocus].querySelector('a').href;
+                }
+            }
+        });
+
+        function addActive(items) {
+            if (!items || items.length === 0) return false;
+            removeActive(items);
+            
+            if (currentFocus >= items.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = items.length - 1;
+            
+            items[currentFocus].classList.add("active");
+            items[currentFocus].scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+
+        function removeActive(items) {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>
